@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SmartigerDev | Web & App Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item {
+            height: 80vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .carousel-caption {
+            position: absolute;
+            bottom: 20%;
+            left: 5%;
+            right: 5%;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .carousel-caption h5 {
+            font-size: 2rem;
+        }
+        .carousel-caption p {
+            font-size: 1.25rem;
+        }
+    </style>
+  
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">SmartigerDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Quienes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Qué Hacemos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Precios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contáctenos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section   class="bg-dark text-light py-5 text-center" -->
+    <header >
+        <!--<div class="container">
+            <h1 class="display-4">Soluciones Innovadoras de Desarrollo Web y Aplicaciones</h1>
+            <p class="lead">Transforma tu negocio con nuestros servicios de diseño web, aplicaciones móviles y más.</p>
+            <a href="#contact" class="btn btn-warning btn-lg mt-3">Solicitar Cotización</a>
+        </div>-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+
+              <!-- Slide 1 -->
+              <div class="carousel-item active" style="background-image: url('https://via.placeholder.com/1920x1080');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4">Soluciones Innovadoras de Desarrollo Web y Aplicaciones</h1>
+                    <p class="lead">Transforma tu negocio con nuestros servicios de diseño web, aplicaciones móviles y más.</p>
+                    <a href="#contact" class="btn btn-warning btn-lg mt-3">Solicitar Cotización</a>
+                </div>
+              </div>
+                
+
+              <!-- Slide 1 -->
+              <div class="carousel-item active" style="background-image: url('https://via.placeholder.com/1920x1080');">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Cuéntanos tu idea y te creamos una web única</h5>
+                </div>
+              </div>
+          
+              <!-- Slide 2 -->
+              <div class="carousel-item" style="background-image: url('https://via.placeholder.com/1920x1080');">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>¿Tienes una idea?</h5>
+                  <p>Si tienes una idea, ya tienes una web. Más de 20 años diseñando sitios web para todo rubro. Sabemos cómo interpretar lo que buscas y te entregamos un servicio de primer nivel.</p>
+                </div>
+              </div>
+          
+              <!-- Slide 3 -->
+              <div class="carousel-item" style="background-image: url('https://via.placeholder.com/1920x1080');">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Diseñamos tu Web</h5>
+                  <p>Lo importante, realmente diseñamos, no vendemos plantillas que se pueden descargar de internet y vender a muchas personas. Diseñaremos para ti un sitio único, nada de copias.</p>
+                </div>
+              </div>
+          
+              <!-- Slide 4 -->
+              <div class="carousel-item" style="background-image: url('https://via.placeholder.com/1920x1080');">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>¿Cuánto debes saber para crearla?</h5>
+                  <p>No es necesario que sepas nada, basta con que nos cuentes lo que quieres hacer con tu página web y nosotros nos encargaremos de crear para ti, una plataforma que cumpla con los requerimientos estéticos y funcionales que necesita tu sitio.</p>
+                </div>
+              </div>
+          
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </header>
+
+    <!-- Quienes Somos -->
+    <section id="about" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-5">¿Quiénes Somos?</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/500x300" alt="Team image" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <p class="lead">Somos un grupo de ingenieros informáticos especializados en desarrollo web, aplicaciones móviles y soluciones digitales. En <strong>SmartigerDev</strong>, combinamos nuestra experiencia técnica con creatividad para entregar soluciones que impulsen el éxito de nuestros clientes.</p>
+                    <p class="lead mt-3">Nuestro equipo está compuesto por especialistas en diversas áreas de tecnología, desde diseño UI/UX, programación back-end y front-end, hasta consultoría y asesoría tecnológica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qué Hacemos -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">¿Qué Hacemos?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Landing Pages</h3>
+                            <p class="card-text">Creamos páginas de aterrizaje optimizadas para la conversión.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Diseño Web</h3>
+                            <p class="card-text">Diseños web modernos, adaptativos y enfocados en la experiencia del usuario.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Aplicaciones Web</h3>
+                            <p class="card-text">Desarrollamos aplicaciones web personalizadas, escalables y seguras.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Aplicaciones Android</h3>
+                            <p class="card-text">Soluciones móviles para dispositivos Android con rendimiento y funcionalidad optimizados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Asesorías Tecnológicas</h3>
+                            <p class="card-text">Te ayudamos a tomar decisiones tecnológicas estratégicas para tu negocio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Consultoría</h3>
+                            <p class="card-text">Ofrecemos servicios de consultoría para soluciones digitales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precios -->
+    <section id="pricing" class="bg-dark text-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestros Precios</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-center text-light border-light">
+                        <div class="card-body">
+                            <h3 class="card-title">Starter</h3>
+                            <p class="display-6">$500</p>
+                            <ul class="list-unstyled mt-3">
+                                <li>1 Landing Page</li>
+                                <li>Soporte Básico</li>
+                                <li>Tiempo de entrega: 1 semana</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-center text-light border-light">
+                        <div class="card-body">
+                            <h3 class="card-title">Pro</h3>
+                            <p class="display-6">$1000</p>
+                            <ul class="list-unstyled mt-3">
+                                <li>Diseño Web Completo</li>
+                                <li>2 Revisiones de Cambios</li>
+                                <li>Soporte 24/7</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-center text-light border-light">
+                        <div class="card-body">
+                            <h3 class="card-title">Expert</h3>
+                            <p class="display-6">$1500</p>
+                            <ul class="list-unstyled mt-3">
+                                <li>Diseño Web + Aplicaciones</li>
+                                <li>Consultoría Personalizada</li>
+                                <li>Soporte Premium</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#contact" class="btn btn-warning btn-lg">Cotizar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Contáctenos</h2>
+            <p class="lead">¡Nos encantaría saber más sobre tu proyecto!</p>
+            <form action="contact.php" method="POST" class="w-50 mx-auto">
+                <div class="mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="Tu Nombre" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Tu Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea name="message" class="form-control" rows="5" placeholder="Tu Mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning btn-lg">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>© <span id="year"></span> SmartigerDev. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>    
