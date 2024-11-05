@@ -1,3 +1,15 @@
+//Efecto de suavizado en los enlaces de navegación:
+$(document).ready(function(){
+    $('a.nav-link').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 800);
+    });
+});
+
+
+
 $(document).ready(function(){
     let i = 0;
     let txt = 'Soluciones Innovadoras de Desarrollo Web y Aplicaciones'; 
