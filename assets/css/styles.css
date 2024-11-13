@@ -384,3 +384,7 @@ body {
 .img-fluid {
   border-radius: 10px; /* Ajusta el valor según sea necesario */
 }
+
+.shadow-custom {
+  box-shadow: 10px 4px 25px rgba(170, 197, 229, 0.7); /* Cambia el color y la opacidad según sea necesario */
+}
