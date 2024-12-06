@@ -1,600 +1,382 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Favicons-->
-    <link rel="icon" type="image/png" sizes="16x16"  href="/assets/img/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32"  href="/assets/img/favicons/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-touch-icon-76x76.png">
-    <link rel="icon" type="image/png" sizes="96x96"  href="/assets/img/favicons/apple-touch-icon-96x96.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicons/android-icon-192x192.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <title>Ingenium Dynamics | Web & App Solutions</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Moderna Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-    <!--fram css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<!--        <link href="assets/css/styles.css" rel="stylesheet">-->
-    <link href="assets/css/styles.css" rel="stylesheet" >
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ 
+  <script src="https://code.jquery.com/jquery-migrate-3.5.2.js"></script>
+  <!-- 
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+-->
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
 
-    <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-                <div class="container">
-                    <img id="logo" src="assets/img/ingenium_Dynamics.jpg">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="#about">Quienes Somos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#services">Qué Hacemos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">Contáctenos</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <header>
-            <section id="hero">
-                <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- Primer item -->
-                        <div class="carousel-item active" style="background-image: url(assets/img/HS1.png); background-size: cover;">
-                            <div class="container h-100 d-flex align-items-center justify-content-center" style="margin-top: 10%;">
-                                <div class="text-center text-light" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px;">
-                                    <h4>Soluciones Innovadoras de Desarrollo Web y Aplicaciones</h4>
-                                    <p>Lleva tu negocio al siguiente nivel con soluciones digitales a medida.</p>
-                                    <!-- <a href="#contact" class="btn btn-warning btn-lg mt-3">Solicitar Cotización</a> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Segundo item -->
-                        <div class="carousel-item" style="background-image: url(assets/img/HS2Es.webp); background-size: cover;">
-                            <div class="container h-100 d-flex align-items-center justify-content-center" style="margin-top: 10%;">
-                                <div class="text-center text-light" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px;">
-                                    <h4>Cuéntanos tu idea y te creamos una web única</h4>
-                                    <h5>Diseñamos tu Web</h5>
-                                    <p>Lo importante, realmente diseñamos para ti un sitio único.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Tercer item -->
-                        <div class="carousel-item" style="background-image: url(assets/img/HS3.png); background-size: cover;">
-                            <div class="container h-100 d-flex align-items-center justify-content-end" style="margin-left: 15%;">
-                                <div class="text-center text-light" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
-                                    <h5>¿Tienes una idea?</h5>
-                                    <p>Si tienes una idea, ya tienes una web.</p><p>Sabemos cómo interpretar lo que buscas y te entregamos un servicio de primer nivel.</p>
-                                </div>
-                            </div>
-                        </div>
-                    <!-- </div>
-                        
-                        <div class="carousel-item" style="background-image: url(assets/img/ingeniumDynamics.jpg); background-size: cover;">
-                            <div class="container h-100 d-flex align-items-center justify-content-end">
-                                <div class="text-end text-light">
-                                    <h5>¿Cuánto debes saber para crearla?</h5>
-                                    <p>No es necesario que sepas nada, basta con que nos cuentes lo que quieres hacer con tu página web y nosotros nos encargaremos de crear para ti, una plataforma que cumpla con los requerimientos estéticos y funcionales que necesita tu sitio.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+<body class="index-page">
 
-                    <!-- Controles del carrusel -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </section>
-        </header>
-    <!-- Quienes Somos -->
-    <section id="about" class="py-5 fade" data-aos="fade-up" style="opacity: 0;">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <header>
-                        <h1>Conoce Más Sobre Nosotros</h1>
-                        <p class="lead">Somos un equipo de ingenieros informáticos especializados en desarrollo web, aplicaciones móviles y soluciones digitales. En <strong>Ingenium Dynamics</strong>, combinamos nuestra experiencia técnica con creatividad para entregar soluciones que impulsen el éxito de nuestros clientes.</p>
-                        <p class="lead mt-3">Nuestro equipo está compuesto por especialistas en diversas áreas de tecnología, desde diseño UI/UX, programación back-end y front-end, hasta consultoría y asesoría tecnológica.</p>
-                    </header>
-                </div>
-                <div class="col-md-6">
-                    <figure>
-                        <img src="assets/img/info1.png" alt="Imagen creativa" class="img-fluid shadow-custom">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- Qué Hacemos -->
-<section id="services" class=" py-5 fade" data-aos="fade-up" style="opacity: 0;">
-    <div class="container" style="max-width: 1000px;">
-        <h2 class="fade text-center mb-5">¿Qué Hacemos?</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-            <div class="col-md-6 mb-3 d-flex justify-content-center">
-                <div class="card text-center h-100">
-                    <div class="card-body d-flex flex-column">
-                        <h3 class="card-title text-white">Diseño Web</h3>
-                        <p class="card-text text-white">Creamos páginas de aterrizaje optimizadas, diseños web modernos y adaptativos, y aplicaciones web personalizadas para impulsar tu negocio digital.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-3 d-flex justify-content-center">
-                <div class="card text-center h-100">
-                    <div class="card-body d-flex flex-column">
-                        <h3 class="card-title text-white">Aplicaciones Web</h3>
-                        <p class="card-text text-white">Desarrollamos aplicaciones web a medida, escalables y seguras, siempre orientadas a potenciar tu negocio en un entorno digital competitivo.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-3 d-flex justify-content-center">
-                <div class="card text-center h-100">
-                    <div class="card-body d-flex flex-column">
-                        <h3 class="card-title text-white">App. Móviles</h3>
-                        <p class="card-text text-white">Creamos aplicaciones móviles optimizadas para Android, junto con asesoría tecnológica y consultoría estratégica para fortalecer tu empresa.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-3 d-flex justify-content-center">
-                <div class="card text-center h-100">
-                    <div class="card-body d-flex flex-column">
-                        <h3 class="card-title text-white">Consultoría</h3>
-                        <p class="card-text text-white">Ofrecemos asesoría integral en ciberseguridad, optimización de procesos y gestión de sistemas. Implementamos estrategias de seguridad que protegen tus datos y aseguran la continuidad de tus operaciones.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Ingenium Dynamics</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
     </div>
-</section>
+  </header>
 
+  <main class="main">
 
-<section id="pattern-background-2" class="dark-bg img-bg-softer" style="background-image: url(assets/images/art/pattern-background02.png);">
-        <div class="container inner">
-            <div class="row">
-                <div class="col-md-8 col-sm-9 mx-auto text-center">
-                    <header>
-                        <h1>Check out our latest works</h1>
-                    </header>
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-    
-            <div class="row inner-top-sm">
-                <div id="carouselLatestWorks" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-                    <div class="carousel-inner">
-    
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="https://www.languagelife.cl" target="_blank">
-                                        <figure>
-                                            <figcaption class="text-overlay">
-                                                <div class="info">
-                                                    <h4>Languagelilfe</h4>
-                                                    <p>Web de educación y arte</p>
-                                                </div><!-- /.info -->
-                                            </figcaption>
-                                            <img src="assets/img/languagelife.JPG" alt="" class="img-fluid">
-                                        </figure>
-                                    </a>
-                                </div><!-- /.col -->
-    
-                                <div class="col-md-4">
-                                    <a href="https://www.haraslospellines.com/" target="_blank">
-                                        <figure>
-                                            <figcaption class="text-overlay">
-                                                <div class="info">
-                                                    <h4>Haras Los Pellines</h4>
-                                                    <p>Caballos Árabes</p>
-                                                </div><!-- /.info -->
-                                            </figcaption>
-                                            <img src="assets/img/haras.JPG" alt="" class="img-fluid">
-                                        </figure>
-                                    </a>
-                                </div><!-- /.col -->
-    
-                                <div class="col-md-4">
-                                    <a href="https://dyw57mjcdz9b2.cloudfront.net/" target="_blank">
-                                        <figure>
-                                            <figcaption class="text-overlay">
-                                                <div class="info">
-                                                    <h4>Nico Castro</h4>
-                                                    <p>Fotógrafo</p>
-                                                </div><!-- /.info -->
-                                            </figcaption>
-                                            <img src="assets/img/nico.JPG" alt="" class="img-fluid">
-                                        </figure>
-                                    </a>
-                                </div><!-- /.col -->
-                            </div><!-- /.row -->
-                        </div><!-- /.carousel-item -->
-    
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="portfolio-bmo-websites.html" target="_blank">
-                                        <figure>
-                                            <figcaption class="text-overlay">
-                                                <div class="info">
-                                                    <h4>BMO Intranet</h4>
-                                                    <p>UI Design, Web Design</p>
-                                                </div><!-- /.info -->
-                                            </figcaption>
-                                            <img src="assets/images/portfolio/hp-UIdesigns.png" alt="" class="img-fluid">
-                                        </figure>
-                                    </a>
-                                </div><!-- /.col -->
-    
-                                <div class="col-md-4">
-                                    <a href="portfolio-bmo-banners.html" target="_blank">
-                                        <figure>
-                                            <figcaption class="text-overlay">
-                                                <div class="info">
-                                                    <h4>BMO Internal websites</h4>
-                                                    <p>Banners Designs</p>
-                                                </div><!-- /.info -->
-                                            </figcaption>
-                                            <img src="assets/images/portfolio/hp-banners.png" alt="" class="img-fluid">
-                                        </figure>
-                                    </a>
-                                </div><!-- /.col -->
-    
-                                <div class="col-md-4">
-                                    <a href="portfolio-bmo-banners.html" target="_blank">
-                                        <figure>
-                                            <figcaption class="text-overlay">
-                                                <div class="info">
-                                                    <h4>BMO Internal websites</h4>
-                                                    <p>Banners Designs</p>
-                                                </div><!-- /.info -->
-                                            </figcaption>
-                                            <img src="assets/images/portfolio/hp-bmo-banners-01.png" alt="" class="img-fluid">
-                                        </figure>
-                                    </a>
-                                </div><!-- /.col -->
-                            </div><!-- /.row -->
-                        </div><!-- /.carousel-item -->
-    
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="portfolio-itrade-banners.html" target="_blank">
-                                        <figure>
-                                            <figcaption class="text-overlay">
-                                                <div class="info">
-                                                    <h4>Scotiabank iTrade</h4>
-                                                    <p>Series of iTrade Banners</p>
-                                                </div><!-- /.info -->
-                                            </figcaption>
-                                            <img src="assets/images/portfolio/hp-iTrade-banners.png" alt="" class="img-fluid">
-                                        </figure>
-                                    </a>
-                                </div><!-- /.col -->
-    
-                                <div class="col-md-4">
-                                    <a href="portfolio.html" target="_blank">
-                                        <figure>
-                                            <figcaption class="text-overlay">
-                                                <div class="info">
-                                                    <h4>All Florida Insurance</h4>
-                                                    <p>Logo Design</p>
-                                                </div><!-- /.info -->
-                                            </figcaption>
-                                            <img src="assets/images/portfolio/hp-logo-florida.png" alt="" class="img-fluid">
-                                        </figure>
-                                    </a>
-                                </div><!-- /.col -->
-    
-                                <div class="col-md-4">
-                                    <a href="portfolio.html" target="_blank">
-                                        <figure>
-                                            <figcaption class="text-overlay">
-                                                <div class="info">
-                                                    <h4>Colonic Boutique</h4>
-                                                    <p>Logo Design</p>
-                                                </div><!-- /.info -->
-                                            </figcaption>
-                                            <img src="assets/images/portfolio/hp-logo-colonboutique.png" alt="" class="img-fluid">
-                                        </figure>
-                                    </a>
-                                </div><!-- /.col -->
-                            </div><!-- /.row -->
-                        </div><!-- /.carousel-item -->
-    
-                    </div><!-- /.carousel-inner -->
-    
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLatestWorks" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselLatestWorks" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div><!-- /.carousel -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
-                    
-    <!-- Precios --> 
-    <section id="pricing" class="bg-dark text-light py-5 fade" data-aos="fade-up" style="opacity: 0;">
-        <div class="container">
-            <h2 class="text-center mb-5">Nuestros Planes</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 bg-dark text-center text-light border-light">
-                        <div class="card-body">
-                            <h3 class="card-title">All in One</h3>
-                            <p class="display-8">desde $25000 mensual</p>
-                            <p class="display-8">desde $250000 anual</p>
-                            <ul class="list-unstyled mt-3">
-                                <li>1 Landing Page</li>
-                                <li>Gestión Compra Dominio</li>
-                                <li>Hosting</li>
-                            </ul>
-                            <hr class="line" />
-                            <p class="display-7">Opcionales</p>
-                            
-                            <ul class="card__list">
-                              <li class="card__list_item">
-                                <span class="check">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 16 16"
-                                    fill="currentColor"
-                                    class="check_svg"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
-                                      clip-rule="evenodd"
-                                    ></path>
-                                  </svg>
-                                </span>
-                                <span class="list_text">Desarrollo orientado a SEO</span>
-                              </li>
-                              <li class="card__list_item">
-                                <span class="check">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 16 16"
-                                    fill="currentColor"
-                                    class="check_svg"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
-                                      clip-rule="evenodd"
-                                    ></path>
-                                  </svg>
-                                </span>
-                                <span class="list_text">Mail con dominio</span>
-                              </li>   
-                              <li class="card__list_item">
-                                <span class="check">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 16 16"
-                                    fill="currentColor"
-                                    class="check_svg"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
-                                      clip-rule="evenodd"
-                                    ></path>
-                                  </svg>
-                                </span>
-                                <span class="list_text">Multilingual</span>
-                              </li>                           
-                            </ul>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 bg-dark text-center text-light border-light">
-                        <div class="card-body">
-                            <h3 class="card-title">Pro</h3>
-                            <p class="display-8">desde $35000 mensual</p>
-                            <p class="display-8">desde $350000 anual</p>
-                            <ul class="list-unstyled mt-3">
-                                <li>Diseño Web Completo (hasta 6 páginas)</li>
-                                <li>Gestión Compra Dominio</li>
-                                <li>4 Mantenciones mensuales</li>
-                                <li>Hosting</li>
-                            </ul>
-                            <hr class="line" />
-                            <p class="display-7">Opcionales</p>
-                            
-                            <ul class="card__list">
-                              <li class="card__list_item">
-                                <span class="check">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 16 16"
-                                    fill="currentColor"
-                                    class="check_svg"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
-                                      clip-rule="evenodd"
-                                    ></path>
-                                  </svg>
-                                </span>
-                                <span class="list_text">Desarrollo orientado a SEO</span>
-                              </li>
-                              <li class="card__list_item">
-                                <span class="check">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 16 16"
-                                    fill="currentColor"
-                                    class="check_svg"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
-                                      clip-rule="evenodd"
-                                    ></path>
-                                  </svg>
-                                </span>
-                                <span class="list_text">Mail con dominio</span>
-                              </li>   
-                              <li class="card__list_item">
-                                <span class="check">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 16 16"
-                                    fill="currentColor"
-                                    class="check_svg"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
-                                      clip-rule="evenodd"
-                                    ></path>
-                                  </svg>
-                                </span>
-                                <span class="list_text">Multilingual</span>
-                              </li>                           
-                            </ul>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 bg-dark text-center text-light border-light">
-                        <div class="card-body">
-                            <h3 class="card-title">Expert</h3>
-                            <p class="display-8">desde $55000 mensual</p>
-                            <p class="display-8">desde $550000 anual</p>
-                            <ul class="list-unstyled mt-3">
-                                <li>Diseño Web Completo (hasta 6 páginas)</li>
-                                <li>Gestión Compra Dominio</li>
-                                <li>Desarrollo orientado a SEO</li>
-                                <li>6 Mantenciones mensuales</li>
-                                <li>Hosting</li>
-                            </ul>
-                            <hr class="line" />
-                            <p class="display-7">Opcionales</p>
-                            
-                            <ul class="card__list">
-                              <li class="card__list_item">
-                                <span class="check">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 16 16"
-                                    fill="currentColor"
-                                    class="check_svg"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
-                                      clip-rule="evenodd"
-                                    ></path>
-                                  </svg>
-                                </span>
-                                <span class="list_text">Desarrollo orientado a SEO</span>
-                              </li>
-                              <li class="card__list_item">
-                                <span class="check">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 16 16"
-                                    fill="currentColor"
-                                    class="check_svg"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
-                                      clip-rule="evenodd"
-                                    ></path>
-                                  </svg>
-                                </span>
-                                <span class="list_text">Mail con dominio</span>
-                              </li>   
-                              <li class="card__list_item">
-                                <span class="check">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 16 16"
-                                    fill="currentColor"
-                                    class="check_svg"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
-                                      clip-rule="evenodd"
-                                    ></path>
-                                  </svg>
-                                </span>
-                                <span class="list_text">Multilingual</span>
-                              </li>                           
-                            </ul>                            
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
 
-                        </div>
-                    </div>
-                </div>
+      <!-- <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in"> -->
+
+      <div id="hero-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="container position-relative">
+
+          <div class="carousel-item active">
+            <div class="carousel-container">
+              <h2>Welcome to Moderna</h2>
+              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <a href="#about" class="btn-get-started">Read More</a>
             </div>
-            <div class="text-center mt-4">
-                <a href="#contact" class="btn btn-warning btn-lg">Cotizar Ahora</a>
+          </div><!-- End Carousel Item -->
+
+          <div class="carousel-item">
+            <div class="carousel-container">
+              <h2>Lorem Ipsum Dolor</h2>
+              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <a href="#about" class="btn-get-started">Read More</a>
             </div>
-        </div>
-    </section>
+          </div><!-- End Carousel Item -->
 
-<!-- Contacto -->
-    <section id="contact" class="py-5 fade" data-aos="fade-up" style="opacity: 0;">
-        <div class="container text-center">
-            <h2 class="mb-5">Contáctenos</h2>
-            <p class="lead">¡Nos encantaría saber más sobre tu proyecto!</p>
-            <form action="contact.php" method="POST" class="w-50 mx-auto">
-                <div class="mb-3">
-                    <input type="text" name="name" class="form-control" placeholder="Tu Nombre" required>
-                </div>
-                <div class="mb-3">
-                    <input type="email" name="email" class="form-control" placeholder="Tu Email" required>
-                </div>
-                <div class="mb-3">
-                    <textarea name="message" class="form-control" rows="5" placeholder="Tu Mensaje" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-warning btn-lg">Enviar Mensaje</button>
-            </form>
-        </div>
-    </section>
+          <div class="carousel-item">
+            <div class="carousel-container">
+              <h2>Sequi ea ut et est quaerat</h2>
+              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <a href="#about" class="btn-get-started">Read More</a>
+            </div>
+          </div><!-- End Carousel Item -->
 
-<!-- Footer -->
-<footer class="bg-dark text-light py-4">
-    <div class="container text-center">
-        <p>© <span id="year"></span> ingeniumDynamics. Todos los derechos reservados.</p>
+          <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+          </a>
+
+          <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+          </a>
+
+          <ol class="carousel-indicators"></ol>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Nesciunt Mete</h3>
+              </a>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Eosle Commodi</h3>
+              </a>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Ledo Markt</h3>
+              </a>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-red position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Asperiores Commodit</h3>
+              </a>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/features-1.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              <li><i class="bi bi-check"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+              <li><i class="bi bi-check"></i> <span>Ullam est qui quos consequatur eos accusamus.</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/features-2.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+            <h3>Corporis temporibus maiores provident</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+            <img src="assets/img/features-3.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up">
+            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
+            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              <li><i class="bi bi-check"></i><span> Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+              <li><i class="bi bi-check"></i> <span>Facilis ut et voluptatem aperiam. Autem soluta ad fugiat</span>.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
+            <img src="assets/img/features-4.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Moderna</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+          </ul>
+        </div>
+
+        <!--<div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>-->
+        </div>
+
+      </div>
     </div>
-</footer>
 
-<script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Ingenium Dynamics</strong> <span>All Rights Reserved</span></p>
 
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-    ></script>   
-    <script src="assets/js/scripts_after.js"></script>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <!--<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>-->
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
-</html>    
+
+</html>
