@@ -1907,7 +1907,7 @@ section,
 
 /*--------------------------------------------------------------
 # Team Section
---------------------------------------------------------------*/
+--------------------------------------------------------------* /
 .team .member {
   position: relative;
 }
@@ -1984,7 +1984,7 @@ section,
 
 /*--------------------------------------------------------------
 # Blog Posts Section
---------------------------------------------------------------*/
+--------------------------------------------------------------* /
 .blog-posts article {
   background-color: var(--surface-color);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -2041,7 +2041,7 @@ section,
 
 /*--------------------------------------------------------------
 # Blog Pagination Section
---------------------------------------------------------------*/
+--------------------------------------------------------------* /
 .blog-pagination {
   padding-top: 0;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
@@ -2083,7 +2083,7 @@ section,
 
 /*--------------------------------------------------------------
 # Blog Details Section
---------------------------------------------------------------*/
+--------------------------------------------------------------* /
 .blog-details {
   padding-bottom: 30px;
 }
@@ -2237,7 +2237,7 @@ section,
 
 /*--------------------------------------------------------------
 # Blog Comments Section
---------------------------------------------------------------*/
+--------------------------------------------------------------* /
 .blog-comments {
   padding: 10px 0;
 }
@@ -2460,9 +2460,18 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
+#hservicios {
+  background-image: url("../img/6.jpg"); /* Ruta de la imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  color: #fff; /* Asegura que el texto sea legible si la imagen es oscura */
+  padding: 50px 20px; /* Espaciado opcional */
+}
+
 /*--------------------------------------------------------------
 # Widgets
---------------------------------------------------------------*/
+--------------------------------------------------------------* /
 .widgets-container {
   background-color: var(--surface-color);
   padding: 30px;
@@ -2630,7 +2639,7 @@ section,
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
-
+*/
 .tags-widget ul {
   list-style: none;
   padding: 0;
