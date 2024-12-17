@@ -82,7 +82,7 @@ h6 {
 }
 
 /* PHP Email Form Messages
-------------------------------*/
+------------------------------* /
 .php-email-form .error-message {
   display: none;
   background: #df1529;
@@ -132,7 +132,7 @@ h6 {
     transform: rotate(360deg);
   }
 }
-
+*/
 /* Pulsating Play Button
 ------------------------------*/
 .pulsating-play-btn {
@@ -1418,7 +1418,7 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+/*.portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
 
@@ -1483,10 +1483,36 @@ section,
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
+*/
+
+.card-img-top {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+/*
+.card-body {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+.card-body {
+  transition: background-color 0.3s ease;
+}
+
+.card:hover .card-body {
+  background-color: rgba(0, 123, 255, 0.1);
+}*/
 
 /*--------------------------------------------------------------
 # Service Details Section
---------------------------------------------------------------*/
+--------------------------------------------------------------* /
 .service-details .service-box {
   background-color: var(--surface-color);
   padding: 20px;
