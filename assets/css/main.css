@@ -1497,7 +1497,7 @@ section,
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-
+*/
 .card:hover .card-body {
   opacity: 1;
 }
@@ -1508,7 +1508,8 @@ section,
 
 .card:hover .card-body {
   background-color: rgba(0, 123, 255, 0.1);
-}*/
+}
+*/
 
 /*--------------------------------------------------------------
 # Service Details Section
