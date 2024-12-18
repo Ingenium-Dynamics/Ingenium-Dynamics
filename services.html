@@ -39,6 +39,7 @@
     <script src="https://code.jquery.com/jquery-migrate-3.5.2.js"></script>
 
     <!-- Main CSS File -->
+    <script src="assets/js/script_clarooscuro.js"></script>
     <link href="assets/css/main.css" rel="stylesheet" />
   </head>
 
@@ -55,12 +56,31 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="index.html"
+                ><i width="50" height="50" class="bi bi-house-door-fill"></i
+              ></a>
+            </li>
+            <li><a href="services.html" class="active">Servicios</a></li>
+            <li><a href="portfolio.html">Portafolio</a></li>
 
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li>
+              <a href="index.html"
+                ><img id="banderas" src="assets/img/espana.webp"
+              /></a>
+            </li>
+            <li>
+              <a href="en/index.html"
+                ><img id="banderas" src="assets/img/usa.webp"
+              /></a>
+            </li>
+            <li>
+              <a href="fr/index.html"
+                ><img id="banderas" src="assets/img/francia.webp"
+              /></a>
+            </li>
+            <li><button id="theme-toggle">Claro/Oscuro</button></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
