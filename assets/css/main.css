@@ -35,12 +35,14 @@
 
 .light-background {
   --background-color: #f4f8fb;
+  --background-color2: #f4f8fb;
   --surface-color: #ffffff;
   --default-color: #000000;
 }
 
 .dark-background {
-  --background-color: #1e4356;
+  --background-color: #021722;
+  --background-color2: #f4f8fb;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #284e62;
@@ -1505,7 +1507,7 @@ section,
 
 /*--------------------------------------------------------------
 # Comment Form Section
---------------------------------------------------------------*/
+--------------------------------------------------------------* /
 .comment-form {
   padding-top: 10px;
 }
