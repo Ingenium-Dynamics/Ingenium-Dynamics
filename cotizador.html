@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Contacto - Ingenium Dynamics</title>
+    <title>Cotizador - Ingenium Dynamics</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -37,6 +37,8 @@
 
     <script src="https://code.jquery.com/jquery-migrate-3.5.2.js"></script>
     <script src="assets/js/script_clarooscuro.js"></script>
+    <script src="assets/js/cotizador.js"></script>
+
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
   </head>
@@ -136,122 +138,177 @@
 
       <!-- Contact Section -->
       <section id="contact" class="contact section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <div class="col-lg-6">
-              <div class="row gy-4">
-                <div class="col-lg-12">
-                  <div
-                    class="info-item d-flex flex-column justify-content-center align-items-center"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    <i class="bi bi-geo-alt"></i>
-                    <h3>Address</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
-                  </div>
-                </div>
-                <!-- End Info Item -->
-
-                <div class="col-md-6">
-                  <div
-                    class="info-item d-flex flex-column justify-content-center align-items-center"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  >
-                    <i class="bi bi-telephone"></i>
-                    <h3>Whatsapp</h3>
-                    <a
-                      id="whatsapp-btn"
-                      href="https://wa.me/56982307788?text=Hola..."
-                      class="btn btn-success btn-whatsapp"
-                      target="_blank"
-                      aria-label="Chat on WhatsApp"
-                    >
-                      <i class="bi bi-whatsapp"></i
-                    ></a>
-                  </div>
-                </div>
-                <!-- End Info Item -->
-
-                <div class="col-md-6">
-                  <div
-                    class="info-item d-flex flex-column justify-content-center align-items-center"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                  >
-                    <i class="bi bi-envelope"></i>
-                    <h3>Email Us</h3>
-                    <p>info@example.com</p>
-                  </div>
-                </div>
-                <!-- End Info Item -->
+        <div class="container mt-5">
+          <h1 class="text-center">Calcula el costo de tu proyecto</h1>
+          <form id="projectForm" class="mt-4">
+            <!-- Nueva sección para seleccionar la moneda -->
+            <div class="mb-4">
+              <h5>Selecciona tu moneda:</h5>
+              <select class="form-select" id="moneda" required>
+                <option value="clp" data-tasa="1">CLP (Peso Chileno)</option>
+                <option value="usd" data-tasa="0.001">
+                  USD (Dólar Estadounidense)
+                </option>
+                <option value="cad" data-tasa="0.0014">
+                  CAD (Dólar Canadiense)
+                </option>
+                <option value="eur" data-tasa="0.000909">EUR (Euro)</option>
+              </select>
+            </div>
+            <!-- Selección de idioma -->
+            <div class="mb-4">
+              <h5>Selecciona el idioma:</h5>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="idioma"
+                  value="idioma1"
+                  id="idioma1"
+                  required
+                />
+                <label class="form-check-label" for="idioma1">Idioma 1</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="idioma"
+                  value="idioma2"
+                  id="idioma2"
+                />
+                <label class="form-check-label" for="idioma2">Idioma 2</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="idioma"
+                  value="idioma3"
+                  id="idioma3"
+                />
+                <label class="form-check-label" for="idioma3">Idioma 3</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="idioma"
+                  value="idioma4"
+                  id="idioma4"
+                />
+                <label class="form-check-label" for="idioma4">Idioma 4</label>
               </div>
             </div>
 
-            <div class="col-lg-6">
-              <form
-                action="forms/contact.php"
-                method="post"
-                class="php-email-form"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      placeholder="Your Name"
-                      required=""
-                    />
-                  </div>
-
-                  <div class="col-md-6">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      placeholder="Your Email"
-                      required=""
-                    />
-                  </div>
-
-                  <div class="col-md-12">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      placeholder="Subject"
-                      required=""
-                    />
-                  </div>
-
-                  <div class="col-md-12">
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="4"
-                      placeholder="Message"
-                      required=""
-                    ></textarea>
-                  </div>
-
-                  <div class="col-md-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
-
-                    <button type="submit">Send Message</button>
-                  </div>
-                </div>
-              </form>
+            <!-- Tipo de cuenta -->
+            <div class="mb-4">
+              <h5>Selecciona el tipo de cuenta de correo:</h5>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="cuenta"
+                  value="dominio"
+                  id="dominio"
+                  required
+                />
+                <label class="form-check-label" for="dominio"
+                  >Cuenta con dominio</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="cuenta"
+                  value="personal"
+                  id="personal"
+                />
+                <label class="form-check-label" for="personal"
+                  >Cuenta personal</label
+                >
+              </div>
             </div>
-            <!-- End Contact Form -->
-          </div>
+
+            <!-- Página de contacto -->
+            <div class="mb-4">
+              <h5>Opciones adicionales:</h5>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="paginaContacto"
+                />
+                <label class="form-check-label" for="paginaContacto"
+                  >Página de contacto</label
+                >
+              </div>
+            </div>
+
+            <!-- Tipo de estructura -->
+            <div class="mb-4">
+              <h5>Selecciona la estructura del sitio:</h5>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="estructura"
+                  value="all_in_one"
+                  id="all_in_one"
+                  required
+                />
+                <label class="form-check-label" for="all_in_one"
+                  >All in 1</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="estructura"
+                  value="multi_2"
+                  id="multi_2"
+                />
+                <label class="form-check-label" for="multi_2"
+                  >Múltiples páginas (2)</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="estructura"
+                  value="multi_4"
+                  id="multi_4"
+                />
+                <label class="form-check-label" for="multi_4"
+                  >Múltiples páginas (4)</label
+                >
+              </div>
+            </div>
+
+            <!-- Resultado y envío -->
+            <div class="mb-4">
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="calcularCosto()"
+              >
+                Calcular costo
+              </button>
+            </div>
+
+            <div class="mb-4">
+              <h5>Valor estimado: <span id="resultado">$0</span></h5>
+            </div>
+
+            <div>
+              <button type="submit" class="btn btn-success">
+                Enviar y ser contactado
+              </button>
+            </div>
+          </form>
         </div>
       </section>
       <!-- /Contact Section -->
@@ -271,9 +328,6 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/scripts_after.js"></script>
-
     <script>
       fetch("footer.html")
         .then((response) => response.text())
