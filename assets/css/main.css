@@ -261,12 +261,13 @@ h6 {
 }
 
 .header .logo {
-  line-height: 1;
+  line-height: 5;
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 100px;
   margin-right: 8px;
+  margin-left: 25px;
 }
 
 .header .logo h1 {
@@ -1298,9 +1299,9 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
+/* .starter-section {} */
   /* Add your styles here */
-}
+
 
 /*--------------------------------------------------------------
 # Services Section
