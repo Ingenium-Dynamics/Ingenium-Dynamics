@@ -1977,6 +1977,10 @@ section,
   font-size: 14px;
 }
 
+/*Servicios Head*/
+#head_text {
+  padding-top: 7%;
+}
 
 /* Estilo para la imagen con ID específico */
 /* #tech-tree {
