@@ -9,11 +9,30 @@
 
     <!-- Favicons -->
     <link href="assets/img/favicon_io/favicon.ico" rel="icon" sizes="any" />
-    <link href="assets/img/favicon_io/favicon-16x16.png" rel="icon" sizes="16x16" />
-    <link href="assets/img/favicon_io/favicon-32x32.png" rel="icon" sizes="32x32" />
-    <link href="assets/img/favicon_io/android-chrome-192x192.png" rel="icon" sizes="192x192" />
-    <link href="assets/img/favicon_io/android-chrome-512x512.png" rel="icon" sizes="512x512" />
-    <link href="assets/img/favicon_io/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link
+      href="assets/img/favicon_io/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+    />
+    <link
+      href="assets/img/favicon_io/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+    />
+    <link
+      href="assets/img/favicon_io/android-chrome-192x192.png"
+      rel="icon"
+      sizes="192x192"
+    />
+    <link
+      href="assets/img/favicon_io/android-chrome-512x512.png"
+      rel="icon"
+      sizes="512x512"
+    />
+    <link
+      href="assets/img/favicon_io/apple-touch-icon.png"
+      rel="apple-touch-icon"
+    />
     <link rel="manifest" href="/assets/img/favicon_io/site.webmanifest" />
 
     <!-- Fonts -->
@@ -57,7 +76,7 @@
         class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
       >
         <a href="index.html" class="logo d-flex align-items-center">
-          <img src="assets/img/Logo V3/Logo_ID_1.png" alt="">
+          <img src="assets/img/Logo V3/Logo_ID_1.png" alt="" />
           <!-- <h1 class="sitename">Ingenium Dynamics</h1> -->
         </a>
 
@@ -128,7 +147,7 @@
 
     <main class="main">
       <!-- Page Title -->
-      <div id ="hportfolio" class="page-title dark-background">
+      <div id="hportfolio" class="page-title dark-background">
         <div class="container position-relative">
           <h1 id="head_text">Portafolio</h1>
           <p>
@@ -367,106 +386,7 @@
             new Date().getFullYear();
         });
     </script>
-    <script>
-      const projects = [
-        {
-          id: 1,
-          title: "Haras los Pellines",
-          description:
-            "Página de aterrizaje creada utilizando HTML, CSS, Bootstrap y JavaScript, con un formulario de contacto implementado mediante tecnologías de AWS.",
-          images: [
-            "./assets/img/portfolio/haras_los_pellines.webp",
-            "./assets/img/portfolio/haras_los_pellines01.webp",
-            "./assets/img/portfolio/haras_los_pellines02.webp",
-          ],
-          web: "https://haraslospellines.com",
-        },
-        {
-          id: 2,
-          title: "LanguageLife",
-          description:
-            "LandingPage Multilingüal para Academia de Idiomas y arte, con una apartado Galería con las pinturas realizadas y un historial de las exposiciones en las cuales se ha participado. ",
-          images: [
-            "./assets/img/portfolio/languagelife1.webp",
-            "./assets/img/portfolio/languagelife2.webp",
-            "./assets/img/portfolio/languagelife3.webp",
-            "./assets/img/portfolio/languagelife4.webp",
-          ],
-          web: "https://www.languagelife.cl",
-        },
-        {
-          id: 3,
-          title: "Psicólogo Alex Oyarzún",
-          description:
-            "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales, no está disponible en algunos paises a petición del cliente",
-          images: [
-            "./assets/img/portfolio/alexoyarzun1.webp",
-            "./assets/img/portfolio/alexoyarzun2.webp",
-            "./assets/img/portfolio/alexoyarzun3.webp",
-          ],
-          web: "https://www.psicologoalexoyarzun.com/",
-        },
-        {
-          id: 4,
-          title: "Nico Castro Photography",
-          description:
-            "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales",
-          images: [
-            "./assets/img/portfolio/nicocastro1.webp",
-            "./assets/img/portfolio/nicocastro2.webp",
-            "./assets/img/portfolio/nicocastro3.webp",
-          ],
-          web: "https://dyw57mjcdz9b2.cloudfront.net/",
-        },
-        {
-          id: 5,
-          title: "Fidias Place",
-          description:
-            "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales",
-          images: [
-            "./assets/img/portfolio/fidias1.webp",
-            "./assets/img/portfolio/fidias2.webp",
-            "./assets/img/portfolio/fidias3.webp",
-            "./assets/img/portfolio/fidias4.webp",
-          ],
-          web: "https://ingenium-dynamics.github.io/fidias/index2.html",
-        },
-        // Añade más proyectos aquí...
-      ];
-
-      function showModal(projectId) {
-        const project = projects.find((p) => p.id === projectId);
-        if (!project) return;
-
-        // Actualizar título y descripción
-        document.getElementById("projectModalLabel").textContent =
-          project.title;
-
-        document.getElementById("projectDescription").textContent =
-          project.description;
-        // Actualizar el enlace de la URL
-        const projectModalWeb = document.getElementById("projectModalWeb");
-        projectModalWeb.href = project.web;
-        projectModalWeb.textContent = "Visitar " + project.title;
-        // Generar contenido del carrusel
-        const carouselInner = document.querySelector(".carousel-inner");
-        carouselInner.innerHTML = project.images
-          .map(
-            (img, index) => `
-          <div class="carousel-item ${index === 0 ? "active" : ""}">
-            <img src="${img}" class="d-block w-100" alt="${project.title}">
-          </div>
-        `
-          )
-          .join("");
-
-        // Mostrar modal
-        const projectModal = new bootstrap.Modal(
-          document.getElementById("projectModal")
-        );
-        projectModal.show();
-      }
-    </script>
+    <script src="assets/js/portafolio_es.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
       AOS.init({
