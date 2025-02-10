@@ -1300,8 +1300,7 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 /* .starter-section {} */
-  /* Add your styles here */
-
+/* Add your styles here */
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1987,3 +1986,34 @@ section,
   border-radius: 30px;
   box-shadow: 10px 4px 25px rgba(170, 197, 229, 0.7);
 } */
+
+/*Banner de Promociones*/
+#bannerPromocion {
+  background-color: #416687;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+#bannerPromocion h1,
+#bannerPromocion p,
+#bannerPromocion li {
+  color: #d4dad5;
+  margin: 0;
+  padding: 10px 0;
+}
+
+#bannerPromocion .item-banner {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Especificidad para otros carruseles */
+.carousel:not(#bannerPromocion .carousel) .carousel-inner {
+  position: relative;
+  overflow: hidden;
+}
