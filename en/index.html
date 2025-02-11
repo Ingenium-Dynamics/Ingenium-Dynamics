@@ -417,35 +417,36 @@
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <section id="include-footer"></section>
-    <!-- Scroll Top -->
-    <a
-      href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
+      </div>
+    </section>
+   
+  </main>
+  <section id="include-footer"></section>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Main JS File -->
-    <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/scripts.js"></script>
-    <script src="../assets/js/scripts_after.js"></script>
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-    <script>
-      fetch("../assets/footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("include-footer").innerHTML = data;
-          // Llama a una funciÃƒÂ³n para ejecutar cualquier script dentro de footer.html
-          // Establecer el aÃƒÂ±o actual despuÃƒÂ©s de incluir el footer
-          document.getElementById("year").textContent =
-            new Date().getFullYear();
-        });
-    </script>
-  </body>
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/scripts.js"></script>
+  <script src="../assets/js/scripts_after.js"></script>
+
+  <script>
+    fetch("footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("include-footer").innerHTML = data;
+        // Llama a una funciÃƒÂ³n para ejecutar cualquier script dentro de footer.html
+        // Establecer el aÃƒÂ±o actual despuÃƒÂ©s de incluir el footer
+        document.getElementById("year").textContent =
+          new Date().getFullYear();
+      });
+  </script>
+</body>
+
 </html>
+
