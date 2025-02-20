@@ -1990,6 +1990,7 @@ section,
 /*Banner de Promociones*/
 #bannerPromocion {
   background-color: #416687;
+  background-image: -webkit-linear-gradient(30deg, #5c7285 70%, #284e62 30%);
   justify-content: center;
   align-items: center;
   height: 350px;
@@ -1998,7 +1999,7 @@ section,
 #bannerPromocion h1,
 #bannerPromocion p,
 #bannerPromocion li {
-  color: #d4dad5;
+  color: #ffffff;
   margin: 0;
   padding: 10px 0;
 }
