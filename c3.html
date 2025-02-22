@@ -256,11 +256,10 @@
                 <div class="tab-content mt-3">
                   <!-- Web Informativa -->
                   <div class="tab-pane fade show active" id="info">
-                    <!--<form class="p-4 shadow-sm bg-white rounded">-->
-                    <form class="php-email-form">
-                      <div class="mb-3">
+                    <form>
+<div class="mb-3">
                         <label class="form-label"
-                          ><strong>¿Qué opción de web necesitas?</strong></label
+                          ><strong>¿Qué opcion de web necesitas?</strong></label
                         >
                         <div class="d-flex flex-wrap gap-3">
                           <div class="form-check">
@@ -269,26 +268,27 @@
                               type="radio"
                               id="plan1"
                               name="secciones[]"
-                              value="Todo en una pagina"
+                              value="Quiénes Somos"
                             />
                             <label class="form-check-label" for="plan1"
-                              >Todo en una página</label
+                              >Todo en una pagina</label
                             >
                           </div>
+
                           <div class="form-check">
                             <input
                               class="form-check-input"
                               type="radio"
                               id="plan2"
                               name="secciones[]"
-                              value="Sitio de 3 paginas"
+                              value="Quiénes Somos"
                             />
                             <label class="form-check-label" for="plan2"
-                              >Sitio de 3 páginas</label
+                              >Sitio de 3 paginas</label
                             >
                           </div>
                         </div>
-                      </div>
+
 
                       <div class="mb-3">
                         <label class="form-label"
@@ -307,6 +307,7 @@
                               >Inicio</label
                             >
                           </div>
+
                           <div class="form-check">
                             <input
                               class="form-check-input"
@@ -319,6 +320,7 @@
                               >Quiénes Somos</label
                             >
                           </div>
+
                           <div class="form-check">
                             <input
                               class="form-check-input"
@@ -331,6 +333,7 @@
                               >Servicios</label
                             >
                           </div>
+
                           <div class="form-check">
                             <input
                               class="form-check-input"
@@ -343,15 +346,16 @@
                               >Proyectos</label
                             >
                           </div>
+
                           <div class="form-check">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="contacto1"
+                              id="contacto"
                               name="secciones[]"
-                              value="Contacto con cuenta de dominio"
+                              value="Contacto"
                             />
-                            <label class="form-check-label" for="contacto1"
+                            <label class="form-check-label" for="contacto"
                               >Contacto con cuenta de dominio</label
                             >
                           </div>
@@ -359,24 +363,23 @@
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="contacto2"
+                              id="contacto"
                               name="secciones[]"
-                              value="Contacto sin cuenta de dominio"
+                              value="Contacto"
                             />
-                            <label class="form-check-label" for="contacto2"
+                            <label class="form-check-label" for="contacto"
                               >Contacto sin cuenta de dominio</label
                             >
                           </div>
                         </div>
                       </div>
-
                       <div class="mb-3">
-                        <label class="form-label"
-                          ><strong
+                        <label class="form-label">
+                          <strong
                             >¿NECESITAS OTRAS SECCIONES/PESTAÑAS
                             ADICIONALES?</strong
-                          ></label
-                        >
+                          >
+                        </label>
                         <br />
                         <input
                           class="form-check-input"
@@ -385,9 +388,11 @@
                           value="Si"
                           onclick="toggleTextarea()"
                         />
-                        <label class="form-check-label" for="paginasadicional"
-                          >Sí, quiero agregar otras</label
-                        >
+
+                        <label class="form-check-label" for="paginasadicional">
+                          Si, quiero agregar otras
+                        </label>
+
                         <textarea
                           id="otraSeccion"
                           class="form-control mt-3"
@@ -400,7 +405,6 @@
                           style="display: none"
                         ></textarea>
                       </div>
-
                       <div class="mb-3">
                         <label class="form-label"
                           ><strong>¿Necesitas Hosting?</strong></label
@@ -413,7 +417,7 @@
                         </select>
                       </div>
 
-                      <div class="mb-3">
+                      <div class="col-md-6">
                         <input
                           type="text"
                           name="name"
@@ -423,7 +427,7 @@
                         />
                       </div>
 
-                      <div class="mb-3">
+                      <div class="col-md-6">
                         <input
                           type="email"
                           class="form-control"
@@ -432,17 +436,15 @@
                           required
                         />
                       </div>
-
-                      <div class="mb-3">
+                      <div class="col-md-12">
                         <textarea
                           class="form-control"
                           name="message"
                           rows="4"
-                          placeholder="Cualquier otra información que desees compartir o preguntar"
+                          placeholder="Cualquier otra informacion que deseea compartir o preguntar"
                           required
                         ></textarea>
                       </div>
-
                       <button type="submit" class="btn btn-primary">
                         Enviar
                       </button>
@@ -451,9 +453,9 @@
 
                   <!-- E-commerce -->
                   <div class="tab-pane fade" id="ecomform">
-                    <form class="php-email-form">
+                    <form>
                       <div class="container mt-4">
-                        <div class="row gy-3">
+                        <div class="row">
                           <!-- N° DE PRODUCTOS QUE DESEAS PUBLICAR -->
                           <div class="col-md-6 mb-3">
                             <label for="numeroproductos" class="form-label"
@@ -544,59 +546,51 @@
                             </div>
                           </div>
                         </div>
-
-                        <!-- ¿Necesitas Hosting? -->
-                        <div class="mb-3">
-                          <label class="form-label"
-                            ><strong>¿Necesitas Hosting?</strong></label
-                          >
-                          <select class="form-select" name="hosting">
-                            <option value="">Elige una opción</option>
-                            <option value="Si">Sí</option>
-                            <option value="No">No</option>
-                            <option value="No sé">
-                              No sé qué es un hosting
-                            </option>
-                          </select>
-                        </div>
-
-                        <!-- Nombre y Email -->
-                        <div class="col-md-6 mb-3">
-                          <input
-                            type="text"
-                            name="name"
-                            class="form-control"
-                            placeholder="Tu Nombre"
-                            required
-                          />
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                          <input
-                            type="email"
-                            class="form-control"
-                            name="email"
-                            placeholder="Tu Email"
-                            required
-                          />
-                        </div>
-
-                        <!-- Mensaje -->
-                        <div class="col-md-12 mb-3">
-                          <textarea
-                            class="form-control"
-                            name="message"
-                            rows="4"
-                            placeholder="Cualquier otra información que desees compartir o preguntar"
-                            required
-                          ></textarea>
-                        </div>
-
-                        <!-- Botón de Enviar -->
-                        <button type="submit" class="btn btn-primary">
-                          Enviar
-                        </button>
                       </div>
+                      <div class="mb-3">
+                        <label class="form-label"
+                          ><strong>¿Necesitas Hosting?</strong></label
+                        >
+                        <select class="form-select" name="hosting">
+                          <option value="">Elige una opción</option>
+                          <option value="Si">Sí</option>
+                          <option value="No">No</option>
+                          <option value="No sé">No sé qué es un hosting</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-6">
+                        <input
+                          type="text"
+                          name="name"
+                          class="form-control"
+                          placeholder="Tu Nombre"
+                          required
+                        />
+                      </div>
+
+                      <div class="col-md-6">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          placeholder="Tu Email"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-12">
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          rows="4"
+                          placeholder="Cualquier otra informacion que deseea compartir o preguntar"
+                          required
+                        ></textarea>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">
+                        Enviar
+                      </button>
                     </form>
                   </div>
 
