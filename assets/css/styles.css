@@ -389,83 +389,62 @@ body {
 
 /* Agregar estilo para imágenes con bordes redondeados */
 .img-fluid {
-  border-radius: 10px; /* Ajusta el valor según sea necesario */
+  border-radius: 10px;
 }
 
 .shadow-custom {
-  box-shadow: 10px 4px 25px rgba(170, 197, 229, 0.7); /* Cambia el color y la opacidad según sea necesario */
+  box-shadow: 10px 4px 25px rgba(170, 197, 229, 0.7);
 }
-/*Servicios Head*/
+
+/* Servicios Head */
 #servicios_head_text {
   padding-top: 7%;
 }
 
-/* Estilos para modales de solicitud */
-#solicitudSmallOne .modal-content,
-#solicitudStarter .modal-content,
-#solicitudStarterII .modal-content,
-#solicitudLight .modal-content,
-#solicitudSmartI .modal-content,
-#solicitudSmartII .modal-content,
-#solicitudProfessional .modal-content {
+/* Estilos para modales basados en tema */
+.light-background .modal-content {
+  background: #ffffff !important;
+  border: 1px solid #dee2e6 !important;
+  color: #212529 !important;
+}
+
+.dark-background .modal-content {
   background: #1a1a1a;
   border: 1px solid #2d2d2d;
-  border-radius: 10px;
-}
-
-#solicitudSmallOne .modal-header,
-#solicitudStarter .modal-header,
-#solicitudStarterII .modal-header,
-#solicitudLight .modal-header,
-#solicitudSmartI .modal-header,
-#solicitudSmartII .modal-header,
-#solicitudProfessional .modal-header {
-  border-bottom: 1px solid #2d2d2d;
-  background: #121212;
-  color: #fff;
-}
-
-#solicitudSmallOne .modal-body,
-#solicitudStarter .modal-body,
-#solicitudStarterII .modal-body,
-#solicitudLight .modal-body,
-#solicitudSmartI .modal-body,
-#solicitudSmartII .modal-body,
-#solicitudProfessional .modal-body {
   color: #e0e0e0;
 }
 
-#solicitudSmallOne .form-control,
-#solicitudStarter .form-control,
-#solicitudStarterII .form-control,
-#solicitudLight .form-control,
-#solicitudSmartI .form-control,
-#solicitudSmartII .form-control,
-#solicitudProfessional .form-control {
-  background-color: #2d2d2d;
-  border: 1px solid #3d3d3d;
-  color: #fff;
+.light-background .modal-header {
+  border-bottom: 1px solid #dee2e6 !important;
+  background: #f8f9fa !important;
 }
 
-#solicitudSmallOne .form-control:focus,
-#solicitudStarter .form-control:focus,
-#solicitudStarterII .form-control:focus,
-#solicitudLight .form-control:focus,
-#solicitudSmartI .form-control:focus,
-#solicitudSmartII .form-control:focus,
-#solicitudProfessional .form-control:focus {
-  background-color: #333;
-  border-color: #00b4d8;
-  box-shadow: 0 0 0 0.25rem rgba(0, 180, 216, 0.25);
+.dark-background .modal-header {
+  border-bottom: 1px solid #2d2d2d;
+  background: #121212;
 }
 
-#solicitudSmallOne .btn-close,
-#solicitudStarter .btn-close,
-#solicitudStarterII .btn-close,
-#solicitudLight .btn-close,
-#solicitudSmartI .btn-close,
-#solicitudSmartII .btn-close,
-#solicitudProfessional .btn-close {
-  filter: invert(1);
+.light-background .modal-body {
+  background: #ffffff !important;
+}
+
+.dark-background .modal-body {
+  background: #1a1a1a;
+}
+
+.form-control {
+  background-color: #2d2d2d !important;
+  border: 1px solid #3d3d3d !important;
+  color: #fff !important;
+}
+
+.form-control:focus {
+  background-color: #333 !important;
+  border-color: #00b4d8 !important;
+  box-shadow: 0 0 0 0.25rem rgba(0, 180, 216, 0.25) !important;
+}
+
+.btn-close {
+  filter: invert(1) !important;
 }
 
