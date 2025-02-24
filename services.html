@@ -352,7 +352,40 @@
                 </li>
               </ul>
               <div class="text-center">
-                <a href="#" class="buy-btn">Solicitar</a>
+                <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#solicitudSmallOne">Solicitar</a>
+              </div>
+            </div>
+
+            <!-- Modal Small One -->
+            <div class="modal fade" id="solicitudSmallOne" tabindex="-1" aria-labelledby="solicitudSmallOneLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="solicitudSmallOneLabel">Solicitar Plan Small One</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="formSmallOne">
+                      <input type="hidden" name="asunto" value="Solicitud de Plan Small One">
+                      <div class="mb-3">
+                        <label for="nombreSmallOne" class="form-label">Nombre <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="nombreSmallOne" name="nombre" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="emailSmallOne" class="form-label">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="emailSmallOne" name="email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="telefonoSmallOne" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefonoSmallOne" name="telefono">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" form="formSmallOne" class="btn btn-primary">Enviar Solicitud</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -394,10 +427,42 @@
                 </li>
               </ul>
               <div class="text-center">
-                <a href="#" class="buy-btn">Solicitar</a>
+                <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#solicitudStarter">Solicitar</a>
               </div>
             </div>
 
+            <!-- Modal Starter -->
+            <div class="modal fade" id="solicitudStarter" tabindex="-1" aria-labelledby="solicitudStarterLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="solicitudStarterLabel">Solicitar Plan Starter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="formStarter">
+                      <input type="hidden" name="asunto" value="Solicitud de Plan Starter">
+                      <div class="mb-3">
+                        <label for="nombreStarter" class="form-label">Nombre <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="nombreStarter" name="nombre" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="emailStarter" class="form-label">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="emailStarter" name="email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="telefonoStarter" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefonoStarter" name="telefono">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" form="formStarter" class="btn btn-primary">Enviar Solicitud</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- End Pricing Item -->
 
@@ -441,7 +506,40 @@
                 </li>
               </ul>
               <div class="text-center">
-                <a href="#" class="buy-btn">Solicitar</a>
+                <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#solicitudStarterII">Solicitar</a>
+              </div>
+            </div>
+
+            <!-- Modal Starter II -->
+            <div class="modal fade" id="solicitudStarterII" tabindex="-1" aria-labelledby="solicitudStarterIILabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="solicitudStarterIILabel">Solicitar Plan Starter II</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="formStarterII">
+                      <input type="hidden" name="asunto" value="Solicitud de Plan Starter II">
+                      <div class="mb-3">
+                        <label for="nombreStarterII" class="form-label">Nombre <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="nombreStarterII" name="nombre" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="emailStarterII" class="form-label">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="emailStarterII" name="email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="telefonoStarterII" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefonoStarterII" name="telefono">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" form="formStarterII" class="btn btn-primary">Enviar Solicitud</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -458,7 +556,7 @@
         <div class="row g-4 g-lg-0">
           <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="100">
             <div class="pricing-item">
-              <h3>Ligth</h3>
+              <h3>Light</h3>
               <!-- <h3>Plan All in 1</h3> -->
               <!--<h4><sup>$</sup>25.000<span> / mes</span></h4>
                         <h4><sup>$</sup>25.000<span> / año</span></h4>-->
@@ -496,7 +594,40 @@
                 </li>
               </ul>
               <div class="text-center">
-                <a href="#" class="buy-btn">Solicitar</a>
+                <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#solicitudLight">Solicitar</a>
+              </div>
+            </div>
+
+            <!-- Modal Light -->
+            <div class="modal fade" id="solicitudLight" tabindex="-1" aria-labelledby="solicitudLightLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="solicitudLightLabel">Solicitar Plan Light</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="formLight">
+                      <input type="hidden" name="asunto" value="Solicitud de Plan Light">
+                      <div class="mb-3">
+                        <label for="nombreLight" class="form-label">Nombre <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="nombreLight" name="nombre" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="emailLight" class="form-label">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="emailLight" name="email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="telefonoLight" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefonoLight" name="telefono">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" form="formLight" class="btn btn-primary">Enviar Solicitud</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -542,10 +673,42 @@
                 </li>
               </ul>
               <div class="text-center">
-                <a href="#" class="buy-btn">Solicitar</a>
+                <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#solicitudSmartI">Solicitar</a>
               </div>
             </div>
 
+            <!-- Modal Smart I -->
+            <div class="modal fade" id="solicitudSmartI" tabindex="-1" aria-labelledby="solicitudSmartILabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="solicitudSmartILabel">Solicitar Plan Smart I</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="formSmartI">
+                      <input type="hidden" name="asunto" value="Solicitud de Plan Smart I">
+                      <div class="mb-3">
+                        <label for="nombreSmartI" class="form-label">Nombre <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="nombreSmartI" name="nombre" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="emailSmartI" class="form-label">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="emailSmartI" name="email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="telefonoSmartI" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefonoSmartI" name="telefono">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" form="formSmartI" class="btn btn-primary">Enviar Solicitud</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- End Pricing Item -->
 
@@ -593,7 +756,40 @@
                 </li>
               </ul>
               <div class="text-center">
-                <a href="#" class="buy-btn">Solicitar</a>
+                <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#solicitudSmartII">Solicitar</a>
+              </div>
+            </div>
+
+            <!-- Modal Smart II -->
+            <div class="modal fade" id="solicitudSmartII" tabindex="-1" aria-labelledby="solicitudSmartIILabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="solicitudSmartIILabel">Solicitar Plan Smart II</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="formSmartII">
+                      <input type="hidden" name="asunto" value="Solicitud de Plan Smart II">
+                      <div class="mb-3">
+                        <label for="nombreSmartII" class="form-label">Nombre <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="nombreSmartII" name="nombre" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="emailSmartII" class="form-label">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="emailSmartII" name="email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="telefonoSmartII" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefonoSmartII" name="telefono">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" form="formSmartII" class="btn btn-primary">Enviar Solicitud</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -643,7 +839,40 @@
                 </li>
               </ul>
               <div class="text-center">
-                <a href="#" class="buy-btn">Solicitar</a>
+                <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#solicitudProfessional">Solicitar</a>
+              </div>
+            </div>
+
+            <!-- Modal Professional -->
+            <div class="modal fade" id="solicitudProfessional" tabindex="-1" aria-labelledby="solicitudProfessionalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="solicitudProfessionalLabel">Solicitar Plan Professional</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="formProfessional">
+                      <input type="hidden" name="asunto" value="Solicitud de Plan Professional">
+                      <div class="mb-3">
+                        <label for="nombreProfessional" class="form-label">Nombre <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="nombreProfessional" name="nombre" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="emailProfessional" class="form-label">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="emailProfessional" name="email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="telefonoProfessional" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefonoProfessional" name="telefono">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" form="formProfessional" class="btn btn-primary">Enviar Solicitud</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
