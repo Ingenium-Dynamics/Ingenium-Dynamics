@@ -389,14 +389,62 @@ body {
 
 /* Agregar estilo para imágenes con bordes redondeados */
 .img-fluid {
-  border-radius: 10px; /* Ajusta el valor según sea necesario */
+  border-radius: 10px;
 }
 
 .shadow-custom {
-  box-shadow: 10px 4px 25px rgba(170, 197, 229, 0.7); /* Cambia el color y la opacidad según sea necesario */
+  box-shadow: 10px 4px 25px rgba(170, 197, 229, 0.7);
 }
-/*Servicios Head*/
+
+/* Servicios Head */
 #servicios_head_text {
   padding-top: 7%;
+}
+
+/* Estilos para modales basados en tema */
+.light-background .modal-content {
+  background: #ffffff !important;
+  border: 1px solid #dee2e6 !important;
+  color: #212529 !important;
+}
+
+.dark-background .modal-content {
+  background: #1a1a1a;
+  border: 1px solid #2d2d2d;
+  color: #e0e0e0;
+}
+
+.light-background .modal-header {
+  border-bottom: 1px solid #dee2e6 !important;
+  background: #f8f9fa !important;
+}
+
+.dark-background .modal-header {
+  border-bottom: 1px solid #2d2d2d;
+  background: #121212;
+}
+
+.light-background .modal-body {
+  background: #ffffff !important;
+}
+
+.dark-background .modal-body {
+  background: #1a1a1a;
+}
+
+.form-control {
+  background-color: #2d2d2d !important;
+  border: 1px solid #3d3d3d !important;
+  color: #fff !important;
+}
+
+.form-control:focus {
+  background-color: #333 !important;
+  border-color: #00b4d8 !important;
+  box-shadow: 0 0 0 0.25rem rgba(0, 180, 216, 0.25) !important;
+}
+
+.btn-close {
+  filter: invert(1) !important;
 }
 
