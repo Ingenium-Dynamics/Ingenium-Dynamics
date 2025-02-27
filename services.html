@@ -1465,5 +1465,16 @@
             new Date().getFullYear();
         });
     </script>
+
+    <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+      <!-- Contenido del modal -->
+    </div>
+
+    <script>
+      function showServiceModal() {
+        const modal = new bootstrap.Modal(document.getElementById('serviceModal'));
+        modal.show();
+      }
+    </script>
   </body>
 </html>

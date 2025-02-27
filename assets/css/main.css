@@ -38,6 +38,9 @@
   --background-color2: #f4f8fb;
   --surface-color: #ffffff;
   --default-color: #000000;
+  --card-bg: #f8f9fa;
+  --invert-filter: 0;
+  --text-color: #212529;
 }
 
 .dark-background {
@@ -47,6 +50,9 @@
   --heading-color: #ffffff;
   --surface-color: #284e62;
   --contrast-color: #ffffff;
+  --card-bg: #1a1a1a;
+  --invert-filter: 1;
+  --text-color: #e0e0e0;
 }
 
 /*claro oscuro*/
@@ -2025,109 +2031,104 @@ section,
   overflow: hidden;
 }
 
-/* Estilos para modales - Fusionado desde styles.css */
-.modal-content {
+/* Estilos para modales - Añadir ID específico */
+#projectModal .modal-content {
   background: var(--surface-color) !important;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%) !important;
   color: var(--default-color);
 }
 
-.modal-header {
+#projectModal .modal-header {
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%) !important;
   background: color-mix(in srgb, var(--surface-color), transparent 20%) !important;
 }
 
-.modal-body {
-  background: var(--surface-color) !important;
+#projectModal .btn-close {
+  filter: invert(var(--invert-filter)) !important;
 }
 
-/* Integrar estilos de tarjetas desde styles.css */
-.card {
+/* Cards del portafolio - Selector específico */
+#portafolioweb .card {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
   width: 19rem;
-  background-color: var(--surface-color);
+  background-color: var(--card-bg);
   border-radius: 1rem;
   box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
 }
 
-.card .card__border {
-  background-image: linear-gradient(0deg, var(--white) -50%, var(--line) 100%);
-}
-
-/* Integrar estilos de formulario desde styles.css */
-.form-control {
-  background-color: color-mix(in srgb, var(--default-color), transparent 90%) !important;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%) !important;
-  color: var(--contrast-color) !important;
-}
-
-.form-control:focus {
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%) !important;
-  border-color: var(--primary) !important;
-  box-shadow: 0 0 0 0.25rem rgba(0, 180, 216, 0.25) !important;
-}
-
-.btn-close {
-  filter: invert(1) !important;
-}
-
-/* Mantener estilos específicos de temas */
 .light-background {
-  --background-color: #f4f8fb;
-  --surface-color: #ffffff;
-  --default-color: #000000;
+  --card-bg: #f8f9fa;
+  --invert-filter: 0;
+  --text-color: #212529;
   
-  .card {
+  #portafolioweb .card {
     background-image: radial-gradient(
       at 88% 40%, 
-      hsla(240, 15%, 9%, 1) 0px, 
-      transparent 85%
-    ), radial-gradient(
-      at 49% 30%, 
-      hsla(240, 15%, 9%, 1) 0px, 
-      transparent 85%
-    ), radial-gradient(
-      at 14% 26%, 
-      hsla(240, 15%, 9%, 1) 0px, 
+      hsla(240, 15%, 9%, 0.1) 0px, 
       transparent 85%
     );
+    color: var(--text-color);
   }
 }
 
 .dark-background {
-  --background-color: #021722;
-  --surface-color: #284e62;
-  --default-color: #ffffff;
+  --card-bg: #1a1a1a;
+  --invert-filter: 1;
+  --text-color: #e0e0e0;
   
-  .card {
+  #portafolioweb .card {
     background-image: radial-gradient(
       at 88% 40%, 
-      hsla(240, 15%, 9%, 1) 0px, 
-      transparent 85%
-    ), radial-gradient(
-      at 49% 30%, 
-      hsla(240, 15%, 9%, 1) 0px, 
-      transparent 85%
-    ), radial-gradient(
-      at 14% 26%, 
-      hsla(240, 15%, 9%, 1) 0px, 
-      transparent 85%
-    ), radial-gradient(
-      at 0% 64%, 
-      hsl(189, 99%, 26%) 0px, 
-      transparent 85%
-    ), radial-gradient(
-      at 41% 94%, 
-      hsl(189, 97%, 36%) 0px, 
-      transparent 85%
-    ), radial-gradient(
-      at 100% 99%, 
-      hsl(188, 94%, 13%) 0px, 
+      hsla(240, 15%, 9%, 0.8) 0px, 
       transparent 85%
     );
+    color: var(--text-color);
   }
+}
+
+/* Modales de Services - IDs específicos */
+#solicitudSmallOne .modal-content,
+#solicitudStarter .modal-content,
+#solicitudStarterII .modal-content,
+#solicitudSmartI .modal-content,
+#solicitudSmartII .modal-content,
+#solicitudProfessional .modal-content {
+  background: var(--surface-color) !important;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%) !important;
+  color: var(--default-color);
+}
+
+#solicitudSmallOne .modal-header,
+#solicitudStarter .modal-header,
+#solicitudStarterII .modal-header,
+#solicitudSmartI .modal-header,
+#solicitudSmartII .modal-header,
+#solicitudProfessional .modal-header {
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%) !important;
+  background: color-mix(in srgb, var(--surface-color), transparent 20%) !important;
+}
+
+#solicitudSmallOne .btn-close,
+#solicitudStarter .btn-close,
+#solicitudStarterII .btn-close,
+#solicitudSmartI .btn-close,
+#solicitudSmartII .btn-close,
+#solicitudProfessional .btn-close {
+  filter: invert(var(--invert-filter)) !important;
+}
+
+/* Campos de formulario en modales */
+#solicitudSmallOne .form-control,
+#solicitudStarter .form-control,
+#solicitudStarterII .form-control,
+#solicitudSmartI .form-control,
+#solicitudSmartII .form-control,
+#solicitudProfessional .form-control {
+  background-color: color-mix(in srgb, var(--default-color), transparent 90%) !important;
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%) !important;
+  color: var(--contrast-color) !important;
 }
