@@ -2132,3 +2132,246 @@ section,
   border-color: color-mix(in srgb, var(--default-color), transparent 80%) !important;
   color: var(--contrast-color) !important;
 }
+
+/* Estilos para la sección de precios inspirados en Tailwind CSS */
+#pricing .pricing-card {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.light-background #pricing .pricing-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.dark-background #pricing .pricing-card {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+}
+
+#pricing .pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+#pricing .pricing-card.popular {
+  border-width: 2px;
+  z-index: 1;
+}
+
+.light-background #pricing .pricing-card.popular {
+  border-color: #3b82f6;
+}
+
+.dark-background #pricing .pricing-card.popular {
+  border-color: #60a5fa;
+}
+
+#pricing .pricing-header {
+  position: relative;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.light-background #pricing .pricing-header {
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dark-background #pricing .pricing-header {
+  background-color: #111827;
+  border-bottom: 1px solid #374151;
+}
+
+.light-background #pricing .wp-plan .pricing-header {
+  background-color: #ecfdf5;
+}
+
+.dark-background #pricing .wp-plan .pricing-header {
+  background-color: #064e3b;
+}
+
+#pricing .pricing-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#pricing .pricing-price {
+  margin: 1rem 0;
+}
+
+#pricing .pricing-price h4 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+#pricing .pricing-price h4 sup {
+  font-size: 1rem;
+  top: -0.8em;
+}
+
+#pricing .pricing-price h4 span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#pricing .price-usd {
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+#pricing .popular-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f59e0b;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+#pricing .pricing-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+#pricing .pricing-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#pricing .pricing-body ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+}
+
+.light-background #pricing .pricing-body ul li {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.dark-background #pricing .pricing-body ul li {
+  border-bottom: 1px solid #1f2937;
+}
+
+#pricing .pricing-body ul li:last-child {
+  border-bottom: none;
+}
+
+#pricing .pricing-body ul li i {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.light-background #pricing .pricing-body ul li i.bi-check {
+  color: #10b981;
+}
+
+.dark-background #pricing .pricing-body ul li i.bi-check {
+  color: #34d399;
+}
+
+.light-background #pricing .pricing-body ul li i.bi-x {
+  color: #ef4444;
+}
+
+.dark-background #pricing .pricing-body ul li i.bi-x {
+  color: #f87171;
+}
+
+#pricing .pricing-body ul li.na {
+  opacity: 0.6;
+}
+
+#pricing .pricing-footer {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+#pricing .buy-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.light-background #pricing .buy-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.dark-background #pricing .buy-btn {
+  background-color: #60a5fa;
+  color: #111827;
+}
+
+.light-background #pricing .wp-plan .buy-btn {
+  background-color: #10b981;
+}
+
+.dark-background #pricing .wp-plan .buy-btn {
+  background-color: #34d399;
+}
+
+#pricing .buy-btn:hover {
+  transform: translateY(-2px);
+}
+
+.light-background #pricing .buy-btn:hover {
+  background-color: #2563eb;
+}
+
+.dark-background #pricing .buy-btn:hover {
+  background-color: #3b82f6;
+}
+
+.light-background #pricing .wp-plan .buy-btn:hover {
+  background-color: #059669;
+}
+
+.dark-background #pricing .wp-plan .buy-btn:hover {
+  background-color: #10b981;
+}
+
+#pricing .pricing-note {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* Ajustes para pantallas más grandes */
+@media (min-width: 992px) {
+  #pricing .pricing-card.popular {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  #pricing .pricing-header h3 {
+    font-size: 1.25rem;
+  }
+  
+  #pricing .pricing-price h4 {
+    font-size: 1.75rem;
+  }
+}
