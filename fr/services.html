@@ -94,7 +94,7 @@
               /></a>
             </li>
             <li>
-              <a href="services.html"
+              <a href="../en/services.html"
                 ><img id="banderas" src="../assets/img/usa.webp"
               /></a>
             </li>
@@ -386,156 +386,929 @@
       <!-- /Services Section -->
 
       <!-- Pricing Section -->
-      <section id="pricing" class="pricing section">
+<section id="pricing" class="pricing section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Nos plans</h2>
+          <h2>Nos Plans</h2>
           <p>
-            Nos plans de conception Web standard - contactez-nous pour des
-            exigences personnalisées
+            Nos plans de conception de sites web Standard, si vous avez besoin de quelque chose de plus
+            personnalisé, vous pouvez nous contacter pour demander un devis
           </p>
           <p>
-            Tous les plans offrent un e-mail de domaine optionnel et un support
-            multilingue, qui peuvent être cités séparément
+            Tous les plans proposent en options : messagerie professionnelle avec nom de domaine,
+            et version multilingue. Ces options peuvent faire l'objet d'un devis supplémentaire
           </p>
         </div>
         <!-- End Section Title -->
 
         <div class="container">
-          <div class="row g-4 g-lg-0">
-            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pricing-item">
-                <h3>Small One</h3>
-                <!-- <h3>Plan All in 1</h3> -->
-                <!--<h4><sup>$</sup>25.000<span> / mes</span></h4>
-                <h4><sup>$</sup>25.000<span> / año</span></h4>-->
-                <ul>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>1 Landing Page</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Domain Purchase Management</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Hosting</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>1 language</span>
-                  </li>
-                  <li class="na">
-                    <i class="bi bi-x"></i>
-                    <span>Corporate email</span>
-                  </li>
-                  <li class="na">
-                    <i class="bi bi-x"></i>
-                    <span>Contact form</span>
-                  </li>
-                  <li>
-                    <span style="font-size: smaller"
-                      >(For more options, contact us)</span
-                    >
-                  </li>
-                </ul>
-                <div class="text-center">
-                  <a href="#" class="buy-btn">Request</a>
+          <div class="row g-4 g-lg-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+              <div id="plan-small-one" class="pricing-card">
+                <div class="pricing-header">
+                  <h3>Small One</h3>
+                  <div class="pricing-price">
+                    <h4><sup>UF</sup> 5<span> / mois</span></h4>
+                    <p id="small-one-usd" class="price-usd">Calcul en cours...</p>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>1 Landing Page</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Gestion d'achat de domaine</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Hosting</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>1 langue</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Développement orienté SEO</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Maintenances</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Mail corporatif</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Formulaire de contact</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a
+                    href="#"
+                    class="buy-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#solicitudSmallOne"
+                    >Demander</a
+                  >
+                  <p class="pricing-note">
+                    (Pour plus d'options, contactez-nous)
+                  </p>
+                </div>
+              </div>
+
+              <!-- Modal Small One -->
+              <div
+                class="modal fade"
+                id="solicitudSmallOne"
+                tabindex="-1"
+                aria-labelledby="solicitudSmallOneLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="solicitudSmallOneLabel">
+                        Demander le Plan Small One
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="formSmallOne">
+                        <input
+                          type="hidden"
+                          name="asunto"
+                          value="Solicitud de Plan Small One"
+                        />
+                        <div class="mb-3">
+                          <label for="nombreSmallOne" class="form-label"
+                            >Nom <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nombreSmallOne"
+                            name="nombre"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="emailSmallOne" class="form-label"
+                            >Email <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="emailSmallOne"
+                            name="email"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="telefonoSmallOne" class="form-label"
+                            >Téléphone</label
+                          >
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="telefonoSmallOne"
+                            name="telefono"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Fermer
+                      </button>
+                      <button
+                        type="submit"
+                        form="formSmallOne"
+                        class="btn btn-primary"
+                      >
+                        Envoyer la demande
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- End Pricing Item -->
 
-            <div
-              class="col-lg-4 featured"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <div class="pricing-item">
-                <h3>Starter</h3>
-                <!--<h4><sup>$</sup>35.000<span> / mes</span></h4>
-                <h4><sup>$</sup>360.000<span> / año</span></h4>-->
-                <ul>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Complete Web Design (up to 6 pages)</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Domain Purchase Management</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>4 Monthly Maintenance Sessions</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Hosting</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Up to 2 Languages</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Contact Form</span>
-                  </li>
-                  <li class="na">
-                    <i class="bi bi-x"></i>
-                    <span>Corporate Email</span>
-                  </li>
-                </ul>
-                <div class="text-center">
-                  <a href="#" class="buy-btn">Request</a>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+              <div id="plan-starter" class="pricing-card popular">
+                <div class="pricing-header">
+                  <span class="popular-badge">Populaire</span>
+                  <h3>Starter</h3>
+                  <div class="pricing-price">
+                    <h4><sup>UF</sup> 10<span> / mois</span></h4>
+                    <p id="starter-usd" class="price-usd">Calcul en cours...</p>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Conception Web Complète (jusqu'à 4 pages)</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Gestion d'Achat de Domaine</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>1 Maintenance mensuelle</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Hosting</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Jusqu'à 2 langues</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Formulaire de contact</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Développement Orienté SEO</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Email d'entreprise</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a
+                    href="#"
+                    class="buy-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#solicitudStarter"
+                    >Demander</a
+                  >
+                  <p class="pricing-note">
+                    (Pour plus d'options, contactez-nous)
+                  </p>
+                </div>
+              </div>
+
+              <!-- Modal Starter -->
+              <div
+                class="modal fade"
+                id="solicitudStarter"
+                tabindex="-1"
+                aria-labelledby="solicitudStarterLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="solicitudStarterLabel">
+                        Demander le Plan Starter
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="formStarter">
+                        <input
+                          type="hidden"
+                          name="asunto"
+                          value="Solicitud de Plan Starter"
+                        />
+                        <div class="mb-3">
+                          <label for="nombreStarter" class="form-label"
+                            >Nom <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nombreStarter"
+                            name="nombre"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="emailStarter" class="form-label"
+                            >Email <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="emailStarter"
+                            name="email"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="telefonoStarter" class="form-label"
+                            >Téléphone</label
+                          >
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="telefonoStarter"
+                            name="telefono"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Fermer
+                      </button>
+                      <button
+                        type="submit"
+                        form="formStarter"
+                        class="btn btn-primary"
+                      >
+                        Envoyer la demande
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- End Pricing Item -->
 
-            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pricing-item">
-                <h3>Self-Manageable Web</h3>
-                <!-- <h4><sup>$</sup>55.000<span> / month</span></h4>
-                <h4><sup>$</sup>680.000<span> / year</span></h4>-->
-                <ul>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span
-                      >Complete Web Design (up to 6 pages) on WordPress</span
-                    >
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Contact page</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Domain Purchase Management</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>SEO-Oriented Development</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>6 Monthly Maintenances</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Hosting</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Contact form</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Corporate email</span>
-                  </li>
-                </ul>
-                <div class="text-center">
-                  <a href="#" class="buy-btn">Request</a>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+              <div id="plan-dynamic-pro" class="pricing-card">
+                <div class="pricing-header">
+                  <h3>Dynamic Pro</h3>
+                  <div class="pricing-price">
+                    <h4><sup>UF</sup> 15<span> / mois</span></h4>
+                    <p id="dynamic-pro-usd" class="price-usd">Calcul en cours...</p>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Conception Web Complète (jusqu'à 6 pages)</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Gestion d'Achat de Domaine</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Développement orienté SEO</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>6 Maintenances mensuelles</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Hosting</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Formulaire de contact</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Email professionnel</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a
+                    href="#"
+                    class="buy-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#solicitudStarterII"
+                    >Demander</a
+                  >
+                  <p class="pricing-note">
+                    (Pour plus d'options, contactez-nous)
+                  </p>
+                </div>
+              </div>
+
+              <!-- Modal Starter II -->
+              <div
+                class="modal fade"
+                id="solicitudStarterII"
+                tabindex="-1"
+                aria-labelledby="solicitudStarterIILabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="solicitudStarterIILabel">
+                        Demander de plan Dynamic Pro
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="formStarterII">
+                        <input
+                          type="hidden"
+                          name="asunto"
+                          value="Solicitud de Plan Starter II"
+                        />
+                        <div class="mb-3">
+                          <label for="nombreStarterII" class="form-label"
+                            >Nom <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nombreStarterII"
+                            name="nombre"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="emailStarterII" class="form-label"
+                            >Email <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="emailStarterII"
+                            name="email"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="telefonoStarterII" class="form-label"
+                            >Téléphone</label
+                          >
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="telefonoStarterII"
+                            name="telefono"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Fermer
+                      </button>
+                      <button
+                        type="submit"
+                        form="formStarterII"
+                        class="btn btn-primary"
+                      >
+                        Envoyer la demande
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+          </div>
+        </div>
+        
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Forfaits WordPress</h2>
+          <p>
+            Solutions complètes avec WordPress pour des sites web auto-administrables qui vous permettent de gérer votre contenu de manière simple et efficace.
+          </p>
+          <p>Site web auto-administrable</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row g-4 g-lg-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+              <div id="plan-smart-i" class="pricing-card wp-plan">
+                <div class="pricing-header">
+                  <h3>Smart I</h3>
+                  <div class="pricing-price">
+                    <h4><sup>UF</sup> 12<span> / mois</span></h4>
+                    <p id="smart-i-usd" class="price-usd">Calcul en cours...</p>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Conception Web complète (jusqu'à 3 pages)</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Gestion des achats de domaines</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Hosting</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>4 Entretien mensuel</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>1 langues</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Formulaire de contact</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Développement orienté SEO</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Accès direct à WhatsApp</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Courriel d'entreprise</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Ecommerce</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a
+                    href="#"
+                    class="buy-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#solicitudSmartI"
+                    >Demande</a
+                  >
+                  <p class="pricing-note">
+                    (Pour plus d'options, contactez-nous)
+                  </p>
+                </div>
+              </div>
+
+              <!-- Modal Smart I -->
+              <div
+                class="modal fade"
+                id="solicitudSmartI"
+                tabindex="-1"
+                aria-labelledby="solicitudSmartILabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="solicitudSmartILabel">
+                        Demande Plan Smart I
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="formSmartI">
+                        <input
+                          type="hidden"
+                          name="asunto"
+                          value="Solicitud de Plan Smart I"
+                        />
+                        <div class="mb-3">
+                          <label for="nombreSmartI" class="form-label"
+                            >Nom <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nombreSmartI"
+                            name="nombre"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="emailSmartI" class="form-label"
+                            >Email <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="emailSmartI"
+                            name="email"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="telefonoSmartI" class="form-label"
+                            >Téléphone</label
+                          >
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="telefonoSmartI"
+                            name="telefono"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Fermer
+                      </button>
+                      <button
+                        type="submit"
+                        form="formSmartI"
+                        class="btn btn-primary"
+                      >
+                        Envoyer la demande
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+              <div id="plan-smart-ii" class="pricing-card wp-plan popular">
+                <div class="pricing-header">
+                  <span class="popular-badge">Recommandé</span>
+                  <h3>Smart II</h3>
+                  <div class="pricing-price">
+                    <h4><sup>UF</sup> 18<span> / mois</span></h4>
+                    <p id="smart-ii-usd" class="price-usd">Calcul en cours...</p>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Conception Web complète (jusqu'à 5 pages) dans WordPress</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Gestion des achats de domaines</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Développement orienté SEO</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>6 Entretien mensuel</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Hosting</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Formulaire de contact</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Jusqu'à 2 langues</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Courriel d'entreprise</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Accès direct à WhatsApp</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Ecommerce</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a
+                    href="#"
+                    class="buy-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#solicitudSmartII"
+                    >Demande</a
+                  >
+                  <p class="pricing-note">
+                    (Pour plus d'options, contactez-nous)
+                  </p>
+                </div>
+              </div>
+
+              <!-- Modal Smart II -->
+              <div
+                class="modal fade"
+                id="solicitudSmartII"
+                tabindex="-1"
+                aria-labelledby="solicitudSmartIILabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="solicitudSmartIILabel">
+                        Demande Plan Smart II
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="formSmartII">
+                        <input
+                          type="hidden"
+                          name="asunto"
+                          value="Solicitud de Plan Smart II"
+                        />
+                        <div class="mb-3">
+                          <label for="nombreSmartII" class="form-label"
+                            >Nom <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nombreSmartII"
+                            name="nombre"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="emailSmartII" class="form-label"
+                            >Email <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="emailSmartII"
+                            name="email"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="telefonoSmartII" class="form-label"
+                            >Téléphone</label
+                          >
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="telefonoSmartII"
+                            name="telefono"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Fermer
+                      </button>
+                      <button
+                        type="submit"
+                        form="formSmartII"
+                        class="btn btn-primary"
+                      >
+                        Envoyer la demande
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+              <div id="plan-professional" class="pricing-card wp-plan">
+                <div class="pricing-header">
+                  <h3>Professional</h3>
+                  <div class="pricing-price">
+                    <h4><sup>UF</sup> 25<span> / mois</span></h4>
+                    <p id="professional-usd" class="price-usd">Calcul en cours...</p>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Conception Web complète (jusqu'à 5 pages) dans WordPress</span>
+                    </li>
+                     <li>
+                      <i class="bi bi-check"></i>
+                      <span>Gestion des achats de domaines</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Développement orienté SEO</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>6 Entretien mensuel</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Hosting</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Formulaire de contact</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Courriel d'entreprise</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Accès direct à WhatsApp</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Jusqu'à 3 langues</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Ecommerce</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a
+                    href="#"
+                    class="buy-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#solicitudProfessional"
+                    >Demande</a
+                  >
+                  <p class="pricing-note">
+                    (Pour plus d'options, contactez-nous)
+                  </p>
+                </div>
+              </div>
+
+              <!-- Modal Professional -->
+              <div
+                class="modal fade"
+                id="solicitudProfessional"
+                tabindex="-1"
+                aria-labelledby="solicitudProfessionalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="solicitudProfessionalLabel">
+                        Demande Plan Professional
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="formProfessional">
+                        <input
+                          type="hidden"
+                          name="asunto"
+                          value="Solicitud de Plan Professional"
+                        />
+                        <div class="mb-3">
+                          <label for="nombreProfessional" class="form-label"
+                            >Nom <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nombreProfessional"
+                            name="nombre"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="emailProfessional" class="form-label"
+                            >Email <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="emailProfessional"
+                            name="email"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="telefonoProfessional" class="form-label"
+                            >Téléphone</label
+                          >
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="telefonoProfessional"
+                            name="telefono"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Fermer
+                      </button>
+                      <button
+                        type="submit"
+                        form="formProfessional"
+                        class="btn btn-primary"
+                      >
+                        Envoyer la demande
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -580,5 +1353,51 @@
             new Date().getFullYear();
         });
     </script>
+      <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+        <!-- Contenido del modal -->
+      </div>
+  
+      <script>
+        function showServiceModal() {
+          const modal = new bootstrap.Modal(document.getElementById('serviceModal'));
+          modal.show();
+        }
+      </script>
+  
+      <script>
+        // Función para convertir UF a USD
+        function convertUFtoUSD() {
+          // Valor ficticio de 1 UF en CLP
+          const ufToCLP = 36000;
+          
+          // Valor ficticio de 1 USD en CLP
+          const usdToCLP = 900;
+          
+          // Planes y sus precios en UF
+          const planes = {
+            'small-one': 5,
+            'starter': 10,
+            'dynamic-pro': 15,
+            'smart-i': 12,
+            'smart-ii': 18,
+            'professional': 25
+          };
+          
+          // Calcular y mostrar los precios en USD
+          for (const [plan, ufPrice] of Object.entries(planes)) {
+            const clpPrice = ufPrice * ufToCLP;
+            const usdPrice = (clpPrice / usdToCLP).toFixed(2);
+            
+            const usdElement = document.getElementById(`${plan}-usd`);
+            if (usdElement) {
+              usdElement.textContent = `$${usdPrice} USD / mes`;
+            }
+          }
+        }
+        
+        // Ejecutar la conversión cuando se cargue la página
+        document.addEventListener('DOMContentLoaded', convertUFtoUSD);
+      </script>
+    </body>
   </body>
 </html>
