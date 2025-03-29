@@ -2203,7 +2203,7 @@ section,
   margin-bottom: 1rem;
 }
 
-#pricing .pricing-price {
+/* #pricing .pricing-price {
   margin: 1rem 0;
 }
 
@@ -2222,7 +2222,7 @@ section,
 #pricing .pricing-price h4 span {
   font-size: 1rem;
   font-weight: 400;
-}
+} */
 
 #pricing .price-usd {
   font-size: 0.875rem;
@@ -2374,4 +2374,52 @@ section,
   #pricing .pricing-price h4 {
     font-size: 1.75rem;
   }
+}
+
+
+
+/* Estilos para la sección de precios */
+.pricing-price {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.pricing-price h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.pricing-price .price-amount {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.pricing-price .price-currency {
+  font-size: 1.5rem;
+  align-self: flex-start;
+}
+
+.pricing-price .price-period {
+  font-size: 1rem;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  align-self: flex-end;
+}
+
+.pricing-price .initial-payment {
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* Estilos para tema oscuro */
+.dark-background .pricing-price .price-period,
+.dark-background .pricing-price .initial-payment {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
