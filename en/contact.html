@@ -9,11 +9,30 @@
 
     <!-- Favicons -->
     <link href="../assets/img/favicon_io/favicon.ico" rel="icon" sizes="any" />
-    <link href="../assets/img/favicon_io/favicon-16x16.png" rel="icon" sizes="16x16" />
-    <link href="../assets/img/favicon_io/favicon-32x32.png" rel="icon" sizes="32x32" />
-    <link href="../assets/img/favicon_io/android-chrome-192x192.png" rel="icon" sizes="192x192" />
-    <link href="../assets/img/favicon_io/android-chrome-512x512.png" rel="icon" sizes="512x512" />
-    <link href="../assets/img/favicon_io/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link
+      href="../assets/img/favicon_io/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+    />
+    <link
+      href="../assets/img/favicon_io/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+    />
+    <link
+      href="./assets/img/favicon_io/android-chrome-192x192.png"
+      rel="icon"
+      sizes="192x192"
+    />
+    <link
+      href="../assets/img/favicon_io/android-chrome-512x512.png"
+      rel="icon"
+      sizes="512x512"
+    />
+    <link
+      href="../assets/img/favicon_io/apple-touch-icon.png"
+      rel="apple-touch-icon"
+    />
     <link rel="manifest" href="../assets/img/favicon_io/site.webmanifest" />
 
     <!-- Fonts -->
@@ -52,7 +71,7 @@
         class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
       >
         <a href="index.html" class="logo d-flex align-items-center">
-          <img src="../assets/img/Logo V3/Logo_ID_1.png" alt="">
+          <img src="../assets/img/Logo V3/Logo_ID_1.png" alt="" />
           <!-- <h1 class="sitename">Ingenium Dynamics</h1> -->
         </a>
 
@@ -68,17 +87,17 @@
 
             <li><a href="contact.html" class="active">Contact</a></li>
             <li>
-              <a href="../contact.html"
+              <a href="../index.html"
                 ><img id="banderas" src="../assets/img/espana.webp"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="en/index.html"
                 ><img id="banderas" src="../assets/img/usa.webp"
               /></a>
             </li>
             <li>
-              <a href="../fr/index.html"
+              <a href="index.html"
                 ><img id="banderas" src="../assets/img/francia.webp"
               /></a>
             </li>
@@ -123,10 +142,14 @@
 
     <main class="main">
       <!-- Page Title -->
-      <div id ="hcontact" class="page-title dark-background">
+      <div id="hcontact" class="page-title dark-background">
         <div class="container position-relative">
           <h1 id="head_text">Contact</h1>
-          <p>Get in touch with us to turn your ideas into digital solutions. We're here to answer your questions and help boost your business.</p>
+          <p>
+            Get in touch with us to turn your ideas into digital solutions.
+            We're here to answer your questions and help you boost your
+            business.
+          </p>
           <nav class="breadcrumbs">
             <ol>
               <li><a href="index.html">Home</a></li>
@@ -166,7 +189,7 @@
                     <h3>Whatsapp</h3>
                     <a
                       id="whatsapp-btn"
-                      href="https://wa.me/56982307788?text=Hola..."
+                      href="https://wa.me/56982307788?text=Salut..."
                       class="btn btn-success btn-whatsapp"
                       target="_blank"
                       aria-label="Chat on WhatsApp"
@@ -192,69 +215,524 @@
                 <!-- End Info Item -->
               </div>
             </div>
-
+            <!--pestañas-->
             <div class="col-lg-6">
-              <form
-                action="forms/contact.php"
-                method="post"
-                class="php-email-form"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      placeholder="Your Name"
-                      required=""
-                    />
+              <!---->
+              <div class="container mt-5">
+                <h4 class="text-center">What type of website do you need?</h4>
+                <hr
+                  class="my-4"
+                  style="
+                    height: 2px;
+                    background: linear-gradient(
+                      140deg,
+                      rgba(0, 180, 255, 1) 0%,
+                      rgba(202, 33, 181, 1) 100%
+                    );
+                    border: none;
+                  "
+                />
+
+                <!-- Pestañas -->
+                <ul class="nav nav-tabs" id="myTabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#info"
+                      >Informative Website</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#ecomform"
+                      >E-commerce</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#contactform"
+                      >General Questions</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- Contenido de las pestañas -->
+                <div class="tab-content mt-3">
+                  <!-- Web Informativa -->
+                  <div class="tab-pane fade show active" id="info">
+                    <!--<form class="p-4 shadow-sm bg-white rounded">-->
+                    <form class="php-email-form">
+                      <div class="mb-3">
+                        <label class="form-label"
+                          ><strong
+                            >What website option do you need?</strong
+                          ></label
+                        >
+                        <div class="d-flex flex-wrap gap-3">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              id="plan1"
+                              name="secciones[]"
+                              value="All-on-one-page"
+                            />
+                            <label class="form-check-label" for="plan1"
+                              >All-on-one-page</label
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              id="plan2"
+                              name="secciones[]"
+                              value="4-page website"
+                            />
+                            <label class="form-check-label" for="plan2"
+                              >4-page website</label
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              id="plan3"
+                              name="secciones[]"
+                              value="6-page website"
+                            />
+                            <label class="form-check-label" for="plan2"
+                              >6-page website</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label class="form-label"
+                          ><strong>What sections do you need?</strong></label
+                        >
+                        <div class="d-flex flex-wrap gap-3">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="inicio"
+                              name="secciones[]"
+                              value="Index"
+                            />
+                            <label class="form-check-label" for="inicio"
+                              >Index</label
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="quienes"
+                              name="secciones[]"
+                              value="About Us"
+                            />
+                            <label class="form-check-label" for="quienes"
+                              >About Us</label
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="servicios"
+                              name="secciones[]"
+                              value="Services"
+                            />
+                            <label class="form-check-label" for="servicios"
+                              >Services</label
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="proyectos"
+                              name="secciones[]"
+                              value="Projects"
+                            />
+                            <label class="form-check-label" for="proyectos"
+                              >Projects</label
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="contacto1"
+                              name="secciones[]"
+                              value="Contact with domain account"
+                            />
+                            <label class="form-check-label" for="contacto1"
+                              >Contact with domain account</label
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="contacto2"
+                              name="secciones[]"
+                              value="Contact without domain account"
+                            />
+                            <label class="form-check-label" for="contacto2"
+                              >Contact without domain account</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label class="form-label"
+                          ><strong>Languages</strong></label
+                        >
+                        <div class="d-flex flex-wrap gap-3">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="Español"
+                              name="idiomas[]"
+                              value="Spanish"
+                            />
+                            <label class="form-check-label" for="Español"
+                              >Spanish</label
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="Ingles"
+                              name="idiomas[]"
+                              value="English"
+                            />
+                            <label class="form-check-label" for="Inglés"
+                              >English</label
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="Frances"
+                              name="idiomas[]"
+                              value="French"
+                            />
+                            <label class="form-check-label" for="Francés"
+                              >French</label
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="Otro"
+                              name="idiomas[]"
+                              value="Other"
+                            />
+                            <label class="form-check-label" for="Otro"
+                              >Other</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <!--fin idiomas-->
+
+                      <div class="mb-3">
+                        <label class="form-label"
+                          ><strong
+                            >DO YOU NEED OTHER ADDITIONAL SECTIONS/TABS?</strong
+                          ></label
+                        >
+                        <br />
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="paginasadicional"
+                          value="Oui"
+                          onclick="toggleTextarea()"
+                        />
+                        <label class="form-check-label" for="paginasadicional"
+                          >Yes, I want to add others.</label
+                        >
+                        <textarea
+                          id="otraSeccion"
+                          class="form-control mt-3"
+                          cols="30"
+                          rows="10"
+                          maxlength="500"
+                          aria-invalid="false"
+                          placeholder="Tell me the additional sections/tabs you need."
+                          name="masdetalles"
+                          style="display: none"
+                        ></textarea>
+                      </div>
+
+                      <div class="mb-3">
+                        <label class="form-label"
+                          ><strong>Do you need Hosting?</strong></label
+                        >
+                        <select class="form-select" name="hosting">
+                          <option value="">Choose an option</option>
+                          <option value="Si">Yes</option>
+                          <option value="No">No</option>
+                          <option value="No sé">
+                            I don't know what hosting is
+                          </option>
+                        </select>
+                      </div>
+
+                      <div class="mb-3">
+                        <input
+                          type="text"
+                          name="name"
+                          class="form-control"
+                          placeholder="Your Name"
+                          required
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          placeholder="Your Email"
+                          required
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          rows="4"
+                          placeholder="Any other information you'd like to share or ask"
+                          required
+                        ></textarea>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">
+                        Send
+                      </button>
+                    </form>
                   </div>
 
-                  <div class="col-md-6">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      placeholder="Your Email"
-                      required=""
-                    />
+                  <!-- E-commerce -->
+                  <div class="tab-pane fade" id="ecomform">
+                    <form class="php-email-form">
+                      <div class="container mt-4">
+                        <div class="row gy-3">
+                          <!-- N° DE PRODUCTOS QUE DESEAS PUBLICAR -->
+                          <div class="col-md-6 mb-3">
+                            <label for="numeroproductos" class="form-label"
+                              ><strong
+                                >Number of products you want to list
+                                (approx.)</strong
+                              ></label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="numeroproductos"
+                              name="numeroproductos"
+                              placeholder="---"
+                              maxlength="400"
+                            />
+                          </div>
+
+                          <!-- MEDIOS DE PAGO QUE DESEAS INTEGRAR EN TU TIENDA -->
+                          <div class="col-md-6 mb-3">
+                            <label class="form-label"
+                              ><strong
+                                >Payment methods you want to integrate into your
+                                store</strong
+                              ></label
+                            >
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                name="mediosdepago[]"
+                                value="Transbank (WebPay)"
+                                id="webpay"
+                              />
+                              <label class="form-check-label" for="webpay"
+                                >Transbank (WebPay)</label
+                              >
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                name="mediosdepago[]"
+                                value="Flow"
+                                id="flow"
+                              />
+                              <label class="form-check-label" for="flow"
+                                >Flow</label
+                              >
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                name="mediosdepago[]"
+                                value="Mercado Pago"
+                                id="mercadopago"
+                              />
+                              <label class="form-check-label" for="mercadopago"
+                                >Mercado Pago</label
+                              >
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                name="mediosdepago[]"
+                                value="PayPal"
+                                id="paypal"
+                              />
+                              <label class="form-check-label" for="paypal"
+                                >PayPal</label
+                              >
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                name="mediosdepago[]"
+                                value="Transferencia bancaria"
+                                id="transferencia"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="transferencia"
+                                >Bank transfer</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- ¿Necesitas Hosting? -->
+                        <div class="mb-3">
+                          <label class="form-label"
+                            ><strong>Do you need Hosting?</strong></label
+                          >
+                          <select class="form-select" name="hosting">
+                            <option value="">Choose an option</option>
+                            <option value="Si">Yes</option>
+                            <option value="No">No</option>
+                            <option value="No sé">
+                              I don't know what hosting is
+                            </option>
+                          </select>
+                        </div>
+
+                        <!-- Nombre y Email -->
+                        <div class="col-md-6 mb-3">
+                          <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="Your Name"
+                            required
+                          />
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            placeholder="Your Email"
+                            required
+                          />
+                        </div>
+
+                        <!-- Mensaje -->
+                        <div class="col-md-12 mb-3">
+                          <textarea
+                            class="form-control"
+                            name="message"
+                            rows="4"
+                            placeholder="Any other information you'd like to share or ask"
+                            required
+                          ></textarea>
+                        </div>
+
+                        <!-- Botón de Enviar -->
+                        <button type="submit" class="btn btn-primary">
+                          Send
+                        </button>
+                      </div>
+                    </form>
                   </div>
 
-                  <div class="col-md-12">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      placeholder="Subject"
-                      required=""
-                    />
-                  </div>
+                  <!-- Consultas Generales -->
+                  <div class="tab-pane fade" id="contactform">
+                    <form
+                      action="forms/contact.php"
+                      method="post"
+                      class="php-email-form"
+                    >
+                      <div class="row gy-3">
+                        <div class="col-md-6">
+                          <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="Your Name"
+                            required
+                          />
+                        </div>
 
-                  <div class="col-md-12">
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="4"
-                      placeholder="Message"
-                      required=""
-                    ></textarea>
-                  </div>
+                        <div class="col-md-6">
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            placeholder="Your Email"
+                            required
+                          />
+                        </div>
 
-                  <div class="col-md-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
+                        <div class="col-md-12">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="subject"
+                            placeholder="Subject"
+                            required
+                          />
+                        </div>
 
-                    <button type="submit">Send Message</button>
+                        <div class="col-md-12">
+                          <textarea
+                            class="form-control"
+                            name="message"
+                            rows="4"
+                            placeholder="Message"
+                            required
+                          ></textarea>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                          <button type="submit" class="btn btn-success">
+                            Send
+                          </button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
-              </form>
+              </div>
+              <!---->
             </div>
-            <!-- End Contact Form -->
+            <!--fin pestañas-->
           </div>
         </div>
       </section>
@@ -288,6 +766,21 @@
           document.getElementById("year").textContent =
             new Date().getFullYear();
         });
+    </script>
+
+    <script>
+      function toggleTextarea() {
+        var checkbox = document.getElementById("paginasadicional");
+        var textarea = document.getElementById("otraSeccion");
+
+        // Si el checkbox está marcado
+        if (checkbox.checked) {
+          textarea.style.display = "block"; // Muestra la textarea
+        } else {
+          textarea.style.display = "none"; // Oculta la textarea
+          textarea.value = ""; // Limpia el contenido de la textarea
+        }
+      }
     </script>
   </body>
 </html>
