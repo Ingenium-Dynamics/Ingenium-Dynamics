@@ -1767,6 +1767,27 @@ section,
   padding: 50px 20px; /* Espaciado opcional */
 }
 
+.hservicios .btn-get-started {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #ffffff;
+  animation: fadeInUp 1s both 0.4s;
+  border: 2px solid var(--accent-color);
+}
+
+.hservicios .btn-get-started:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  text-decoration: none;
+}
+
 #hportfolio {
   background-image: url("../img/bg/parabolic-rectangle-bg.svg"); /* Ruta de la imagen by SVGBackgrounds.com*/
   background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
@@ -2025,6 +2046,27 @@ section,
   padding: 20px;
 }
 
+.bannerPromocion .btn-get-started {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #ffffff;
+  animation: fadeInUp 1s both 0.4s;
+  border: 2px solid var(--accent-color);
+}
+
+.bannerPromocion .btn-get-started:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  text-decoration: none;
+}
+
 /* Especificidad para otros carruseles */
 .carousel:not(#bannerPromocion .carousel) .carousel-inner {
   position: relative;
@@ -2039,8 +2081,13 @@ section,
 }
 
 #projectModal .modal-header {
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%) !important;
-  background: color-mix(in srgb, var(--surface-color), transparent 20%) !important;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%) !important;
+  background: color-mix(
+    in srgb,
+    var(--surface-color),
+    transparent 20%
+  ) !important;
 }
 
 #projectModal .btn-close {
@@ -2064,11 +2111,11 @@ section,
   --card-bg: #f8f9fa;
   --invert-filter: 0;
   --text-color: #212529;
-  
+
   #portafolioweb .card {
     background-image: radial-gradient(
-      at 88% 40%, 
-      hsla(240, 15%, 9%, 0.1) 0px, 
+      at 88% 40%,
+      hsla(240, 15%, 9%, 0.1) 0px,
       transparent 85%
     );
     color: var(--text-color);
@@ -2079,11 +2126,11 @@ section,
   --card-bg: #1a1a1a;
   --invert-filter: 1;
   --text-color: #e0e0e0;
-  
+
   #portafolioweb .card {
     background-image: radial-gradient(
-      at 88% 40%, 
-      hsla(240, 15%, 9%, 0.8) 0px, 
+      at 88% 40%,
+      hsla(240, 15%, 9%, 0.8) 0px,
       transparent 85%
     );
     color: var(--text-color);
@@ -2108,8 +2155,13 @@ section,
 #solicitudSmartI .modal-header,
 #solicitudSmartII .modal-header,
 #solicitudProfessional .modal-header {
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%) !important;
-  background: color-mix(in srgb, var(--surface-color), transparent 20%) !important;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%) !important;
+  background: color-mix(
+    in srgb,
+    var(--surface-color),
+    transparent 20%
+  ) !important;
 }
 
 #solicitudSmallOne .btn-close,
@@ -2128,8 +2180,16 @@ section,
 #solicitudSmartI .form-control,
 #solicitudSmartII .form-control,
 #solicitudProfessional .form-control {
-  background-color: color-mix(in srgb, var(--default-color), transparent 90%) !important;
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%) !important;
+  background-color: color-mix(
+    in srgb,
+    var(--default-color),
+    transparent 90%
+  ) !important;
+  border-color: color-mix(
+    in srgb,
+    var(--default-color),
+    transparent 80%
+  ) !important;
   color: var(--contrast-color) !important;
 }
 
@@ -2138,7 +2198,8 @@ section,
   position: relative;
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   height: 100%;
   display: flex;
@@ -2157,7 +2218,8 @@ section,
 
 #pricing .pricing-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 #pricing .pricing-card.popular {
@@ -2370,13 +2432,11 @@ section,
   #pricing .pricing-header h3 {
     font-size: 1.25rem;
   }
-  
+
   #pricing .pricing-price h4 {
     font-size: 1.75rem;
   }
 }
-
-
 
 /* Estilos para la sección de precios */
 .pricing-price {
