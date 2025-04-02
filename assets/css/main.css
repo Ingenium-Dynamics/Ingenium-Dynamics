@@ -2694,3 +2694,100 @@ section,
     min-width: 32px;
   }
 }
+
+/* Solución para el contraste en las pestañas de formularios de contacto en modo oscuro */
+#contactFormTabs.nav-tabs {
+  border-bottom-color: #dee2e6;
+}
+
+#contactFormTabs .nav-link {
+  color: inherit;
+}
+
+.dark-background #contactFormTabs.nav-tabs {
+  border-bottom-color: #444;
+}
+
+.dark-background #contactFormTabs .nav-link {
+  color: #e0e0e0;
+}
+
+.dark-background #contactFormTabs .nav-link:hover,
+.dark-background #contactFormTabs .nav-link:focus {
+  border-color: #444 #444 transparent;
+  color: #fff;
+}
+
+.dark-background #contactFormTabs .nav-link.active {
+  color: #fff;
+  background-color: #333;
+  border-color: #444 #444 transparent;
+}
+
+.dark-background .tab-content .card-body .text-muted {
+  color: #aaa !important;
+}
+
+.dark-background .tab-content .form-text,
+.dark-background .tab-content .small.text-muted {
+  color: #bbb !important;
+}
+
+.dark-background .tab-content .bg-light {
+  background-color: #333 !important;
+}
+
+.dark-background .tab-content {
+  color: #e0e0e0;
+}
+
+/* Solución para tarjetas de contacto y sus títulos en modo oscuro */
+.dark-background .card-title,
+.dark-background .card h5 {
+  color: #fff;
+}
+
+.dark-background .card {
+  background-color: rgba(40, 40, 40, 0.9);
+  border-color: rgba(70, 70, 70, 0.5);
+}
+
+.dark-background .card-body {
+  color: #e0e0e0;
+}
+
+/* Arreglar círculos de iconos en modo oscuro */
+.dark-background .bg-light {
+  background-color: #333 !important;
+}
+
+.dark-background .rounded-circle.bg-light {
+  background-color: #444 !important;
+}
+
+.dark-background .text-muted {
+  color: #bbb !important;
+}
+
+/* Mejorar visibilidad para los campos en modo oscuro */
+.dark-background .form-control,
+.dark-background .form-select {
+  background-color: rgba(30, 30, 30, 0.9);
+  border-color: rgba(80, 80, 80, 0.5);
+  color: #e0e0e0;
+}
+
+.dark-background .form-control:focus,
+.dark-background .form-select:focus {
+  background-color: rgba(50, 50, 50, 0.9);
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+.dark-background .form-check-label {
+  color: #e0e0e0;
+}
+
+.dark-background .form-floating label {
+  color: #bbb;
+}

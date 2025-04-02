@@ -262,11 +262,11 @@
                   "
                 />
 
-                <!-- Pestañas -->
-                <ul class="nav nav-tabs" id="myTabs">
+                <!-- Onglets -->
+                <ul class="nav nav-tabs" id="contactFormTabs">
                   <li class="nav-item">
                     <a class="nav-link active" data-bs-toggle="tab" href="#info"
-                      >Site Informatif</a
+                      >Site Web Informatif</a
                     >
                   </li>
                   <li class="nav-item">
@@ -276,7 +276,7 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="tab" href="#contactform"
-                      >Consultations Générales</a
+                      >Demandes Générales</a
                     >
                   </li>
                 </ul>
@@ -861,7 +861,6 @@
                             <div class="col-12">
                               <div class="form-floating">
                                 <textarea class="form-control" name="message" id="floatingMessageContact" rows="5" style="height: 150px" placeholder="Votre message" required></textarea>
-                                <!-- <label for="floatingMessageContact">Votre message</label> -->
                                 <div class="invalid-feedback">Veuillez écrire votre message</div>
                               </div>
                             </div>
@@ -1085,6 +1084,50 @@
             }
           }
         });
+      });
+    </script>
+
+    <script>
+      // Procesar parámetros URL para pre-llenar el formulario
+      document.addEventListener('DOMContentLoaded', function() {
+        // Obtener parámetros de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const asunto = urlParams.get('asunto');
+        const departamento = urlParams.get('departamento');
+        
+        // Si hay parámetros, activar automáticamente la pestaña de consultas generales
+        if (asunto || departamento) {
+          // Buscar y hacer clic en la pestaña de consultas generales
+          const generalTab = document.querySelector('a[href="#contactform"]');
+          if (generalTab) {
+            generalTab.click();
+          }
+          
+          // Llenar los campos si tenemos los valores
+          if (asunto) {
+            const asuntoInput = document.getElementById('floatingSubject');
+            if (asuntoInput) {
+              asuntoInput.value = asunto;
+            }
+          }
+          
+          if (departamento) {
+            const departamentoSelect = document.getElementById('departamento');
+            if (departamentoSelect) {
+              // Mapeo de valores de departamento
+              const depMap = {
+                'ventas': 'ventas'
+              };
+              
+              // Seleccionar la opción correcta
+              Array.from(departamentoSelect.options).forEach(option => {
+                if (option.value === departamento) {
+                  option.selected = true;
+                }
+              });
+            }
+          }
+        }
       });
     </script>
   </body>

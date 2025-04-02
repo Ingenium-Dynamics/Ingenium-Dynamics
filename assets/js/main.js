@@ -188,4 +188,51 @@
 
   });
 
+  /**
+   * Maneja los clics en los botones de solicitar plan
+   * Redirige al formulario de contacto con los parámetros necesarios
+   */
+  function initPlanRequestButtons() {
+    // Selecciona todos los botones "Solicitar" independientemente de la estructura
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function(e) {
+        // Prevenir comportamiento predeterminado
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // Obtener el nombre del plan del encabezado más cercano
+        const planCard = this.closest('.pricing-card') || this.closest('.pricing-table');
+        
+        // Intentar obtener el título del plan - compatibilidad con diferentes estructuras
+        let planTitle = "";
+        if (planCard) {
+          const h3Title = planCard.querySelector('.pricing-header h3');
+          const h4Title = planCard.querySelector('.pricing-header h4');
+          planTitle = (h3Title ? h3Title.textContent.trim() : (h4Title ? h4Title.textContent.trim() : ""));
+        }
+        
+        // Determinar el departamento
+        let departamento = "Web Development";
+        
+        // Determinar el asunto según el idioma de la página
+        let asunto = "";
+        const lang = document.documentElement.lang || 'es';
+        
+        if (lang === 'fr') {
+          asunto = `Demande plan ${planTitle}`;
+        } else if (lang === 'en') {
+          asunto = `Request plan ${planTitle}`;
+        } else {
+          asunto = `Solicitud de Plan ${planTitle}`;
+        }
+        
+        // Redirigir directamente a la página de contacto con los parámetros necesarios
+        window.location.href = `contact.html?asunto=${encodeURIComponent(asunto)}&departamento=${encodeURIComponent(departamento)}`;
+      });
+    });
+  }
+
+  // Inicializar los botones de solicitud cuando el DOM esté completamente cargado
+  document.addEventListener('DOMContentLoaded', initPlanRequestButtons);
+
 })();

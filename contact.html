@@ -279,7 +279,7 @@
                 />
 
                 <!-- Pestañas -->
-                <ul class="nav nav-tabs" id="myTabs">
+                <ul class="nav nav-tabs" id="contactFormTabs">
                   <li class="nav-item">
                     <a class="nav-link active" data-bs-toggle="tab" href="#info"
                       >Web Informativa</a
@@ -1048,6 +1048,48 @@
           const radio = this.querySelector('input[type="radio"]');
           radio.checked = true;
         });
+      });
+      
+      // Procesar parámetros de URL para autocompletar el formulario
+      document.addEventListener('DOMContentLoaded', function() {
+        // Obtener parámetros de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const asunto = urlParams.get('asunto');
+        const departamento = urlParams.get('departamento');
+        
+        // Verificar si hay parámetros para procesar
+        if (asunto || departamento) {
+          // Obtener referencia a la pestaña de consultas generales
+          const consultasTab = document.querySelector('a[href="#contactform"]');
+          
+          // Si se encuentra la pestaña, haz clic en ella para activarla
+          if (consultasTab) {
+            // Forzar clic en la pestaña
+            consultasTab.click();
+          }
+          
+          // Completar el campo de asunto si está presente en la URL
+          if (asunto) {
+            const asuntoInput = document.getElementById('floatingSubject');
+            if (asuntoInput) {
+              asuntoInput.value = asunto;
+            }
+          }
+          
+          // Seleccionar el departamento si está presente en la URL
+          if (departamento) {
+            const departamentoSelect = document.getElementById('departamento');
+            if (departamentoSelect) {
+              // Encuentra la opción que coincida con el valor del departamento
+              for (let i = 0; i < departamentoSelect.options.length; i++) {
+                if (departamentoSelect.options[i].value === departamento) {
+                  departamentoSelect.selectedIndex = i;
+                  break;
+                }
+              }
+            }
+          }
+        }
       });
     </script>
 
