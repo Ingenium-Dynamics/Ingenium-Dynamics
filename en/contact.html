@@ -1017,5 +1017,49 @@
         });
       });
     </script>
+    
+    <script>
+      // Process URL parameters to auto-fill the form
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const asunto = urlParams.get('asunto');
+        const departamento = urlParams.get('departamento');
+        
+        // Check if there are parameters to process
+        if (asunto || departamento) {
+          // Get reference to the general inquiries tab
+          const consultasTab = document.querySelector('a[href="#contactform"]');
+          
+          // If the tab is found, click on it to activate it
+          if (consultasTab) {
+            // Force click on the tab
+            consultasTab.click();
+          }
+          
+          // Fill in the subject field if present in the URL
+          if (asunto) {
+            const asuntoInput = document.getElementById('floatingSubject');
+            if (asuntoInput) {
+              asuntoInput.value = asunto;
+            }
+          }
+          
+          // Select the department if present in the URL
+          if (departamento) {
+            const departamentoSelect = document.getElementById('departamento');
+            if (departamentoSelect) {
+              // Find the option that matches the department value
+              for (let i = 0; i < departamentoSelect.options.length; i++) {
+                if (departamentoSelect.options[i].value === departamento) {
+                  departamentoSelect.selectedIndex = i;
+                  break;
+                }
+              }
+            }
+          }
+        }
+      });
+    </script>
   </body>
 </html>
