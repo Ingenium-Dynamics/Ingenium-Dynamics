@@ -63,6 +63,35 @@
     <script src="../assets/js/script_clarooscuro.js"></script>
     <!-- Main CSS File -->
     <link href="../assets/css/main.css" rel="stylesheet" />
+    <style>
+      .payment-card {
+        position: relative;
+        transition: all 0.3s ease;
+        border: 1px solid #dee2e6;
+        cursor: pointer;
+      }
+
+      .payment-card:hover {
+        border-color: #adb5bd;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+
+      .payment-card .form-check-input:checked ~ .card-body {
+        border: none;
+      }
+
+      .payment-card input[type="checkbox"]:checked + .card-body,
+      .payment-card input[type="checkbox"]:checked ~ .card-body {
+        background-color: rgba(13, 110, 253, 0.1);
+      }
+
+      /* Para pantallas pequeñas, ajusta el tamaño */
+      @media (max-width: 768px) {
+        .payment-card .card-body {
+          padding: 0.75rem;
+        }
+      }
+    </style>
   </head>
 
   <body class="contact-page">
@@ -172,14 +201,10 @@
                     data-aos="fade-up"
                     data-aos-delay="200"
                   >
-                    <a
-                      href="https://www.linkedin.com/company/ingenium-dynamics/"
-                      target="_blank"
-                    >
-                      <i class="bi bi bi-linkedin"></i>
-                    </a>
+                  <a href="https://www.linkedin.com/company/ingenium-dynamics/" target="_blank">
+                    <i class="bi bi bi-linkedin"></i> </a>
                     <h3>LinkedIn</h3>
-                  </div>
+                    </div>
                 </div>
                 <!-- End Info Item -->
 
@@ -190,10 +215,10 @@
                     data-aos-delay="300"
                   >
                     <!-- <i class="bi bi-telephone"></i>-->
-                    <h3>Whatsapp</h3>
+                    <h3>WhatsApp</h3>
                     <a
                       id="whatsapp-btn"
-                      href="https://wa.me/56982307788?text=Salut..."
+                      href="https://wa.me/56982307788?text=Hello..."
                       class="btn btn-success btn-whatsapp"
                       target="_blank"
                       aria-label="Chat on WhatsApp"
@@ -219,7 +244,7 @@
                 <!-- End Info Item -->
               </div>
             </div>
-            <!--pestañas-->
+            <!--tabs-->
             <div class="col-lg-6">
               <!---->
               <div class="container mt-5">
@@ -237,11 +262,11 @@
                   "
                 />
 
-                <!-- Pestañas -->
+                <!-- Tabs -->
                 <ul class="nav nav-tabs" id="myTabs">
                   <li class="nav-item">
                     <a class="nav-link active" data-bs-toggle="tab" href="#info"
-                      >Informative Website</a
+                      >Informational Website</a
                     >
                   </li>
                   <li class="nav-item">
@@ -251,492 +276,678 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="tab" href="#contactform"
-                      >General Questions</a
+                      >General Inquiries</a
                     >
                   </li>
                 </ul>
 
-                <!-- Contenido de las pestañas -->
+                <!-- Tab content -->
                 <div class="tab-content mt-3">
-                  <!-- Web Informativa -->
+                  <!-- Informational Website -->
                   <div class="tab-pane fade show active" id="info">
-                    <!--<form class="p-4 shadow-sm bg-white rounded">-->
-                    <form class="php-email-form">
-                      <div class="mb-3">
-                        <label class="form-label"
-                          ><strong
-                            >What website option do you need?</strong
-                          ></label
-                        >
-                        <div class="d-flex flex-wrap gap-3">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              id="plan1"
-                              name="secciones[]"
-                              value="All-on-one-page"
-                            />
-                            <label class="form-check-label" for="plan1"
-                              >All-on-one-page</label
-                            >
+                    <form class="php-email-form needs-validation" novalidate>
+                      <!-- Website type section with visual cards -->
+                      <div class="mb-4">
+                        <label class="form-label fw-bold mb-3">What type of website do you need?</label>
+                        <div class="row row-cols-1 row-cols-md-3 g-3">
+                          <div class="col">
+                            <div class="card h-100 plan-card">
+                              <div class="card-body p-3 text-center">
+                                <div class="form-check mb-0">
+                                  <input class="form-check-input visually-hidden" type="radio" id="plan1" name="secciones[]" value="All in one page" />
+                                  <label class="form-check-label d-block w-100" for="plan1">
+                                    <i class="bi bi-file-earmark-text fs-2 mb-2"></i>
+                                    <h5>All in one page</h5>
+                                    <p class="small text-muted">Ideal for simple presentations</p>
+                                  </label>
                           </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              id="plan2"
-                              name="secciones[]"
-                              value="4-page website"
-                            />
-                            <label class="form-check-label" for="plan2"
-                              >4-page website</label
-                            >
                           </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              id="plan3"
-                              name="secciones[]"
-                              value="6-page website"
-                            />
-                            <label class="form-check-label" for="plan2"
-                              >6-page website</label
-                            >
+                            </div>
                           </div>
-                        </div>
-                      </div>
-
-                      <div class="mb-3">
-                        <label class="form-label"
-                          ><strong>What sections do you need?</strong></label
-                        >
-                        <div class="d-flex flex-wrap gap-3">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              id="inicio"
-                              name="secciones[]"
-                              value="Index"
-                            />
-                            <label class="form-check-label" for="inicio"
-                              >Index</label
-                            >
+                          <div class="col">
+                            <div class="card h-100 plan-card">
+                              <div class="card-body p-3 text-center">
+                                <div class="form-check mb-0">
+                                  <input class="form-check-input visually-hidden" type="radio" id="plan2" name="secciones[]" value="4-page site" />
+                                  <label class="form-check-label d-block w-100" for="plan2">
+                                    <i class="bi bi-files fs-2 mb-2"></i>
+                                    <h5>4-page site</h5>
+                                    <p class="small text-muted">For more comprehensive websites</p>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              id="quienes"
-                              name="secciones[]"
-                              value="About Us"
-                            />
-                            <label class="form-check-label" for="quienes"
-                              >About Us</label
-                            >
+                          <div class="col">
+                            <div class="card h-100 plan-card">
+                              <div class="card-body p-3 text-center">
+                                <div class="form-check mb-0">
+                                  <input class="form-check-input visually-hidden" type="radio" id="plan3" name="secciones[]" value="6-page site" />
+                                  <label class="form-check-label d-block w-100" for="plan3">
+                                    <i class="bi bi-layout-text-window-reverse fs-2 mb-2"></i>
+                                    <h5>6-page site</h5>
+                                    <p class="small text-muted">For more extensive projects</p>
+                                  </label>
+                                </div>
                           </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              id="servicios"
-                              name="secciones[]"
-                              value="Services"
-                            />
-                            <label class="form-check-label" for="servicios"
-                              >Services</label
-                            >
                           </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              id="proyectos"
-                              name="secciones[]"
-                              value="Projects"
-                            />
-                            <label class="form-check-label" for="proyectos"
-                              >Projects</label
-                            >
-                          </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              id="contacto1"
-                              name="secciones[]"
-                              value="Contact with domain account"
-                            />
-                            <label class="form-check-label" for="contacto1"
-                              >Contact with domain account</label
-                            >
-                          </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              id="contacto2"
-                              name="secciones[]"
-                              value="Contact without domain account"
-                            />
-                            <label class="form-check-label" for="contacto2"
-                              >Contact without domain account</label
-                            >
                           </div>
                         </div>
                       </div>
 
-                      <div class="mb-3">
-                        <label class="form-label"
-                          ><strong>Languages</strong></label
-                        >
-                        <div class="d-flex flex-wrap gap-3">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              id="Español"
-                              name="idiomas[]"
-                              value="Spanish"
-                            />
-                            <label class="form-check-label" for="Español"
-                              >Spanish</label
-                            >
+                      <!-- Improved sections section -->
+                      <div class="mb-4">
+                        <label class="form-label fw-bold mb-3">What sections do you need?</label>
+                        <div class="row row-cols-2 row-cols-md-3 g-3">
+                          <div class="col">
+                            <div class="form-check custom-checkbox">
+                              <input class="form-check-input" type="checkbox" id="inicio" name="secciones[]" value="Home" />
+                              <label class="form-check-label" for="inicio">
+                                <i class="bi bi-house-door me-2"></i>Home
+                              </label>
                           </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              id="Ingles"
-                              name="idiomas[]"
-                              value="English"
-                            />
-                            <label class="form-check-label" for="Inglés"
-                              >English</label
-                            >
                           </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              id="Frances"
-                              name="idiomas[]"
-                              value="French"
-                            />
-                            <label class="form-check-label" for="Francés"
-                              >French</label
-                            >
+                          <div class="col">
+                            <div class="form-check custom-checkbox">
+                              <input class="form-check-input" type="checkbox" id="quienes" name="secciones[]" value="About Us" />
+                              <label class="form-check-label" for="quienes">
+                                <i class="bi bi-people me-2"></i>About Us
+                              </label>
                           </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              id="Otro"
-                              name="idiomas[]"
-                              value="Other"
-                            />
-                            <label class="form-check-label" for="Otro"
-                              >Other</label
-                            >
+                          </div>
+                          <div class="col">
+                            <div class="form-check custom-checkbox">
+                              <input class="form-check-input" type="checkbox" id="servicios" name="secciones[]" value="Services" />
+                              <label class="form-check-label" for="servicios">
+                                <i class="bi bi-gear me-2"></i>Services
+                              </label>
+                          </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-check custom-checkbox">
+                              <input class="form-check-input" type="checkbox" id="proyectos" name="secciones[]" value="Projects" />
+                              <label class="form-check-label" for="proyectos">
+                                <i class="bi bi-briefcase me-2"></i>Projects
+                              </label>
+                          </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-check custom-checkbox">
+                              <input class="form-check-input" type="checkbox" id="contacto1" name="secciones[]" value="Contact with domain account" />
+                              <label class="form-check-label" for="contacto1">
+                                <i class="bi bi-envelope me-2"></i>Contact with domain
+                              </label>
+                          </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-check custom-checkbox">
+                              <input class="form-check-input" type="checkbox" id="contacto2" name="secciones[]" value="Contact without domain account" />
+                              <label class="form-check-label" for="contacto2">
+                                <i class="bi bi-chat me-2"></i>Contact without domain
+                              </label>
+                          </div>
                           </div>
                         </div>
                       </div>
-                      <!--fin idiomas-->
 
-                      <div class="mb-3">
-                        <label class="form-label"
-                          ><strong
-                            >DO YOU NEED OTHER ADDITIONAL SECTIONS/TABS?</strong
-                          ></label
-                        >
-                        <br />
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="paginasadicional"
-                          value="Oui"
-                          onclick="toggleTextarea()"
-                        />
-                        <label class="form-check-label" for="paginasadicional"
-                          >Yes, I want to add others.</label
-                        >
-                        <textarea
-                          id="otraSeccion"
-                          class="form-control mt-3"
-                          cols="30"
-                          rows="10"
-                          maxlength="500"
-                          aria-invalid="false"
-                          placeholder="Tell me the additional sections/tabs you need."
-                          name="masdetalles"
-                          style="display: none"
-                        ></textarea>
+                      <!-- Improved languages section -->
+                      <div class="mb-4">
+                        <label class="form-label fw-bold mb-3">Languages</label>
+                        <div class="d-flex flex-wrap gap-3">
+                          <div class="language-option">
+                            <input class="btn-check" type="checkbox" id="Español" name="idiomas[]" value="Spanish" autocomplete="off" />
+                            <label class="btn btn-outline-primary" for="Español">
+                              <img src="../assets/img/espana.webp" width="24" class="me-2" alt="Spanish">Spanish
+                            </label>
+                          </div>
+                          <div class="language-option">
+                            <input class="btn-check" type="checkbox" id="Ingles" name="idiomas[]" value="English" autocomplete="off" />
+                            <label class="btn btn-outline-primary" for="Ingles">
+                              <img src="../assets/img/usa.webp" width="24" class="me-2" alt="English">English
+                            </label>
+                          </div>
+                          <div class="language-option">
+                            <input class="btn-check" type="checkbox" id="Frances" name="idiomas[]" value="French" autocomplete="off" />
+                            <label class="btn btn-outline-primary" for="Frances">
+                              <img src="../assets/img/francia.webp" width="24" class="me-2" alt="French">French
+                            </label>
+                          </div>
+                          <div class="language-option">
+                            <input class="btn-check" type="checkbox" id="Otro" name="idiomas[]" value="Other" autocomplete="off" />
+                            <label class="btn btn-outline-primary" for="Otro">
+                              <i class="bi bi-globe me-2"></i>Other
+                            </label>
+                          </div>
+                        </div>
                       </div>
 
-                      <div class="mb-3">
-                        <label class="form-label"
-                          ><strong>Do you need Hosting?</strong></label
-                        >
-                        <select class="form-select" name="hosting">
-                          <option value="">Choose an option</option>
-                          <option value="Si">Yes</option>
-                          <option value="No">No</option>
-                          <option value="No sé">
-                            I don't know what hosting is
-                          </option>
-                        </select>
+                      <!-- Additional sections with improved UI -->
+                      <div class="mb-4">
+                        <div class="card border-0 bg-light">
+                          <div class="card-body">
+                            <label class="form-label fw-bold">Do you need other additional sections?</label>
+                            <div class="form-check form-switch mb-3">
+                              <input class="form-check-input" type="checkbox" id="paginasadicional" value="Yes" onclick="toggleTextarea()" />
+                              <label class="form-check-label" for="paginasadicional">Yes, I want to add other sections</label>
+                      </div>
+                            <div id="seccionesAdicionalesContainer" style="display: none">
+                              <textarea id="otraSeccion" class="form-control" cols="30" rows="4" maxlength="500" placeholder="Describe the additional sections you need" name="masdetalles"></textarea>
+                              <div class="form-text text-end"><span id="charCount">0</span>/500</div>
+                      </div>
+                          </div>
+                        </div>
                       </div>
 
-                      <div class="mb-3">
-                        <input
-                          type="text"
-                          name="name"
-                          class="form-control"
-                          placeholder="Your Name"
-                          required
-                        />
+                      <!-- Hosting with icons and improved UX -->
+                      <div class="mb-4">
+                        <label class="form-label fw-bold mb-3">Do you need Hosting?</label>
+                        <div class="row g-3">
+                          <div class="col-md-4">
+                            <div class="card h-100 hosting-option">
+                              <div class="card-body text-center p-3">
+                                <input type="radio" class="btn-check" name="hosting" id="hosting-si" value="Yes" autocomplete="off" />
+                                <label class="btn d-block h-100 hosting-btn" for="hosting-si">
+                                  <i class="bi bi-check-circle-fill fs-3 text-success mb-2"></i>
+                                  <h6>Yes</h6>
+                                  <p class="small text-muted mb-0">Include hosting service</p>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card h-100 hosting-option">
+                              <div class="card-body text-center p-3">
+                                <input type="radio" class="btn-check" name="hosting" id="hosting-no" value="No" autocomplete="off" />
+                                <label class="btn d-block h-100 hosting-btn" for="hosting-no">
+                                  <i class="bi bi-x-circle-fill fs-3 text-danger mb-2"></i>
+                                  <h6>No</h6>
+                                  <p class="small text-muted mb-0">I already have my own hosting</p>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card h-100 hosting-option">
+                              <div class="card-body text-center p-3">
+                                <input type="radio" class="btn-check" name="hosting" id="hosting-info" value="I don't know" autocomplete="off" />
+                                <label class="btn d-block h-100 hosting-btn" for="hosting-info">
+                                  <i class="bi bi-question-circle-fill fs-3 text-info mb-2"></i>
+                                  <h6>I don't know</h6>
+                                  <p class="small text-muted mb-0">I need more information</p>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
 
-                      <div class="mb-3">
-                        <input
-                          type="email"
-                          class="form-control"
-                          name="email"
-                          placeholder="Your Email"
-                          required
-                        />
+                      <!-- Contact information in a single, more modern section -->
+                      <div class="card border-0 shadow-sm rounded-3 p-3 mb-4">
+                        <div class="card-body">
+                          <h5 class="card-title mb-3">Your contact information</h5>
+                          <div class="row g-3">
+                            <div class="col-md-6">
+                              <div class="form-floating mb-3">
+                                <input type="text" name="name" class="form-control" id="floatingName" placeholder="Your Name" required />
+                                <!-- <label for="floatingName">Your Name</label> -->
+                                <div class="invalid-feedback">Please enter your name</div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating mb-3">
+                                <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="Your Email" required />
+                                <!-- <label for="floatingEmail">Your Email</label> -->
+                                <div class="invalid-feedback">Please enter a valid email</div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-floating">
+                                <textarea class="form-control" name="message" id="floatingMessage" rows="4" style="height: 120px" placeholder="Message" required></textarea>
+                                <!-- <label for="floatingMessage">Additional information or inquiries</label> -->
+                                <div class="invalid-feedback">Please leave your message</div>
+                              </div>
+                            </div>
+                      </div>
+                      </div>
                       </div>
 
-                      <div class="mb-3">
-                        <textarea
-                          class="form-control"
-                          name="message"
-                          rows="4"
-                          placeholder="Any other information you'd like to share or ask"
-                          required
-                        ></textarea>
-                      </div>
-
-                      <button type="submit" class="btn btn-primary">
-                        Send
+                      <!-- Modernized submit button -->
+                      <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg py-3">
+                          <i class="bi bi-send-fill me-2"></i>Submit Request
                       </button>
+                      </div>
                     </form>
                   </div>
 
                   <!-- E-commerce -->
                   <div class="tab-pane fade" id="ecomform">
-                    <form class="php-email-form">
-                      <div class="container mt-4">
-                        <div class="row gy-3">
-                          <!-- N° DE PRODUCTOS QUE DESEAS PUBLICAR -->
-                          <div class="col-md-6 mb-3">
-                            <label for="numeroproductos" class="form-label"
-                              ><strong
-                                >Number of products you want to list
-                                (approx.)</strong
-                              ></label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="numeroproductos"
-                              name="numeroproductos"
-                              placeholder="---"
-                              maxlength="400"
-                            />
+                    <form class="php-email-form needs-validation" novalidate>
+                      <div class="container">
+                        <!-- Products panel -->
+                        <div class="card border-0 shadow-sm rounded-3 mb-4">
+                          <div class="card-body">
+                            <h5 class="card-title mb-3">
+                              <i class="bi bi-box-seam me-2"></i>Product Information
+                            </h5>
+                            <div class="row g-3">
+                              <!-- Number of products -->
+                              <div class="col-md-6">
+                                <label for="numeroproductos" class="form-label fw-bold">Number of products</label>
+                                <div class="input-group">
+                                  <span class="input-group-text"><i class="bi bi-tag"></i></span>
+                                  <input type="number" min="1" class="form-control" id="numeroproductos" name="numeroproductos" placeholder="Approximate quantity" required />
+                                  <div class="invalid-feedback">
+                                    Please indicate an approximate quantity
+                                  </div>
+                                </div>
+                                <div class="form-text">How many products do you plan to sell in your store?</div>
                           </div>
 
-                          <!-- MEDIOS DE PAGO QUE DESEAS INTEGRAR EN TU TIENDA -->
-                          <div class="col-md-6 mb-3">
-                            <label class="form-label"
-                              ><strong
-                                >Payment methods you want to integrate into your
-                                store</strong
-                              ></label
-                            >
-                            <div class="form-check">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                name="mediosdepago[]"
-                                value="Transbank (WebPay)"
-                                id="webpay"
-                              />
-                              <label class="form-check-label" for="webpay"
-                                >Transbank (WebPay)</label
-                              >
+                              <!-- Product categories (new field) -->
+                              <div class="col-md-6">
+                                <label for="categorias" class="form-label fw-bold">Product Categories</label>
+                                <div class="input-group">
+                                  <span class="input-group-text"><i class="bi bi-folder"></i></span>
+                                  <input type="number" min="1" class="form-control" id="categorias" name="categorias" placeholder="Number of categories" />
                             </div>
-                            <div class="form-check">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                name="mediosdepago[]"
-                                value="Flow"
-                                id="flow"
-                              />
-                              <label class="form-check-label" for="flow"
-                                >Flow</label
-                              >
+                                <div class="form-text">Categories to organize your products</div>
                             </div>
-                            <div class="form-check">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                name="mediosdepago[]"
-                                value="Mercado Pago"
-                                id="mercadopago"
-                              />
-                              <label class="form-check-label" for="mercadopago"
-                                >Mercado Pago</label
-                              >
                             </div>
-                            <div class="form-check">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                name="mediosdepago[]"
-                                value="PayPal"
-                                id="paypal"
-                              />
-                              <label class="form-check-label" for="paypal"
-                                >PayPal</label
-                              >
                             </div>
-                            <div class="form-check">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                name="mediosdepago[]"
-                                value="Transferencia bancaria"
-                                id="transferencia"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="transferencia"
-                                >Bank transfer</label
-                              >
+                            </div>
+                        
+                        <!-- Payment methods panel -->
+                        <div class="card border-0 shadow-sm rounded-3 mb-4">
+                          <div class="card-body">
+                            <h5 class="card-title mb-3">
+                              <i class="bi bi-credit-card me-2"></i>Payment Methods
+                            </h5>
+                            <p class="card-text small text-muted mb-3">Select the payment options you want to offer your customers</p>
+                            
+                            <div class="row row-cols-1 row-cols-md-3 g-3">
+                              <!-- WebPay -->
+                              <div class="col">
+                                <div class="card h-100 payment-card">
+                                  <div class="card-body p-3">
+                                    <div class="form-check position-absolute" style="top: 10px; left: 10px;">
+                                      <input class="form-check-input" type="checkbox" name="mediosdepago[]" value="Transbank (WebPay)" id="webpay" />
+                                    </div>
+                                    <div class="text-center mt-4">
+                                      <div class="mx-auto mb-3 d-flex justify-content-center align-items-center bg-light rounded-circle p-2" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-credit-card-2-front text-primary fs-4"></i>
+                                      </div>
+                                      <h6>Transbank (WebPay)</h6>
+                                      <small class="text-muted d-block">Credit/Debit cards</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Flow -->
+                              <div class="col">
+                                <div class="card h-100 payment-card">
+                                  <div class="card-body p-3">
+                                    <div class="form-check position-absolute" style="top: 10px; left: 10px;">
+                                      <input class="form-check-input" type="checkbox" name="mediosdepago[]" value="Flow" id="flow" />
+                                    </div>
+                                    <div class="text-center mt-4">
+                                      <div class="mx-auto mb-3 d-flex justify-content-center align-items-center bg-light rounded-circle p-2" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-currency-exchange text-info fs-4"></i>
+                                      </div>
+                                      <h6>Flow</h6>
+                                      <small class="text-muted d-block">Payment gateway</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <!-- Mercado Pago -->
+                              <div class="col">
+                                <div class="card h-100 payment-card">
+                                  <div class="card-body p-3">
+                                    <div class="form-check position-absolute" style="top: 10px; left: 10px;">
+                                      <input class="form-check-input" type="checkbox" name="mediosdepago[]" value="Mercado Pago" id="mercadopago" />
+                                    </div>
+                                    <div class="text-center mt-4">
+                                      <div class="mx-auto mb-3 d-flex justify-content-center align-items-center bg-light rounded-circle p-2" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-basket text-success fs-4"></i>
+                                      </div>
+                                      <h6>Mercado Pago</h6>
+                                      <small class="text-muted d-block">Multiple methods</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <!-- PayPal -->
+                              <div class="col">
+                                <div class="card h-100 payment-card">
+                                  <div class="card-body p-3">
+                                    <div class="form-check position-absolute" style="top: 10px; left: 10px;">
+                                      <input class="form-check-input" type="checkbox" name="mediosdepago[]" value="PayPal" id="paypal" />
+                                    </div>
+                                    <div class="text-center mt-4">
+                                      <div class="mx-auto mb-3 d-flex justify-content-center align-items-center bg-light rounded-circle p-2" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-paypal text-primary fs-4"></i>
+                                      </div>
+                                      <h6>PayPal</h6>
+                                      <small class="text-muted d-block">International payments</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <!-- Bank transfer -->
+                              <div class="col">
+                                <div class="card h-100 payment-card">
+                                  <div class="card-body p-3">
+                                    <div class="form-check position-absolute" style="top: 10px; left: 10px;">
+                                      <input class="form-check-input" type="checkbox" name="mediosdepago[]" value="Bank transfer" id="transferencia" />
+                                    </div>
+                                    <div class="text-center mt-4">
+                                      <div class="mx-auto mb-3 d-flex justify-content-center align-items-center bg-light rounded-circle p-2" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-bank text-dark fs-4"></i>
+                                      </div>
+                                      <h6>Bank transfer</h6>
+                                      <small class="text-muted d-block">Direct payment to account</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <!-- Cash -->
+                              <div class="col">
+                                <div class="card h-100 payment-card">
+                                  <div class="card-body p-3">
+                                    <div class="form-check position-absolute" style="top: 10px; left: 10px;">
+                                      <input class="form-check-input" type="checkbox" name="mediosdepago[]" value="Cash" id="efectivo" />
+                                    </div>
+                                    <div class="text-center mt-4">
+                                      <div class="mx-auto mb-3 d-flex justify-content-center align-items-center bg-light rounded-circle p-2" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-cash-coin text-success fs-4"></i>
+                                      </div>
+                                      <h6>Cash</h6>
+                                      <small class="text-muted d-block">Cash on delivery</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-
-                        <!-- ¿Necesitas Hosting? -->
-                        <div class="mb-3">
-                          <label class="form-label"
-                            ><strong>Do you need Hosting?</strong></label
-                          >
-                          <select class="form-select" name="hosting">
-                            <option value="">Choose an option</option>
-                            <option value="Si">Yes</option>
-                            <option value="No">No</option>
-                            <option value="No sé">
-                              I don't know what hosting is
-                            </option>
+                        
+                        <!-- Additional features panel -->
+                        <div class="card border-0 shadow-sm rounded-3 mb-4">
+                          <div class="card-body">
+                            <h5 class="card-title mb-3">
+                              <i class="bi bi-gear-fill me-2"></i>Store Features
+                            </h5>
+                            
+                            <div class="row g-3">
+                              <!-- Shipping options -->
+                              <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                  <select class="form-select" id="opciones-envio" name="opciones_envio" required>
+                                    <option value="" selected disabled>Select an option</option>
+                                    <option value="nacional">National shipping only</option>
+                                    <option value="internacional">National and international shipping</option>
+                                    <option value="sin_envio">No shipping (store pickup)</option>
                           </select>
+                                  <label for="opciones-envio">Shipping Options</label>
+                                </div>
                         </div>
 
-                        <!-- Nombre y Email -->
-                        <div class="col-md-6 mb-3">
-                          <input
-                            type="text"
-                            name="name"
-                            class="form-control"
-                            placeholder="Your Name"
-                            required
-                          />
+                              <!-- Hosting -->
+                              <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                  <select class="form-select" id="hosting-ecommerce" name="hosting" required>
+                                    <option value="" selected disabled>Select an option</option>
+                                    <option value="Si">Yes, I need hosting</option>
+                                    <option value="No">No, I already have hosting</option>
+                                    <option value="No sé">I don't know what hosting is</option>
+                                  </select>
+                                  <label for="hosting-ecommerce">Do you need Hosting?</label>
+                                </div>
                         </div>
 
-                        <div class="col-md-6 mb-3">
-                          <input
-                            type="email"
-                            class="form-control"
-                            name="email"
-                            placeholder="Your Email"
-                            required
-                          />
+                              <!-- Integration with platforms -->
+                              <div class="col-12 mt-2">
+                                <label class="form-label fw-bold">Do you need integration with any of these platforms?</label>
+                                <div class="row row-cols-2 row-cols-md-4 g-2">
+                                  <div class="col">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" name="integraciones[]" value="excel" id="excel-int">
+                                      <label class="form-check-label" for="excel-int">
+                                        <i class="bi bi-file-earmark-excel me-1 text-success"></i> Excel/CSV
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" name="integraciones[]" value="erp" id="erp-int">
+                                      <label class="form-check-label" for="erp-int">
+                                        <i class="bi bi-clipboard-data me-1 text-primary"></i> ERP
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" name="integraciones[]" value="whatsapp" id="wp-int">
+                                      <label class="form-check-label" for="wp-int">
+                                        <i class="bi bi-whatsapp me-1 text-success"></i> WhatsApp
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" name="integraciones[]" value="instagram" id="ig-int">
+                                      <label class="form-check-label" for="ig-int">
+                                        <i class="bi bi-instagram me-1 text-danger"></i> Instagram
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
 
-                        <!-- Mensaje -->
-                        <div class="col-md-12 mb-3">
-                          <textarea
-                            class="form-control"
-                            name="message"
-                            rows="4"
-                            placeholder="Any other information you'd like to share or ask"
-                            required
-                          ></textarea>
+                        <!-- Modernized contact information -->
+                        <div class="card border-0 shadow-sm rounded-3 mb-4">
+                          <div class="card-body">
+                            <h5 class="card-title mb-3">
+                              <i class="bi bi-person-lines-fill me-2"></i>Your contact information
+                            </h5>
+                            <div class="row g-3">
+                              <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                  <input type="text" name="name" class="form-control" id="floatingNameEcom" placeholder="Your Name" required />
+                                  <!-- <label for="floatingNameEcom">Your Name</label> -->
+                                  <div class="invalid-feedback">Please enter your name</div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                  <input type="email" class="form-control" name="email" id="floatingEmailEcom" placeholder="Your Email" required />
+                                  <!-- <label for="floatingEmailEcom">Your Email</label> -->
+                                  <div class="invalid-feedback">Please enter a valid email</div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                  <input type="tel" class="form-control" name="phone" id="floatingPhoneEcom"  />
+                                  <label for="floatingPhoneEcom">Your Phone (optional)</label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" name="company" id="floatingCompanyEcom" placeholder="Your Business Name" />
+                                  <!-- <label for="floatingCompanyEcom">Your Business Name</label> -->
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-floating">
+                                  <textarea class="form-control" name="message" id="floatingMessageEcom" rows="4" style="height: 120px" placeholder="Additional information or inquiries" required></textarea>
+                                  <!-- <label for="floatingMessageEcom">Additional information or inquiries</label> -->
+                                  <div class="invalid-feedback">Please leave your message</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
 
-                        <!-- Botón de Enviar -->
-                        <button type="submit" class="btn btn-primary">
-                          Send
+                        <!-- Modernized submit button -->
+                        <div class="d-grid">
+                          <button type="submit" class="btn btn-primary btn-lg py-3">
+                            <i class="bi bi-send-fill me-2"></i>Request Quote
                         </button>
+                        </div>
                       </div>
                     </form>
                   </div>
 
-                  <!-- Consultas Generales -->
+                  <!-- General Inquiries -->
                   <div class="tab-pane fade" id="contactform">
-                    <form
-                      action="forms/contact.php"
-                      method="post"
-                      class="php-email-form"
-                    >
-                      <div class="row gy-3">
-                        <div class="col-md-6">
-                          <input
-                            type="text"
-                            name="name"
-                            class="form-control"
-                            placeholder="Your Name"
-                            required
-                          />
-                        </div>
-
-                        <div class="col-md-6">
-                          <input
-                            type="email"
-                            class="form-control"
-                            name="email"
-                            placeholder="Your Email"
-                            required
-                          />
-                        </div>
-
-                        <div class="col-md-12">
-                          <input
-                            type="text"
-                            class="form-control"
-                            name="subject"
-                            placeholder="Subject"
-                            required
-                          />
-                        </div>
-
-                        <div class="col-md-12">
-                          <textarea
-                            class="form-control"
-                            name="message"
-                            rows="4"
-                            placeholder="Message"
-                            required
-                          ></textarea>
-                        </div>
-
-                        <div class="col-md-12 text-center">
-                          <button type="submit" class="btn btn-success">
-                            Send
-                          </button>
+                    <form action="forms/contact.php" method="post" class="php-email-form needs-validation" novalidate>
+                      <div class="card border-0 shadow-sm rounded-3 mb-4">
+                        <div class="card-body">
+                          <h5 class="card-title mb-3">
+                            <i class="bi bi-chat-dots me-2"></i>Send us your inquiry
+                          </h5>
+                          <p class="card-text text-muted mb-4">We are here to answer all your questions. Fill out the form and we will respond promptly.</p>
+                          
+                          <div class="row g-3">
+                            <!-- Main fields -->
+                            <div class="col-md-6">
+                              <div class="form-floating mb-3">
+                                <input type="text" name="name" class="form-control" id="floatingNameContact" placeholder="Your Name" required />
+                                <!-- <label for="floatingNameContact">Your Name</label> -->
+                                <div class="invalid-feedback">Please enter your name</div>
+                              </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                              <div class="form-floating mb-3">
+                                <input type="email" class="form-control" name="email" id="floatingEmailContact" placeholder="Your Email" required />
+                                <!-- <label for="floatingEmailContact">Your Email</label> -->
+                                <div class="invalid-feedback">Please enter a valid email</div>
+                              </div>
+                            </div>
+                            
+                            <!-- Subject and department -->
+                            <div class="col-md-6">
+                              <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="subject" id="floatingSubject" placeholder="Subject" required />
+                                <!-- <label for="floatingSubject">Subject</label> -->
+                                <div class="invalid-feedback">Please indicate a subject</div>
+                              </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                              <div class="form-floating mb-3">
+                                <select class="form-select" id="departamento" name="department">
+                                  <option value="" selected disabled>Select an option</option>
+                                  <option value="soporte">Technical Support</option>
+                                  <option value="ventas">Sales</option>
+                                  <option value="info">General Information</option>
+                                  <option value="otros">Others</option>
+                                </select>
+                                <label for="departamento">Department (optional)</label>
+                              </div>
+                            </div>
+                            
+                            <!-- Message -->
+                            <div class="col-12">
+                              <div class="form-floating">
+                                <textarea class="form-control" name="message" id="floatingMessageContact" rows="5" style="height: 150px" placeholder="Message" required></textarea>
+                                <!-- <label for="floatingMessageContact">Your Message</label> -->
+                                <div class="invalid-feedback">Please write your message</div>
+                              </div>
+                            </div>
+                            
+                            <!-- Contact preference (new field) -->
+                            <div class="col-12 mt-2">
+                              <label class="form-label fw-bold">How would you prefer us to contact you?</label>
+                              <div class="d-flex flex-wrap gap-3">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="contactPreference" value="email" id="prefEmail" checked>
+                                  <label class="form-check-label" for="prefEmail">
+                                    <i class="bi bi-envelope me-1"></i> By email
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="contactPreference" value="phone" id="prefPhone">
+                                  <label class="form-check-label" for="prefPhone">
+                                    <i class="bi bi-telephone me-1"></i> By phone
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="contactPreference" value="whatsapp" id="prefWhatsapp">
+                                  <label class="form-check-label" for="prefWhatsapp">
+                                    <i class="bi bi-whatsapp me-1"></i> By WhatsApp
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <!-- Phone number conditional on preference -->
+                            <div class="col-md-6 mt-2" id="phoneFieldContainer" style="display: none;">
+                              <div class="form-floating">
+                                <input type="tel" class="form-control" name="phone" id="floatingPhoneContact" placeholder="Your Phone">
+                                <label for="floatingPhoneContact">Your Phone</label>
+                              </div>
+                            </div>
+                            
+                            <!-- Privacy checkbox -->
+                            <div class="col-12 mt-4">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="privacyCheck" required>
+                                <label class="form-check-label" for="privacyCheck">
+                                  I accept the <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">privacy policy</a> and the processing of my data
+                                </label>
+                                <div class="invalid-feedback">
+                                  You must accept the privacy policy to proceed
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
+                      
+                      <!-- Modernized submit button -->
+                      <div class="d-grid">
+                        <button type="submit" class="btn btn-success btn-lg py-3">
+                          <i class="bi bi-send-fill me-2"></i>Send Message
+                        </button>
+                      </div>
                     </form>
+                    
+                    <!-- Privacy policy modal -->
+                    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>The personal data you provide will be processed for the purpose of addressing your inquiry and/or request.</p>
+                            <p>Your data will be retained for as long as our relationship lasts or for the years necessary to comply with legal obligations.</p>
+                            <p>You can exercise your rights of access, rectification, deletion, limitation, opposition, and portability by contacting us.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <!---->
             </div>
-            <!--fin pestañas-->
+            <!--end tabs-->
           </div>
         </div>
       </section>
@@ -785,6 +996,26 @@
           textarea.value = ""; // Limpia el contenido de la textarea
         }
       }
+    </script>
+
+    <script>
+      // Make the entire payment card clickable to check/uncheck the checkbox
+      document.querySelectorAll('.payment-card').forEach(card => {
+        card.addEventListener('click', function(e) {
+          // Don't trigger if clicked directly on the checkbox
+          if (e.target.type !== 'checkbox') {
+            const checkbox = this.querySelector('input[type="checkbox"]');
+            checkbox.checked = !checkbox.checked;
+            
+            // Change the style visually
+            if (checkbox.checked) {
+              this.classList.add('border-primary');
+            } else {
+              this.classList.remove('border-primary');
+            }
+          }
+        });
+      });
     </script>
   </body>
 </html>
