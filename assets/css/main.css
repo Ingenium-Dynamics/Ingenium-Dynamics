@@ -900,7 +900,7 @@ section,
       color-mix(in srgb, var(--background-color), transparent 90%),
       var(--background-color)
     ),
-    url("../img/HS1.png") center top no-repeat;
+    url("../img/HS1.webp") center top no-repeat;
   background-size: cover;
   z-index: 0;
   border-radius: 0 0 50% 50%;

@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: "Haras los Pellines",
     description:
-      "Página de aterrizaje creada utilizando HTML, CSS, Bootstrap y JavaScript, con un formulario de contacto implementado mediante tecnologías de AWS.",
+      "Page d'atterrissage créée en utilisant HTML, CSS, Bootstrap et JavaScript, avec un formulaire de contact implémenté à l'aide des technologies AWS.",
     images: [
       "../assets/img/portfolio/haras_los_pellines.webp",
       "../assets/img/portfolio/haras_los_pellines01.webp",
@@ -15,7 +15,7 @@ const projects = [
     id: 2,
     title: "LanguageLife",
     description:
-      "LandingPage Multilingüal para Academia de Idiomas y arte, con una apartado Galería con las pinturas realizadas y un historial de las exposiciones en las cuales se ha participado. ",
+      "Landing page multilingue pour une académie de langues et d'art, avec une section galerie présentant les peintures réalisées et un historique des expositions auxquelles elle a participé.",
     images: [
       "../assets/img/portfolio/languagelife1.webp",
       "../assets/img/portfolio/languagelife2.webp",
@@ -28,7 +28,7 @@ const projects = [
     id: 3,
     title: "Psicólogo Alex Oyarzún",
     description:
-      "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales, no está disponible en algunos paises a petición del cliente",
+      "Landing page professionnelle pour le psychologue Alex Oyarzún. Elle présente le professionnel, ses services et ses réseaux sociaux. Non disponible dans certains pays à la demande du client.",
     images: [
       "../assets/img/portfolio/alexoyarzun1.webp",
       "../assets/img/portfolio/alexoyarzun2.webp",
@@ -40,7 +40,7 @@ const projects = [
     id: 4,
     title: "Nico Castro Photography",
     description:
-      "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales",
+      "Landing page professionnelle présentant le professionnel, ses services et ses réseaux sociaux.",
     images: [
       "../assets/img/portfolio/nicocastro1.webp",
       "../assets/img/portfolio/nicocastro2.webp",
@@ -52,7 +52,7 @@ const projects = [
     id: 5,
     title: "Fidias Place",
     description:
-      "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales",
+      "Landing page professionnelle présentant le professionnel, ses services et ses réseaux sociaux.",
     images: [
       "../assets/img/portfolio/fidias1.webp",
       "../assets/img/portfolio/fidias2.webp",
@@ -76,7 +76,7 @@ function showModal(projectId) {
   // Actualizar el enlace de la URL
   const projectModalWeb = document.getElementById("projectModalWeb");
   projectModalWeb.href = project.web;
-  projectModalWeb.textContent = "Visitar " + project.title;
+  projectModalWeb.textContent = "Visiter " + project.title;
   // Generar contenido del carrusel
   const carouselInner = document.querySelector(".carousel-inner");
   carouselInner.innerHTML = project.images
