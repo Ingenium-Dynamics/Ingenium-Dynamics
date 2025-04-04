@@ -1705,10 +1705,11 @@ section,
 }
 
 .contact .php-email-form {
-  background-color: var(--surface-color);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  height: 100%;
-  padding: 30px 30px 0 30px;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: var(--light-background-color, #fff);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 575px) {
@@ -1742,16 +1743,14 @@ section,
 }
 
 .contact .php-email-form button[type="submit"] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
+  transition: all 0.3s ease;
   border-radius: 50px;
+  font-weight: 500;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(var(--bs-primary-rgb), 0.3);
 }
 
 #hservicios {
@@ -2478,4 +2477,313 @@ section,
 .dark-background .pricing-price .price-period,
 .dark-background .pricing-price .initial-payment {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+/* Mejoras para el formulario de contacto */
+.contact .php-email-form {
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: var(--light-background-color, #fff);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Estilos para tarjetas de selección */
+.plan-card, .hosting-option {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #dee2e6;
+  overflow: hidden;
+}
+
+.plan-card:hover, .hosting-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.selected-card {
+  border-color: var(--bs-primary);
+  background-color: rgba(var(--bs-primary-rgb), 0.05);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mejoras para checkbox personalizados */
+.custom-checkbox .form-check-input:checked {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.custom-checkbox .form-check-label {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.custom-checkbox input:checked + .form-check-label {
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+/* Estilos para opciones de idioma */
+.language-option .btn-outline-primary {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.language-option .btn-check:checked + .btn-outline-primary {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para modo oscuro */
+.dark-background .php-email-form {
+  background-color: rgba(25, 25, 25, 0.85);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dark-background .plan-card,
+.dark-background .hosting-option {
+  background-color: rgba(40, 40, 40, 0.9);
+  border-color: rgba(70, 70, 70, 0.5);
+}
+
+.dark-background .selected-card {
+  background-color: rgba(var(--bs-primary-rgb), 0.2);
+}
+
+.dark-background .card-body {
+  color: var(--light-text-color, #fff);
+}
+
+.dark-background .form-floating label {
+  color: rgba(200, 200, 200, 0.8);
+}
+
+.dark-background .form-floating>.form-control:focus~label {
+  color: var(--bs-primary);
+}
+
+.dark-background .card.bg-light {
+  background-color: rgba(50, 50, 50, 0.8) !important;
+}
+
+/* Animaciones de feedback para los inputs */
+@keyframes formShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.was-validated .form-control:invalid:focus {
+  animation: formShake 0.4s ease;
+}
+
+/* Mejora de botón de envío */
+.contact .php-email-form button[type="submit"] {
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(var(--bs-primary-rgb), 0.3);
+}
+
+/* Estilos para las opciones de pago en e-commerce */
+.payment-option {
+  margin-bottom: 10px;
+}
+
+.payment-label {
+  display: flex;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.payment-label:hover {
+  background-color: rgba(var(--bs-primary-rgb), 0.05);
+}
+
+.payment-selected, 
+.payment-option input:checked + .payment-label {
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+  border-left: 3px solid var(--bs-primary);
+}
+
+.payment-icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+}
+
+/* Estilos para el formulario de contacto general */
+#contactform .form-check-input:checked {
+  background-color: var(--bs-success);
+  border-color: var(--bs-success);
+}
+
+#contactform .btn-success {
+  background: linear-gradient(140deg, #28a745, #20c997);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#contactform .btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+/* Mejoras para el modo oscuro en los nuevos formularios */
+.dark-background .payment-icon {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-background .payment-label:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-background .payment-selected, 
+.dark-background .payment-option input:checked + .payment-label {
+  background-color: rgba(var(--bs-primary-rgb), 0.2);
+}
+
+.dark-background #contactform .form-check-input:checked {
+  background-color: var(--bs-success);
+}
+
+.dark-background #privacyModal .modal-content {
+  background-color: rgba(30, 30, 30, 0.95);
+  color: var(--light-text-color, #fff);
+}
+
+/* Animaciones para los nuevos formularios */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+#phoneFieldContainer {
+  animation: fadeInUp 0.3s ease;
+}
+
+/* Mejoras para dispositivos móviles */
+@media (max-width: 767px) {
+  .payment-label {
+    padding: 8px;
+  }
+  
+  .payment-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+}
+
+/* Solución para el contraste en las pestañas de formularios de contacto en modo oscuro */
+#contactFormTabs.nav-tabs {
+  border-bottom-color: #dee2e6;
+}
+
+#contactFormTabs .nav-link {
+  color: inherit;
+}
+
+.dark-background #contactFormTabs.nav-tabs {
+  border-bottom-color: #444;
+}
+
+.dark-background #contactFormTabs .nav-link {
+  color: #e0e0e0;
+}
+
+.dark-background #contactFormTabs .nav-link:hover,
+.dark-background #contactFormTabs .nav-link:focus {
+  border-color: #444 #444 transparent;
+  color: #fff;
+}
+
+.dark-background #contactFormTabs .nav-link.active {
+  color: #fff;
+  background-color: #333;
+  border-color: #444 #444 transparent;
+}
+
+.dark-background .tab-content .card-body .text-muted {
+  color: #aaa !important;
+}
+
+.dark-background .tab-content .form-text,
+.dark-background .tab-content .small.text-muted {
+  color: #bbb !important;
+}
+
+.dark-background .tab-content .bg-light {
+  background-color: #333 !important;
+}
+
+.dark-background .tab-content {
+  color: #e0e0e0;
+}
+
+/* Solución para tarjetas de contacto y sus títulos en modo oscuro */
+.dark-background .card-title,
+.dark-background .card h5 {
+  color: #fff;
+}
+
+.dark-background .card {
+  background-color: rgba(40, 40, 40, 0.9);
+  border-color: rgba(70, 70, 70, 0.5);
+}
+
+.dark-background .card-body {
+  color: #e0e0e0;
+}
+
+/* Arreglar círculos de iconos en modo oscuro */
+.dark-background .bg-light {
+  background-color: #333 !important;
+}
+
+.dark-background .rounded-circle.bg-light {
+  background-color: #444 !important;
+}
+
+.dark-background .text-muted {
+  color: #bbb !important;
+}
+
+/* Mejorar visibilidad para los campos en modo oscuro */
+.dark-background .form-control,
+.dark-background .form-select {
+  background-color: rgba(30, 30, 30, 0.9);
+  border-color: rgba(80, 80, 80, 0.5);
+  color: #e0e0e0;
+}
+
+.dark-background .form-control:focus,
+.dark-background .form-select:focus {
+  background-color: rgba(50, 50, 50, 0.9);
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+.dark-background .form-check-label {
+  color: #e0e0e0;
+}
+
+.dark-background .form-floating label {
+  color: #bbb;
 }
