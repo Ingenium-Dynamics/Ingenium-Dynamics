@@ -512,11 +512,14 @@
                       </div>
                       </div>
 
+                      <!-- Container for alert messages -->
+                      <div class="alert-msg mt-3" style="display: none;"></div>
+                      
                       <!-- Modernized submit button -->
                       <div class="d-grid">
                         <button type="submit" class="btn btn-primary btn-lg py-3">
                           <i class="bi bi-send-fill me-2"></i>Submit Request
-                      </button>
+                        </button>
                       </div>
                     </form>
                   </div>
@@ -798,6 +801,9 @@
                           </div>
                         </div>
 
+                        <!-- Container for alert messages -->
+                        <div class="alert-msg mt-3" style="display: none;"></div>
+                        
                         <!-- Modernized submit button -->
                         <div class="d-grid">
                           <button type="submit" class="btn btn-primary btn-lg py-3">
@@ -810,7 +816,7 @@
 
                   <!-- General Inquiries -->
                   <div class="tab-pane fade" id="contactform">
-                    <form action="forms/contact.php" method="post" class="php-email-form needs-validation" novalidate>
+                    <form class="php-email-form needs-validation" novalidate>
                       <div class="card border-0 shadow-sm rounded-3 mb-4">
                         <div class="card-body">
                           <h5 class="card-title mb-3">
@@ -916,6 +922,9 @@
                         </div>
                       </div>
                       
+                      <!-- Container for alert messages -->
+                      <div class="alert-msg mt-3" style="display: none;"></div>
+                      
                       <!-- Modernized submit button -->
                       <div class="d-grid">
                         <button type="submit" class="btn btn-success btn-lg py-3">
@@ -971,7 +980,7 @@
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/scripts.js"></script>
     <script src="../assets/js/scripts_after.js"></script>
-    <script src="assets/js/contact-form-script.js"></script>
+    <script src="../assets/js/contact-form-script-en.js"></script>
 
     <script>
       fetch("footer.html")
@@ -1061,6 +1070,25 @@
             }
           }
         }
+      });
+    </script>
+
+    <!-- Script para validación de formularios Bootstrap -->
+    <script>
+      // Initialize Bootstrap validation for all forms
+      document.addEventListener('DOMContentLoaded', function() {
+        const forms = document.querySelectorAll('.needs-validation');
+        
+        Array.from(forms).forEach(form => {
+          // Apply validation before form submission
+          form.addEventListener('submit', function(event) {
+            // Only apply visual validation, don't stop submission
+            // The actual submission handling is in contact-form-script-en.js
+            if (!form.checkValidity()) {
+              form.classList.add('was-validated');
+            }
+          }, false);
+        });
       });
     </script>
   </body>
