@@ -61,6 +61,7 @@
 
     <script src="https://code.jquery.com/jquery-migrate-3.5.2.js"></script>
     <script src="assets/js/script_clarooscuro.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1048.0.min.js"></script>
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
     <style>
@@ -527,6 +528,9 @@
                       </div>
                       </div>
 
+                      <!-- Contenedor para mensajes de alerta -->
+                      <div class="alert-msg mt-3" style="display: none;"></div>
+                      
                       <!-- Botón de envío modernizado -->
                       <div class="d-grid">
                         <button type="submit" class="btn btn-primary btn-lg py-3">
@@ -557,7 +561,6 @@
                                     Por favor indica una cantidad aproximada
                                   </div>
                                 </div>
-                                <div class="form-text">¿Cuántos productos piensas vender en tu tienda?</div>
                           </div>
 
                               <!-- Categorías de productos (nuevo campo) -->
@@ -813,6 +816,9 @@
                           </div>
                         </div>
 
+                        <!-- Contenedor para mensajes de alerta -->
+                        <div class="alert-msg mt-3" style="display: none;"></div>
+                        
                         <!-- Botón de envío modernizado -->
                         <div class="d-grid">
                           <button type="submit" class="btn btn-primary btn-lg py-3">
@@ -825,7 +831,7 @@
 
                   <!-- Consultas Generales -->
                   <div class="tab-pane fade" id="contactform">
-                    <form action="forms/contact.php" method="post" class="php-email-form needs-validation" novalidate>
+                    <form class="php-email-form needs-validation" novalidate>
                       <div class="card border-0 shadow-sm rounded-3 mb-4">
                         <div class="card-body">
                           <h5 class="card-title mb-3">
@@ -931,6 +937,9 @@
                         </div>
                       </div>
                       
+                      <!-- Contenedor para mensajes de alerta -->
+                      <div class="alert-msg mt-3" style="display: none;"></div>
+                      
                       <!-- Botón de envío modernizado -->
                       <div class="d-grid">
                         <button type="submit" class="btn btn-success btn-lg py-3">
@@ -986,6 +995,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/scripts_after.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
 
     <script>
       fetch("footer.html")
@@ -1161,6 +1171,43 @@
               this.classList.remove('border-primary');
             }
           }
+        });
+      });
+    </script>
+
+    <!-- Script para validación de formularios Bootstrap -->
+    <script>
+      // Inicializar la validación de Bootstrap para todos los formularios
+      document.addEventListener('DOMContentLoaded', function() {
+        const forms = document.querySelectorAll('.needs-validation');
+        
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      });
+    </script>
+
+    <!-- Script para validación de formularios Bootstrap -->
+    <script>
+      // Inicializar la validación de Bootstrap para todos los formularios
+      document.addEventListener('DOMContentLoaded', function() {
+        const forms = document.querySelectorAll('.needs-validation');
+        
+        Array.from(forms).forEach(form => {
+          // Aplicar validación antes del envío del formulario
+          form.addEventListener('submit', function(event) {
+            // Solo aplicar la validación visual, no detener el envío
+            // El manejo real de envío está en contact-form-script.js
+            if (!form.checkValidity()) {
+              form.classList.add('was-validated');
+            }
+          }, false);
         });
       });
     </script>
