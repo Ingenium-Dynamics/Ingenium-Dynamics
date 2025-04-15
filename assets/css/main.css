@@ -1744,7 +1744,6 @@ section,
   padding-top: 7%;
 }
 
-
 /*Banner de Promociones*/
 #bannerPromocion {
   background-color: #416687;
@@ -2198,14 +2197,16 @@ section,
 }
 
 /* Estilos para tarjetas de selección */
-.plan-card, .hosting-option {
+.plan-card,
+.hosting-option {
   cursor: pointer;
   transition: all 0.3s ease;
   border: 1px solid #dee2e6;
   overflow: hidden;
 }
 
-.plan-card:hover, .hosting-option:hover {
+.plan-card:hover,
+.hosting-option:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -2271,7 +2272,7 @@ section,
   color: rgba(200, 200, 200, 0.8);
 }
 
-.dark-background .form-floating>.form-control:focus~label {
+.dark-background .form-floating > .form-control:focus ~ label {
   color: var(--bs-primary);
 }
 
@@ -2281,9 +2282,16 @@ section,
 
 /* Animaciones de feedback para los inputs */
 @keyframes formShake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  75% { transform: translateX(5px); }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
 }
 
 .was-validated .form-control:invalid:focus {
@@ -2319,7 +2327,7 @@ section,
   background-color: rgba(var(--bs-primary-rgb), 0.05);
 }
 
-.payment-selected, 
+.payment-selected,
 .payment-option input:checked + .payment-label {
   background-color: rgba(var(--bs-primary-rgb), 0.1);
   border-left: 3px solid var(--bs-primary);
@@ -2357,7 +2365,7 @@ section,
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-.dark-background .payment-selected, 
+.dark-background .payment-selected,
 .dark-background .payment-option input:checked + .payment-label {
   background-color: rgba(var(--bs-primary-rgb), 0.2);
 }
@@ -2392,7 +2400,7 @@ section,
   .payment-label {
     padding: 8px;
   }
-  
+
   .payment-icon {
     width: 32px;
     height: 32px;
@@ -2495,4 +2503,33 @@ section,
 
 .dark-background .form-floating label {
   color: #bbb;
+}
+
+/*SOBRE NOSOTROS: WHY INGENIUM*/
+#why_ingenium {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#why_ingenium img {
+  width: 500px;
+  border-radius: 50%;
+  aspect-ratio: 1; /* Se ajusta al mismo valor que el width */
+  object-fit: cover;
+  padding: 5%;
+}
+
+#why_ingenium h2 {
+  font-weight: 700;
+}
+
+#why_ingenium p {
+  font-weight: 300;
+  font-size: large;
+  line-height: 2;
+}
+
+.why_ingenium_text {
+  padding: 5% 0;
 }
