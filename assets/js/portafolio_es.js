@@ -40,7 +40,7 @@ const projects = [
     id: 4,
     title: "Nico Castro Photography",
     description:
-      "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales",
+      "LandingPage profesional, para el fotografo Nicolas Castro. presenta al profesional, sus servicios y sus redes sociales",
     images: [
       "./assets/img/portfolio/nicocastro1.webp",
       "./assets/img/portfolio/nicocastro2.webp",
@@ -52,7 +52,7 @@ const projects = [
     id: 5,
     title: "Fidias Place",
     description:
-      "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales",
+      "LandingPage profesional, para una academia de baile. presenta a la academia, sus servicios y sus redes sociales",
     images: [
       "./assets/img/portfolio/fidias1.webp",
       "./assets/img/portfolio/fidias2.webp",

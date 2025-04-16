@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: "Haras los Pellines",
     description:
-      "Página de aterrizaje creada utilizando HTML, CSS, Bootstrap y JavaScript, con un formulario de contacto implementado mediante tecnologías de AWS.",
+      "Landing page created using HTML, CSS, Bootstrap, and JavaScript, with a contact form implemented using AWS technologies.",
     images: [
       "../assets/img/portfolio/haras_los_pellines.webp",
       "../assets/img/portfolio/haras_los_pellines01.webp",
@@ -15,7 +15,7 @@ const projects = [
     id: 2,
     title: "LanguageLife",
     description:
-      "LandingPage Multilingüal para Academia de Idiomas y arte, con una apartado Galería con las pinturas realizadas y un historial de las exposiciones en las cuales se ha participado. ",
+      "Multilingual LandingPage for Language Academy and art, with a Gallery section featuring the paintings made and a history of the exhibitions in which it has participated.",
     images: [
       "../assets/img/portfolio/languagelife1.webp",
       "../assets/img/portfolio/languagelife2.webp",
@@ -28,7 +28,7 @@ const projects = [
     id: 3,
     title: "Psicólogo Alex Oyarzún",
     description:
-      "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales, no está disponible en algunos paises a petición del cliente",
+      "Professional LandingPage for psychologist Alex Oyazún. It presents the professional, their services, and their social media, not available in some countries at the client's request",
     images: [
       "../assets/img/portfolio/alexoyarzun1.webp",
       "../assets/img/portfolio/alexoyarzun2.webp",
@@ -40,7 +40,7 @@ const projects = [
     id: 4,
     title: "Nico Castro Photography",
     description:
-      "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales",
+      "Professional LandingPage for photographer Nicolas Castro, presenting the professional, their services, and their social media",
     images: [
       "../assets/img/portfolio/nicocastro1.webp",
       "../assets/img/portfolio/nicocastro2.webp",
@@ -52,7 +52,7 @@ const projects = [
     id: 5,
     title: "Fidias Place",
     description:
-      "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales",
+      "Professional LandingPage for a dance academy, presenting the academy, its services, schedules, and its social media",
     images: [
       "../assets/img/portfolio/fidias1.webp",
       "../assets/img/portfolio/fidias2.webp",
