@@ -200,6 +200,23 @@ body {
   box-shadow: 10px 4px 25px rgba(170, 197, 229, 0.7);
 }
 
+/* Estilos para tarjetas de plan */
+.plan-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.selected-card {
+  border: 2px solid #0d6efd !important;
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3) !important;
+  background-color: rgba(13, 110, 253, 0.05);
+}
+
 /* Servicios Head */
 #servicios_head_text {
   padding-top: 7%;

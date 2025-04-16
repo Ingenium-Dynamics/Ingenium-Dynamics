@@ -573,6 +573,11 @@
                       <!-- Contenedor para mensajes de alerta -->
                       <div class="alert-msg mt-3" style="display: none;"></div>
                       
+                      <!-- hCaptcha -->
+                      <div class="mb-4">
+                        <div class="h-captcha" data-sitekey="322a5f52-14a4-4696-a556-603c573070d0" data-callback="onCaptchaVerified"></div>
+                      </div>
+                      
                       <!-- Botón de envío modernizado -->
                       <div class="d-grid">
                         <button type="submit" class="btn btn-primary btn-lg py-3">
@@ -861,6 +866,11 @@
                         <!-- Contenedor para mensajes de alerta -->
                         <div class="alert-msg mt-3" style="display: none;"></div>
                         
+                        <!-- hCaptcha -->
+                        <div class="mb-4">
+                          <div class="h-captcha" data-sitekey="322a5f52-14a4-4696-a556-603c573070d0" data-callback="onCaptchaVerified"></div>
+                        </div>
+                        
                         <!-- Botón de envío modernizado -->
                         <div class="d-grid">
                           <button type="submit" class="btn btn-primary btn-lg py-3">
@@ -981,6 +991,11 @@
                       
                       <!-- Contenedor para mensajes de alerta -->
                       <div class="alert-msg mt-3" style="display: none;"></div>
+                      
+                      <!-- hCaptcha -->
+                      <div class="mb-4">
+                        <div class="h-captcha" data-sitekey="322a5f52-14a4-4696-a556-603c573070d0" data-callback="onCaptchaVerified"></div>
+                      </div>
                       
                       <!-- Botón de envío modernizado -->
                       <div class="d-grid">
@@ -1224,24 +1239,6 @@
         const forms = document.querySelectorAll('.needs-validation');
         
         Array.from(forms).forEach(form => {
-          form.addEventListener('submit', function(event) {
-            if (!form.checkValidity()) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      });
-    </script>
-
-    <!-- Script para validación de formularios Bootstrap -->
-    <script>
-      // Inicializar la validación de Bootstrap para todos los formularios
-      document.addEventListener('DOMContentLoaded', function() {
-        const forms = document.querySelectorAll('.needs-validation');
-        
-        Array.from(forms).forEach(form => {
           // Aplicar validación antes del envío del formulario
           form.addEventListener('submit', function(event) {
             // Solo aplicar la validación visual, no detener el envío
@@ -1252,6 +1249,32 @@
           }, false);
         });
       });
+    </script>
+
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    
+    <!-- Función para manejar la verificación del captcha -->
+    <script>
+      function onCaptchaVerified(token) {
+        console.log("Captcha verificado exitosamente con token:", token);
+        // Almacenar el token en un campo oculto para que sea accesible durante el envío del formulario
+        document.querySelectorAll('.h-captcha').forEach(function(captcha) {
+          const form = captcha.closest('form');
+          if (form) {
+            // Verificar si ya existe un campo para el token
+            let tokenInput = form.querySelector('input[name="h-captcha-response"]');
+            if (!tokenInput) {
+              // Si no existe, crear uno nuevo
+              tokenInput = document.createElement('input');
+              tokenInput.type = 'hidden';
+              tokenInput.name = 'h-captcha-response';
+              form.appendChild(tokenInput);
+            }
+            // Establecer el valor del token
+            tokenInput.value = token;
+          }
+        });
+      }
     </script>
   </body>
 </html>

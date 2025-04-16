@@ -32,6 +32,10 @@ function sendMessageToSNS(name, email, message, additionalData = {}, topicArn = 
         });
     }
     
+    // Depuración: Mostrar información del mensaje a enviar
+    console.log(`Enviando mensaje a SNS: Tópico ${topicArn}`);
+    console.log(`Datos a enviar: Nombre=${name}, Email=${email}`);
+    
     const params = {
         Message: messageContent,
         TopicArn: topicArn
@@ -105,9 +109,12 @@ function checkRateLimit() {
 function collectFormData(form) {
     const formData = {};
     
-    // Recopilar inputs
+    // Recopilar inputs, excluyendo campos relacionados con captcha
     form.querySelectorAll('input:not([type="radio"]):not([type="checkbox"]), textarea, select').forEach(input => {
-        if (input.name && input.value.trim()) {
+        if (input.name && input.value.trim() && 
+            input.name !== 'h-captcha-response' && 
+            input.name !== 'g-recaptcha-response' &&
+            !input.name.includes('captcha')) {
             formData[input.name] = input.value.trim();
         }
     });
@@ -148,6 +155,48 @@ document.addEventListener('DOMContentLoaded', function() {
     forms.forEach(form => {
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
+            
+            // Verificar captcha - Método mejorado para obtener el valor de hCaptcha
+            let hcaptchaResponse = '';
+            try {
+                // Primero, intentar obtener el token desde el API global de hCaptcha
+                if (window.hcaptcha) {
+                    hcaptchaResponse = window.hcaptcha.getResponse();
+                }
+                
+                // Si no se obtiene de la primera forma, buscar un campo oculto que podría tener el token
+                if (!hcaptchaResponse) {
+                    const captchaInput = this.querySelector('input[name="h-captcha-response"]');
+                    if (captchaInput && captchaInput.value) {
+                        hcaptchaResponse = captchaInput.value;
+                    }
+                }
+                
+                // Si aún no hay token, buscar el campo generado automáticamente por hCaptcha
+                if (!hcaptchaResponse) {
+                    const captchaTextarea = document.querySelector('textarea[name="h-captcha-response"]');
+                    if (captchaTextarea && captchaTextarea.value) {
+                        hcaptchaResponse = captchaTextarea.value;
+                    }
+                }
+                
+                // Verificación adicional: buscar en todos los iframes de hCaptcha
+                if (!hcaptchaResponse) {
+                    const captchaIframe = this.querySelector('.h-captcha iframe');
+                    if (captchaIframe) {
+                        console.log("Se encontró el iframe de hCaptcha, pero no se pudo obtener el token directamente");
+                    }
+                }
+                
+                console.log("Estado del captcha:", hcaptchaResponse ? "Token obtenido" : "No se pudo obtener token");
+            } catch (error) {
+                console.error("Error al verificar hCaptcha:", error);
+            }
+            
+            if (!hcaptchaResponse) {
+                showMessage("Por favor completa el captcha antes de enviar el formulario", "error", this);
+                return;
+            }
             
             // Verificar el límite de envíos
             const rateLimitCheck = checkRateLimit();
@@ -196,6 +245,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 delete formData.email;
                 delete formData.message;
                 
+                // Eliminar cualquier token de captcha para no enviarlos por SNS
+                delete formData.captchaToken;
+                delete formData['h-captcha-response'];
+                delete formData['g-recaptcha-response'];
+                
                 // Enviar el mensaje al tópico correspondiente
                 await sendMessageToSNS(name, email, message, formData, topicArn);
                 showMessage("Tu mensaje ha sido enviado con éxito. Gracias!", "success", this);
@@ -213,6 +267,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Resetear completamente el formulario para eliminar la validación
                 this.classList.remove('was-validated');
                 
+                // Restablecer el captcha
+                if (window.hcaptcha) {
+                    try {
+                        window.hcaptcha.reset();
+                        console.log("hCaptcha reiniciado correctamente");
+                    } catch (e) {
+                        console.error("Error al reiniciar hCaptcha:", e);
+                    }
+                }
+                
+                // También limpiar cualquier campo oculto relacionado con el captcha
+                const hiddenCaptchaInputs = this.querySelectorAll('input[name="h-captcha-response"]');
+                hiddenCaptchaInputs.forEach(input => {
+                    input.value = '';
+                });
+                
                 // Dar tiempo para que se complete la animación y luego ocultar cualquier alerta después de 5 segundos
                 setTimeout(() => {
                     const alertMsg = this.querySelector('.alert-msg');
@@ -221,6 +291,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 }, 5000);
             } catch (error) {
+                console.error("Error al procesar el formulario:", error);
                 showMessage("Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.", "error", this);
             } finally {
                 submitButton.disabled = false;
