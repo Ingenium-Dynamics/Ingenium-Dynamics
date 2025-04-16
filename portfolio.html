@@ -3,26 +3,54 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Portafolio - Ingenium Portafolio</title>
-    <meta name="description" content="Especialistas en desarrollo de aplicaciones web y sitios web estáticos. Soluciones personalizadas con Django, diseños responsive, integración con bases de datos y optimización SEO para empresas y emprendedores." />
-    <meta name="keywords" content="desarrollo web, aplicaciones web personalizadas, sitios web estáticos, Django, diseño responsive, bases de datos, SEO, desarrollo a medida, código seguro, soluciones digitales, empresas, emprendedores" />
+    <title>Portafolio | Ingenium Dynamics - Proyectos y Casos de Éxito</title>
+    <meta name="description" content="Descubre nuestro portafolio de proyectos web y aplicaciones. Casos de éxito en desarrollo web, aplicaciones móviles y soluciones digitales personalizadas. Ver ejemplos de nuestro trabajo." />
+    <meta name="keywords" content="portafolio desarrollo web, proyectos web, casos de éxito, aplicaciones web, desarrollo Django, diseño responsive, proyectos digitales, ejemplos de trabajo, desarrollo a medida" />
+    <meta name="author" content="Ingenium Dynamics" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit-after" content="7 days" />
 
-          <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ingeniumdynamics.com/" />
-    <meta property="og:title" content="Ingenium Dynamics - Desarrollo de Aplicaciones Web y Sitios Web Estáticos" />
-    <meta property="og:description" content="Especialistas en desarrollo de aplicaciones web y sitios web estáticos. Soluciones personalizadas con Django, diseños responsive, integración con bases de datos y optimización SEO para empresas y emprendedores." />
+    <meta property="og:url" content="https://ingeniumdynamics.com/portfolio.html" />
+    <meta property="og:title" content="Portafolio | Ingenium Dynamics - Proyectos y Casos de Éxito" />
+    <meta property="og:description" content="Descubre nuestro portafolio de proyectos web y aplicaciones. Casos de éxito en desarrollo web, aplicaciones móviles y soluciones digitales personalizadas. Ver ejemplos de nuestro trabajo." />
     <meta property="og:image" content="assets/img/Logo V3/ingeniumdynamics.png" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:site_name" content="Ingenium Dynamics" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://ingeniumdynamics.com/" />
-    <meta property="twitter:title" content="Ingenium Dynamics - Desarrollo de Aplicaciones Web y Sitios Web Estáticos" />
-    <meta property="twitter:description" content="Especialistas en desarrollo de aplicaciones web y sitios web estáticos. Soluciones personalizadas con Django, diseños responsive, integración con bases de datos y optimización SEO para empresas y emprendedores." />
-    <meta property="twitter:image" content="assets/img/Logo V3/ingeniumdynamics.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://ingeniumdynamics.com/portfolio.html" />
+    <meta name="twitter:title" content="Portafolio | Ingenium Dynamics - Proyectos y Casos de Éxito" />
+    <meta name="twitter:description" content="Descubre nuestro portafolio de proyectos web y aplicaciones. Casos de éxito en desarrollo web, aplicaciones móviles y soluciones digitales personalizadas. Ver ejemplos de nuestro trabajo." />
+    <meta name="twitter:image" content="assets/img/Logo V3/ingeniumdynamics.png" />
+    <meta name="twitter:creator" content="@IngeniumDynamics" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ingeniumdynamics.com/portfolio.html" />
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Portafolio de Ingenium Dynamics",
+      "description": "Descubre nuestro portafolio de proyectos web y aplicaciones. Casos de éxito en desarrollo web, aplicaciones móviles y soluciones digitales personalizadas.",
+      "url": "https://ingeniumdynamics.com/portfolio.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Ingenium Dynamics",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ingeniumdynamics.com/assets/img/Logo V3/Logo_ID_1.png"
+        }
+      }
+    }
+    </script>
 
     <!-- Favicons -->
     <link href="assets/img/favicon_io/favicon.ico" rel="icon" sizes="any" />
@@ -85,46 +113,78 @@
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
     />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/js/main.js" as="script">
+    <link rel="preload" href="assets/img/Logo V3/Logo_ID_1.png" as="image">
+    
+    <!-- Additional Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "WebSite",
+            "name": "Haras Los Pellines",
+            "url": "https://haraslospellines.com",
+            "description": "Sitio web elegante y funcional para una caballeriza de élite"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "WebSite",
+            "name": "LanguageLife",
+            "url": "https://languagelife.com",
+            "description": "Plataforma digital para academia de idiomas y arte"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
 
   <body class="portfolio-page">
-    <header id="header" class="header d-flex align-items-center fixed-top">
-      <div
-        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
-      >
-        <a href="index.html" class="logo d-flex align-items-center">
-          <img src="assets/img/Logo V3/Logo_ID_1.png" alt="" />
-          <!-- <h1 class="sitename">Ingenium Dynamics</h1> -->
+    <header id="header" class="header d-flex align-items-center fixed-top" role="banner">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center" aria-label="Ingenium Dynamics - Inicio">
+          <img src="assets/img/Logo V3/Logo_ID_1.png" alt="Ingenium Dynamics Logo" width="200" height="50" loading="eager">
         </a>
 
-        <nav id="navmenu" class="navmenu">
+        <nav id="navmenu" class="navmenu" aria-label="Navegación principal" role="navigation">
           <ul>
             <li>
-              <a href="index.html"
-                ><i width="50" height="50" class="bi bi-house-door-fill"></i
-              ></a>
+              <a href="index.html" aria-label="Ir a inicio">
+                <i width="50" height="50" class="bi bi-house-door-fill" aria-hidden="true"></i>
+                <span class="visually-hidden">Inicio</span>
+              </a>
             </li>
             <li><a href="services.html">Servicios</a></li>
-            <li><a href="portfolio.html" class="active">Portafolio</a></li>
-
+            <li><a href="portfolio.html" class="active" aria-current="page">Portafolio</a></li>
             <li><a href="contact.html">Contacto</a></li>
             <li>
-              <a href="#"
-                ><img id="banderas" src="assets/img/espana.webp"
-              /></a>
+              <a href="#" aria-label="Versión en español">
+                <img id="banderas" src="assets/img/espana.webp" alt="Español" width="24" height="16" loading="lazy">
+              </a>
             </li>
             <li>
-              <a href="en/portfolio.html"
-                ><img id="banderas" src="assets/img/usa.webp"
-              /></a>
+              <a href="en/portfolio.html" aria-label="English version">
+                <img id="banderas" src="assets/img/usa.webp" alt="English" width="24" height="16" loading="lazy">
+              </a>
             </li>
             <li>
-              <a href="fr/portfolio.html"
-                ><img id="banderas" src="assets/img/francia.webp"
-              /></a>
+              <a href="fr/portfolio.html" aria-label="Version française">
+                <img id="banderas" src="assets/img/francia.webp" alt="Français" width="24" height="16" loading="lazy">
+              </a>
             </li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <button class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Menú móvil" aria-expanded="false"></button>
         </nav>
       </div>
 
@@ -162,46 +222,49 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main" role="main">
       <!-- Page Title -->
       <div id="hportfolio" class="page-title dark-background">
         <div class="container position-relative">
           <h1 id="head_text">Portafolio</h1>
           <p>
-            Explora nuestros proyectos más destacados, donde combinamos
-            creatividad, innovación y tecnología para ofrecer soluciones que
-            transforman ideas en realidades digitales.
+            Descubre nuestra colección de proyectos digitales donde la innovación 
+            se encuentra con la excelencia técnica. Cada proyecto representa nuestro 
+            compromiso con soluciones web de alto impacto que transforman negocios.
           </p>
-          <nav class="breadcrumbs">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
             <ol>
               <li><a href="index.html">Inicio</a></li>
-              <li class="current">Portafolio</li>
+              <li class="current" aria-current="page">Portafolio</li>
             </ol>
           </nav>
         </div>
       </div>
       <!-- End Page Title -->
 
-      <section id="portafolioweb" class="portafolio section">
+      <section id="portafolioweb" class="portafolio section" aria-labelledby="projects-heading">
         <div class="container py-5" id="projects">
-          <h2 class="text-center mb-5" data-aos="fade-up">
-            Proyectos Realizados
+          <h2 id="projects-heading" class="text-center mb-5" data-aos="fade-up">
+            Nuestros Proyectos Destacados
           </h2>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Haras Los Pellines  -->
             <div class="col" data-aos="fade-up" data-aos-delay="100">
-              <div class="card shadow-sm" onclick="showModal(1)">
+              <div class="card shadow-sm" onclick="showModal(1)" role="button" tabindex="0" aria-label="Ver detalles de Haras Los Pellines">
                 <img
                   src="./assets/img/portfolio/haras_los_pellines.webp"
                   class="card-img-top img-fluid"
-                  alt="Haras Los Pellines"
+                  alt="Haras Los Pellines - Sitio web de caballeriza de élite"
+                  width="400"
+                  height="300"
+                  loading="lazy"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Haras Los Pellines</h5>
                   <p class="card-text">
-                    Landing Page creada utilizando HTML, CSS, Bootstrap y
-                    JavaScript, con un formulario de contacto implementado en
-                    tecnologías de AWS.
+                    Sitio web elegante y funcional para una caballeriza de élite, 
+                    desarrollado con tecnologías modernas. Incluye formulario de contacto 
+                    integrado con AWS para una gestión eficiente de consultas.
                   </p>
                 </div>
               </div>
@@ -213,14 +276,14 @@
                 <img
                   src="./assets/img/portfolio/languagelife1.webp"
                   class="card-img-top img-fluid"
-                  alt="Proyecto 2"
+                  alt="LanguageLife - Academia de idiomas y arte con galería virtual"
                 />
                 <div class="card-body">
                   <h5 class="card-title">LanguageLife</h5>
                   <p class="card-text">
-                    LandingPage para Academia de Idiomas y arte, con una
-                    apartado Galería con las pinturas realizadas y un historial
-                    de las exposiciones en las cuales se ha participado.
+                    Plataforma digital para una academia de idiomas y arte, 
+                    destacando una galería virtual de obras y un archivo histórico 
+                    de exposiciones. Diseño elegante que fusiona educación y arte.
                   </p>
                 </div>
               </div>
@@ -232,14 +295,16 @@
                 <img
                   src="./assets/img/portfolio/alexoyarzun1.webp"
                   class="card-img-top img-fluid"
-                  alt="www.psicologoalexoyarzun.com"
+                  alt="Psicólogo Alex Oyarzún - Sitio web profesional de psicología"
                 />
                 <div class="card-body">
                   <h5 class="card-title">
-                    Landing Page - Psicólogo Alex Oyarzún
+                    Psicólogo Alex Oyarzún
                   </h5>
                   <p class="card-text">
-                    Landing Page - Psicólogo Alex Oyarzún.
+                    Landing page profesional diseñada para un psicólogo clínico, 
+                    enfocada en generar confianza y facilitar el contacto con 
+                    potenciales pacientes.
                   </p>
                 </div>
               </div>
@@ -251,13 +316,14 @@
                 <img
                   src="./assets/img/portfolio/nicocastro1.webp"
                   class="card-img-top img-fluid"
-                  alt="https://www.nicocastrophotography.com/"
+                  alt="Nicolás Castro Fotografía - Portafolio profesional multilingüe"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Nicolás Castro Fotógrafo</h5>
+                  <h5 class="card-title">Nicolás Castro Fotografía</h5>
                   <p class="card-text">
-                    LandingPage Multilingüal para fotógrafo profesional Nicolás
-                    Castro
+                    Portafolio digital multilingüe para un fotógrafo profesional, 
+                    diseñado para mostrar su trabajo a una audiencia internacional 
+                    y facilitar la captación de clientes.
                   </p>
                 </div>
               </div>
@@ -269,12 +335,14 @@
                 <img
                   src="./assets/img/portfolio/fidias1.webp"
                   class="card-img-top img-fluid"
-                  alt="fidiasplace"
+                  alt="Fidias Place - Academia de baile con presencia digital"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Fidias Place</h5>
                   <p class="card-text">
-                    LandingPage de una academia de Salsa y Bachata
+                    Sitio web dinámico para una academia de Salsa y Bachata, 
+                    diseñado para atraer estudiantes y mostrar la pasión por 
+                    el baile a través de una experiencia digital envolvente.
                   </p>
                 </div>
               </div>
@@ -283,15 +351,19 @@
             <!-- Proyecto 6 -->
             <div class="col" data-aos="fade-up" data-aos-delay="600">
               <div class="card shadow-sm">
-                <!--onclick="showModal(6)"-->
                 <img
                   src="./assets/img/portfolio/tuweb.webp"
                   class="card-img-top img-fluid"
-                  alt="tu web"
+                  alt="Tu próximo proyecto web con Ingenium Dynamics"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Aquí podría estar, tu Web</h5>
-                  <p class="card-text">Aquí podría estar, tu Web</p>
+                  <h5 class="card-title">Tu Próximo Proyecto Digital</h5>
+                  <p class="card-text">
+                    ¿Listo para transformar tu idea en realidad? Permítenos 
+                    crear tu sitio web personalizado con las últimas tecnologías 
+                    y un diseño que destaque tu marca.
+                  </p>
+                  <a href="contact.html" class="btn btn-primary mt-3" aria-label="Contactenos para comenzar con su proyecto">Contactenos</a>
                 </div>
               </div>
             </div>
@@ -305,14 +377,14 @@
           tabindex="-1"
           aria-labelledby="projectModalLabel"
           aria-hidden="true"
+          role="dialog"
         >
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="projectModalLabel">
-                  Título del Proyecto
+                  Detalles del Proyecto
                 </h5>
-
                 <button
                   type="button"
                   class="btn-close"
@@ -339,7 +411,7 @@
                       class="carousel-control-prev-icon"
                       aria-hidden="true"
                     ></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden">Anterior</span>
                   </button>
                   <button
                     class="carousel-control-next"
@@ -351,7 +423,7 @@
                       class="carousel-control-next-icon"
                       aria-hidden="true"
                     ></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden">Siguiente</span>
                   </button>
                 </div>
                 <p id="projectDescription" class="mt-3">
@@ -363,7 +435,7 @@
                     href="#"
                     target="_blank"
                     class="text-primary"
-                    >Visitar sitio web</a
+                    >Explorar sitio web</a
                   >
                 </h6>
               </div>
@@ -373,25 +445,30 @@
       </section>
       <!-- Portfolio Section -->
     </main>
-    <section id="include-footer"></section>
+    <section id="include-footer" role="contentinfo"></section>
 
     <!-- Scroll Top -->
     <a
       href="#"
       id="scroll-top"
       class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+      aria-label="Volver arriba"
+      role="button"
+    >
+      <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
+    </a>
 
     <!-- Preloader -->
-    <div id="preloader"></div>
+    <div id="preloader" aria-hidden="true"></div>
 
     <!-- Vendor JS Files -->
 
     <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/scripts_after.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
+    <script src="assets/js/scripts_after.js" defer></script>
+    <script src="assets/js/portafolio_es.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
 
     <script>
       fetch("footer.html")
@@ -404,8 +481,6 @@
             new Date().getFullYear();
         });
     </script>
-    <script src="assets/js/portafolio_es.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
       AOS.init({
         duration: 1000,
