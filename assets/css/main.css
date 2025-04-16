@@ -2533,3 +2533,14 @@ section,
 .why_ingenium_text {
   padding: 5% 0;
 }
+
+/*OBEJTIVOS EMPRESA*/
+#objetivos-empresa {
+  background-color: #416687;
+  background-image: -webkit-linear-gradient(90deg, #416687 70%, #f4f8fb 30%);
+}
+
+#objetivos-empresa p {
+  font-weight: 300;
+  font-size: 15px;
+}
