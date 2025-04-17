@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: "Haras los Pellines",
     description:
-      "Página de aterrizaje creada utilizando HTML, CSS, Bootstrap y JavaScript, con un formulario de contacto implementado mediante tecnologías de AWS.",
+      "LandingPage creada utilizando HTML, CSS, Bootstrap y JavaScript, con un formulario de contacto implementado mediante tecnologías de AWS.",
     images: [
       "./assets/img/portfolio/haras_los_pellines.webp",
       "./assets/img/portfolio/haras_los_pellines01.webp",
@@ -40,7 +40,7 @@ const projects = [
     id: 4,
     title: "Nico Castro Photography",
     description:
-      "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales",
+      "LandingPage profesional, para fotógrafo Nicolas Castro. Presenta al profesional, sus servicios, sus redes sociales y algo de su trabajo",
     images: [
       "./assets/img/portfolio/nicocastro1.webp",
       "./assets/img/portfolio/nicocastro2.webp",
@@ -52,7 +52,7 @@ const projects = [
     id: 5,
     title: "Fidias Place",
     description:
-      "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales",
+      "LandingPage profesional, para academia de baile, con detalles de sus servicios y horarios.",
     images: [
       "./assets/img/portfolio/fidias1.webp",
       "./assets/img/portfolio/fidias2.webp",

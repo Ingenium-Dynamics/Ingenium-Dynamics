@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: "Haras los Pellines",
     description:
-      "Page d'atterrissage créée en utilisant HTML, CSS, Bootstrap et JavaScript, avec un formulaire de contact implémenté à l'aide des technologies AWS.",
+      "Landing page créée en utilisant HTML, CSS, Bootstrap et JavaScript, avec un formulaire de contact implémenté à l'aide des technologies AWS.",
     images: [
       "../assets/img/portfolio/haras_los_pellines.webp",
       "../assets/img/portfolio/haras_los_pellines01.webp",
@@ -40,7 +40,7 @@ const projects = [
     id: 4,
     title: "Nico Castro Photography",
     description:
-      "Landing page professionnelle présentant le professionnel, ses services et ses réseaux sociaux.",
+      "Page d'accueil professionnelle pour le photographe Nicolas Castro. Elle présente le professionnel, ses services, ses réseaux sociaux et quelques-uns de ses travaux",
     images: [
       "../assets/img/portfolio/nicocastro1.webp",
       "../assets/img/portfolio/nicocastro2.webp",
@@ -52,7 +52,7 @@ const projects = [
     id: 5,
     title: "Fidias Place",
     description:
-      "Landing page professionnelle présentant le professionnel, ses services et ses réseaux sociaux.",
+      "Page d'accueil professionnelle pour une académie de danse, avec des détails sur ses services et ses horaires.",
     images: [
       "../assets/img/portfolio/fidias1.webp",
       "../assets/img/portfolio/fidias2.webp",
