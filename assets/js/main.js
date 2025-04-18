@@ -35,7 +35,6 @@
         mobileNavToogle();
       }
     });
-
   });
 
   /**
@@ -264,5 +263,51 @@
 
   // Inicializar los botones de solicitud cuando el DOM esté completamente cargado
   document.addEventListener('DOMContentLoaded', initPlanRequestButtons);
+
+  /**
+   * Mejora para la visualización de los botones de idioma en móvil
+   */
+  function enhanceMobileLanguageButtons() {
+    // Solo ejecutar en dispositivos móviles
+    if (window.innerWidth <= 1199) {
+      // Obtener los elementos de idioma (los 3 últimos del menú)
+      const menuItems = document.querySelectorAll('#navmenu ul li');
+      const langItems = Array.from(menuItems).slice(-3);
+      
+      // Crear un contenedor para los idiomas si no existe
+      if (!document.querySelector('.language-flags')) {
+        const langContainer = document.createElement('div');
+        langContainer.className = 'language-flags';
+        
+        // Mover los elementos de idioma al contenedor
+        langItems.forEach(item => {
+          // Agregar clase active al idioma actual
+          const link = item.querySelector('a');
+          const currentPath = window.location.pathname;
+          const langPath = link.getAttribute('href');
+          
+          // Comprobar si estamos en la página de este idioma
+          if (currentPath.includes(langPath) || 
+              (langPath.includes('index.html') && currentPath === '/')) {
+            link.classList.add('active');
+          }
+          
+          langContainer.appendChild(item);
+        });
+        
+        // Agregar el contenedor al final del menú
+        const navmenu = document.querySelector('#navmenu ul');
+        if (navmenu) {
+          navmenu.appendChild(langContainer);
+        }
+      }
+    }
+  }
+  
+  // Ejecutar al cargar la página
+  window.addEventListener('load', enhanceMobileLanguageButtons);
+  
+  // Ejecutar cuando se redimensiona la ventana
+  window.addEventListener('resize', enhanceMobileLanguageButtons);
 
 })();

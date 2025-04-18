@@ -437,18 +437,121 @@ h6 {
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
-    border-radius: 6px;
+    border-radius: 12px; /* Bordes más redondeados */
     background-color: var(--nav-mobile-background-color);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
   }
 
+  /* Sección de idiomas */
+  .navmenu ul::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 1px;
+    margin: 15px auto;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
+  }
+
+  /* Texto de idiomas dependiendo del idioma actual (usando atributos de idioma) */
+  html[lang="es"] .navmenu ul::before {
+    content: 'Idiomas';
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: var(--default-color);
+    opacity: 0.7;
+    margin: 10px 0;
+    font-weight: 500;
+  }
+  
+  html[lang="en"] .navmenu ul::before {
+    content: 'Languages';
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: var(--default-color);
+    opacity: 0.7;
+    margin: 10px 0;
+    font-weight: 500;
+  }
+  
+  html[lang="fr"] .navmenu ul::before {
+    content: 'Langues';
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: var(--default-color);
+    opacity: 0.7;
+    margin: 10px 0;
+    font-weight: 500;
+  }
+
+  /* Contenedor de flags en el footer */
+  .language-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+  }
+
+  /* Contenedor para banderas de idioma */
+  .language-flags-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+    padding: 0 15px;
+  }
+
+  /* Esto afecta a los tres últimos elementos (los idiomas) */
+  .navmenu li:nth-last-child(-n+3) {
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+    padding: 5px 0;
+  }
+
+  .navmenu li:nth-last-child(-n+3) a {
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    border: none;
+  }
+
+  .navmenu li:nth-last-child(-n+3) a:hover,
+  .navmenu li:nth-last-child(-n+3) a.active {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+  }
+
+  /* Mejora en los iconos de banderas */
+  #banderas {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    object-fit: cover;
+  }
+  
+  .navmenu li:nth-last-child(-n+3) a:hover #banderas {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Mejoras en los elementos de navegación */
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
-    padding: 10px 20px;
+    padding: 12px 20px; /* Más espacio vertical */
     font-family: var(--nav-font);
     font-size: 17px;
     font-weight: 500;
@@ -456,12 +559,15 @@ h6 {
     align-items: center;
     justify-content: space-between;
     white-space: nowrap;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent; /* Borde izquierdo para efecto hover */
+    margin: 4px 10px; /* Márgenes horizontales para mejor apariencia */
+    border-radius: 6px; /* Bordes redondeados para cada elemento de menú */
   }
 
   .navmenu a i,
   .navmenu a:focus i {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0;
     margin-left: 5px;
     width: 30px;
@@ -478,12 +584,16 @@ h6 {
   .navmenu a:focus i:hover {
     background-color: var(--accent-color);
     color: var(--contrast-color);
+    transform: scale(1.1); /* Leve efecto de escala */
   }
 
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
+    background-color: rgba(104, 164, 196, 0.1); /* Fondo sutil al hacer hover */
+    border-left-color: var(--accent-color); /* Borde en el color de acento */
+    padding-left: 23px; /* Pequeño desplazamiento a la derecha */
   }
 
   .navmenu .active i,
@@ -491,6 +601,43 @@ h6 {
     background-color: var(--accent-color);
     color: var(--contrast-color);
     transform: rotate(180deg);
+  }
+
+  /* Estilos mejorados para los idiomas */
+  .navmenu li:nth-last-child(-n+3) a {
+    padding: 8px 15px;
+    margin: 5px;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  /* Contenedor de idiomas */
+  .navmenu li:nth-last-child(-n+3) {
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* Contenedor para los botones de idioma */
+  .navmenu ul:after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 1px;
+    margin: 10px auto;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  #banderas {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .navmenu li:nth-last-child(-n+3) a:hover #banderas {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .navmenu .dropdown ul {
@@ -501,7 +648,8 @@ h6 {
     margin: 10px 20px;
     background-color: var(--nav-dropdown-background-color);
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    box-shadow: none;
+    border-radius: 8px; /* Más consistente con el diseño general */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.5s ease-in-out;
   }
 
@@ -512,6 +660,7 @@ h6 {
   .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
+    border-radius: 8px; /* Más consistente con el diseño general */
   }
 
   .mobile-nav-active {
@@ -526,6 +675,19 @@ h6 {
     right: 15px;
     margin-right: 0;
     z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .mobile-nav-active .mobile-nav-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: rotate(90deg);
   }
 
   .mobile-nav-active .navmenu {
@@ -533,11 +695,77 @@ h6 {
     overflow: hidden;
     inset: 0;
     background: rgba(33, 37, 41, 0.8);
+    backdrop-filter: blur(4px); /* Efecto de desenfoque para mayor profesionalidad */
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu > ul {
+  /* Contenedor de banderas de idioma centrado */
+  .mobile-nav-active .navmenu ul {
     display: block;
+    padding: 15px 0; /* Algo más de padding */
+    animation: fadeInRight 0.5s ease forwards; /* Animación de entrada */
+  }
+  
+  /* Animación de aparición para el menú */
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Creamos un contenedor flex para las banderas */
+  .mobile-nav-active .navmenu ul .language-flags {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Separador entre enlaces de menú */
+  .navmenu a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Mejorar aspecto visual en modo oscuro */
+  .dark-background .navmenu ul {
+    background-color: rgba(40, 40, 40, 0.95);
+  }
+  
+  .dark-background .navmenu ul::after {
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+  }
+  
+  .dark-background .navmenu a:not(:last-child)::after {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .dark-background html[lang="es"] .navmenu ul::before,
+  .dark-background html[lang="en"] .navmenu ul::before,
+  .dark-background html[lang="fr"] .navmenu ul::before {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Estilos específicos para dispositivos muy pequeños */
+  @media (max-width: 320px) {
+    .navmenu li:nth-last-child(-n+3) a {
+      width: 40px;
+      height: 40px;
+    }
+    
+    #banderas {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
