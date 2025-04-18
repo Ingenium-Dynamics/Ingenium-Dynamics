@@ -14,6 +14,19 @@
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
 
+  // Ajustar altura del encabezado en dispositivos móviles
+  function adjustHeaderHeight() {
+    const headerHeight = document.querySelector('#header').offsetHeight;
+    if (window.innerWidth <= 768) {
+      document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+    } else {
+      document.documentElement.style.removeProperty('--header-height');
+    }
+  }
+
+  window.addEventListener('load', adjustHeaderHeight);
+  window.addEventListener('resize', adjustHeaderHeight);
+
   /**
    * Mobile nav toggle
    */
