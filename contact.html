@@ -186,6 +186,27 @@
           padding: 0.75rem;
         }
       }
+      
+      /* Estilos para centrar el captcha y hacerlo responsive */
+      .h-captcha {
+        display: inline-block;
+        margin: 0 auto;
+      }
+      
+      @media (max-width: 576px) {
+        .h-captcha iframe {
+          max-width: 100%;
+          transform: scale(0.9);
+          transform-origin: center;
+          margin: 0 auto;
+        }
+      }
+      
+      @media (max-width: 400px) {
+        .h-captcha iframe {
+          transform: scale(0.85);
+        }
+      }
     </style>
   </head>
 
@@ -635,7 +656,7 @@
                       <div class="alert-msg mt-3" style="display: none;"></div>
                       
                       <!-- hCaptcha -->
-                      <div class="mb-4">
+                      <div class="mb-4 d-flex justify-content-center">
                         <div class="h-captcha" data-sitekey="322a5f52-14a4-4696-a556-603c573070d0" data-callback="onCaptchaVerified"></div>
                       </div>
                       
@@ -928,7 +949,7 @@
                         <div class="alert-msg mt-3" style="display: none;"></div>
                         
                         <!-- hCaptcha -->
-                        <div class="mb-4">
+                        <div class="mb-4 d-flex justify-content-center">
                           <div class="h-captcha" data-sitekey="322a5f52-14a4-4696-a556-603c573070d0" data-callback="onCaptchaVerified"></div>
                         </div>
                         
@@ -1054,7 +1075,7 @@
                       <div class="alert-msg mt-3" style="display: none;"></div>
                       
                       <!-- hCaptcha -->
-                      <div class="mb-4">
+                      <div class="mb-4 d-flex justify-content-center">
                         <div class="h-captcha" data-sitekey="322a5f52-14a4-4696-a556-603c573070d0" data-callback="onCaptchaVerified"></div>
                       </div>
                       
@@ -1336,6 +1357,26 @@
           }
         });
       }
+      
+      // Función para ajustar el tamaño del captcha en dispositivos móviles
+      function adjustCaptchaSize() {
+        const width = window.innerWidth;
+        const captchaContainers = document.querySelectorAll('.h-captcha');
+        
+        if (width <= 400) {
+          captchaContainers.forEach(container => {
+            container.setAttribute('data-size', 'compact');
+          });
+        } else {
+          captchaContainers.forEach(container => {
+            container.removeAttribute('data-size');
+          });
+        }
+      }
+      
+      // Ejecutar al cargar y al cambiar el tamaño de la ventana
+      window.addEventListener('load', adjustCaptchaSize);
+      window.addEventListener('resize', adjustCaptchaSize);
     </script>
   </body>
 </html>
