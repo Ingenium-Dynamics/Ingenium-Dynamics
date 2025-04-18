@@ -2533,3 +2533,29 @@ section,
 .why_ingenium_text {
   padding: 5% 0;
 }
+
+/* Estilos para centrar el captcha y hacerlo responsive */
+.h-captcha {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.mb-4.d-flex.justify-content-center {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+@media (max-width: 576px) {
+  .h-captcha iframe {
+    max-width: 100%;
+    transform: scale(0.9);
+    transform-origin: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .h-captcha iframe {
+    transform: scale(0.85);
+  }
+}

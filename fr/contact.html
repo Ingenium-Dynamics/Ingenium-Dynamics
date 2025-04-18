@@ -620,7 +620,7 @@
                       <div class="alert-msg mt-3" style="display: none;"></div>
                       
                       <!-- hCaptcha -->
-                      <div class="mb-4">
+                      <div class="mb-4 d-flex justify-content-center">
                         <div class="h-captcha" data-sitekey="322a5f52-14a4-4696-a556-603c573070d0" data-callback="onCaptchaVerified"></div>
                       </div>
                       
@@ -914,7 +914,7 @@
                         <div class="alert-msg mt-3" style="display: none;"></div>
                         
                         <!-- hCaptcha -->
-                        <div class="mb-4">
+                        <div class="mb-4 d-flex justify-content-center">
                           <div class="h-captcha" data-sitekey="322a5f52-14a4-4696-a556-603c573070d0" data-callback="onCaptchaVerified"></div>
                         </div>
                         
@@ -1039,7 +1039,7 @@
                       <div class="alert-msg mt-3" style="display: none;"></div>
                       
                       <!-- hCaptcha -->
-                      <div class="mb-4">
+                      <div class="mb-4 d-flex justify-content-center">
                         <div class="h-captcha" data-sitekey="322a5f52-14a4-4696-a556-603c573070d0" data-callback="onCaptchaVerified"></div>
                       </div>
                       
@@ -1266,25 +1266,45 @@
     <!-- Función para manejar la verificación del captcha -->
     <script>
       function onCaptchaVerified(token) {
-        console.log("Captcha vérifié avec succès avec token:", token);
-        // Stocker le token dans un champ caché pour qu'il soit accessible lors de la soumission du formulaire
+        console.log("Captcha vérifié avec succès avec le jeton:", token);
+        // Store the token in a hidden field to be accessible during form submission
         document.querySelectorAll('.h-captcha').forEach(function(captcha) {
           const form = captcha.closest('form');
           if (form) {
-            // Vérifier si un champ pour le token existe déjà
+            // Check if a token field already exists
             let tokenInput = form.querySelector('input[name="h-captcha-response"]');
             if (!tokenInput) {
-              // Si non, en créer un nouveau
+              // If not, create a new one
               tokenInput = document.createElement('input');
               tokenInput.type = 'hidden';
               tokenInput.name = 'h-captcha-response';
               form.appendChild(tokenInput);
             }
-            // Définir la valeur du token
+            // Set the token value
             tokenInput.value = token;
           }
         });
       }
+      
+      // Function to adjust the captcha size on mobile devices
+      function adjustCaptchaSize() {
+        const width = window.innerWidth;
+        const captchaContainers = document.querySelectorAll('.h-captcha');
+        
+        if (width <= 400) {
+          captchaContainers.forEach(container => {
+            container.setAttribute('data-size', 'compact');
+          });
+        } else {
+          captchaContainers.forEach(container => {
+            container.removeAttribute('data-size');
+          });
+        }
+      }
+      
+      // Execute when loading and when the window size changes
+      window.addEventListener('load', adjustCaptchaSize);
+      window.addEventListener('resize', adjustCaptchaSize);
     </script>
     
     <!-- Script pour la sélection des cartes de plan -->

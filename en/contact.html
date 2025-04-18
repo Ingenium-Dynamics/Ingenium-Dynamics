@@ -623,7 +623,7 @@
                       <div class="alert-msg mt-3" style="display: none;"></div>
                       
                       <!-- hCaptcha -->
-                      <div class="mb-4">
+                      <div class="mb-4 d-flex justify-content-center">
                         <div class="h-captcha" data-sitekey="322a5f52-14a4-4696-a556-603c573070d0" data-callback="onCaptchaVerified"></div>
                       </div>
                       
@@ -917,7 +917,7 @@
                         <div class="alert-msg mt-3" style="display: none;"></div>
                         
                         <!-- hCaptcha -->
-                        <div class="mb-4">
+                        <div class="mb-4 d-flex justify-content-center">
                           <div class="h-captcha" data-sitekey="322a5f52-14a4-4696-a556-603c573070d0" data-callback="onCaptchaVerified"></div>
                         </div>
                         
@@ -1043,7 +1043,7 @@
                       <div class="alert-msg mt-3" style="display: none;"></div>
                       
                       <!-- hCaptcha -->
-                      <div class="mb-4">
+                      <div class="mb-4 d-flex justify-content-center">
                         <div class="h-captcha" data-sitekey="322a5f52-14a4-4696-a556-603c573070d0" data-callback="onCaptchaVerified"></div>
                       </div>
                       
@@ -1238,6 +1238,26 @@
           }
         });
       }
+      
+      // Function to adjust the captcha size on mobile devices
+      function adjustCaptchaSize() {
+        const width = window.innerWidth;
+        const captchaContainers = document.querySelectorAll('.h-captcha');
+        
+        if (width <= 400) {
+          captchaContainers.forEach(container => {
+            container.setAttribute('data-size', 'compact');
+          });
+        } else {
+          captchaContainers.forEach(container => {
+            container.removeAttribute('data-size');
+          });
+        }
+      }
+      
+      // Execute when loading and when the window size changes
+      window.addEventListener('load', adjustCaptchaSize);
+      window.addEventListener('resize', adjustCaptchaSize);
     </script>
     
     <!-- Script for plan card selection -->
