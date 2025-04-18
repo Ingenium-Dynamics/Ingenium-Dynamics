@@ -82,6 +82,36 @@
   document.addEventListener('scroll', toggleScrollTop);
 
   /**
+   * Ajusta espaciado en dispositivos móviles para evitar solapamientos
+   */
+  function adjustMobileSpacing() {
+    // Solo ejecutar en dispositivos móviles
+    if (window.innerWidth <= 768) {
+      const header = document.querySelector('#header');
+      const headText = document.querySelector('#head_text');
+      const pageTitle = document.querySelector('.page-title');
+      
+      if (header) {
+        const headerHeight = header.offsetHeight;
+        
+        // Ajustar espacio para head_text si existe
+        if (headText) {
+          headText.style.paddingTop = `${headerHeight + 20}px`;
+        }
+        
+        // Ajustar espacio para page-title si existe
+        if (pageTitle) {
+          pageTitle.style.paddingTop = `${headerHeight + 40}px`;
+        }
+      }
+    }
+  }
+  
+  // Ejecutar en carga y redimensionamiento
+  window.addEventListener('load', adjustMobileSpacing);
+  window.addEventListener('resize', adjustMobileSpacing);
+
+  /**
    * Animation on scroll function and init
    */
   function aosInit() {

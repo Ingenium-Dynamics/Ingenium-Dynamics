@@ -288,6 +288,22 @@ h6 {
   --background-color: #1e4356;
 }
 
+/* Header para dispositivos móviles */
+@media (max-width: 768px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Incrementar z-index en móviles */
+    background-color: rgba(30, 67, 86, 0.9); /* Fondo con ligera transparencia para mejor visibilidad */
+  }
+  
+  .header .logo img {
+    max-height: 70px; /* Reducir el tamaño del logo en móviles */
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1698,6 +1714,18 @@ section,
   padding: 50px 20px; /* Espaciado opcional */
 }
 
+/* Ajustes para portfolio en dispositivos móviles */
+@media (max-width: 768px) {
+  #hportfolio {
+    padding-top: 100px; /* Aumentar el padding superior en móviles */
+  }
+  
+  /* Ajustar también los elementos internos de portfolio */
+  #portafolioweb {
+    padding-top: 20px;
+  }
+}
+
 #hcontact {
   background-image: url("../img/bg/parabolic-rectangle-bg.svg"); /* Ruta de la imagen by SVGBackgrounds.com*/
   background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
@@ -1742,6 +1770,18 @@ section,
 /*Servicios Head*/
 #head_text {
   padding-top: 7%;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+  #head_text {
+    padding-top: 120px; /* Aumentar el padding superior en móviles */
+  }
+  
+  /* Ajustar también el título de página en móviles */
+  .page-title {
+    padding-top: 140px;
+  }
 }
 
 /*Banner de Promociones*/
