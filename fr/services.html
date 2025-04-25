@@ -1,942 +1,1089 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-96DW2M52M1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<!-- Primary Meta Tags -->
-<title>Services de Développement Web | Ingenium Bright Canada</title>
-<meta name="description" content="Agence spécialisée à Sherbrooke. Création de sites web, landing pages, applications web et mobiles avec Django. Design responsive, SEO avancé et conseil technologique pour entreprises." />
-<meta name="keywords" content="développement web Sherbrooke, création sites web Québec, landing pages efficaces, applications web Django, design responsive Canada, SEO pour entreprises, conseil technologique Montréal, développement mobile, e-commerce Canada, solutions numériques" />
+      gtag("config", "G-96DW2M52M1");
+    </script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- Primary Meta Tags -->
+    <title>Services de Développement Web | Ingenium Bright Canada</title>
+    <meta
+      name="description"
+      content="Agence spécialisée à Sherbrooke. Création de sites web, landing pages, applications web et mobiles avec Django. Design responsive, SEO avancé et conseil technologique pour entreprises."
+    />
+    <meta
+      name="keywords"
+      content="développement web Sherbrooke, création sites web Québec, landing pages efficaces, applications web Django, design responsive Canada, SEO pour entreprises, conseil technologique Montréal, développement mobile, e-commerce Canada, solutions numériques"
+    />
 
-<!-- Author and Copyright -->
-<meta name="author" content="Ingenium Bright Canada" />
-<meta name="copyright" content="Ingenium Bright Canada" />
+    <!-- Author and Copyright -->
+    <meta name="author" content="Ingenium Bright Canada" />
+    <meta name="copyright" content="Ingenium Bright Canada" />
 
-<!-- Robots and Indexing -->
-<meta name="robots" content="index, follow, max-image-preview:large" />
-<meta name="googlebot" content="index, follow" />
+    <!-- Robots and Indexing -->
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow" />
 
-<!-- Language and Localization -->
-<meta name="language" content="French" />
-<meta name="geo.region" content="CA-QC" />
-<meta name="geo.placename" content="Sherbrooke" />
-<meta name="geo.position" content="45.4008;-71.8829" />
-<meta name="ICBM" content="45.4008, -71.8829" />
+    <!-- Language and Localization -->
+    <meta name="language" content="French" />
+    <meta name="geo.region" content="CA-QC" />
+    <meta name="geo.placename" content="Sherbrooke" />
+    <meta name="geo.position" content="45.4008;-71.8829" />
+    <meta name="ICBM" content="45.4008, -71.8829" />
 
-<!-- Social Media Meta Tags -->
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ingeniumBright.com/fr/services.html" />
-<meta property="og:title" content="Services de Développement Web Professionnel | Ingenium Bright Canada" />
-<meta property="og:description" content="Création de sites web, landing pages et applications personnalisées à Sherbrooke. Technologie Django, design adaptatif et stratégies SEO pour votre entreprise." />
-<meta property="og:image" content="https://ingeniumBright.com/assets/img/ingenium_1.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Services de développement web à Sherbrooke, Canada" />
-<meta property="og:locale" content="fr_CA" />
-<meta property="og:site_name" content="Ingenium Bright Canada" />
+    <!-- Social Media Meta Tags -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://ingeniumBright.com/fr/services.html"
+    />
+    <meta
+      property="og:title"
+      content="Services de Développement Web Professionnel | Ingenium Bright Canada"
+    />
+    <meta
+      property="og:description"
+      content="Création de sites web, landing pages et applications personnalisées à Sherbrooke. Technologie Django, design adaptatif et stratégies SEO pour votre entreprise."
+    />
+    <meta
+      property="og:image"
+      content="https://ingeniumBright.com/assets/img/ingenium_1.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Services de développement web à Sherbrooke, Canada"
+    />
+    <meta property="og:locale" content="fr_CA" />
+    <meta property="og:site_name" content="Ingenium Bright Canada" />
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@IngeniumBrightCA" />
-<meta name="twitter:creator" content="@IngeniumBrightCA" />
-<meta name="twitter:title" content="Services de Développement Web | Ingenium Bright Canada" />
-<meta name="twitter:description" content="Experts en développement web à Sherbrooke. Création de sites web, landing pages et applications sur mesure avec technologie Django et design responsive." />
-<meta name="twitter:image" content="https://ingeniumBright.com/assets/img/ingenium_1.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@IngeniumBrightCA" />
+    <meta name="twitter:creator" content="@IngeniumBrightCA" />
+    <meta
+      name="twitter:title"
+      content="Services de Développement Web | Ingenium Bright Canada"
+    />
+    <meta
+      name="twitter:description"
+      content="Experts en développement web à Sherbrooke. Création de sites web, landing pages et applications sur mesure avec technologie Django et design responsive."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ingeniumBright.com/assets/img/ingenium_1.png"
+    />
 
-<!-- Canonical URL -->
-<link rel="canonical" href="https://ingeniumBright.com/fr/services.html" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ingeniumBright.com/fr/services.html" />
 
-<!-- Alternate Language Versions -->
-<link rel="alternate" hreflang="en" href="https://ingeniumBright.com/en/services.html" />
-<link rel="alternate" hreflang="es" href="https://ingeniumBright.com/services.html" />
-<link rel="alternate" hreflang="fr" href="https://ingeniumBright.com/fr/services.html" />
+    <!-- Alternate Language Versions -->
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://ingeniumBright.com/en/services.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://ingeniumBright.com/services.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://ingeniumBright.com/fr/services.html"
+    />
 
-<!-- Favicons (optimized) -->
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon_io/favicon-16x16.png">
-<link rel="manifest" href="../assets/img/favicon_io/site.webmanifest">
-<link rel="mask-icon" href="../assets/img/favicon_io/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="../assets/img/favicon_io/favicon.ico">
-<meta name="msapplication-TileColor" content="#2d89ef">
-<meta name="msapplication-config" content="assets/img/favicon_io/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+    <!-- Favicons (optimized) -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/img/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/img/favicon_io/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../assets/img/favicon_io/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="../assets/img/favicon_io/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta
+      name="msapplication-config"
+      content="assets/img/favicon_io/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
-<!-- Preload critical resources -->
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"></noscript>
+    <!-- Preload critical resources -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    /></noscript>
 
-<!-- CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-<link href="../assets/css/main.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="../assets/css/main.css" rel="stylesheet" />
 
-<!-- Deferred JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-<script src="https://code.jquery.com/jquery-migrate-3.5.2.js" defer></script>
-<script src="../assets/js/script_clarooscuro.js" defer></script>
+    <!-- Deferred JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-migrate-3.5.2.js"
+      defer
+    ></script>
+    <script src="../assets/js/script_clarooscuro.js" defer></script>
 
-<!-- Schema.org markup (enhanced) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Ingenium Bright Canada",
-  "url": "https://ingeniumBright.com/fr/services.html",
-  "logo": "https://ingeniumBright.com/assets/img/Logo_V3/Logo_ID_1.png",
-  "description": "Agence spécialisée en développement web à Sherbrooke. Services de création de sites web, landing pages, applications web/mobiles et conseil technologique.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "123 Rue King Ouest",
-    "addressLocality": "Sherbrooke",
-    "addressRegion": "QC",
-    "postalCode": "J1H 1A1",
-    "addressCountry": "CA"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+1-819-XXX-XXXX",
-    "contactType": "customer service",
-    "email": "contact@ingeniumBright.ca",
-    "availableLanguage": ["French", "English"]
-  },
-  "sameAs": [
-    "https://www.linkedin.com/company/ingenium-Bright-canada",
-    "https://twitter.com/IngeniumBrightCA"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Services de Développement Web",
-    "itemListElement": [
+    <!-- Schema.org markup (enhanced) -->
+    <script type="application/ld+json">
       {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Création de Sites Web",
-          "description": "Développement de sites web professionnels et responsive pour entreprises"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Landing Pages",
-          "description": "Conception de landing pages optimisées pour la conversion"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Applications Web",
-          "description": "Développement d'applications web personnalisées avec Django"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Conseil Technologique",
-          "description": "Services de consultation pour projets numériques"
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Ingenium Bright Canada",
+        "url": "https://ingeniumBright.com/fr/services.html",
+        "logo": "https://ingeniumBright.com/assets/img/Logo_V3/Logo_ID_1.png",
+        "description": "Agence spécialisée en développement web à Sherbrooke. Services de création de sites web, landing pages, applications web/mobiles et conseil technologique.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Rue King Ouest",
+          "addressLocality": "Sherbrooke",
+          "addressRegion": "QC",
+          "postalCode": "J1H 1A1",
+          "addressCountry": "CA"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-819-XXX-XXXX",
+          "contactType": "customer service",
+          "email": "contact@ingeniumBright.ca",
+          "availableLanguage": ["French", "English"]
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/ingenium-Bright-canada",
+          "https://twitter.com/IngeniumBrightCA"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services de Développement Web",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Création de Sites Web",
+                "description": "Développement de sites web professionnels et responsive pour entreprises"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Landing Pages",
+                "description": "Conception de landing pages optimisées pour la conversion"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Applications Web",
+                "description": "Développement d'applications web personnalisées avec Django"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Conseil Technologique",
+                "description": "Services de consultation pour projets numériques"
+              }
+            }
+          ]
         }
       }
-    ]
-  }
-}
-</script>
+    </script>
 
-<!-- Additional SEO Meta -->
-<meta name="generator" content="Ingenium Bright" />
-<meta name="rating" content="safe for kids" />
-<meta name="distribution" content="global" />
-<meta http-equiv="content-language" content="fr-CA" />
+    <!-- Additional SEO Meta -->
+    <meta name="generator" content="Ingenium Bright" />
+    <meta name="rating" content="safe for kids" />
+    <meta name="distribution" content="global" />
+    <meta http-equiv="content-language" content="fr-CA" />
 
-<!-- Preconnect to external domains -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-</head>
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  </head>
 
-<body class="services-page">
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div
-      class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
-    >
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="../assets/img/Logo_V3/Logo_ID_1.png" alt="" />
-      </a>
+  <body class="services-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="../assets/img/Logo_V3/Logo_ID_1.png" alt="" />
+        </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li>
-            <a href="index.html"
-              ><i width="50" height="50" class="bi bi-house-door-fill"></i
-            ></a>
-          </li>
-          <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="index.html"
+                ><i width="50" height="50" class="bi bi-house-door-fill"></i
+              ></a>
+            </li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
 
-          <li><a href="contact.html">Contact</a></li>
-          <li>
-            <a href="../services.html"
-              ><img id="banderas" src="../assets/img/espana.webp"
-            /></a>
-          </li>
-          <li>
-            <a href="../en/services.html"
-              ><img id="banderas" src="../assets/img/usa.webp"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img id="banderas" src="../assets/img/francia.webp"
-            /></a>
-          </li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-    </div>
-    <div class="theme-switch">
-      <input type="checkbox" id="theme-checkbox" />
-      <label for="theme-checkbox">
-        <div></div>
-        <span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </span>
-        <span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
-            ></path>
-          </svg>
-        </span>
-      </label>
-    </div>
-  </header>
-
-  <main class="main">
-    <!-- Page Title -->
-
-    <div id="hservicios" class="page-title dark-background">
-      <div class="container position-relative">
-        <h1 id="head_text">Nos services</h1>
-        <p>
-          Boostez votre activité grâce à des solutions numériques
-          personnalisées : de la
-          <strong>conception Web adaptative</strong> aux
-          <strong>applications mobiles optimisées</strong>.
-        </p>
-        <p>
-          Nous créons des <strong>pages de destination</strong> et des
-          <strong>applications Web sécurisées</strong> qui se connectent à vos
-          clients, tout en protégeant vos données grâce à des
-          <strong>stratégies de cybersécurité</strong>.
-        </p>
-        <p>
-          Transformez votre présence numérique et faites passer votre
-          entreprise au niveau supérieur.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Contactez-nous!</a>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="../services.html"
+                ><img id="banderas" src="../assets/img/espana.webp"
+              /></a>
+            </li>
+            <li>
+              <a href="../en/services.html"
+                ><img id="banderas" src="../assets/img/usa.webp"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img id="banderas" src="../assets/img/francia.webp"
+              /></a>
+            </li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
       </div>
-    </div>
-    <!-- End Page Title -->
+      <div class="theme-switch">
+        <input type="checkbox" id="theme-checkbox" />
+        <label for="theme-checkbox">
+          <div></div>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </span>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+              ></path>
+            </svg>
+          </span>
+        </label>
+      </div>
+    </header>
 
-    <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section">
-      <div class="container">
-        <div class="row gy-4">
-          <div
-            class="col-lg-3 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="service-item item-cyan position-relative">
-              <div class="icon">
-                <i class="bi bi-window"></i>
-              </div>
+    <main class="main">
+      <!-- Page Title -->
 
-              <h3>Conception Web</h3>
-
-              <p>
-                Nous créons des pages de destination optimisées, des
-                conceptions Web modernes et adaptatives pour dynamiser votre
-                activité numérique.
-              </p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div
-            class="col-lg-3 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <i class="bi bi-gear"></i>
-              </div>
-              <!--<a href="service-details.html" class="stretched-link">-->
-              <h3>Applications Web</h3>
-              <!--</a>-->
-              <p>
-                Nous développons des applications Web personnalisées,
-                évolutives et sécurisées, toujours axées sur l'amélioration de
-                votre entreprise dans un environnement numérique compétitif.
-              </p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div
-            class="col-lg-3 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="service-item item-teal position-relative">
-              <div class="icon">
-                <i class="bi bi-phone"></i>
-              </div>
-
-              <h3>Applications mobiles</h3>
-
-              <p>
-                Nous créons des applications mobiles optimisées pour Android,
-                ainsi que des conseils techniques et stratégiques pour
-                renforcer votre entreprise.
-              </p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div
-            class="col-lg-3 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div class="service-item item-red position-relative">
-              <div class="icon">
-                <i class="bi bi-person-lines-fill"></i>
-              </div>
-
-              <h3>Conseil</h3>
-
-              <p>
-                Nous proposons des conseils complets en matière de
-                cybersécurité, d'optimisation des processus et de gestion des
-                systèmes. Nous mettons en œuvre des stratégies de sécurité qui
-                protègent vos données et assurent la continuité de vos
-                activités.
-              </p>
-            </div>
-          </div>
-          <!-- End Service Item -->
+      <div id="hservicios" class="page-title dark-background">
+        <div class="container position-relative">
+          <h1 id="head_text">Nos services</h1>
+          <p>
+            Boostez votre activité grâce à des solutions numériques
+            personnalisées : de la
+            <strong>conception Web adaptative</strong> aux
+            <strong>applications mobiles optimisées</strong>.
+          </p>
+          <p>
+            Nous créons des <strong>pages de destination</strong> et des
+            <strong>applications Web sécurisées</strong> qui se connectent à vos
+            clients, tout en protégeant vos données grâce à des
+            <strong>stratégies de cybersécurité</strong>.
+          </p>
+          <p>
+            Transformez votre présence numérique et faites passer votre
+            entreprise au niveau supérieur.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Contactez-nous!</a>
         </div>
       </div>
-    </section>
-    <!-- /Featured Services Section -->
+      <!-- End Page Title -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img
-                  src="../assets/img/services_1.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="details">
+      <!-- Featured Services Section -->
+      <section id="featured-services" class="featured-services section">
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item item-cyan position-relative">
+                <div class="icon">
+                  <i class="bi bi-window"></i>
+                </div>
+
                 <h3>Conception Web</h3>
 
                 <p>
-                  Transformez votre présence en ligne avec des pages de
-                  destination irrésistibles, des conceptions Web modernes
-                  entièrement adaptables et des applications Web
-                  personnalisées. Dynamisez votre activité numérique et
-                  attirez plus de clients avec des solutions exceptionnelles.
+                  Nous créons des pages de destination optimisées, des
+                  conceptions Web modernes et adaptatives pour dynamiser votre
+                  activité numérique.
                 </p>
               </div>
             </div>
-          </div>
-          <!-- End Service Item -->
+            <!-- End Service Item -->
 
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img
-                  src="../assets/img/services_2.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="details">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item item-orange position-relative">
+                <div class="icon">
+                  <i class="bi bi-gear"></i>
+                </div>
+                <!--<a href="service-details.html" class="stretched-link">-->
                 <h3>Applications Web</h3>
-
+                <!--</a>-->
                 <p>
-                  Boostez votre activité avec des applications Web
-                  personnalisées, évolutives et hautement sécurisées. Nous
-                  créons des solutions innovantes qui se démarquent dans le
-                  paysage numérique concurrentiel et vous aident à atteindre
-                  vos objectifs.
+                  Nous développons des applications Web personnalisées,
+                  évolutives et sécurisées, toujours axées sur l'amélioration de
+                  votre entreprise dans un environnement numérique compétitif.
                 </p>
               </div>
             </div>
-          </div>
-          <!-- End Service Item -->
+            <!-- End Service Item -->
 
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img
-                  src="../assets/img/services_3.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="details">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item item-teal position-relative">
+                <div class="icon">
+                  <i class="bi bi-phone"></i>
+                </div>
+
                 <h3>Applications mobiles</h3>
 
                 <p>
-                  Nous concevons des applications mobiles optimisées pour
-                  Android, complétées par des conseils techniques et
-                  stratégiques. Donnez à votre entreprise les moyens de se
-                  connecter avec vos clients et de renforcer sa présence
-                  numérique.
+                  Nous créons des applications mobiles optimisées pour Android,
+                  ainsi que des conseils techniques et stratégiques pour
+                  renforcer votre entreprise.
                 </p>
               </div>
             </div>
-          </div>
-          <!-- End Service Item -->
+            <!-- End Service Item -->
 
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img
-                  src="../assets/img/services_4.webp"
-                  class="img-fluid"
-                  alt=""
-                /><!--designed by freepik www.freepik.es-->
-              </div>
-              <div class="details">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="service-item item-red position-relative">
+                <div class="icon">
+                  <i class="bi bi-person-lines-fill"></i>
+                </div>
+
                 <h3>Conseil</h3>
 
                 <p>
-                  Faites progresser votre entreprise grâce à des conseils
-                  d'experts en cybersécurité, à l'optimisation des processus
-                  et à la gestion des systèmes. Protégez vos données,
-                  améliorez l'efficacité et assurez la continuité
-                  opérationnelle grâce à des stratégies axées sur le succès.
+                  Nous proposons des conseils complets en matière de
+                  cybersécurité, d'optimisation des processus et de gestion des
+                  systèmes. Nous mettons en œuvre des stratégies de sécurité qui
+                  protègent vos données et assurent la continuité de vos
+                  activités.
                 </p>
               </div>
             </div>
+            <!-- End Service Item -->
           </div>
-          <!-- End Service Item -->
         </div>
-      </div>
-    </section>
-    <!-- /Services Section -->
+      </section>
+      <!-- /Featured Services Section -->
 
-    <!-- Pricing Section -->
-<section id="pricing" class="pricing section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Nos Plans</h2>
-        <p>
-          Nos plans de conception de sites web Standard, si vous avez besoin de quelque chose de plus
-          personnalisé, vous pouvez nous contacter pour demander un devis
-        </p>
-        <p>
-          Tous les plans proposent en options : messagerie professionnelle avec nom de domaine,
-          et version multilingue. Ces options peuvent faire l'objet d'un devis supplémentaire
-        </p>
-      </div>
-      <!-- End Section Title -->
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <div class="img">
+                  <img
+                    src="../assets/img/services_1.webp"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="details">
+                  <h3>Conception Web</h3>
 
-      <div class="container">
-        <div class="row g-4 g-lg-4 justify-content-center">
-          <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
-            <div id="plan-small-one" class="pricing-card">
-              <div class="pricing-header">
-                <h3>Small One</h3>
-                <div class="pricing-price">
-                  <h4>
-                    <span class="price-amount">35</span>
-                    <span class="price-currency">USD</span>
-                    <span class="price-period">/ an</span>
-                  </h4>
-                  <h5 class="initial-payment">Paiement initial: 150 USD</h5>
+                  <p>
+                    Transformez votre présence en ligne avec des pages de
+                    destination irrésistibles, des conceptions Web modernes
+                    entièrement adaptables et des applications Web
+                    personnalisées. Dynamisez votre activité numérique et
+                    attirez plus de clients avec des solutions exceptionnelles.
+                  </p>
                 </div>
               </div>
-              <div class="pricing-body">
-                <ul>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>1 Landing Page</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Gestion d'achat de domaine</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Hosting</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>1 langue</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Développement orienté SEO</span>
-                  </li>
-                  <li class="na">
-                    <i class="bi bi-x"></i>
-                    <span>Maintenances</span>
-                  </li>
-                  <li class="na">
-                    <i class="bi bi-x"></i>
-                    <span>Mail corporatif</span>
-                  </li>
-                  <li class="na">
-                    <i class="bi bi-x"></i>
-                    <span>Formulaire de contact</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="pricing-footer">
-                <a href="#" class="buy-btn">Demander</a>
-                <p class="pricing-note">
-                  (Pour plus d'options, contactez-nous)
-                </p>
-              </div>
             </div>
-         </div>
-          <!-- End Pricing Item -->
+            <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
-            <div id="plan-starter" class="pricing-card popular">
-              <div class="pricing-header">
-                <span class="popular-badge">Populaire</span>
-                <h3>Starter</h3>
-                <div class="pricing-price">
-                  <h4>
-                    <span class="price-amount">45</span>
-                    <span class="price-currency">USD</span>
-                    <span class="price-period">/ an</span>
-                  </h4>
-                  <h5 class="initial-payment">Paiement initial: 250 USD</h5>
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <div class="img">
+                  <img
+                    src="../assets/img/services_2.webp"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="details">
+                  <h3>Applications Web</h3>
+
+                  <p>
+                    Boostez votre activité avec des applications Web
+                    personnalisées, évolutives et hautement sécurisées. Nous
+                    créons des solutions innovantes qui se démarquent dans le
+                    paysage numérique concurrentiel et vous aident à atteindre
+                    vos objectifs.
+                  </p>
                 </div>
               </div>
-              <div class="pricing-body">
-                <ul>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Conception Web Complète (jusqu'à 4 pages)</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Gestion d'Achat de Domaine</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>1 Maintenance mensuelle</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Hosting</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Jusqu'à 2 langues</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Formulaire de contact</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Développement Orienté SEO</span>
-                  </li>
-                  <li class="na">
-                    <i class="bi bi-x"></i>
-                    <span>Email d'entreprise</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="pricing-footer">
-                <a href="#" class="buy-btn">Demander</a>
-                <p class="pricing-note">
-                  (Pour plus d'options, contactez-nous)
-                </p>
+            </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
+              <div class="service-item position-relative">
+                <div class="img">
+                  <img
+                    src="../assets/img/services_3.webp"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="details">
+                  <h3>Applications mobiles</h3>
+
+                  <p>
+                    Nous concevons des applications mobiles optimisées pour
+                    Android, complétées par des conseils techniques et
+                    stratégiques. Donnez à votre entreprise les moyens de se
+                    connecter avec vos clients et de renforcer sa présence
+                    numérique.
+                  </p>
+                </div>
               </div>
             </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="500">
+              <div class="service-item position-relative">
+                <div class="img">
+                  <img
+                    src="../assets/img/services_4.webp"
+                    class="img-fluid"
+                    alt=""
+                  /><!--designed by freepik www.freepik.es-->
+                </div>
+                <div class="details">
+                  <h3>Conseil</h3>
+
+                  <p>
+                    Faites progresser votre entreprise grâce à des conseils
+                    d'experts en cybersécurité, à l'optimisation des processus
+                    et à la gestion des systèmes. Protégez vos données,
+                    améliorez l'efficacité et assurez la continuité
+                    opérationnelle grâce à des stratégies axées sur le succès.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
           </div>
-          <!-- End Pricing Item -->
-
-          <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
-            <div id="plan-dynamic-pro" class="pricing-card">
-              <div class="pricing-header">
-                <h3>Dynamic Pro</h3>
-                <div class="pricing-price">
-                  <h4>
-                    <span class="price-amount">370</span>
-                    <span class="price-currency">USD</span>
-                    <span class="price-period">/ an</span>
-                  </h4>
-                  <h5 class="initial-payment">Paiement initial: 450 USD</h5>
-                </div>
-              </div>
-              <div class="pricing-body">
-                <ul>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Conception Web Complète (jusqu'à 6 pages)</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Gestion d'Achat de Domaine</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Développement orienté SEO</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>6 Maintenances mensuelles</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Hosting</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Formulaire de contact</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Email professionnel</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="pricing-footer">
-                <a href="#" class="buy-btn">Demander</a>
-                <p class="pricing-note">
-                  (Pour plus d'options, contactez-nous)
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End Pricing Item -->
         </div>
-      </div>
-      
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Forfaits WordPress</h2>
-        <p>
-          Solutions complètes avec WordPress pour des sites web auto-administrables qui vous permettent de gérer votre contenu de manière simple et efficace.
-        </p>
-        <p>Site web auto-administrable</p>
-      </div>
-      <!-- End Section Title -->
+      </section>
+      <!-- /Services Section -->
 
-      <div class="container">
-        <div class="row g-4 g-lg-4 justify-content-center">
-          <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
-            <div id="plan-smart-i" class="pricing-card wp-plan">
-              <div class="pricing-header">
-                <h3>Smart I</h3>
-                <div class="pricing-price">
-                  <h4>
-                    <span class="price-amount">50</span>
-                    <span class="price-currency">USD</span>
-                    <span class="price-period">/ an</span>
-                  </h4>
-                  <h5 class="initial-payment">Paiement initial: 180 USD</h5>
-                </div>
-              </div>
-              <div class="pricing-body">
-                <ul>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Conception Web complète (jusqu'à 3 pages)</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Gestion des achats de domaines</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Hosting</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>4 Entretien mensuel</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>1 langues</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Formulaire de contact</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Développement orienté SEO</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Accès direct à WhatsApp</span>
-                  </li>
-                  <li class="na">
-                    <i class="bi bi-x"></i>
-                    <span>Courriel d'entreprise</span>
-                  </li>
-                  <li class="na">
-                    <i class="bi bi-x"></i>
-                    <span>Ecommerce</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="pricing-footer">
-                <a href="#" class="buy-btn">Demander</a>
-                <p class="pricing-note">
-                  (Pour plus d'options, contactez-nous)
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End Pricing Item -->
-
-          <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
-            <div id="plan-smart-ii" class="pricing-card wp-plan popular">
-              <div class="pricing-header">
-                <span class="popular-badge">Recommandé</span>
-                <h3>Smart II</h3>
-                <div class="pricing-price">
-                  <h4>
-                    <span class="price-amount">70</span>
-                    <span class="price-currency">USD</span>
-                    <span class="price-period">/ an</span>
-                  </h4>
-                  <h5 class="initial-payment">Paiement initial: 350 US$</h5>
-                </div>
-              </div>
-              <div class="pricing-body">
-                <ul>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Conception Web complète (jusqu'à 5 pages) dans WordPress</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Gestion des achats de domaines</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Développement orienté SEO</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>6 Entretien mensuel</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Hosting</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Formulaire de contact</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Jusqu'à 2 langues</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Courriel d'entreprise</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Accès direct à WhatsApp</span>
-                  </li>
-                  <li class="na">
-                    <i class="bi bi-x"></i>
-                    <span>Ecommerce</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="pricing-footer">
-                <a href="#" class="buy-btn">Demander</a>
-                <p class="pricing-note">
-                  (Pour plus d'options, contactez-nous)
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End Pricing Item -->
-
-          <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
-            <div id="plan-professional" class="pricing-card wp-plan">
-              <div class="pricing-header">
-                <h3>Professional</h3>
-                <div class="pricing-price">
-                  <h4>
-                    <span class="price-amount">170</span>
-                    <span class="price-currency">USD</span>
-                    <span class="price-period">/ an</span>
-                  </h4>
-                  <h5 class="initial-payment">Paiement initial: 690 USD</h5>
-                </div>
-              </div>
-              <div class="pricing-body">
-                <ul>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Conception Web complète (jusqu'à 5 pages) dans WordPress</span>
-                  </li>
-                   <li>
-                    <i class="bi bi-check"></i>
-                    <span>Gestion des achats de domaines</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Développement orienté SEO</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>6 Entretien mensuel</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Hosting</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Formulaire de contact</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Courriel d'entreprise</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Accès direct à WhatsApp</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Jusqu'à 3 langues</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>Ecommerce</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span>50 articles</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="pricing-footer">
-                <a href="#" class="buy-btn">Demander</a>
-                <p class="pricing-note">
-                  (Pour plus d'options, contactez-nous)
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End Pricing Item -->
+      <!-- Pricing Section -->
+      <section id="pricing" class="pricing section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Nos Plans</h2>
+          <p>
+            Nos plans de conception de sites web Standard, si vous avez besoin
+            de quelque chose de plus personnalisé, vous pouvez nous contacter
+            pour demander un devis
+          </p>
+          <p>
+            Tous les plans proposent en options : messagerie professionnelle
+            avec nom de domaine, et version multilingue. Ces options peuvent
+            faire l'objet d'un devis supplémentaire
+          </p>
         </div>
-      </div>
-    </section>
-    <!-- /Pricing Section -->
-  </main>
-  <section id="include-footer"></section>
-  <!-- Scroll Top -->
-  <a
-    href="#"
-    id="scroll-top"
-    class="scroll-top d-flex align-items-center justify-content-center"
-    ><i class="bi bi-arrow-up-short"></i
-  ></a>
+        <!-- End Section Title -->
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+        <div class="container">
+          <div class="row g-4 g-lg-4 justify-content-center">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div id="plan-small-one" class="pricing-card">
+                <div class="pricing-header">
+                  <h3>Small One</h3>
+                  <div class="pricing-price">
+                    <h4>
+                      <span class="price-amount">35</span>
+                      <span class="price-currency">USD</span>
+                      <span class="price-period">/ an</span>
+                    </h4>
+                    <h5 class="initial-payment">Paiement initial: 150 USD</h5>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>1 Landing Page</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Gestion d'achat de domaine</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Hosting</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>1 langue</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Développement orienté SEO</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Maintenances</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Mail corporatif</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Formulaire de contact</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a href="#" class="buy-btn">Demander</a>
+                  <p class="pricing-note">
+                    (Pour plus d'options, contactez-nous)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Pricing Item -->
 
-  <!-- Main JS File -->
-  <script src="../assets/js/main.js"></script>
-  <script src="../assets/js/scripts.js"></script>
-  <script src="../assets/js/scripts_after.js"></script>
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div id="plan-starter" class="pricing-card popular">
+                <div class="pricing-header">
+                  <span class="popular-badge">Populaire</span>
+                  <h3>Starter</h3>
+                  <div class="pricing-price">
+                    <h4>
+                      <span class="price-amount">45</span>
+                      <span class="price-currency">USD</span>
+                      <span class="price-period">/ an</span>
+                    </h4>
+                    <h5 class="initial-payment">Paiement initial: 250 USD</h5>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Conception Web Complète (jusqu'à 4 pages)</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Gestion d'Achat de Domaine</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>1 Maintenance mensuelle</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Hosting</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Jusqu'à 2 langues</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Formulaire de contact</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Développement Orienté SEO</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Email d'entreprise</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a href="#" class="buy-btn">Demander</a>
+                  <p class="pricing-note">
+                    (Pour plus d'options, contactez-nous)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Pricing Item -->
 
-  <script>
-    fetch("footer.html")
-      .then((response) => response.text())
-      .then((data) => {
-        document.getElementById("include-footer").innerHTML = data;
-        // Llama a una funciÃƒÂ³n para ejecutar cualquier script dentro de footer.html
-        // Establecer el aÃƒÂ±o actual despuÃƒÂ©s de incluir el footer
-        document.getElementById("year").textContent =
-          new Date().getFullYear();
-      });
-  </script>
-    <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div id="plan-dynamic-pro" class="pricing-card">
+                <div class="pricing-header">
+                  <h3>Dynamic Pro</h3>
+                  <div class="pricing-price">
+                    <h4>
+                      <span class="price-amount">370</span>
+                      <span class="price-currency">USD</span>
+                      <span class="price-period">/ an</span>
+                    </h4>
+                    <h5 class="initial-payment">Paiement initial: 450 USD</h5>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Conception Web Complète (jusqu'à 6 pages)</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Gestion d'Achat de Domaine</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Développement orienté SEO</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>6 Maintenances mensuelles</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Hosting</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Formulaire de contact</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Email professionnel</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a href="#" class="buy-btn">Demander</a>
+                  <p class="pricing-note">
+                    (Pour plus d'options, contactez-nous)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+          </div>
+        </div>
+
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Forfaits WordPress</h2>
+          <p>
+            Solutions complètes avec WordPress pour des sites web
+            auto-administrables qui vous permettent de gérer votre contenu de
+            manière simple et efficace.
+          </p>
+          <p>Site web auto-administrable</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row g-4 g-lg-4 justify-content-center">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div id="plan-smart-i" class="pricing-card wp-plan">
+                <div class="pricing-header">
+                  <h3>Smart I</h3>
+                  <div class="pricing-price">
+                    <h4>
+                      <span class="price-amount">50</span>
+                      <span class="price-currency">USD</span>
+                      <span class="price-period">/ an</span>
+                    </h4>
+                    <h5 class="initial-payment">Paiement initial: 180 USD</h5>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Conception Web complète (jusqu'à 3 pages)</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Gestion des achats de domaines</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Hosting</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>4 Entretien mensuel</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>1 langues</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Formulaire de contact</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Développement orienté SEO</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Accès direct à WhatsApp</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Courriel d'entreprise</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Ecommerce</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a href="#" class="buy-btn">Demander</a>
+                  <p class="pricing-note">
+                    (Pour plus d'options, contactez-nous)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div id="plan-smart-ii" class="pricing-card wp-plan popular">
+                <div class="pricing-header">
+                  <span class="popular-badge">Recommandé</span>
+                  <h3>Smart II</h3>
+                  <div class="pricing-price">
+                    <h4>
+                      <span class="price-amount">70</span>
+                      <span class="price-currency">USD</span>
+                      <span class="price-period">/ an</span>
+                    </h4>
+                    <h5 class="initial-payment">Paiement initial: 350 US$</h5>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span
+                        >Conception Web complète (jusqu'à 5 pages) dans
+                        WordPress</span
+                      >
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Gestion des achats de domaines</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Développement orienté SEO</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>6 Entretien mensuel</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Hosting</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Formulaire de contact</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Jusqu'à 2 langues</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Courriel d'entreprise</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Accès direct à WhatsApp</span>
+                    </li>
+                    <li class="na">
+                      <i class="bi bi-x"></i>
+                      <span>Ecommerce</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a href="#" class="buy-btn">Demander</a>
+                  <p class="pricing-note">
+                    (Pour plus d'options, contactez-nous)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div id="plan-professional" class="pricing-card wp-plan">
+                <div class="pricing-header">
+                  <h3>Professional</h3>
+                  <div class="pricing-price">
+                    <h4>
+                      <span class="price-amount">170</span>
+                      <span class="price-currency">USD</span>
+                      <span class="price-period">/ an</span>
+                    </h4>
+                    <h5 class="initial-payment">Paiement initial: 690 USD</h5>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span
+                        >Conception Web complète (jusqu'à 5 pages) dans
+                        WordPress</span
+                      >
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Gestion des achats de domaines</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Développement orienté SEO</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>6 Entretien mensuel</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Hosting</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Formulaire de contact</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Courriel d'entreprise</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Accès direct à WhatsApp</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Jusqu'à 3 langues</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>Ecommerce</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check"></i>
+                      <span>50 articles</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a href="#" class="buy-btn">Demander</a>
+                  <p class="pricing-note">
+                    (Pour plus d'options, contactez-nous)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Pricing Section -->
+    </main>
+    <section id="include-footer"></section>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Main JS File -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/scripts_after.js"></script>
+
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("include-footer").innerHTML = data;
+          // Llama a una funciÃƒÂ³n para ejecutar cualquier script dentro de footer.html
+          // Establecer el aÃƒÂ±o actual despuÃƒÂ©s de incluir el footer
+          document.getElementById("year").textContent =
+            new Date().getFullYear();
+        });
+    </script>
+    <div
+      class="modal fade"
+      id="serviceModal"
+      tabindex="-1"
+      aria-labelledby="serviceModalLabel"
+      aria-hidden="true"
+    >
       <!-- Contenido del modal -->
     </div>
 
     <script>
       function showServiceModal() {
-        const modal = new bootstrap.Modal(document.getElementById('serviceModal'));
+        const modal = new bootstrap.Modal(
+          document.getElementById("serviceModal")
+        );
         modal.show();
       }
     </script>
     <script>
       // Script para manejar los clics en los botones "Demander"
-      document.addEventListener("DOMContentLoaded", function() {
+      document.addEventListener("DOMContentLoaded", function () {
         // Obtener todos los botones con clase buy-btn
-        const buyButtons = document.querySelectorAll('.buy-btn');
-        
+        const buyButtons = document.querySelectorAll(".buy-btn");
+
         // Mapeo de títulos de planes a departamentos
         const planToDepartment = {
           "Small One": "Web Development",
-          "Starter": "Web Development",
+          Starter: "Web Development",
           "Starter II": "Web Development",
           "Smart I": "Web Development",
           "Smart II": "Web Development",
-          "Professional": "Web Development"
+          Professional: "Web Development",
         };
-        
+
         // Añadir evento de clic a cada botón
-        buyButtons.forEach(button => {
-          button.addEventListener('click', function(e) {
+        buyButtons.forEach((button) => {
+          button.addEventListener("click", function (e) {
             e.preventDefault();
-            
+
             // Obtener el título del plan del encabezado más cercano
-            const card = this.closest('.pricing-card');
-            const planTitle = card.querySelector('.pricing-header h3').textContent.trim();
-            
+            const card = this.closest(".pricing-card");
+            const planTitle = card
+              .querySelector(".pricing-header h3")
+              .textContent.trim();
+
             // Redirigir a la página de contacto con los parámetros
-            window.location.href = `contact.html?asunto=Demande plan ${encodeURIComponent(planTitle)}&departamento=ventas`;
+            window.location.href = `contact.html?asunto=Demande plan ${encodeURIComponent(
+              planTitle
+            )}&departamento=ventas`;
           });
         });
       });
