@@ -22,7 +22,7 @@ const projects = [
       "../assets/img/portfolio/languagelife3.webp",
       "../assets/img/portfolio/languagelife4.webp",
     ],
-    web: "https://www.languagelife.cl",
+    web: "https://www.languageartlife.com/en/index.html",
   },
   {
     id: 3,
