@@ -154,6 +154,7 @@
       crossorigin="anonymous"
     />
     <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/language-selector.css" rel="stylesheet" />
 
     <!-- Deferred JavaScript -->
     <script
@@ -167,6 +168,8 @@
       defer
     ></script>
     <script src="assets/js/script_clarooscuro.js" defer></script>
+    <!-- Sistema de internacionalización -->
+    <script src="assets/js/i18n.js" defer></script>
 
     <!-- Schema.org markup (enhanced) -->
     <script type="application/ld+json">
@@ -252,25 +255,13 @@
               ></a>
             </li>
 
-            <li><a href="services.html">Servicios</a></li>
-            <li><a href="portfolio.html">Portafolio</a></li>
+            <li><a href="services.html" data-i18n="navigation.services">Servicios</a></li>
+            <li><a href="portfolio.html" data-i18n="navigation.portfolio">Portafolio</a></li>
 
-            <li><a href="contact.html">Contacto</a></li>
-            <li>
-              <a href="index.html"
-                ><img id="banderas" src="assets/img/espana.webp" alt="espana"
-              /></a>
-            </li>
-            <li>
-              <a href="en/index.html"
-                ><img id="banderas" src="assets/img/usa.webp" alt="ingles"
-              /></a>
-            </li>
-            <li>
-              <a href="fr/index.html"
-                ><img id="banderas" src="assets/img/francia.webp" alt="frances"
-              /></a>
-            </li>
+            <li><a href="contact.html" data-i18n="navigation.contact">Contacto</a></li>
+            
+            <!-- Selector de idioma -->
+            <li id="language-selector"></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -329,7 +320,7 @@
                   Sabemos como interpretar lo que buscas y te entregamos un
                   servicio de primer nivel.
                 </p>
-                <a href="#about" class="btn-get-started">Más</a>
+                <a href="#about" class="btn-get-started" data-i18n="navigation.about">Más</a>
               </div>
             </div>
             <!-- End Carousel Item -->
@@ -341,7 +332,7 @@
                   Lleva tu negocio al siguiente nivel con soluciones digitales a
                   medida.
                 </p>
-                <a href="#about" class="btn-get-started">Más</a>
+                <a href="#about" class="btn-get-started" data-i18n="navigation.about">Más</a>
               </div>
             </div>
             <!-- End Carousel Item -->
@@ -353,7 +344,7 @@
                   Diseñamos tu web. Lo importante, realmente diseñamos para tí
                   un sitio único.
                 </p>
-                <a href="#about" class="btn-get-started">Más</a>
+                <a href="#about" class="btn-get-started" data-i18n="navigation.about">Más</a>
               </div>
             </div>
             <!-- End Carousel Item -->

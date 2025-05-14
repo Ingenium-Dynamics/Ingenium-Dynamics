@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "language": "English",
+    "contentLanguage": "en-CA"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "portfolio": {
+    "projectDetails": "Project Details",
+    "visitButton": "Visit"
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "subject": "Subject",
+      "company": "Company",
+      "submit": "Submit",
+      "languages": "Languages"
+    }
+  },
+  "services": {
+    "language": {
+      "one": "1 language",
+      "two": "Up to 2 languages",
+      "three": "Up to 3 languages"
+    }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Haras los Pellines",
+      "description": "Landing Page created using HTML, CSS, Bootstrap and JavaScript, with a contact form implemented using AWS technologies.",
+      "web": "https://haraslospellines.com"
+    },
+    {
+      "id": 2,
+      "title": "LanguageLife",
+      "description": "Multilingual Landing Page for Language and Art Academy, with a Gallery section with the paintings made and a history of the exhibitions in which they have participated.",
+      "web": "https://www.languageartlife.com/en/index.html"
+    },
+    {
+      "id": 3,
+      "title": "Psychologist Alex Oyarzún",
+      "description": "Professional Landing Page for psychologist Alex Oyazún. It presents the professional, his services and his social networks. It is not available in some countries at the request of the client.",
+      "web": "https://www.psicologoalexoyarzun.com/"
+    },
+    {
+      "id": 4,
+      "title": "Nico Castro Photography",
+      "description": "Professional Landing Page for photographer Nicolas Castro. It presents the professional, his services, his social networks and some of his work.",
+      "web": "https://dyw57mjcdz9b2.cloudfront.net/"
+    },
+    {
+      "id": 5,
+      "title": "Fidias Place",
+      "description": "Professional Landing Page for a dance academy, with details of its services and schedules.",
+      "web": "https://ingenium-dynamics.github.io/fidias/index2.html"
+    }
+  ]
+} 

@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "language": "French",
+    "contentLanguage": "fr-CA"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "portfolio": {
+    "projectDetails": "Détails du Projet",
+    "visitButton": "Visiter"
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Nom",
+      "email": "Courriel",
+      "phone": "Téléphone",
+      "message": "Message",
+      "subject": "Sujet",
+      "company": "Entreprise",
+      "submit": "Envoyer",
+      "languages": "Langues"
+    }
+  },
+  "services": {
+    "language": {
+      "one": "1 langue",
+      "two": "Jusqu'à 2 langues",
+      "three": "Jusqu'à 3 langues"
+    }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Haras los Pellines",
+      "description": "Page d'atterrissage créée à l'aide de HTML, CSS, Bootstrap et JavaScript, avec un formulaire de contact implémenté à l'aide des technologies AWS.",
+      "web": "https://haraslospellines.com"
+    },
+    {
+      "id": 2,
+      "title": "LanguageLife",
+      "description": "Page d'atterrissage multilingue pour l'Académie de Langues et d'Art, avec une section Galerie avec les peintures réalisées et un historique des expositions auxquelles ils ont participé.",
+      "web": "https://www.languageartlife.com/fr/index.html"
+    },
+    {
+      "id": 3,
+      "title": "Psychologue Alex Oyarzún",
+      "description": "Page d'atterrissage professionnelle pour le psychologue Alex Oyazún. Il présente le professionnel, ses services et ses réseaux sociaux. Il n'est pas disponible dans certains pays à la demande du client.",
+      "web": "https://www.psicologoalexoyarzun.com/"
+    },
+    {
+      "id": 4,
+      "title": "Nico Castro Photographie",
+      "description": "Page d'atterrissage professionnelle pour le photographe Nicolas Castro. Il présente le professionnel, ses services, ses réseaux sociaux et une partie de son travail.",
+      "web": "https://dyw57mjcdz9b2.cloudfront.net/"
+    },
+    {
+      "id": 5,
+      "title": "Fidias Place",
+      "description": "Page d'atterrissage professionnelle pour une académie de danse, avec les détails de ses services et ses horaires.",
+      "web": "https://ingenium-dynamics.github.io/fidias/index2.html"
+    }
+  ]
+} 

@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "language": "Spanish",
+    "contentLanguage": "es-CL"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "portfolio": {
+    "projectDetails": "Detalles del Proyecto",
+    "visitButton": "Visitar"
+  },
+  "contact": {
+    "title": "Contacto",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "subject": "Asunto",
+      "company": "Empresa",
+      "submit": "Enviar",
+      "languages": "Idiomas"
+    }
+  },
+  "services": {
+    "language": {
+      "one": "1 idioma",
+      "two": "Hasta 2 idiomas",
+      "three": "Hasta 3 idiomas"
+    }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Haras los Pellines",
+      "description": "LandingPage creada utilizando HTML, CSS, Bootstrap y JavaScript, con un formulario de contacto implementado mediante tecnologías de AWS.",
+      "web": "https://haraslospellines.com"
+    },
+    {
+      "id": 2,
+      "title": "LanguageLife",
+      "description": "LandingPage Multilingüal para Academia de Idiomas y arte, con una apartado Galería con las pinturas realizadas y un historial de las exposiciones en las cuales se ha participado.",
+      "web": "https://www.languageartlife.com/index.html"
+    },
+    {
+      "id": 3,
+      "title": "Psicólogo Alex Oyarzún",
+      "description": "LandingPage profesional, para psicólogo Alex Oyazún. presenta al profesional, sus servicios y sus redes sociales, no está disponible en algunos paises a petición del cliente",
+      "web": "https://www.psicologoalexoyarzun.com/"
+    },
+    {
+      "id": 4,
+      "title": "Nico Castro Photography",
+      "description": "LandingPage profesional, para fotógrafo Nicolas Castro. Presenta al profesional, sus servicios, sus redes sociales y algo de su trabajo",
+      "web": "https://dyw57mjcdz9b2.cloudfront.net/"
+    },
+    {
+      "id": 5,
+      "title": "Fidias Place",
+      "description": "LandingPage profesional, para academia de baile, con detalles de sus servicios y horarios.",
+      "web": "https://ingenium-dynamics.github.io/fidias/index2.html"
+    }
+  ]
+} 
