@@ -6,6 +6,7 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-96DW2M52M1"
     ></script>
+    <!--https://script.google.com/macros/s/AKfycbyeWVgyfs5sMG6x-inPZhQjZqKOMLBmMv2hu8FIKw_aj8pukwJxwOIjCqrD2HE8tOhV/exec-->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -592,11 +593,15 @@
                   <h3>Small One</h3>
                   <div class="pricing-price">
                     <h4>
-                      <span class="price-amount">35</span>
-                      <span class="price-currency">USD</span>
+                      <span id="price-amount" class="price-amount">35</span>
+                      <span id="price-currency" class="price-currency"
+                        >USD</span
+                      >
                       <span class="price-period">/ año</span>
                     </h4>
-                    <h5 class="initial-payment">Pago inicial: 150 USD</h5>
+                    <h5 id="initial-payment" class="initial-payment">
+                      Pago inicial: 150 USD
+                    </h5>
                   </div>
                 </div>
                 <div class="pricing-body">
@@ -1161,5 +1166,108 @@
         });
       });
     </script>
+
+    <script>
+      async function detectarPaisYActualizarPrecios() {
+        try {
+          // Paso 1: Detectar país con ipinfo.io
+          const ipinfoResponse = await fetch(
+            "https://api.ipinfo.io/lite/?token=ad248ef49967eb"
+          ); // ← pon tu token de ipinfo.io
+          const ipinfoData = await ipinfoResponse.json();
+          const countryCode = ipinfoData.country || "default";
+
+          // Paso 2: Llamar a tu Google Apps Script con el parámetro 'country'
+          const scriptURL =
+            "https://script.google.com/macros/s/AKfycby6Ha7X_JAvchSJsyToHA7BNqo8UgVxG5kQXNa0x0kWuROVzCFAiVH6nixFwGcNyHCP/exec";
+          const preciosResponse = await fetch(scriptURL);
+          const precios = await preciosResponse.json();
+
+          // Paso 3: Actualizar precios en HTML
+          // Plan Small One
+          document.querySelector("#plan-small-one .price-amount").innerText =
+            precios.small_one.amount;
+          document.querySelector("#plan-small-one .price-currency").innerText =
+            precios.small_one.currency;
+          document.querySelector(
+            "#plan-small-one .initial-payment"
+          ).innerText = `Pago inicial: ${precios.small_one.initial}`;
+
+          // Plan Starter
+          document.querySelector("#plan-starter .price-amount").innerText =
+            precios.starter.amount;
+          document.querySelector("#plan-starter .price-currency").innerText =
+            precios.starter.currency;
+          document.querySelector(
+            "#plan-starter .initial-payment"
+          ).innerText = `Pago inicial: ${precios.starter.initial}`;
+
+          // Plan Dynamic Pro
+          document.querySelector("#plan-dynamic-pro .price-amount").innerText =
+            precios.dynamic.amount;
+          document.querySelector(
+            "#plan-dynamic-pro .price-currency"
+          ).innerText = precios.dynamic.currency;
+          document.querySelector(
+            "#plan-dynamic-pro .initial-payment"
+          ).innerText = `Pago inicial: ${precios.dynamic.initial}`;
+        } catch (error) {
+          console.error("Error al detectar país o actualizar precios:", error);
+        }
+      }
+
+      // Ejecutar la función al cargar la página
+      window.addEventListener(
+        "DOMContentLoaded",
+        detectarPaisYActualizarPrecios
+      );
+    </script>
+
+    <!--
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const priceAmount = document.querySelector(".price-amount");
+        const priceCurrency = document.querySelector(".price-currency");
+        const initialPayment = document.querySelector(".initial-payment");
+
+        // URL de tu aplicación web de Google Apps Script
+        const scriptUrl =
+          "https://script.google.com/macros/s/AKfycbx_RrnwF-oM1p3-PS-u0IyeMwT1znRPl-pCavZPVlR-R4Dt6yg6YPe-qRJlYyRCb8w/exec";
+
+        // Primero intentamos obtener el país del usuario
+        fetch("https://api.ipinfo.io/lite/?token=ad248ef49967eb")
+          .then((response) => response.json())
+          .then((data) => {
+            const country = data.country || "default";
+
+            // Llamamos a nuestro Google Apps Script con el país
+            return fetch(`${scriptUrl}?country=${country}`);
+          })
+          .then((response) => response.json())
+          .then(data => {
+            // Small One
+            document.querySelector('#plan-small-one .price-amount').innerText = data.small_one.amount;
+            document.querySelector('#plan-small-one .price-currency').innerText = data.small_one.currency;
+            document.querySelector('#plan-small-one .initial-payment').innerText = `Pago inicial: ${data.small_one.initial}`;
+
+            // Starter
+            document.querySelector('#plan-starter .price-amount').innerText = data.starter.amount;
+            document.querySelector('#plan-starter .price-currency').innerText = data.starter.currency;
+            document.querySelector('#plan-starter .initial-payment').innerText = `Pago inicial: ${data.starter.initial}`;
+
+            // Dynamic Pro
+            document.querySelector('#plan-dynamic-pro .price-amount').innerText = data.dynamic.amount;
+            document.querySelector('#plan-dynamic-pro .price-currency').innerText = data.dynamic.currency;
+            document.querySelector('#plan-dynamic-pro .initial-payment').innerText = `Pago inicial: ${data.dynamic.initial}`;
+          });
+          .catch((error) => {
+            console.error("Error:", error);
+            // Valores por defecto en caso de error
+            priceAmount.textContent = "35";
+            priceCurrency.textContent = "USD";
+            initialPayment.textContent = "Pago inicial: 150 USD";
+          });
+      });
+    </script>-->
   </body>
 </html>
