@@ -1211,6 +1211,34 @@
           document.querySelector(
             "#plan-dynamic-pro .initial-payment"
           ).innerText = `Pago inicial: ${precios.dynamic.initial}`;
+
+          // Plan starter I
+          document.querySelector("#plan-smart-i .price-amount").innerText =
+            precios.smart_i.amount;
+          document.querySelector("#plan-smart-i .price-currency").innerText =
+            precios.smart_i.currency;
+          document.querySelector(
+            "#plan-smart-i .initial-payment"
+          ).innerText = `Pago inicial: ${precios.smart_i.initial}`;
+
+          // Plan starter II
+          document.querySelector("#plan-smart-ii .price-amount").innerText =
+            precios.smart_ii.amount;
+          document.querySelector("#plan-smart-ii .price-currency").innerText =
+            precios.smart_ii.currency;
+          document.querySelector(
+            "#plan-smart-ii .initial-payment"
+          ).innerText = `Pago inicial: ${precios.smart_ii.initial}`;
+
+          //plan-professional
+          document.querySelector("#plan-professional .price-amount").innerText =
+            precios.professional.amount;
+          document.querySelector(
+            "#plan-professional .price-currency"
+          ).innerText = precios.professional.currency;
+          document.querySelector(
+            "#plan-professional .initial-payment"
+          ).innerText = `Pago inicial: ${precios.professional.initial}`;
         } catch (error) {
           console.error("Error al detectar país o actualizar precios:", error);
         }
