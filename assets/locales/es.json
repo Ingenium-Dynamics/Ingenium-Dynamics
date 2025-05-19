@@ -10,6 +10,14 @@
     "portfolio": "Portafolio",
     "contact": "Contacto"
   },
+  "hero": {
+    "idea_01": "¿Tienes una idea? Si tienes una idea, ya tienes una web.",
+    "service_01": "Sabemos como interpretar lo que buscas y te entregamos un servicio de primer nivel.",
+    "title_01": "Soluciones Innovadoras de Desarrollo Web y Aplicaciones",
+    "service_02": "Lleva tu negocio al siguiente nivel con soluciones digitales a medida",
+    "title_02": "Cuéntanos tu idea y te creamos una web única",
+    "service_03": "Diseñamos tu web. Lo importante, realmente diseñamos para tí un sitio único."              
+  },
   "portfolio": {
     "projectDetails": "Detalles del Proyecto",
     "visitButton": "Visitar"

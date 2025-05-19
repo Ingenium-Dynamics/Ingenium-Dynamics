@@ -10,6 +10,14 @@
     "portfolio": "Portfolio",
     "contact": "Contact"
   },
+  "hero": {
+    "idea_01": "Do you have an idea? If you have an idea, you already have a website.",
+    "service_01": "We know how to interpret what you're looking for and provide you with top-tier service.",
+    "title_01": "Innovative Web and App Development Solutions",
+    "service_02": "Take your business to the next level with custom digital solutions.",
+    "title_02": "Tell us your idea and we'll create a unique website for you",
+    "service_03": "We design your website. What's important is that we truly design a unique site for you."              
+  },
   "portfolio": {
     "projectDetails": "Project Details",
     "visitButton": "Visit"

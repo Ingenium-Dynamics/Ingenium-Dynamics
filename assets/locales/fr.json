@@ -10,6 +10,14 @@
     "portfolio": "Portfolio",
     "contact": "Contact"
   },
+  "hero": {
+    "idea_01": "Avez-vous une idée ? Si vous avez une idée, vous avez déjà un site Web.",
+    "service_01": "Nous savons comment interpréter ce que vous recherchez et vous fournir un service de premier ordre.",
+    "title_01": "Solutions innovantes de développement d'applications et de sites Web",
+    "service_02": "Faites passer votre entreprise au niveau supérieur avec des solutions numériques personnalisées",
+    "title_02": "Dites-nous votre idée et nous créerons un site Web unique pour vous",
+    "service_03": "Nous concevons votre site Web. Ce qui est important, c'est que nous concevions vraiment un site unique pour vous."              
+  },
   "portfolio": {
     "projectDetails": "Détails du Projet",
     "visitButton": "Visiter"
