@@ -1173,7 +1173,7 @@
           // Paso 1: Detectar país con ipinfo.io
           //"https://api.ipinfo.io/lite/me?token=ad248ef49967eb"
           const ipinfoResponse = await fetch(
-            "https://ipinfo.io/json?token=ad248ef49967eb"
+            "https://ipinfo.io/me?token=ad248ef49967eb"
           ); // ← pon tu token de ipinfo.io
           const ipinfoData = await ipinfoResponse.json();
           const countryCode = ipinfoData.country_code || "default";
