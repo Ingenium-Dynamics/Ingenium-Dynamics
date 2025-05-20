@@ -18,6 +18,16 @@
     "title_02": "Cuéntanos tu idea y te creamos una web única",
     "service_03": "Diseñamos tu web. Lo importante, realmente diseñamos para tí un sitio único."              
   },
+  "services_index": { 
+    "web_design": "Diseño Web",
+    "web_design_description": "Creamos páginas de aterrizaje optimizadas, diseños web modernos y adaptativos, además de implementar SEO avanzado, medidas de seguridad y gestión de CDN con listas negras o blancas de países para impulsar tu negocio digital.",
+    "web_applications": "Aplicaciones Web",
+    "web_applications_description": "Desarrollamos aplicaciones web a medida, escalables y seguras, siempre orientadas a potenciar tu negocio en un entorno digital competitivo.",
+    "mobile_applications": "Aplicaciones móviles",
+    "mobile_applications_description": "Creamos aplicaciones móviles optimizadas para Android, diseñadas para ser escalables y seguras, ofreciendo ventajas competitivas que impulsan el crecimiento y la eficiencia de tu negocio.",
+    "consultancy": "Consultoría",
+    "consultancy_description": "Ofrecemos asesoría integral en ciberseguridad, optimización de procesos y gestión de sistemas. Implementamos estrategias de seguridad que protegen tus datos y aseguran la continuidad de tus operaciones."
+  },
   "portfolio": {
     "projectDetails": "Detalles del Proyecto",
     "visitButton": "Visitar"

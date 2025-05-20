@@ -18,6 +18,16 @@
     "title_02": "Tell us your idea and we'll create a unique website for you",
     "service_03": "We design your website. What's important is that we truly design a unique site for you."              
   },
+  "services_index": { 
+    "web_design": "Web Design",
+    "web_design_description": "We create optimized landing pages, modern and adaptive web designs, along with implementing advanced SEO, security measures, and CDN management with country whitelisting/blacklisting to boost your digital business.",
+    "web_applications": "Web Applications",
+    "web_applications_description": "We develop custom web applications, scalable and secure, always focused on enhancing your business in a competitive digital environment.",
+    "mobile_applications": "Mobile Applications",
+    "mobile_applications_description": "We create mobile applications optimized for Android, designed to be scalable and secure, offering competitive advantages that drive business growth and efficiency.",
+    "consultancy": "Consulting",
+    "consultancy_description": "We offer comprehensive cybersecurity consulting, process optimization, and systems management. We implement security strategies that protect your data and ensure business continuity."
+  },
   "portfolio": {
     "projectDetails": "Project Details",
     "visitButton": "Visit"

@@ -18,6 +18,16 @@
     "title_02": "Dites-nous votre idée et nous créerons un site Web unique pour vous",
     "service_03": "Nous concevons votre site Web. Ce qui est important, c'est que nous concevions vraiment un site unique pour vous."              
   },
+  "services_index": { 
+    "web_design": "Conception Web",
+    "web_design_description": "Nous créons des pages de destination optimisées, des conceptions Web modernes et adaptatives, ainsi que la mise en œuvre de mesures de référencement avancées, de sécurité et de gestion CDN avec liste blanche/liste noire par pays pour dynamiser votre activité numérique.",
+    "web_applications": "Applications Web",
+    "web_applications_description": "Nous développons des applications Web personnalisées, évolutives et sécurisées, toujours axées sur l'amélioration de votre entreprise dans un environnement numérique concurrentiel",
+    "mobile_applications": "Applications mobiles",
+    "mobile_applications_description": "Nous créons des applications mobiles optimisées pour Android, conçues pour être évolutives et sécurisées, offrant des avantages concurrentiels qui stimulent la croissance et l'efficacité des entreprises.",
+    "consultancy": "Conseil",
+    "consultancy_description": "Nous proposons des services complets de conseil en cybersécurité, d'optimisation des processus et de gestion des systèmes. Nous mettons en œuvre des stratégies de sécurité qui protègent vos données et assurent la continuité de vos activités."
+  },
   "portfolio": {
     "projectDetails": "Détails du Projet",
     "visitButton": "Visiter"
