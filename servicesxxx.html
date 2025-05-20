@@ -1176,11 +1176,11 @@
             "https://ipinfo.io/me?token=ad248ef49967eb"
           ); // ← pon tu token de ipinfo.io
           const ipinfoData = await ipinfoResponse.json();
-          const countryCode = ipinfoData.country || "default";
+          const countryCode = ipinfoData.country_code || "default";
 
           // Paso 2: Llamar a tu Google Apps Script con el parámetro 'country'
           const scriptURL =
-            "https://script.google.com/macros/s/AKfycbwz5NFcdIBItlWQbsi9FFu0CbwaWTHVvg83nGctLaBqvGPl7csMgMnx8vXarPmEfECD/exec";
+            "https://script.google.com/macros/s/AKfycbxVux0Am1jWqs1DySkkhTmXYvuxinb9BFAJ6YW_VLnEOiu7Kc4Aw1tqiPthD03LQ7Az/exec";
           const preciosResponse = await fetch(scriptURL);
           const precios = await preciosResponse.json();
 
