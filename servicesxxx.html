@@ -1176,7 +1176,7 @@
             "https://ipinfo.io/me?token=ad248ef49967eb"
           ); // ← pon tu token de ipinfo.io
           const ipinfoData = await ipinfoResponse.json();
-          const countryCode = ipinfoData.country_code || "default";
+          const countryCode = ipinfoData.country || "default";
 
           // Paso 2: Llamar a tu Google Apps Script con el parámetro 'country'
           const scriptURL =
