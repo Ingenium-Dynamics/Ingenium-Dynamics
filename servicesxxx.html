@@ -1172,14 +1172,15 @@
         try {
           // Paso 1: Detectar país con ipinfo.io
           //"https://api.ipinfo.io/lite/me?token=ad248ef49967eb"
+          //"https://ipinfo.io/me?token=ad248ef49967eb"
           const ipinfoResponse = await fetch(
-            "https://ipinfo.io/me?token=ad248ef49967eb"
+            "https://api.ipinfo.io/lite/me?token=ad248ef49967eb"
           ); // ← pon tu token de ipinfo.io
           const ipinfoData = await ipinfoResponse.json();
-          const countryCode = ipinfoData.country || "default";
+          const countryCode = ipinfoData.country_code || "default";
           console.log("ipinfoData:", ipinfoData);
           alert(countryCode);
-          alert(ipinfoData.country);
+          alert(ipinfoData.country_code);
           // Paso 2: Llamar a tu Google Apps Script con el parámetro 'country'
           const scriptURL =
             "https://script.google.com/macros/s/AKfycbye2oIBCgxiSyE8G82I1mTqjo0oObkkNEbH7tkvzKCYi5eby2sm7PsslSB9lelALztY/exec";
