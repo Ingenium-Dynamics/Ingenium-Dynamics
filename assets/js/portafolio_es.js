@@ -61,7 +61,18 @@ const projects = [
     ],
     web: "https://ingenium-dynamics.github.io/fidias/index2.html",
   },
-  // Añade más proyectos aquí...
+  {
+    id: 6,
+    title: "J-Avila Limpieza y Mantención",
+    description:
+      "LandingPage de una empresa de limpieza, mantenciíon y jardinería.",
+    images: [
+      "./assets/img/portfolio/j-avila-01.webp",
+      "./assets/img/portfolio/j-avila-02.webp",
+      "./assets/img/portfolio/j-avila-03.webp"
+    ],
+    web: "https://www.j-avila.com",
+  },
 ];
 
 function showModal(projectId) {

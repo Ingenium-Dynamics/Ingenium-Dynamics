@@ -61,6 +61,18 @@ const projects = [
     ],
     web: "https://ingenium-dynamics.github.io/fidias/index2.html",
   },
+    {
+    id: 6,
+    title: "J-Avila Limpieza y Mantención",
+    description:
+      "LandingPage of a cleaning, maintenance and gardening company.",
+    images: [
+      "../assets/img/portfolio/j-avila-01.webp",
+      "../assets/img/portfolio/j-avila-02.webp",
+      "../assets/img/portfolio/j-avila-03.webp"
+    ],
+    web: "https://www.j-avila.com",
+  },
   // Añade más proyectos aquí...
 ];
 
@@ -76,7 +88,7 @@ function showModal(projectId) {
   // Actualizar el enlace de la URL
   const projectModalWeb = document.getElementById("projectModalWeb");
   projectModalWeb.href = project.web;
-  projectModalWeb.textContent = "Visitar " + project.title;
+  projectModalWeb.textContent = "Go to " + project.title;
   // Generar contenido del carrusel
   const carouselInner = document.querySelector(".carousel-inner");
   carouselInner.innerHTML = project.images
