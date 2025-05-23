@@ -1161,5 +1161,102 @@
         });
       });
     </script>
+    <script>
+      async function detectarPaisYActualizarPrecios() {
+        let countryCode = "default"; // Valor por defecto en caso de fallo total
+
+        try {
+          // Intento principal: ipinfo.io
+          const ipinfoResponse = await fetch(
+            "https://ipinfo.io/json?token=ad248ef49967eb"
+          );
+          if (!ipinfoResponse.ok) throw new Error("ipinfo bloqueado o falló");
+          const ipinfoData = await ipinfoResponse.json();
+          countryCode = ipinfoData.country || "default";
+          console.log("Usando ipinfo.io → País:", countryCode);
+        } catch (error) {
+          console.warn("Fallo ipinfo.io, intentando ipapi.co...", error);
+
+          // Fallback: ipapi.co
+          try {
+            const fallbackResponse = await fetch("https://ipapi.co/json/");
+            if (!fallbackResponse.ok) throw new Error("ipapi también falló");
+            const fallbackData = await fallbackResponse.json();
+            countryCode = fallbackData.country || "default";
+            console.log("Usando ipapi.co → País:", countryCode);
+          } catch (fallbackError) {
+            console.error("Error total al detectar país:", fallbackError);
+          }
+        }
+
+        try {
+          // Llamar a Google Apps Script con el código de país
+          const scriptURL =
+            "https://script.google.com/macros/s/AKfycbye2oIBCgxiSyE8G82I1mTqjo0oObkkNEbH7tkvzKCYi5eby2sm7PsslSB9lelALztY/exec";
+          const preciosResponse = await fetch(
+            `${scriptURL}?countryCode=${countryCode}`
+          );
+          const precios = await preciosResponse.json();
+
+          // Actualizar precios en HTML
+          document.querySelector("#plan-small-one .price-amount").innerText =
+            precios.small_one.amount;
+          document.querySelector("#plan-small-one .price-currency").innerText =
+            precios.small_one.currency;
+          document.querySelector(
+            "#plan-small-one .initial-payment"
+          ).innerText = `Pago inicial: ${precios.small_one.initial}`;
+
+          document.querySelector("#plan-starter .price-amount").innerText =
+            precios.starter.amount;
+          document.querySelector("#plan-starter .price-currency").innerText =
+            precios.starter.currency;
+          document.querySelector(
+            "#plan-starter .initial-payment"
+          ).innerText = `Pago inicial: ${precios.starter.initial}`;
+
+          document.querySelector("#plan-dynamic-pro .price-amount").innerText =
+            precios.dynamic.amount;
+          document.querySelector(
+            "#plan-dynamic-pro .price-currency"
+          ).innerText = precios.dynamic.currency;
+          document.querySelector(
+            "#plan-dynamic-pro .initial-payment"
+          ).innerText = `Pago inicial: ${precios.dynamic.initial}`;
+
+          document.querySelector("#plan-smart-i .price-amount").innerText =
+            precios.smart_i.amount;
+          document.querySelector("#plan-smart-i .price-currency").innerText =
+            precios.smart_i.currency;
+          document.querySelector(
+            "#plan-smart-i .initial-payment"
+          ).innerText = `Pago inicial: ${precios.smart_i.initial}`;
+
+          document.querySelector("#plan-smart-ii .price-amount").innerText =
+            precios.smart_ii.amount;
+          document.querySelector("#plan-smart-ii .price-currency").innerText =
+            precios.smart_ii.currency;
+          document.querySelector(
+            "#plan-smart-ii .initial-payment"
+          ).innerText = `Pago inicial: ${precios.smart_ii.initial}`;
+
+          document.querySelector("#plan-professional .price-amount").innerText =
+            precios.professional.amount;
+          document.querySelector(
+            "#plan-professional .price-currency"
+          ).innerText = precios.professional.currency;
+          document.querySelector(
+            "#plan-professional .initial-payment"
+          ).innerText = `Pago inicial: ${precios.professional.initial}`;
+        } catch (error) {
+          console.error("Error al obtener o mostrar precios:", error);
+        }
+      }
+
+      window.addEventListener(
+        "DOMContentLoaded",
+        detectarPaisYActualizarPrecios
+      );
+    </script>
   </body>
 </html>
