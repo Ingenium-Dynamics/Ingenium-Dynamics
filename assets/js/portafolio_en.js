@@ -13,7 +13,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "LanguageLife",
+    title: "LanguageArtLife",
     description:
       "Multilingual Landing Page for Language and Art Academy, with a Gallery section with the paintings made and a history of the exhibitions in which they have participated.",
     images: [

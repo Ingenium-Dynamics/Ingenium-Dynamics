@@ -13,7 +13,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "LanguageLife",
+    title: "LanguageArtLife",
     description:
       "LandingPage Multilingüal para Academia de Idiomas y arte, con una apartado Galería con las pinturas realizadas y un historial de las exposiciones en las cuales se ha participado. ",
     images: [
