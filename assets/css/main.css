@@ -296,9 +296,14 @@ h6 {
     top: 0;
     left: 0;
     z-index: 1000; /* Incrementar z-index en móviles */
-    background-color: rgba(30, 67, 86, 0.9); /* Fondo con ligera transparencia para mejor visibilidad */
+    background-color: rgba(
+      30,
+      67,
+      86,
+      0.9
+    ); /* Fondo con ligera transparencia para mejor visibilidad */
   }
-  
+
   .header .logo img {
     max-height: 70px; /* Reducir el tamaño del logo en móviles */
   }
@@ -447,17 +452,22 @@ h6 {
 
   /* Sección de idiomas */
   .navmenu ul::after {
-    content: '';
+    content: "";
     display: block;
     width: 80%;
     height: 1px;
     margin: 15px auto;
-    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(0, 0, 0, 0.1),
+      transparent
+    );
   }
 
   /* Texto de idiomas dependiendo del idioma actual (usando atributos de idioma) */
   html[lang="es"] .navmenu ul::before {
-    content: 'Idiomas';
+    content: "Idiomas";
     display: block;
     text-align: center;
     font-size: 14px;
@@ -466,9 +476,9 @@ h6 {
     margin: 10px 0;
     font-weight: 500;
   }
-  
+
   html[lang="en"] .navmenu ul::before {
-    content: 'Languages';
+    content: "Languages";
     display: block;
     text-align: center;
     font-size: 14px;
@@ -477,9 +487,9 @@ h6 {
     margin: 10px 0;
     font-weight: 500;
   }
-  
+
   html[lang="fr"] .navmenu ul::before {
-    content: 'Langues';
+    content: "Langues";
     display: block;
     text-align: center;
     font-size: 14px;
@@ -507,14 +517,14 @@ h6 {
   }
 
   /* Esto afecta a los tres últimos elementos (los idiomas) */
-  .navmenu li:nth-last-child(-n+3) {
+  .navmenu li:nth-last-child(-n + 3) {
     display: inline-block;
     text-align: center;
     margin: 0 5px;
     padding: 5px 0;
   }
 
-  .navmenu li:nth-last-child(-n+3) a {
+  .navmenu li:nth-last-child(-n + 3) a {
     padding: 10px;
     margin: 0;
     display: flex;
@@ -526,8 +536,8 @@ h6 {
     border: none;
   }
 
-  .navmenu li:nth-last-child(-n+3) a:hover,
-  .navmenu li:nth-last-child(-n+3) a.active {
+  .navmenu li:nth-last-child(-n + 3) a:hover,
+  .navmenu li:nth-last-child(-n + 3) a.active {
     background-color: var(--accent-color);
     transform: translateY(-3px);
   }
@@ -541,8 +551,8 @@ h6 {
     transition: all 0.3s ease;
     object-fit: cover;
   }
-  
-  .navmenu li:nth-last-child(-n+3) a:hover #banderas {
+
+  .navmenu li:nth-last-child(-n + 3) a:hover #banderas {
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
@@ -604,7 +614,7 @@ h6 {
   }
 
   /* Estilos mejorados para los idiomas */
-  .navmenu li:nth-last-child(-n+3) a {
+  .navmenu li:nth-last-child(-n + 3) a {
     padding: 8px 15px;
     margin: 5px;
     display: inline-flex;
@@ -612,14 +622,14 @@ h6 {
   }
 
   /* Contenedor de idiomas */
-  .navmenu li:nth-last-child(-n+3) {
+  .navmenu li:nth-last-child(-n + 3) {
     display: inline-block;
     text-align: center;
   }
 
   /* Contenedor para los botones de idioma */
   .navmenu ul:after {
-    content: '';
+    content: "";
     display: block;
     width: 80%;
     height: 1px;
@@ -634,8 +644,8 @@ h6 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
   }
-  
-  .navmenu li:nth-last-child(-n+3) a:hover #banderas {
+
+  .navmenu li:nth-last-child(-n + 3) a:hover #banderas {
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
@@ -684,7 +694,7 @@ h6 {
     justify-content: center;
     transition: all 0.3s ease;
   }
-  
+
   .mobile-nav-active .mobile-nav-toggle:hover {
     background-color: rgba(0, 0, 0, 0.3);
     transform: rotate(90deg);
@@ -695,7 +705,9 @@ h6 {
     overflow: hidden;
     inset: 0;
     background: rgba(33, 37, 41, 0.8);
-    backdrop-filter: blur(4px); /* Efecto de desenfoque para mayor profesionalidad */
+    backdrop-filter: blur(
+      4px
+    ); /* Efecto de desenfoque para mayor profesionalidad */
     transition: 0.3s;
   }
 
@@ -705,7 +717,7 @@ h6 {
     padding: 15px 0; /* Algo más de padding */
     animation: fadeInRight 0.5s ease forwards; /* Animación de entrada */
   }
-  
+
   /* Animación de aparición para el menú */
   @keyframes fadeInRight {
     from {
@@ -717,14 +729,14 @@ h6 {
       transform: translateX(0);
     }
   }
-  
+
   /* Creamos un contenedor flex para las banderas */
   .mobile-nav-active .navmenu ul .language-flags {
     display: flex;
     justify-content: center;
     margin-top: 20px;
   }
-  
+
   /* Separador entre enlaces de menú */
   .navmenu a:not(:last-child)::after {
     content: "";
@@ -735,33 +747,38 @@ h6 {
     height: 1px;
     background-color: rgba(0, 0, 0, 0.05);
   }
-  
+
   /* Mejorar aspecto visual en modo oscuro */
   .dark-background .navmenu ul {
     background-color: rgba(40, 40, 40, 0.95);
   }
-  
+
   .dark-background .navmenu ul::after {
-    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent
+    );
   }
-  
+
   .dark-background .navmenu a:not(:last-child)::after {
     background-color: rgba(255, 255, 255, 0.05);
   }
-  
+
   .dark-background html[lang="es"] .navmenu ul::before,
   .dark-background html[lang="en"] .navmenu ul::before,
   .dark-background html[lang="fr"] .navmenu ul::before {
     color: rgba(255, 255, 255, 0.7);
   }
-  
+
   /* Estilos específicos para dispositivos muy pequeños */
   @media (max-width: 320px) {
-    .navmenu li:nth-last-child(-n+3) a {
+    .navmenu li:nth-last-child(-n + 3) a {
       width: 40px;
       height: 40px;
     }
-    
+
     #banderas {
       width: 20px;
       height: 20px;
@@ -1947,7 +1964,7 @@ section,
   #hportfolio {
     padding-top: 100px; /* Aumentar el padding superior en móviles */
   }
-  
+
   /* Ajustar también los elementos internos de portfolio */
   #portafolioweb {
     padding-top: 20px;
@@ -2005,7 +2022,7 @@ section,
   #head_text {
     padding-top: 120px; /* Aumentar el padding superior en móviles */
   }
-  
+
   /* Ajustar también el título de página en móviles */
   .page-title {
     padding-top: 140px;
@@ -2826,4 +2843,24 @@ section,
   .h-captcha iframe {
     transform: scale(0.85);
   }
+}
+/***************************************** SEGUNDO BOTON *************************************/
+button.learn-more {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+button:hover {
+  border: 1px solid white;
+}
+
+button:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
 }
