@@ -2866,16 +2866,21 @@ button:active {
 }
 
 /*CARD PRUEBA - LIUVA*/
+.card-body {
+  background-color: #ffffff;
+}
+
 #card-prueba {
   border: 0px !important;
-  padding: 0px !important;
+  padding: 20px !important;
   height: auto !important;
   width: 95% !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
 }
 
 #card-prueba img {
   max-height: fit-content;
-  border-radius: 10px !important;
 }
 
 #card-prueba a {
@@ -2885,15 +2890,15 @@ button:active {
   font-weight: 500;
 }
 
-#card-prueba i {
-  color: #ffffff;
+#card-prueba p {
+  font-size: small;
 }
 
 .btn-ver-sitio {
   padding: 10px 25px;
   width: fit-content;
   max-width: 100%;
-  align-self: center;
+  align-self: right;
   font-size: small;
 }
 
@@ -2904,4 +2909,42 @@ button:active {
 #title-background {
   background-color: #f4f8fb !important;
   padding-bottom: 20px !important;
+}
+
+.no-item {
+  color: gray !important;
+  text-decoration: line-through;
+}
+
+.icons-tech i {
+  padding-right: 10px;
+  font-size: 20px !important;
+}
+
+.bi-box-arrow-up-right {
+  color: #ffffff;
+}
+
+.bi-check-lg {
+  color: #059652 !important;
+}
+
+.bi-x {
+  color: brown !important;
+}
+
+.bi-filetype-html {
+  color: #e34c26;
+}
+
+.bi-filetype-css {
+  color: #2965f1;
+}
+
+.bi-search {
+  color: #eeca06;
+}
+
+.bi-globe2 {
+  color: #284e62;
 }
