@@ -2864,3 +2864,39 @@ button:hover {
 button:active {
   box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
 }
+
+/*CARD PRUEBA - LIUVA*/
+#card-prueba {
+  border: 0px !important;
+  padding: 0px !important;
+  height: auto !important;
+  background-image: sc;
+}
+
+#card-prueba img {
+  max-height: fit-content;
+  border-radius: 10px !important;
+}
+
+#card-prueba a {
+  background-color: #68a4c4;
+  border: 0px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+#card-prueba i {
+  color: #ffffff;
+}
+
+.btn-ver-sitio {
+  padding: 10px 25px; /* espacio interno */
+  width: fit-content; /* se adapta al contenido */
+  max-width: 100%; /* evita que se salga del contenedor */
+  align-self: center; /* o center o end según alineación */
+  font-size: small;
+}
+
+.card-img-overlay {
+  padding: 1rem; /* o ajusta según tu diseño */
+}
