@@ -2890,13 +2890,18 @@ button:active {
 }
 
 .btn-ver-sitio {
-  padding: 10px 25px; /* espacio interno */
-  width: fit-content; /* se adapta al contenido */
-  max-width: 100%; /* evita que se salga del contenedor */
-  align-self: center; /* o center o end según alineación */
+  padding: 10px 25px;
+  width: fit-content;
+  max-width: 100%;
+  align-self: center;
   font-size: small;
 }
 
 .card-img-overlay {
-  padding: 1rem; /* o ajusta según tu diseño */
+  padding: 1rem;
+}
+
+#title-background {
+  background-color: #f4f8fb !important;
+  padding-bottom: 20px !important;
 }
