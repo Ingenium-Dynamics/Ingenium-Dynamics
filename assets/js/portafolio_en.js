@@ -61,7 +61,7 @@ const projects = [
     ],
     web: "https://ingenium-dynamics.github.io/fidias/index2.html",
   },
-    {
+  {
     id: 6,
     title: "J-Avila Limpieza y Mantención",
     description:
@@ -72,6 +72,18 @@ const projects = [
       "../assets/img/portfolio/j-avila-03.webp"
     ],
     web: "https://www.j-avila.com",
+  },
+  {
+    id: 7,
+    title: "Escuela Artes y Cultura",
+    description:
+      "Website for School of Arts and Culture.",
+    images: [
+      "../assets/img/portfolio/eaco01.webp",
+      "../assets/img/portfolio/eaco02.webp",
+      "../assets/img/portfolio/eaco03.webp",
+    ],
+    web: "https://www.escueladeartesycultura.com/",
   },
   // Añade más proyectos aquí...
 ];

@@ -73,6 +73,18 @@ const projects = [
     ],
     web: "https://www.j-avila.com",
   },
+  {
+    id: 7,
+    title: "Escuela Artes y Cultura",
+    description:
+      "Sitio web para Escuela Artes y Cultura.",
+    images: [
+      "./assets/img/portfolio/eaco01.webp",
+      "./assets/img/portfolio/eaco02.webp",
+      "./assets/img/portfolio/eaco03.webp",
+    ],
+    web: "https://www.escueladeartesycultura.com/",
+  },
 ];
 
 function showModal(projectId) {
