@@ -48,4 +48,22 @@ $(document).ready(function(){
     });
 });
 
-
+// Rotate mobile images for Real Estate App
+$(document).ready(function() {
+    const images = [
+        'assets/img/webapps/web_app_prop/wa_prop_mob_01.webp',
+        'assets/img/webapps/web_app_prop/wa_prop_mob_02.webp',
+        'assets/img/webapps/web_app_prop/wa_prop_mob_03.webp'
+    ];
+    let currentIndex = 0;
+    const mobileImg = $('.mobile-view img');
+    
+    if(mobileImg.length) {
+        setInterval(function() {
+            currentIndex = (currentIndex + 1) % images.length;
+            mobileImg.fadeOut(400, function() {
+                $(this).attr('src', images[currentIndex]).fadeIn(400);
+            });
+        }, 3000);
+    }
+});

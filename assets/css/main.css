@@ -2827,3 +2827,83 @@ section,
     transform: scale(0.85);
   }
 }
+
+/*--------------------------------------------------------------
+# Web App Showcase
+--------------------------------------------------------------*/
+.webapp-showcase {
+    padding: 2rem 0;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, var(--heading-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.feature-list li i {
+    transition: transform 0.3s ease;
+}
+
+.feature-list li:hover i {
+    transform: scale(1.2);
+}
+
+.showcase-visuals {
+    perspective: 1000px;
+}
+
+.desktop-view {
+    transition: transform 0.5s ease;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.showcase-visuals:hover .desktop-view {
+    transform: rotateY(2deg);
+}
+
+.mobile-view {
+    transition: transform 0.5s ease;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.175)!important;
+}
+
+.showcase-visuals:hover .mobile-view {
+    transform: translateY(-10px) rotateY(-5deg);
+}
+
+/* Pricing Cards */
+.pricing-card {
+    transition: all 0.3s ease-in-out;
+    background: var(--surface-color);
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.175)!important;
+}
+
+.popular-plan {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.popular-plan:hover {
+    transform: scale(1.08) translateY(-10px);
+}
+
+@media (max-width: 768px) {
+    .mobile-view {
+        width: 120px !important;
+        right: 0 !important;
+        bottom: -20px !important;
+    }
+    
+    .pricing-card.popular-plan {
+        transform: scale(1);
+    }
+    
+    .pricing-card.popular-plan:hover {
+        transform: translateY(-5px);
+    }
+}
