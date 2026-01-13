@@ -310,24 +310,4 @@
   // Ejecutar cuando se redimensiona la ventana
   window.addEventListener('resize', enhanceMobileLanguageButtons);
 
-  /**
-   * Reset Gallery Carousel when Modal Opens
-   */
-  const galleryModal = document.getElementById('galleryModal');
-  if (galleryModal) {
-    galleryModal.addEventListener('show.bs.modal', function () {
-      // Find the carousel inside the modal
-      const carouselElement = galleryModal.querySelector('.carousel');
-      if (carouselElement) {
-        // Get the Bootstrap Carousel instance or create one
-        let carouselInstance = bootstrap.Carousel.getInstance(carouselElement);
-        if (!carouselInstance) {
-           carouselInstance = new bootstrap.Carousel(carouselElement);
-        }
-        // Go to the first slide
-        carouselInstance.to(0);
-      }
-    });
-  }
-
 })();

@@ -289,10 +289,9 @@
                       alt="Vue Bureau Gestion Immobilière">
                     <!-- Overlay Button -->
                     <div class="gallery-overlay">
-                      <button class="btn btn-primary rounded-pill px-4 py-2 shadow-sm gallery-btn"
-                        data-bs-toggle="modal" data-bs-target="#galleryModal">
-                        <i class="bi bi-images me-2"></i>Voir la galerie
-                      </button>
+                      <a href="courtage-immobilier.html" target="_blank" class="btn btn-primary rounded-pill px-4 py-2 shadow-sm gallery-btn">
+                        <i class="bi bi-info-circle me-2"></i>Plus d'infos
+                      </a>
                     </div>
                   </div>
                   <div class="mobile-view shadow-lg rounded-4 position-absolute"
@@ -348,7 +347,7 @@
                       <div class="card-body text-center p-4">
                         <h5 class="card-title text-muted mb-3">Trimestriel</h5>
                         <div class="price mb-3">
-                          <span class="fs-2 fw-bold text-dark">3 UF</span>
+                          <span class="fs-2 fw-bold text-dark">135 USD</span>
                           <span class="text-muted small">/total</span>
                         </div>
                         <p class="card-text small text-muted mb-4">Idéal pour tester la plateforme.</p>
@@ -366,7 +365,7 @@
                       <div class="card-body text-center p-4">
                         <h5 class="card-title text-primary mb-3">Annuel</h5>
                         <div class="price mb-3">
-                          <span class="fs-1 fw-bold text-dark">8 UF</span>
+                          <span class="fs-1 fw-bold text-dark">360 USD</span>
                           <span class="text-muted small">/an</span>
                         </div>
                         <p class="card-text small text-muted mb-4">Économies maximales pour votre entreprise.</p>
@@ -381,7 +380,7 @@
                       <div class="card-body text-center p-4">
                         <h5 class="card-title text-muted mb-3">Semestriel</h5>
                         <div class="price mb-3">
-                          <span class="fs-2 fw-bold text-dark">5 UF</span>
+                          <span class="fs-2 fw-bold text-dark">225 USD</span>
                           <span class="text-muted small">/total</span>
                         </div>
                         <p class="card-text small text-muted mb-4">Équilibre parfait entre coût et durée.</p>
@@ -427,81 +426,7 @@
     <!-- Contenido del modal -->
   </div>
 
-  <!-- Gallery Modal -->
-  <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content bg-transparent border-0">
-        <div class="modal-header border-0">
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body p-0">
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                aria-label="Slide 6"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                aria-label="Slide 7"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-                aria-label="Slide 8"></button>
-            </div>
-            <div class="carousel-inner rounded-3">
-              <!-- Desktop Images -->
-              <div class="carousel-item active">
-                <img src="../assets/img/webapps/web_app_prop/wa_propiedades_01.webp" class="d-block w-100"
-                  alt="Gestionnaire Immobilier 1">
-              </div>
-              <div class="carousel-item">
-                <img src="../assets/img/webapps/web_app_prop/wa_propiedades_02.webp" class="d-block w-100"
-                  alt="Gestionnaire Immobilier 2">
-              </div>
-              <div class="carousel-item">
-                <img src="../assets/img/webapps/web_app_prop/wa_propiedades_03.webp" class="d-block w-100"
-                  alt="Gestionnaire Immobilier 3">
-              </div>
-              <div class="carousel-item">
-                <img src="../assets/img/webapps/web_app_prop/wa_propiedades_04.webp" class="d-block w-100"
-                  alt="Gestionnaire Immobilier 4">
-              </div>
-              <div class="carousel-item">
-                <img src="../assets/img/webapps/web_app_prop/wa_propiedades_05.webp" class="d-block w-100"
-                  alt="Gestionnaire Immobilier 5">
-              </div>
-              <!-- Mobile Images -->
-              <div class="carousel-item text-center bg-dark">
-                 <img src="../assets/img/webapps/web_app_prop/wa_prop_mob_01.webp" class="d-inline-block mobile-carousel-img" alt="Gestionnaire Immobilier Mobile 1">
-              </div>
-              <div class="carousel-item text-center bg-dark">
-                 <img src="../assets/img/webapps/web_app_prop/wa_prop_mob_02.webp" class="d-inline-block mobile-carousel-img" alt="Gestionnaire Immobilier Mobile 2">
-              </div>
-              <div class="carousel-item text-center bg-dark">
-                 <img src="../assets/img/webapps/web_app_prop/wa_prop_mob_03.webp" class="d-inline-block mobile-carousel-img" alt="Gestionnaire Immobilier Mobile 3">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Précédent</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Suivant</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
   <script>
     function showServiceModal() {
