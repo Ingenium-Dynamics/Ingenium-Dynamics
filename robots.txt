@@ -1,7 +1,0 @@
-# robots.txt optimized for LanguageLife
-User-agent: *
-Disallow: /assets/
-
-
-Sitemap: https://www.ingeniumbright.com/sitemap.xml
-

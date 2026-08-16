@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "solutions": "Soluciones",
+    "work": "Proyectos",
+    "about": "Nosotros",
+    "insights": "Perspectivas",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Tecnología que impulsa tu negocio.",
+    "description": "Diseñamos y desarrollamos soluciones digitales adaptadas a tu negocio — desde sitios web y aplicaciones hasta automatización, datos y cloud.",
+    "primaryCta": "Iniciar un proyecto",
+    "secondaryCta": "Ver proyectos"
+  }
+}

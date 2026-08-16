@@ -1,0 +1,204 @@
+{
+  "nav": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "work": "Work",
+    "about": "About",
+    "insights": "Insights",
+    "contact": "Contact",
+    "cta": "Start a Project"
+  },
+  "hero": {
+    "title": "Technology that moves your business forward.",
+    "subtitle": "We design and build digital solutions around your business — from websites and applications to automation, data and cloud.",
+    "cta_primary": "Start a project",
+    "cta_secondary": "Explore our work",
+    "badge_web": "Web & Digital",
+    "badge_software": "Custom Software",
+    "badge_automation": "Automation & AI",
+    "badge_data": "Data & Analytics",
+    "badge_cloud": "Cloud & Security",
+    "badge_consulting": "Technology Consulting"
+  },
+  "problem_value": {
+    "tagline": "Business-First Approach",
+    "title": "Your business doesn't need more technology. It needs the right technology.",
+    "description": "At Ingenium Bright, we don't choose tools blindly. We begin by understanding your business challenges, workflows, and goals. From there, we design and build a scalable technical solution that solves the actual problem and delivers measurable value."
+  },
+  "solutions": {
+    "tagline": "Our Solutions",
+    "title": "Professional Technology Boutique",
+    "web": {
+      "title": "Web & Digital",
+      "desc": "High-converting corporate websites, landing pages, and fast, modern e-commerce platforms optimized for SEO from day one.",
+      "items": ["Web Development", "Landing Pages", "E-commerce", "SEO-Ready Websites"]
+    },
+    "software": {
+      "title": "Custom Software",
+      "desc": "Powerful web applications, internal management portals, APIs, and custom integrations to automate your core business logic.",
+      "items": ["Web Applications", "Custom Software", "API Development", "System Integrations"]
+    },
+    "automation": {
+      "title": "Automation & AI",
+      "desc": "Streamlining repetitive manual workflows and integrating artificial intelligence models to boost team productivity.",
+      "items": ["Workflow Automation", "AI Integrations", "Process Optimization", "API Connections"]
+    },
+    "data": {
+      "title": "Data & Analytics",
+      "desc": "Interactive visualization dashboards, data engineering pipelines, and automatic reporting for data-driven decisions.",
+      "items": ["Dashboards", "Data Analytics", "Data Engineering", "Automated Reporting"]
+    },
+    "cloud": {
+      "title": "Cloud & Security",
+      "desc": "Scalable cloud architectures, continuous deployment pipelines, and modern security protocols to keep your infrastructure safe.",
+      "items": ["Cloud Architecture", "DevOps Deployments", "Cybersecurity", "Infrastructure as Code"]
+    },
+    "consulting": {
+      "title": "Technology Consulting",
+      "desc": "Strategic digital transformation advising, SAP consulting, and technical architecture definition built for the future.",
+      "items": ["Technology Strategy", "Digital Transformation", "SAP Consulting", "Technical Architecture"]
+    }
+  },
+  "process": {
+    "tagline": "Methodology",
+    "title": "How we work",
+    "step1_title": "Discover",
+    "step1_desc": "We deeply analyze your business, your target users, and your commercial goals before writing any code.",
+    "step2_title": "Design",
+    "step2_desc": "We map out the user experience, define the system architecture, and establish a detailed technical scope.",
+    "step3_title": "Build",
+    "step3_desc": "We develop clean, typed code, integrate with your current platforms, run quality tests, and deploy safely.",
+    "step4_title": "Grow",
+    "step4_desc": "We monitor performance, provide ongoing updates, and evolve the product to match your scaling business."
+  },
+  "why_us": {
+    "tagline": "Why Choose Us",
+    "title": "A dependable partner for your digital challenges",
+    "business_first_title": "Business first",
+    "business_first_desc": "We start with your operational challenges, not technological trends.",
+    "expertise_title": "Full-stack expertise",
+    "expertise_desc": "Capable from modern user interfaces to secure database structures, server architecture, and APIs.",
+    "scalable_title": "Scalable by design",
+    "scalable_desc": "Clean code bases designed to grow and evolve easily with your business.",
+    "partner_title": "Single technology partner",
+    "partner_desc": "We cover the complete product lifecycle: strategy, design, development, and support."
+  },
+  "about": {
+    "tagline": "About Ingenium Bright",
+    "title": "Where technology meets business strategy",
+    "desc_1": "We are a boutique software company dedicated to engineering high-quality digital solutions. We step away from generic site templates and mass-produced apps: every project we deliver is customized around your business needs.",
+    "desc_2": "Our capabilities range from modern frontend and backend development to secure cloud setups, complex data systems, and strategic SAP consulting. We pride ourselves on bridging the gap between business processes and modern software engineering.",
+    "founder_note": "We support local businesses wanting a professional web presence, as well as growing startups and enterprises requiring customized applications and automated backend workflows."
+  },
+  "insights": {
+    "tagline": "Insights & Community",
+    "title": "Tech trends, digital strategy, and announcements",
+    "desc": "We believe in sharing knowledge. Follow us on Instagram for our latest news, quick technical deep-dives, and digital strategy insights.",
+    "cta": "Follow on Instagram",
+    "handle": "@ingenium_bright"
+  },
+  "contact": {
+    "tagline": "Let's talk",
+    "title": "Tell us about your project",
+    "desc": "Let us know what you want to build, improve, or automate. We will get back to you shortly.",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "company": "Company",
+      "project_type": "Project type",
+      "project_type_placeholder": "Select project type...",
+      "web_dev": "Website / E-commerce",
+      "custom_software": "Custom Software",
+      "automation": "Automation or AI",
+      "other": "Other / Consulting",
+      "need": "What do you need?",
+      "need_placeholder": "Briefly describe your requirements...",
+      "budget": "Budget range (Optional)",
+      "budget_placeholder": "Select budget range...",
+      "budget_1": "Under $2,000 USD",
+      "budget_2": "$2,000 - $5,000 USD",
+      "budget_3": "$5,000 - $10,000 USD",
+      "budget_4": "Over $10,000 USD",
+      "message": "Your message",
+      "message_placeholder": "Tell us more about your project goals...",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! We will get back to you soon.",
+      "error": "An error occurred while sending the message. Please try again."
+    }
+  },
+  "portfolio": {
+    "tagline": "Case Studies",
+    "title": "Our Featured Work",
+    "cta_view": "View Case Study",
+    "visit_site": "Visit Website",
+    "project": "Project",
+    "client": "Client / Industry",
+    "challenge": "The Challenge",
+    "solution": "The Solution",
+    "tech": "Technologies used",
+    "result": "The Result",
+    "projects": {
+      "haras-los-pellines": {
+        "title": "Haras Los Pellines",
+        "category": "Digital Presence / Horse Breeder",
+        "description": "High-impact landing page for a prestigious horse breeding farm, with AWS-powered contact forms.",
+        "challenge": "The client needed a sophisticated web presence reflecting the prestige and tradition of their farm, with a secure, reliable communication channel for customer inquiries.",
+        "solution": "We designed a premium responsive landing page with clean typography and optimized photography, powered by serverless AWS components for form handling.",
+        "tech": "HTML5, CSS3, Tailwind, JavaScript, AWS Lambda, API Gateway.",
+        "result": "A high-performance page with rapid load times and instant inquiry notifications to the management team."
+      },
+      "languagelife": {
+        "title": "LanguageLife",
+        "category": "Education / Art Academy",
+        "description": "Multilingual educational web platform for a language and art academy, featuring galleries and exhibition logs.",
+        "challenge": "The academy needed a multilingual website to promote its courses, art exhibitions, and student gallery in a highly visual layout.",
+        "solution": "We built a multilingual system with real-time language toggling, responsive layouts, and interactive lazy-loaded image grids.",
+        "tech": "HTML5, CSS3, JavaScript, Bootstrap, Multilingual Routing.",
+        "result": "Increased enrollment from international students and elevated brand visibility for their art exhibitions."
+      },
+      "alex-oyarzun": {
+        "title": "Psychologist Alex Oyarzún",
+        "category": "Healthcare / Professional Consultation",
+        "description": "Professional, reassuring clinical website showcasing therapeutic services and client inquiry options.",
+        "challenge": "A mental health professional required an empathetic, clear page to outline therapeutic services and encourage initial consultations while ensuring confidentiality.",
+        "solution": "We created a clean layout emphasizing warm design elements, clearly structured services, and direct, secure contact methods.",
+        "tech": "HTML5, CSS3, Tailwind, JavaScript.",
+        "result": "A solid digital presence that helped build trust, resulting in a full client schedule and simplified communication."
+      },
+      "nico-castro": {
+        "title": "Nicolás Castro Photography",
+        "category": "Photography / Creative Portfolio",
+        "description": "Sleek, dark creative portfolio designed to show high-resolution photography with rapid load times.",
+        "challenge": "A professional photographer needed to showcase galleries of high-definition work without slowing down the site for mobile users.",
+        "solution": "We built a minimal dark UI that acts as a blank canvas, utilizing advanced WebP compression and aggressive image lazy loading.",
+        "tech": "HTML5, CSS3, JavaScript, WebP Optimization, Cloudfront CDN.",
+        "result": "A visually striking portfolio loading in milliseconds that beautifully presents commercial work across international locations."
+      },
+      "fidias-place": {
+        "title": "Fidias Place",
+        "category": "Leisure & Sports / Dance Academy",
+        "description": "Interactive landing page with class calendars, pricing lists, and online registration.",
+        "challenge": "The academy wanted a mobile-friendly site to capture new students, showing class options and scheduling information clearly.",
+        "solution": "We developed a clean conversion funnel, integrating clear call-to-actions and clean tables mapping out salsa and bachata lessons.",
+        "tech": "HTML5, CSS3, Bootstrap, JavaScript.",
+        "result": "A high converting landing page leading to steady increases in weekly student signups."
+      },
+      "j-avila": {
+        "title": "J-Avila Cleaning & Maintenance",
+        "category": "Industrial Services / Commercial Cleaning",
+        "description": "Conversion-oriented landing page designed to attract corporate contracts and quote requests.",
+        "challenge": "A cleaning and maintenance company needed to upgrade their online brand to win contracts in the corporate and industrial spaces.",
+        "solution": "We engineered a clean website presenting their service checklists, client trust markers, and a simplified quote calculator form.",
+        "tech": "HTML5, CSS3, Tailwind, JS.",
+        "result": "Improved corporate credibility and a solid stream of weekly quote requests from offices and facilities."
+      }
+    }
+  },
+  "footer": {
+    "desc": "Digital solutions engineered for your business. We build with technical excellence.",
+    "solutions_title": "Solutions",
+    "company_title": "Company",
+    "rights": "All rights reserved."
+  }
+}

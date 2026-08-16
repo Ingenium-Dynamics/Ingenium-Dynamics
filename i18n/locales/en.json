@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "solutions": "Solutions",
+    "work": "Work",
+    "about": "About",
+    "insights": "Insights",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Technology that moves your business forward.",
+    "description": "We design and build digital solutions around your business — from websites and applications to automation, data and cloud.",
+    "primaryCta": "Start a project",
+    "secondaryCta": "Explore our work"
+  }
+}

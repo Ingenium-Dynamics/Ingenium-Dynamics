@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "solutions": "Solutions",
+    "work": "Réalisations",
+    "about": "À propos",
+    "insights": "Perspectives",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "La technologie au service de votre entreprise.",
+    "description": "Nous concevons et développons des solutions numériques adaptées à votre entreprise — des sites web et applications à l’automatisation, aux données et au cloud.",
+    "primaryCta": "Démarrer un projet",
+    "secondaryCta": "Voir nos réalisations"
+  }
+}

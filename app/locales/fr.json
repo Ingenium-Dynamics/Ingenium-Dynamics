@@ -1,0 +1,204 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "solutions": "Solutions",
+    "work": "Projets",
+    "about": "À Propos",
+    "insights": "Perspectives",
+    "contact": "Contact",
+    "cta": "Lancer un Projet"
+  },
+  "hero": {
+    "title": "La technologie qui fait progresser votre entreprise.",
+    "subtitle": "Nous concevons et développons des solutions numériques sur mesure pour votre entreprise — des sites web et applications à l'automatisation, aux données et au cloud.",
+    "cta_primary": "Démarrer un projet",
+    "cta_secondary": "Explorer nos projets",
+    "badge_web": "Web & Numérique",
+    "badge_software": "Logiciels Sur Mesure",
+    "badge_automation": "Automatisation & IA",
+    "badge_data": "Données & Analytique",
+    "badge_cloud": "Cloud & Sécurité",
+    "badge_consulting": "Conseil Technologique"
+  },
+  "problem_value": {
+    "tagline": "Priorité aux Objectifs d'Affaires",
+    "title": "Votre entreprise n'a pas besoin de plus de technologie. Elle a besoin de la bonne technologie.",
+    "description": "Chez Ingenium Bright, nous ne choisissons pas les outils aveuglément. Nous commençons par comprendre vos défis d'affaires, vos flux de travail et vos objectifs. À partir de là, nous concevons et développons une solution technique évolutive qui résout le problème réel y apporte une valeur mesurable."
+  },
+  "solutions": {
+    "tagline": "Nos Solutions",
+    "title": "Boutique de Services Technologiques",
+    "web": {
+      "title": "Web & Numérique",
+      "desc": "Sites web corporatifs, pages de destination (landing pages) de haute conversion et plateformes de commerce électronique rapides, modernes et optimisées pour le référencement (SEO).",
+      "items": ["Développement Web", "Pages de Destination", "Commerce Électronique", "Sites Web Optimisés pour le SEO"]
+    },
+    "software": {
+      "title": "Logiciels Sur Mesure",
+      "desc": "Applications web performantes, portails de gestion interne, APIs et flux d'intégration personnalisés pour automatiser vos processus clés.",
+      "items": ["Applications Web", "Logiciels Personnalisés", "Développement d'APIs", "Intégrations de Systèmes"]
+    },
+    "automation": {
+      "title": "Automatisation & IA",
+      "desc": "Optimisation des flux de travail répétitifs et intégration de modèles d'intelligence artificielle pour accélérer la productivité.",
+      "items": ["Automatisation des Processus", "Intégration d'IA", "Flux de Travail", "Connexions d'APIs"]
+    },
+    "data": {
+      "title": "Données & Analytique",
+      "desc": "Tableaux de bord interactifs, ingénierie de données et rapports automatiques pour guider vos décisions d'affaires.",
+      "items": ["Tableaux de Bord", "Analytique des Données", "Ingénierie de Données", "Rapports Automatisés"]
+    },
+    "cloud": {
+      "title": "Cloud & Sécurité",
+      "desc": "Architectures cloud évolutives, pipelines de déploiement continu et protocoles de sécurité modernes pour protéger vos infrastructures.",
+      "items": ["Architecture Cloud", "Déploiements DevOps", "Cybersécurité", "Infrastructure as Code"]
+    },
+    "consulting": {
+      "title": "Conseil Technologique",
+      "desc": "Accompagnement stratégique en transformation numérique, conseil SAP et définition d'architectures techniques tournées vers l'avenir.",
+      "items": ["Stratégie Technologique", "Transformation Numérique", "Conseil SAP", "Architecture de Systèmes"]
+    }
+  },
+  "process": {
+    "tagline": "Méthodologie",
+    "title": "Notre façon de travailler",
+    "step1_title": "Découvrir",
+    "step1_desc": "Nous analysons en profondeur votre entreprise, vos utilisateurs et vos objectifs commerciaux avant de proposer une solution.",
+    "step2_title": "Concevoir",
+    "step2_desc": "Nous définissons l'expérience utilisateur, l'architecture du système et établissons un plan technique détaillé.",
+    "step3_title": "Bâtir",
+    "step3_desc": "Nous développons du code propre, intégrons vos systèmes, réalisons des tests de qualité et déployons en toute sécurité.",
+    "step4_title": "Grandir",
+    "step4_desc": "Nous surveillons les performances, assurons la maintenance et faisons évoluer le produit à votre rythme."
+  },
+  "why_us": {
+    "tagline": "Pourquoi Nous Choisir",
+    "title": "Un partenaire de confiance pour vos défis numériques",
+    "business_first_title": "L'entreprise d'abord",
+    "business_first_desc": "Nous partons de vos défis opérationnels réels, pas des modes technologiques.",
+    "expertise_title": "Expertise Full-Stack",
+    "expertise_desc": "De l'interface utilisateur moderne à l'architecture de base de données, serveurs et APIs.",
+    "scalable_title": "Évolutif par conception",
+    "scalable_desc": "Des bases de code propres conçues pour grandir avec votre entreprise.",
+    "partner_title": "Partenaire technologique unique",
+    "partner_desc": "Nous gérons tout le cycle de vie : stratégie, conception, développement et support."
+  },
+  "about": {
+    "tagline": "À Propos d'Ingenium Bright",
+    "title": "Là où la technologie rencontre la stratégie d'affaires",
+    "desc_1": "Nous sommes une boutique technologique dédiée à la conception et au développement de solutions numériques de haute qualité. Nous nous éloignons des modèles de sites génériques : chaque projet est développé sur mesure pour répondre aux besoins spécifiques de votre entreprise.",
+    "desc_2": "Nos compétences vont du développement moderne frontend et backend aux infrastructures cloud sécurisées, aux systèmes de données complexes et au conseil SAP. Nous comblons le fossé entre les processus d'affaires et l'ingénierie logicielle moderne.",
+    "founder_note": "Nous soutenons les entreprises locales qui souhaitent professionnaliser leur présence en ligne, ainsi que les startups et entreprises en croissance ayant besoin d'applications sur mesure et de flux d'automatisation."
+  },
+  "insights": {
+    "tagline": "Perspectives & Communauté",
+    "title": "Tendances, stratégies numériques et nouveautés",
+    "desc": "Nous croyons au partage des connaissances. Suivez-nous sur Instagram pour découvrir nos actualités, nos analyses techniques et nos conseils de stratégie numérique.",
+    "cta": "Suivre sur Instagram",
+    "handle": "@ingenium_bright"
+  },
+  "contact": {
+    "tagline": "Discutons",
+    "title": "Parlez-nous de votre projet",
+    "desc": "Dites-nous ce que vous souhaitez bâtir, améliorer ou automatiser. Nous vous répondrons dans les plus brefs délais.",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse courriel",
+      "company": "Entreprise",
+      "project_type": "Type de projet",
+      "project_type_placeholder": "Sélectionnez le type de projet...",
+      "web_dev": "Site Web / Commerce Électronique",
+      "custom_software": "Logiciel Sur Mesure",
+      "automation": "Automatisation ou IA",
+      "other": "Autre / Conseil",
+      "need": "De quoi avez-vous besoin?",
+      "need_placeholder": "Décrivez brièvement vos besoins...",
+      "budget": "Fourchette budgétaire (Optionnel)",
+      "budget_placeholder": "Sélectionnez le budget...",
+      "budget_1": "Moins de 2 000 $ USD",
+      "budget_2": "2 000 $ - 5 000 $ USD",
+      "budget_3": "5 000 $ - 10 000 $ USD",
+      "budget_4": "Plus de 10 000 $ USD",
+      "message": "Votre message",
+      "message_placeholder": "Racontez-nous en détail vos objectifs...",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès! Nous vous contacterons bientôt.",
+      "error": "Une erreur est survenue lors de l'envoi. Veuillez réessayer."
+    }
+  },
+  "portfolio": {
+    "tagline": "Études de Cas",
+    "title": "Nos réalisations",
+    "cta_view": "Voir l'étude de cas",
+    "visit_site": "Visiter le site web",
+    "project": "Projet",
+    "client": "Client / Secteur",
+    "challenge": "Le Défi",
+    "solution": "La Solution",
+    "tech": "Technologies utilisées",
+    "result": "Le Résultat",
+    "projects": {
+      "haras-los-pellines": {
+        "title": "Haras Los Pellines",
+        "category": "Présence Numérique / Élevage de Chevaux",
+        "description": "Page de destination élégante et performante pour un haras de prestige, équipée de formulaires AWS serverless.",
+        "challenge": "Le client souhaitait une vitrine raffinée reflétant le prestige de son élevage, ainsi qu'un moyen fiable de capter des demandes d'acheteurs potentiels.",
+        "solution": "Nous avons développé une landing page optimisée pour mobile avec une galerie photos fluide et un formulaire de contact connecté aux services serverless d'AWS.",
+        "tech": "HTML5, CSS3, Tailwind, JavaScript, AWS Lambda, API Gateway.",
+        "result": "Un site rapide avec des notifications de contact transmises instantanément à l'équipe de gestion."
+      },
+      "languagelife": {
+        "title": "LanguageLife",
+        "category": "Éducation / Académie de Langues et d'Art",
+        "description": "Portail éducatif et culturel multilingue avec galeries d'art et suivi des expositions.",
+        "challenge": "L'académie avait besoin d'un portail multilingue pour attirer des étudiants internationaux et présenter ses expositions artistiques.",
+        "solution": "Nous avons conçu un système de traduction instantanée avec des grilles de galeries interactives optimisées pour mobile.",
+        "tech": "HTML5, CSS3, JavaScript, Bootstrap, Routage Multilingue.",
+        "result": "Une augmentation des inscriptions d'élèves étrangers et une meilleure visibilité internationale pour les expositions."
+      },
+      "alex-oyarzun": {
+        "title": "Psychologue Alex Oyarzún",
+        "category": "Santé / Consultation Clinique",
+        "description": "Site professionnel épuré permettant de présenter ses spécialités cliniques et de faciliter les prises de contact.",
+        "challenge": "Le clinicien demandait une vitrine numérique chaleureuse et sécurisée pour rassurer ses futurs patients et faciliter la prise de contact.",
+        "solution": "Création d'un design minimaliste chaleureux, détaillant clairement les champs de pratique avec un accès simple et sécurisé aux formulaires.",
+        "tech": "HTML5, CSS3, Tailwind, JavaScript.",
+        "result": "Une présence locale consolidée avec un agenda de consultations clinique rapidement rempli."
+      },
+      "nico-castro": {
+        "title": "Nicolas Castro Photographe",
+        "category": "Photographie / Portfolio Créatif",
+        "description": "Portfolio de photographie d'art haut de gamme garantissant un chargement ultra-rapide des visuels.",
+        "challenge": "Afficher des galeries de photographies haute définition sans ralentir la navigation mobile.",
+        "solution": "Un design sombre minimaliste servant d'arrière-plan aux clichés, optimisé avec compression WebP et lazy loading agressif.",
+        "tech": "HTML5, CSS3, JavaScript, WebP, Cloudfront CDN.",
+        "result": "Un portfolio moderne, fluide, chargeant instantanément pour présenter ses reportages internationaux."
+      },
+      "fidias-place": {
+        "title": "Fidias Place",
+        "category": "Loisirs / École de Danse",
+        "description": "Page de destination interactive avec grille d'horaires des cours, tarifs et formulaires d'inscriptions.",
+        "challenge": "Capturer de nouvelles inscriptions d'élèves de salsa et bachata grâce à une présentation simple des cours et horaires.",
+        "solution": "Nous avons créé des tableaux d'horaires clairs et un entonnoir d'inscription simple adapté aux mobiles.",
+        "tech": "HTML5, CSS3, Bootstrap, JavaScript.",
+        "result": "Hausse importante du taux de conversion et des inscriptions directes via la page."
+      },
+      "j-avila": {
+        "title": "J-Avila Services de Nettoyage",
+        "category": "Services Industriels / Entretien Résidentiel",
+        "description": "Vitrine corporative axée sur la conversion et les demandes de soumission de nettoyage.",
+        "challenge": "Positionner la marque dans le segment corporatif et industriel de l'entretien commercial.",
+        "solution": "Développement d'un site présentant les listes de contrôle de nettoyage, les garanties et une demande de soumission simplifiée.",
+        "tech": "HTML5, CSS3, Tailwind, JS.",
+        "result": "Amélioration de la crédibilité de l'entreprise avec une augmentation des demandes de devis d'entreprises."
+      }
+    }
+  },
+  "footer": {
+    "desc": "Des solutions numériques adaptées à votre entreprise. Conçues avec excellence technique.",
+    "solutions_title": "Solutions",
+    "company_title": "Compagnie",
+    "rights": "Tous droits réservés."
+  }
+}
