@@ -1,15 +1,287 @@
 {
   "nav": {
+    "home": "Inicio",
     "solutions": "Soluciones",
-    "work": "Proyectos",
-    "about": "Nosotros",
-    "insights": "Perspectivas",
-    "contact": "Contacto"
+    "work": "Portafolio",
+    "about": "Sobre Nosotros",
+    "insights": "Insights",
+    "contact": "Contacto",
+    "cta": "Iniciar Proyecto"
   },
   "hero": {
+    "eyebrow": "Boutique Tecnológica",
     "title": "Tecnología que impulsa tu negocio.",
-    "description": "Diseñamos y desarrollamos soluciones digitales adaptadas a tu negocio — desde sitios web y aplicaciones hasta automatización, datos y cloud.",
-    "primaryCta": "Iniciar un proyecto",
-    "secondaryCta": "Ver proyectos"
+    "description": "Diseñamos y construimos soluciones digitales a la medida de tu empresa — desde sitios web y aplicaciones hasta automatización, datos y nube.",
+    "primaryCta": "Comenzar un proyecto",
+    "secondaryCta": "Explorar nuestro trabajo",
+    "capabilities": {
+      "web": "Web & Digital",
+      "software": "Custom Software",
+      "automation": "Automatización & IA",
+      "data": "Datos & Analítica",
+      "cloud": "Cloud & Seguridad",
+      "consulting": "Consultoría Tecnológica"
+    }
+  },
+  "intro": {
+    "eyebrow": "Enfoque en el Negocio",
+    "title": "Tu negocio no necesita más tecnología. Necesita la tecnología correcta.",
+    "description": "En Ingenium Bright no elegimos herramientas a ciegas. Comenzamos por comprender los desafíos, los procesos y las metas de tu negocio. A partir de ahí, diseñamos y construimos una solución técnica escalable que realmente resuelva el problema y aporte valor medible."
+  },
+  "solutions": {
+    "eyebrow": "Nuestras Soluciones",
+    "title": "Boutique de Servicios Tecnológicos",
+    "description": "Seis áreas de especialización que trabajan en conjunto para llevar tu negocio de lo digital a lo estratégico.",
+    "web": {
+      "title": "Web & Digital",
+      "description": "Sitios web corporativos, landing pages de alta conversión y plataformas de comercio electrónico rápidas, modernas y totalmente optimizadas para SEO.",
+      "items": ["Desarrollo Web", "Landing Pages", "Comercio Electrónico", "Webs Optimizadas para SEO"],
+      "cta": "Explorar Web & Digital"
+    },
+    "software": {
+      "title": "Software a Medida",
+      "description": "Aplicaciones web potentes, sistemas de gestión interna, APIs y flujos de integración personalizados para automatizar los procesos centrales.",
+      "items": ["Aplicaciones Web", "Software Personalizado", "Diseño de APIs", "Integraciones de Sistemas"],
+      "cta": "Explorar Software a Medida"
+    },
+    "automation": {
+      "title": "Automatización & IA",
+      "description": "Optimización de flujos de trabajo repetitivos e integración de modelos de inteligencia artificial para acelerar la productividad.",
+      "items": ["Automatización de Procesos", "Integración de IA", "Flujos de Trabajo", "Conexiones de APIs"],
+      "cta": "Explorar Automatización & IA"
+    },
+    "data": {
+      "title": "Datos & Analítica",
+      "description": "Paneles de visualización interactivos, ingeniería de datos y reportes automáticos para tomar decisiones comerciales informadas.",
+      "items": ["Dashboards", "Analítica de Datos", "Ingeniería de Datos", "Reportes Automatizados"],
+      "cta": "Explorar Datos & Analítica"
+    },
+    "cloud": {
+      "title": "Nube & Seguridad",
+      "description": "Arquitectura en la nube escalable, despliegue continuo y protocolos de seguridad modernos para proteger tu infraestructura.",
+      "items": ["Arquitectura Cloud", "Despliegues DevOps", "Ciberseguridad", "Infraestructura como Código"],
+      "cta": "Explorar Nube & Seguridad"
+    },
+    "consulting": {
+      "title": "Consultoría Tecnológica",
+      "description": "Asesoría estratégica en transformación digital, consultoría SAP y definición de arquitecturas técnicas para el futuro.",
+      "items": ["Estrategia Tecnológica", "Transformación Digital", "Consultoría SAP", "Arquitectura de Sistemas"],
+      "cta": "Explorar Consultoría"
+    }
+  },
+  "process": {
+    "eyebrow": "Metodología",
+    "title": "Cómo trabajamos",
+    "discover": {
+      "number": "01",
+      "title": "Descubrir",
+      "description": "Entendemos a fondo tu negocio, tus usuarios y tus objetivos comerciales antes de proponer cualquier solución."
+    },
+    "design": {
+      "number": "02",
+      "title": "Diseñar",
+      "description": "Definimos la experiencia de usuario, la arquitectura del sistema y la propuesta técnica detallada."
+    },
+    "build": {
+      "number": "03",
+      "title": "Construir",
+      "description": "Desarrollamos de forma limpia, integramos con tus sistemas, realizamos pruebas de calidad y desplegamos."
+    },
+    "grow": {
+      "number": "04",
+      "title": "Crecer",
+      "description": "Monitoreamos la solución, proveemos mantenimiento especializado y evolucionamos el producto a tu ritmo."
+    }
+  },
+  "why": {
+    "eyebrow": "Por qué elegirnos",
+    "title": "Un socio de confianza para tus retos digitales",
+    "businessFirst": {
+      "title": "El negocio primero",
+      "description": "Comenzamos por el problema real del negocio, no por la moda tecnológica."
+    },
+    "fullStack": {
+      "title": "Expertise Full-Stack",
+      "description": "Dominamos desde la interfaz de usuario hasta arquitecturas de servidores, datos y APIs."
+    },
+    "scalable": {
+      "title": "Escalable por diseño",
+      "description": "Soluciones limpias preparadas para crecer y evolucionar junto con tu negocio."
+    },
+    "partner": {
+      "title": "Socio tecnológico único",
+      "description": "Nos encargamos de todo el ciclo: estrategia, diseño, desarrollo y soporte."
+    }
+  },
+  "about": {
+    "tagline": "Sobre Ingenium Bright",
+    "title": "Donde la tecnología se une con la estrategia de negocio",
+    "cta": "Conoce nuestra historia",
+    "desc_1": "Somos una boutique tecnológica profesional dedicada a diseñar y construir soluciones digitales de alta calidad. Nos distanciamos de las plantillas genéricas y del software en masa: cada proyecto se diseña y programa en torno a los desafíos específicos de tu negocio.",
+    "desc_2": "Nuestra experiencia abarca desde el desarrollo web frontend y backend moderno hasta la consultoría técnica en la nube, sistemas de datos complejos y consultoría estratégica en SAP. Nos enorgullecemos de ser el puente entre las necesidades de negocio y la ingeniería de software moderna.",
+    "founder_note": "Acompañamos tanto a pequeñas empresas locales que buscan profesionalizar su presencia online, como a startups y compañías en crecimiento que requieren aplicaciones personalizadas y flujos de automatización robustos.",
+    "philosophy_title": "Nuestra filosofía",
+    "small_business_title": "Para pequeñas empresas y negocios en crecimiento",
+    "capabilities_title": "Nuestras capacidades",
+    "capabilities": {
+      "web_dev": {
+        "title": "Desarrollo Full Stack",
+        "description": "Arquitecturas modernas de frontend y backend."
+      },
+      "cloud": {
+        "title": "Cloud & Infraestructura",
+        "description": "Configuración escalable en AWS y Google Cloud."
+      },
+      "data": {
+        "title": "Ingeniería de Datos",
+        "description": "Bases de datos, esquemas y pipelines a la medida."
+      },
+      "automation": {
+        "title": "Automatización de Procesos",
+        "description": "Conectamos operaciones con integraciones personalizadas."
+      },
+      "sap": {
+        "title": "Consultoría SAP",
+        "description": "Transformación estratégica de ERP y blueprints."
+      },
+      "analytics": {
+        "title": "Business Intelligence",
+        "description": "Reportes de KPIs accionables y dashboards."
+      }
+    },
+    "cta_title": "Hablemos de cómo podemos trabajar juntos",
+    "cta_desc": "Cuéntanos qué soluciones digitales quieres construir o qué retos técnicos estás enfrentando.",
+    "cta_button": "Iniciar una conversación"
+  },
+  "insights": {
+    "eyebrow": "Insights & Comunidad",
+    "title": "Novedades, estrategia y tendencias tecnológicas",
+    "description": "Creemos en compartir el conocimiento. Síguenos en Instagram para ver nuestras últimas novedades, análisis técnicos rápidos y consejos de estrategia digital.",
+    "instagramHandle": "ingenium_bright",
+    "instagram": "Seguir",
+    "banner_title": "Síguenos en Instagram",
+    "banner_desc": "Contenido detrás de cámara, tips rápidos de tecnología y las últimas novedades de nuestros proyectos.",
+    "coming_soon": "Estamos preparando artículos y guías técnicas en profundidad. Muy pronto encontrarás aquí contenido exclusivo sobre estrategia digital, automatización y arquitectura de software."
+  },
+  "contact": {
+    "eyebrow": "Hablemos",
+    "title": "Cuéntanos sobre tu proyecto",
+    "description": "Dinos qué quieres construir, mejorar o automatizar. Nos pondremos en contacto contigo a la brevedad.",
+    "cta": "Iniciar Proyecto",
+    "email_label": "Correo electrónico",
+    "location_label": "Ubicación",
+    "location": "Santiago, Chile",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "company": "Empresa",
+      "project_type": "Tipo de proyecto",
+      "project_type_placeholder": "Selecciona el tipo de proyecto...",
+      "web_dev": "Sitio Web / E-commerce",
+      "custom_software": "Software a Medida",
+      "automation": "Automatización o IA",
+      "other": "Otro / Consultoría",
+      "need": "¿Qué necesitas?",
+      "need_placeholder": "Describe brevemente las necesidades...",
+      "budget": "Rango de presupuesto (Opcional)",
+      "budget_placeholder": "Selecciona un rango aproximado...",
+      "budget_1": "Menos de $2,000 USD",
+      "budget_2": "$2,000 - $5,000 USD",
+      "budget_3": "$5,000 - $10,000 USD",
+      "budget_4": "Más de $10,000 USD",
+      "message": "Tu mensaje",
+      "message_placeholder": "Cuéntanos más detalles del proyecto...",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
+      "error": "Ocurrió un error al enviar el formulario. Por favor, inténtalo de nuevo."
+    }
+  },
+  "portfolio": {
+    "tagline": "Casos de Estudio",
+    "title": "Trabajos destacados",
+    "description": "Una muestra de proyectos reales, construidos a la medida de negocios como el tuyo.",
+    "intro": "Cada proyecto nace de un desafío de negocio real. Estos son algunos de los casos de estudio que muestran cómo diseñamos, construimos y entregamos soluciones a la medida.",
+    "viewAll": "Ver todos los proyectos",
+    "cta_view": "Ver caso de estudio",
+    "visit_site": "Visitar sitio web",
+    "back_to_work": "Volver al portafolio",
+    "project": "Proyecto",
+    "client": "Cliente / Industria",
+    "challenge": "El Reto",
+    "approach": "Nuestro Enfoque",
+    "solution": "La Solución",
+    "tech": "Tecnologías utilizadas",
+    "result": "El Resultado",
+    "details": "Detalles del proyecto",
+    "gallery": "Galería",
+    "cta_title": "¿Listo para construir tu propio caso de éxito?",
+    "cta_desc": "Cuéntanos sobre tu proyecto y descubramos juntos la mejor solución técnica para tu negocio.",
+    "cta_button": "Iniciar Proyecto",
+    "projects": {
+      "haras-los-pellines": {
+        "title": "Haras Los Pellines",
+        "category": "Presencia Digital / Criadero de Caballos",
+        "description": "Landing page de alto impacto para un prestigioso criadero de caballos, equipada con formulario de contacto automatizado en la nube.",
+        "challenge": "El cliente necesitaba una presencia digital elegante que reflejara el prestigio y la tradición de su haras, además de un canal seguro y confiable para recibir solicitudes de clientes interesados.",
+        "solution": "Diseñamos una landing page premium adaptada a dispositivos móviles con tipografía refinada y una galería fotográfica optimizada. Implementamos un formulario de contacto seguro conectado a servicios serverless en AWS.",
+        "tech": "HTML5, CSS3, Tailwind, JavaScript, AWS Lambda, API Gateway.",
+        "result": "Una plataforma rápida y moderna con un tiempo de carga sobresaliente y un sistema de contacto que procesa y notifica las consultas en tiempo real."
+      },
+      "languagelife": {
+        "title": "LanguageLife",
+        "category": "Educación / Arte & Academia",
+        "description": "Plataforma web multilingüe para una academia internacional de idiomas y arte, con galerías y registro de exposiciones.",
+        "challenge": "La academia necesitaba un sitio web en múltiples idiomas que pudiera mostrar tanto su oferta de cursos de idiomas como sus actividades artísticas y galerías de pinturas de forma visualmente atractiva.",
+        "solution": "Desarrollamos un sitio web multilingüe con selector de idioma en tiempo real, secciones dedicadas para exposiciones y una galería interactiva con lazy loading para optimizar el rendimiento visual.",
+        "tech": "HTML5, CSS3, JavaScript, Bootstrap, Multilingual Routing.",
+        "result": "Atracción exitosa de estudiantes internacionales y un aumento notable en la visibilidad de los artistas locales gracias a las galerías virtuales."
+      },
+      "alex-oyarzun": {
+        "title": "Psicólogo Alex Oyarzún",
+        "category": "Salud / Consulta Profesional",
+        "description": "Sitio web profesional y sobrio que permite dar a conocer los servicios terapéuticos y agendar consultas clínicas.",
+        "challenge": "El profesional requería una landing page sobria y empática que explicara su metodología terapéutica y facilitara el contacto directo de pacientes respetando la privacidad del canal.",
+        "solution": "Estructuramos un diseño limpio enfocado en la usabilidad y la calidez visual, facilitando información detallada sobre las especialidades y simplificando los canales de comunicación directa.",
+        "tech": "HTML5, CSS3, Tailwind, JavaScript.",
+        "result": "Consolidación de su presencia digital, resultando en una consulta clínica activa y un canal directo de contacto sin intermediarios."
+      },
+      "nico-castro": {
+        "title": "Nicolás Castro Photography",
+        "category": "Fotografía / Portafolio Creativo",
+        "description": "Portafolio de fotografía artística multilingüe para destacar la producción visual en alta definición sin comprometer la velocidad.",
+        "challenge": "Un fotógrafo profesional necesitaba mostrar su trabajo en alta definición sin que el peso de las imágenes afectara el rendimiento de la web en dispositivos móviles.",
+        "solution": "Implementamos una interfaz oscura y minimalista que actúa como lienzo para las fotografías, integrando técnicas de compresión avanzadas y carga diferida (lazy loading).",
+        "tech": "HTML5, CSS3, JavaScript, WebP Optimization, Cloudfront CDN.",
+        "result": "Portafolio sumamente visual que carga al instante y muestra de forma limpia el trabajo de cobertura en múltiples países."
+      },
+      "fidias-place": {
+        "title": "Fidias Place",
+        "category": "Deporte & Ocio / Academia de Danza",
+        "description": "Landing page interactiva para academia de baile con calendario de clases, tarifas e inscripción en línea.",
+        "challenge": "La academia requería una página ágil para captar nuevos alumnos, mostrando sus horarios de clases y promoviendo la inscripción a talleres de salsa y bachata.",
+        "solution": "Diseñamos un flujo de conversión claro con llamados a la acción dinámicos y tablas informativas de horarios estructuradas para fácil lectura móvil.",
+        "tech": "HTML5, CSS3, Bootstrap, JavaScript.",
+        "result": "Aumento significativo en las matrículas semanales gracias a un flujo de inscripción claro y móvil-friendly."
+      },
+      "j-avila": {
+        "title": "J-Avila Limpieza y Mantención",
+        "category": "Servicios Industriales / Limpieza & Hogar",
+        "description": "Landing page de servicios comerciales y residenciales optimizada para la conversión y la captación de cotizaciones directas.",
+        "challenge": "Una empresa de servicios de limpieza y jardinería necesitaba profesionalizar su marca digital para competir en el sector industrial y corporativo.",
+        "solution": "Desarrollamos una landing page enfocada en los beneficios, la confianza y la cotización simplificada del servicio.",
+        "tech": "HTML5, CSS3, Tailwind, JS.",
+        "result": "Mayor credibilidad corporativa y un flujo constante de solicitudes de presupuesto de oficinas y condominios."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Boutique de Servicios Tecnológicos",
+    "desc": "Soluciones digitales a la medida de tu negocio. Diseñamos y programamos con excelencia técnica.",
+    "solutions_title": "Soluciones",
+    "company_title": "Compañía",
+    "social_title": "Síguenos",
+    "language": "Idioma",
+    "rights": "Todos los derechos reservados."
   }
 }

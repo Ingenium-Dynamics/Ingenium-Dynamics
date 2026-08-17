@@ -1,16 +1,15 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useLocalePath } from '#imports'
 import LanguageSwitcher from './LanguageSwitcher.vue'
 
-const localePath = useLocalePath()
+const routes = useAppRoutes()
 const isMobileMenuOpen = ref(false)
 
 const navLinks = [
-  { key: 'solutions', path: '/solutions' },
-  { key: 'work', path: '/work' },
-  { key: 'about', path: '/about' },
-  { key: 'insights', path: '/insights' }
+  { key: 'solutions', to: () => routes.solutions() },
+  { key: 'work', to: () => routes.work() },
+  { key: 'about', to: () => routes.about() },
+  { key: 'insights', to: () => routes.insights() }
 ]
 
 const toggleMobileMenu = () => {
@@ -21,8 +20,7 @@ const toggleMobileMenu = () => {
 <template>
   <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/5 bg-brand-dark/80 backdrop-blur-xl">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <!-- Logo -->
-      <NuxtLink :to="localePath('/')" class="flex items-center space-x-3 group">
+      <NuxtLink :to="routes.home()" class="flex items-center space-x-3 group">
         <img 
           src="/img/Logo_V3/Logo_ID_1.png" 
           alt="Ingenium Bright Logo" 
@@ -30,12 +28,11 @@ const toggleMobileMenu = () => {
         />
       </NuxtLink>
 
-      <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center space-x-8">
         <NuxtLink
           v-for="link in navLinks"
           :key="link.key"
-          :to="localePath(link.path)"
+          :to="link.to()"
           class="text-sm font-medium text-zinc-400 hover:text-zinc-100 transition-colors duration-200"
           active-class="text-brand-primary font-semibold"
         >
@@ -43,15 +40,13 @@ const toggleMobileMenu = () => {
         </NuxtLink>
       </nav>
 
-      <!-- CTA & Language switcher (Desktop) -->
       <div class="hidden md:flex items-center">
-        <NuxtLink :to="localePath('/contact')" class="btn-premium-secondary px-5 py-2 text-sm">
+        <NuxtLink :to="routes.contact()" class="btn-premium-secondary px-5 py-2 text-sm">
           {{ $t('nav.cta') }}
         </NuxtLink>
         <LanguageSwitcher />
       </div>
 
-      <!-- Mobile Menu Button -->
       <button 
         @click="toggleMobileMenu"
         class="md:hidden p-2 text-zinc-400 hover:text-zinc-100 focus:outline-none"
@@ -66,7 +61,6 @@ const toggleMobileMenu = () => {
       </button>
     </div>
 
-    <!-- Mobile Navigation Drawer -->
     <div 
       v-if="isMobileMenuOpen"
       class="md:hidden border-b border-white/5 bg-brand-dark/95 backdrop-blur-2xl transition-all duration-300"
@@ -75,7 +69,7 @@ const toggleMobileMenu = () => {
         <NuxtLink
           v-for="link in navLinks"
           :key="link.key"
-          :to="localePath(link.path)"
+          :to="link.to()"
           @click="isMobileMenuOpen = false"
           class="text-base font-medium text-zinc-400 hover:text-zinc-100 py-2 transition-colors duration-200"
           active-class="text-brand-primary font-semibold border-l-2 border-brand-primary pl-2"
@@ -83,14 +77,13 @@ const toggleMobileMenu = () => {
           {{ $t(`nav.${link.key}`) }}
         </NuxtLink>
         <NuxtLink 
-          :to="localePath('/contact')"
+          :to="routes.contact()"
           @click="isMobileMenuOpen = false"
           class="btn-premium-primary text-center py-3 text-sm w-full mt-4"
         >
           {{ $t('nav.cta') }}
         </NuxtLink>
         
-        <!-- Language selector for mobile -->
         <div class="flex items-center justify-center pt-6 border-t border-white/5 mt-4">
           <LanguageSwitcher />
         </div>

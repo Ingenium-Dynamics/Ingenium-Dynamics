@@ -1,45 +1,45 @@
 <script setup lang="ts">
-import { useLocalePath } from '#imports'
 import LanguageSwitcher from './LanguageSwitcher.vue'
 
-const localePath = useLocalePath()
+const routes = useAppRoutes()
 const currentYear = new Date().getFullYear()
 
 const solutions = [
-  { key: 'web', path: '/solutions/web' },
-  { key: 'software', path: '/solutions/software' },
-  { key: 'automation', path: '/solutions/automation' },
-  { key: 'data', path: '/solutions/data' },
-  { key: 'cloud', path: '/solutions/cloud' },
-  { key: 'consulting', path: '/solutions/consulting' }
-]
+  { key: 'web', to: () => routes.solution('web') },
+  { key: 'software', to: () => routes.solution('software') },
+  { key: 'automation', to: () => routes.solution('automation') },
+  { key: 'data', to: () => routes.solution('data') },
+  { key: 'cloud', to: () => routes.solution('cloud') },
+  { key: 'consulting', to: () => routes.solution('consulting') }
+] as const
 
 const companyLinks = [
-  { key: 'about', path: '/about' },
-  { key: 'work', path: '/work' },
-  { key: 'insights', path: '/insights' },
-  { key: 'contact', path: '/contact' }
-]
+  { key: 'about', to: () => routes.about() },
+  { key: 'work', to: () => routes.work() },
+  { key: 'insights', to: () => routes.insights() },
+  { key: 'contact', to: () => routes.contact() }
+] as const
 </script>
 
 <template>
   <footer class="relative z-10 border-t border-white/5 bg-brand-dark pt-20 pb-10 overflow-hidden">
-    <!-- Grid elements for ambient lights in background -->
     <div class="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
     <div class="absolute bottom-0 right-1/4 neon-glow-violet opacity-20 transform translate-y-1/2"></div>
     <div class="absolute top-1/2 left-10 neon-glow-emerald opacity-10"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-20">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12 pb-16">
-        <!-- Brand Description -->
         <div class="md:col-span-1 space-y-4">
-          <NuxtLink :to="localePath('/')" class="inline-block">
+          <NuxtLink :to="routes.home()" class="inline-block">
             <img 
               src="/img/Logo_V3/Logo_ID_1.png" 
               alt="Ingenium Bright" 
               class="h-10 w-auto object-contain"
             />
           </NuxtLink>
+          <p class="text-sm font-display font-medium text-zinc-300">
+            {{ $t('footer.tagline') }}
+          </p>
           <p class="text-sm text-zinc-400 leading-relaxed font-sans">
             {{ $t('footer.desc') }}
           </p>
@@ -48,7 +48,6 @@ const companyLinks = [
           </div>
         </div>
 
-        <!-- Solutions Links -->
         <div class="space-y-4">
           <h4 class="text-sm font-display font-semibold uppercase tracking-wider text-zinc-300">
             {{ $t('footer.solutions_title') }}
@@ -56,7 +55,7 @@ const companyLinks = [
           <ul class="space-y-2">
             <li v-for="sol in solutions" :key="sol.key">
               <NuxtLink 
-                :to="localePath(sol.path)" 
+                :to="sol.to()" 
                 class="text-sm text-zinc-400 hover:text-brand-primary transition-colors duration-200"
               >
                 {{ $t(`solutions.${sol.key}.title`) }}
@@ -65,7 +64,6 @@ const companyLinks = [
           </ul>
         </div>
 
-        <!-- Company Links -->
         <div class="space-y-4">
           <h4 class="text-sm font-display font-semibold uppercase tracking-wider text-zinc-300">
             {{ $t('footer.company_title') }}
@@ -73,7 +71,7 @@ const companyLinks = [
           <ul class="space-y-2">
             <li v-for="link in companyLinks" :key="link.key">
               <NuxtLink 
-                :to="localePath(link.path)" 
+                :to="link.to()" 
                 class="text-sm text-zinc-400 hover:text-brand-primary transition-colors duration-200"
               >
                 {{ $t(`nav.${link.key}`) }}
@@ -82,10 +80,9 @@ const companyLinks = [
           </ul>
         </div>
 
-        <!-- Social Media/Newsletter Concept -->
         <div class="space-y-4">
           <h4 class="text-sm font-display font-semibold uppercase tracking-wider text-zinc-300">
-            Social
+            {{ $t('footer.social_title') }}
           </h4>
           <ul class="space-y-3">
             <li>
@@ -118,15 +115,13 @@ const companyLinks = [
         </div>
       </div>
 
-      <!-- Copyright Bottom Bar -->
       <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between">
         <p class="text-xs text-zinc-500 font-sans">
           &copy; {{ currentYear }} Ingenium Bright. {{ $t('footer.rights') }}
         </p>
         
-        <!-- Language selector container for footer -->
         <div class="mt-4 md:mt-0 flex items-center">
-          <span class="text-xs text-zinc-500 font-sans mr-2">Language:</span>
+          <span class="text-xs text-zinc-500 font-sans mr-2">{{ $t('footer.language') }}</span>
           <LanguageSwitcher />
         </div>
       </div>

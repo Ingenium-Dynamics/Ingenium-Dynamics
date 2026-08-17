@@ -9,6 +9,7 @@
     "cta": "Start a Project"
   },
   "hero": {
+    "eyebrow": "Ingenium Bright • Digital Solutions & Technology",
     "title": "Technology that moves your business forward.",
     "subtitle": "We design and build digital solutions around your business — from websites and applications to automation, data and cloud.",
     "cta_primary": "Start a project",
@@ -28,10 +29,14 @@
   "solutions": {
     "tagline": "Our Solutions",
     "title": "Professional Technology Boutique",
+    "intro": "We combine software engineering, UX/UI design, automation, data, and cloud architecture to solve real business challenges.",
     "web": {
       "title": "Web & Digital",
       "desc": "High-converting corporate websites, landing pages, and fast, modern e-commerce platforms optimized for SEO from day one.",
-      "items": ["Web Development", "Landing Pages", "E-commerce", "SEO-Ready Websites"]
+      "items": ["Web Development", "Landing Pages", "E-commerce", "SEO-Ready Websites"],
+      "small_business_title": "Professional websites for small businesses",
+      "small_business_desc": "We build clean, fast websites for Canadian and international small businesses — without template bloat or aggressive discount messaging. Project-based pricing tailored to your scope.",
+      "item_detail": "Custom layouts, semantic structure, mobile-first architecture, and optimized assets for performance and search visibility."
     },
     "software": {
       "title": "Custom Software",
@@ -81,7 +86,8 @@
     "scalable_title": "Scalable by design",
     "scalable_desc": "Clean code bases designed to grow and evolve easily with your business.",
     "partner_title": "Single technology partner",
-    "partner_desc": "We cover the complete product lifecycle: strategy, design, development, and support."
+    "partner_desc": "We cover the complete product lifecycle: strategy, design, development, and support.",
+    "cta": "Learn about our capabilities"
   },
   "about": {
     "tagline": "About Ingenium Bright",
@@ -92,15 +98,22 @@
   },
   "insights": {
     "tagline": "Insights & Community",
-    "title": "Tech trends, digital strategy, and announcements",
+    "title": "Follow our latest insights on Instagram",
     "desc": "We believe in sharing knowledge. Follow us on Instagram for our latest news, quick technical deep-dives, and digital strategy insights.",
     "cta": "Follow on Instagram",
-    "handle": "@ingenium_bright"
+    "handle": "@ingenium_bright",
+    "banner_title": "Join our community on Instagram",
+    "banner_desc": "We post tips, process clips, UI snapshots, and tech strategy breakdowns directly on our profile.",
+    "coming_soon": "Articles and technical deep-dives will be published here when we have substantive content worth sharing — not filler posts for SEO."
   },
   "contact": {
     "tagline": "Let's talk",
+    "heading": "Let's talk about your project.",
     "title": "Tell us about your project",
-    "desc": "Let us know what you want to build, improve, or automate. We will get back to you shortly.",
+    "desc": "Tell us what you're trying to build, improve or automate. We will get back to you shortly.",
+    "email_label": "Email",
+    "location_label": "Location",
+    "location": "Québec, Canada • Global",
     "form": {
       "name": "Full name",
       "email": "Email address",
@@ -121,23 +134,33 @@
       "budget_4": "Over $10,000 USD",
       "message": "Your message",
       "message_placeholder": "Tell us more about your project goals...",
-      "submit": "Send message",
+      "submit": "Start a conversation",
       "sending": "Sending...",
       "success": "Message sent successfully! We will get back to you soon.",
-      "error": "An error occurred while sending the message. Please try again."
+      "error": "An error occurred while sending the message. Please try again.",
+      "error_rate_limit": "You have exceeded the submission limit. Please try again later.",
+      "error_config": "The contact form is temporarily unavailable. Please email us at info@ingeniumbright.com"
     }
   },
   "portfolio": {
     "tagline": "Case Studies",
     "title": "Our Featured Work",
+    "intro": "Real challenges, real solutions. We design, build, and deploy software that addresses business needs. No invented metrics — just honest engineering.",
+    "back_to_work": "Back to Work",
     "cta_view": "View Case Study",
     "visit_site": "Visit Website",
     "project": "Project",
     "client": "Client / Industry",
     "challenge": "The Challenge",
+    "approach": "Our Approach",
     "solution": "The Solution",
     "tech": "Technologies used",
     "result": "The Result",
+    "details": "Details",
+    "gallery": "Gallery",
+    "cta_title": "Want similar results for your business?",
+    "cta_desc": "Let's discuss how we can build a modern, high-performance solution that solves your operational needs.",
+    "cta_button": "Start a project together",
     "projects": {
       "haras-los-pellines": {
         "title": "Haras Los Pellines",
@@ -196,9 +219,16 @@
     }
   },
   "footer": {
+    "tagline": "Digital Solutions & Technology",
     "desc": "Digital solutions engineered for your business. We build with technical excellence.",
     "solutions_title": "Solutions",
     "company_title": "Company",
+    "social_title": "Social",
+    "language": "Language",
     "rights": "All rights reserved."
+  },
+  "common": {
+    "back_to_solutions": "Back to Solutions",
+    "tech_stack": "Technologies we excel in"
   }
 }

@@ -1,15 +1,26 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useLocalePath, useSeoMeta, useRuntimeConfig } from '#imports'
-import { Mail, Phone, MapPin, Sparkles, Send, CheckCircle2, AlertCircle } from 'lucide-vue-next'
+import { Mail, MapPin, Send, CheckCircle2, AlertCircle } from '@lucide/vue'
 import ButtonPremium from '~/components/ui/ButtonPremium.vue'
 import InputPremium from '~/components/ui/InputPremium.vue'
 
-const localePath = useLocalePath()
+const { t, locale } = useI18n()
+const { submitContactForm } = useContactSubmit()
 
 useSeoMeta({
-  title: "Contact Us | Start a Conversation",
-  description: "Tell us about your digital solutions or technology project. Get in touch with our team for custom web, software, data, or cloud development."
+  title: () =>
+    locale.value === 'fr'
+      ? 'Contactez-nous | Démarrer une conversation'
+      : locale.value === 'es'
+        ? 'Contacto | Iniciar una conversación'
+        : 'Contact Us | Start a Conversation',
+
+  description: () =>
+    locale.value === 'fr'
+      ? 'Parlez-nous de votre projet de solutions numériques ou technologiques. Contactez notre équipe pour du développement web, logiciel, data ou cloud sur mesure.'
+      : locale.value === 'es'
+        ? 'Cuéntanos sobre tu proyecto de soluciones digitales o tecnología. Ponte en contacto con nuestro equipo para desarrollo web, software, datos o cloud a la medida.'
+        : 'Tell us about your digital solutions or technology project. Get in touch with our team for custom web, software, data, or cloud development.'
 })
 
 const form = ref({
@@ -24,24 +35,16 @@ const form = ref({
 
 const isSending = ref(false)
 const submitStatus = ref<'idle' | 'success' | 'error'>('idle')
+const errorKey = ref<string | null>(null)
 
 const onSubmit = async () => {
   isSending.value = true
   submitStatus.value = 'idle'
+  errorKey.value = null
 
   try {
-    // In a real production environment, the user can configure a contact endpoint
-    // We will submit the form data to an endpoint or log it
-    // For local and static builds, we use a placeholder or runtimeConfig
-    const endpoint = '/api/contact' // Or external web service URL
-    
-    // Simulate submission delay
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    
-    console.log('Submitted Form Data:', form.value)
-    
+    await submitContactForm(form.value)
     submitStatus.value = 'success'
-    // Reset form
     form.value = {
       name: '',
       email: '',
@@ -52,32 +55,38 @@ const onSubmit = async () => {
       message: ''
     }
   } catch (error) {
-    console.error('Submission error:', error)
     submitStatus.value = 'error'
+    if (error instanceof Error) {
+      errorKey.value = error.message
+    }
   } finally {
     isSending.value = false
   }
 }
+
+const errorMessage = computed(() => {
+  if (errorKey.value === 'rate_limit') return t('contact.form.error_rate_limit')
+  if (errorKey.value === 'not_configured') return t('contact.form.error_config')
+  return t('contact.form.error')
+})
 </script>
 
 <template>
   <div class="relative min-h-screen py-16 md:py-24 overflow-hidden animate-fade-in">
-    <!-- background ambient glow -->
     <div class="absolute top-20 right-10 neon-glow-violet opacity-10"></div>
     <div class="absolute bottom-20 left-10 neon-glow-emerald opacity-10"></div>
 
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10">
-      <!-- 1. Text & Contact info -->
       <div class="lg:col-span-5 space-y-8 flex flex-col justify-center">
         <div class="space-y-4">
           <span class="text-xs font-display font-semibold uppercase tracking-wider text-brand-primary">
-            {{ $t('contact.tagline') }}
+            {{ $t('contact.eyebrow') }}
           </span>
           <h1 class="text-4xl md:text-6xl font-display font-extrabold text-gradient tracking-tight leading-tight">
-            Let's talk about <br />your project.
+            {{ $t('contact.title') }}
           </h1>
           <p class="text-zinc-400 text-lg leading-relaxed font-sans">
-            {{ $t('contact.desc') }}
+            {{ $t('contact.description') }}
           </p>
         </div>
 
@@ -87,7 +96,7 @@ const onSubmit = async () => {
               <Mail class="w-5 h-5" />
             </div>
             <div>
-              <span class="block text-[10px] font-display font-semibold uppercase tracking-wider text-zinc-500">Email</span>
+              <span class="block text-[10px] font-display font-semibold uppercase tracking-wider text-zinc-500">{{ $t('contact.email_label') }}</span>
               <a href="mailto:info@ingeniumbright.com" class="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
                 info@ingeniumbright.com
               </a>
@@ -99,50 +108,42 @@ const onSubmit = async () => {
               <MapPin class="w-5 h-5" />
             </div>
             <div>
-              <span class="block text-[10px] font-display font-semibold uppercase tracking-wider text-zinc-500">Location</span>
+              <span class="block text-[10px] font-display font-semibold uppercase tracking-wider text-zinc-500">{{ $t('contact.location_label') }}</span>
               <span class="text-sm font-medium text-zinc-300">
-                Québec, Canada &bull; Global
+                {{ $t('contact.location') }}
               </span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 2. Contact form card -->
       <div class="lg:col-span-7">
         <div class="glass-card p-8 md:p-12 bg-zinc-950/20 border-white/5">
           <form @submit.prevent="onSubmit" class="space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <!-- Name -->
               <InputPremium
                 id="name"
                 v-model="form.name"
                 :label="$t('contact.form.name')"
                 required
-                placeholder="John Doe"
               />
 
-              <!-- Email -->
               <InputPremium
                 id="email"
                 v-model="form.email"
                 type="email"
                 :label="$t('contact.form.email')"
                 required
-                placeholder="john@company.com"
               />
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <!-- Company -->
               <InputPremium
                 id="company"
                 v-model="form.company"
                 :label="$t('contact.form.company')"
-                placeholder="Acme Corp (Optional)"
               />
 
-              <!-- Project Type -->
               <InputPremium
                 id="project_type"
                 v-model="form.project_type"
@@ -159,7 +160,6 @@ const onSubmit = async () => {
               />
             </div>
 
-            <!-- What do you need? -->
             <InputPremium
               id="need"
               v-model="form.need"
@@ -169,7 +169,6 @@ const onSubmit = async () => {
               :placeholder="$t('contact.form.need_placeholder')"
             />
 
-            <!-- Budget range -->
             <InputPremium
               id="budget"
               v-model="form.budget"
@@ -184,7 +183,6 @@ const onSubmit = async () => {
               ]"
             />
 
-            <!-- Message (Optional) -->
             <InputPremium
               id="message"
               v-model="form.message"
@@ -193,7 +191,6 @@ const onSubmit = async () => {
               :placeholder="$t('contact.form.message_placeholder')"
             />
 
-            <!-- Success/Error Feedback Messages -->
             <div 
               v-if="submitStatus === 'success'" 
               class="flex items-start space-x-3 p-4 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 text-sm font-sans"
@@ -207,10 +204,9 @@ const onSubmit = async () => {
               class="flex items-start space-x-3 p-4 rounded-xl border border-red-500/20 bg-red-500/5 text-red-400 text-sm font-sans"
             >
               <AlertCircle class="w-5 h-5 flex-shrink-0" />
-              <span>{{ $t('contact.form.error') }}</span>
+              <span>{{ errorMessage }}</span>
             </div>
 
-            <!-- Submit button -->
             <div class="pt-4">
               <ButtonPremium 
                 type="submit" 

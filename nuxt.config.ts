@@ -1,46 +1,83 @@
+import { PORTFOLIO_PROJECT_IDS } from './app/data/projects'
+
+const workRoutesByLocale: Record<string, (id: string) => string> = {
+  en: id => `/en/work/${id}`,
+  fr: id => `/fr/projets/${id}`,
+  es: id => `/es/portafolio/${id}`
+}
+
+const prerenderWorkRoutes = Object.entries(workRoutesByLocale).flatMap(([locale, pathFn]) =>
+  PORTFOLIO_PROJECT_IDS.map(id => pathFn(id))
+)
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
 
-  // Enable Nuxt 4 compatibility features
   future: {
-    compatibilityVersion: 4,
+    compatibilityVersion: 4
   },
 
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/robots',
+    '@nuxtjs/seo',
     '@nuxt/image'
   ],
 
-  // Site Configuration for Nuxt SEO
+  runtimeConfig: {
+    public: {
+      awsRegion: 'us-east-1',
+      awsIdentityPoolId: 'us-east-1:4cb32f41-9337-4954-83a1-214f3ead6d6d',
+      awsSnsTopicArn: 'arn:aws:sns:us-east-1:183295419448:Topic_ContactForm_ID_es_CG_03'
+    }
+  },
+
   site: {
     url: 'https://www.ingeniumbright.com',
     name: 'Ingenium Bright',
-    description: 'Digital Solutions & Technology - Technology that moves your business forward.',
-    defaultLocale: 'es'
+    description: 'Digital Solutions & Technology — Technology that moves your business forward.',
+    defaultLocale: 'en'
   },
 
-  // Nuxt i18n Configuration
+  schemaOrg: {
+    identity: {
+      type: 'Organization',
+      name: 'Ingenium Bright',
+      url: 'https://www.ingeniumbright.com',
+      logo: 'https://www.ingeniumbright.com/img/Logo_V3/Logo_ID_1.png',
+      description: 'Digital solutions and technology boutique — web, software, automation, data and cloud.',
+      sameAs: [
+        'https://www.instagram.com/ingenium_bright/',
+        'https://www.linkedin.com/company/ingenium-dynamics'
+      ],
+      email: 'info@ingeniumbright.com'
+    }
+  },
+
+  sitemap: {
+    zeroRuntime: true
+  },
+
   i18n: {
     locales: [
-      { code: 'es', iso: 'es', name: 'Español', file: 'es.json' },
       { code: 'en', iso: 'en-CA', name: 'English', file: 'en.json' },
-      { code: 'fr', iso: 'fr-CA', name: 'Français', file: 'fr.json' }
+      { code: 'fr', iso: 'fr-CA', name: 'Français', file: 'fr.json' },
+      { code: 'es', iso: 'es', name: 'Español', file: 'es.json' }
     ],
-    defaultLocale: 'es',
+    defaultLocale: 'en',
     strategy: 'prefix',
     lazy: true,
     langDir: 'locales/',
+    baseUrl: 'https://www.ingeniumbright.com',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
-      alwaysRedirect: true
+      alwaysRedirect: true,
+      fallbackLocale: 'en'
     },
     customRoutes: 'config',
     pages: {
@@ -89,17 +126,17 @@ export default defineNuxtConfig({
         fr: '/projets/:id',
         es: '/portafolio/:id'
       },
-      'about': {
+      about: {
         en: '/about',
         fr: '/a-propos',
         es: '/sobre-nosotros'
       },
-      'insights': {
+      insights: {
         en: '/insights',
         fr: '/perspectives',
         es: '/insights'
       },
-      'contact': {
+      contact: {
         en: '/contact',
         fr: '/contact',
         es: '/contacto'
@@ -107,19 +144,19 @@ export default defineNuxtConfig({
     }
   },
 
-  // Tailwind CSS configuration (if needed)
   tailwindcss: {
     exposeConfig: true,
     viewer: false
   },
 
-  // Nuxt Image Configuration
   image: {
-    format: ['webp', 'avif'],
-    providers: {
-      local: {
-        dir: 'public'
-      }
+    format: ['webp', 'avif']
+  },
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: prerenderWorkRoutes
     }
   }
 })

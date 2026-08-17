@@ -1,33 +1,34 @@
 <script setup lang="ts">
-import { useLocalePath, useSeoMeta } from '#imports'
-import { ArrowRight, Sparkles } from 'lucide-vue-next'
+import { ArrowRight } from '@lucide/vue'
 import CardPremium from '~/components/ui/CardPremium.vue'
+import { PORTFOLIO_PROJECTS } from '~/data/projects'
 
-const localePath = useLocalePath()
+const routes = useAppRoutes()
+const { locale } = useI18n()
 
 useSeoMeta({
-  title: 'Portfolio & Case Studies',
-  description: 'Explore our technology solutions and real case studies in web design, software development, cloud, and business automation.'
-})
+  title: () =>
+    locale.value === 'fr'
+      ? 'Portfolio & Études de Cas | Ingenium Bright'
+      : locale.value === 'es'
+        ? 'Portafolio & Casos de Estudio | Ingenium Bright'
+        : 'Portfolio & Case Studies | Ingenium Bright',
 
-const projectsList = [
-  { id: 'haras-los-pellines', cover: '/img/portfolio/haras_los_pellines.webp', color: 'emerald' },
-  { id: 'languagelife', cover: '/img/portfolio/languagelife1.webp', color: 'blue' },
-  { id: 'alex-oyarzun', cover: '/img/portfolio/alexoyarzun1.webp', color: 'violet' },
-  { id: 'nico-castro', cover: '/img/portfolio/nicocastro1.webp', color: 'emerald' },
-  { id: 'fidias-place', cover: '/img/portfolio/fidias1.webp', color: 'blue' },
-  { id: 'j-avila', cover: '/img/portfolio/j-avila-01.webp', color: 'violet' }
-]
+  description: () =>
+    locale.value === 'fr'
+      ? 'Découvrez nos solutions technologiques et nos études de cas réelles en design web, développement logiciel, cloud et automatisation.'
+      : locale.value === 'es'
+        ? 'Explora nuestras soluciones tecnológicas y casos de estudio reales en diseño web, desarrollo de software, cloud y automatización de negocios.'
+        : 'Explore our technology solutions and real case studies in web design, software development, cloud, and business automation.'
+})
 </script>
 
 <template>
   <div class="relative min-h-screen py-16 md:py-24 overflow-hidden">
-    <!-- background glowing blurs -->
     <div class="absolute top-20 right-10 neon-glow-emerald opacity-10"></div>
     <div class="absolute bottom-20 left-10 neon-glow-violet opacity-10"></div>
 
     <div class="max-w-7xl mx-auto px-6">
-      <!-- Title & Header -->
       <div class="max-w-3xl mb-20 space-y-4">
         <span class="text-xs font-display font-semibold uppercase tracking-wider text-brand-primary">
           {{ $t('portfolio.tagline') }}
@@ -36,19 +37,17 @@ const projectsList = [
           {{ $t('portfolio.title') }}
         </h1>
         <p class="text-zinc-400 text-lg leading-relaxed font-sans max-w-2xl">
-          Real challenges, real solutions. We design, build, and deploy software that addresses business needs. No fake metrics, just clean engineering.
+          {{ $t('portfolio.intro') }}
         </p>
       </div>
 
-      <!-- Work Portfolio Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <CardPremium
-          v-for="project in projectsList"
+          v-for="project in PORTFOLIO_PROJECTS"
           :key="project.id"
           :glow-color="project.color"
           class="flex flex-col h-full justify-between !p-0 group border border-white/5 bg-zinc-950/20"
         >
-          <!-- Project Cover Image -->
           <div class="relative w-full aspect-video overflow-hidden rounded-t-2xl border-b border-white/5 bg-zinc-900">
             <img 
               :src="project.cover" 
@@ -76,7 +75,7 @@ const projectsList = [
                 {{ $t('portfolio.cta_view') }}
               </span>
               <NuxtLink 
-                :to="localePath(`/work/${project.id}`)" 
+                :to="routes.workProject(project.id)" 
                 class="inline-flex items-center justify-center w-10 h-10 rounded-xl border border-white/5 bg-white/5 text-zinc-200 hover:bg-brand-primary hover:border-brand-primary hover:text-white transition-all duration-300"
               >
                 <ArrowRight class="w-5 h-5" />

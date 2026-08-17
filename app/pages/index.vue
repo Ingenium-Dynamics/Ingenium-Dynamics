@@ -1,256 +1,665 @@
 <script setup lang="ts">
-import { useLocalePath, useSeoMeta } from '#imports'
-import { 
-  Laptop, 
-  Cpu, 
-  GitFork, 
-  BarChart3, 
-  ShieldCheck, 
-  Users, 
+import {
+  Laptop,
+  Cpu,
+  GitFork,
+  BarChart3,
+  ShieldCheck,
+  Users,
   ArrowRight,
   Sparkles,
   Zap,
   Layers,
   Compass
-} from 'lucide-vue-next'
-import CardPremium from '~/components/ui/CardPremium.vue'
-import ButtonPremium from '~/components/ui/ButtonPremium.vue'
+} from '@lucide/vue'
 
 const localePath = useLocalePath()
-
-// SEO Optimization
-useSeoMeta({
-  title: 'Technology that moves your business forward',
-  ogTitle: 'Ingenium Bright | Digital Solutions & Technology',
-  description: 'We design and build digital solutions around your business — from websites and applications to automation, data and cloud.',
-  ogDescription: 'We design and build digital solutions around your business — from websites and applications to automation, data and cloud.',
-  ogImage: '/img/Logo_V3/ingenium_1.png'
-})
+const { locale } = useI18n()
 
 const solutionsList = [
-  { key: 'web', icon: Laptop, path: '/solutions/web', color: 'emerald' },
-  { key: 'software', icon: Cpu, path: '/solutions/software', color: 'blue' },
-  { key: 'automation', icon: GitFork, path: '/solutions/automation', color: 'violet' },
-  { key: 'data', icon: BarChart3, path: '/solutions/data', color: 'emerald' },
-  { key: 'cloud', icon: ShieldCheck, path: '/solutions/cloud', color: 'blue' },
-  { key: 'consulting', icon: Users, path: '/solutions/consulting', color: 'violet' }
-]
+  {
+    key: 'web',
+    icon: Laptop,
+    accent: 'emerald'
+  },
+  {
+    key: 'software',
+    icon: Cpu,
+    accent: 'blue'
+  },
+  {
+    key: 'automation',
+    icon: GitFork,
+    accent: 'violet'
+  },
+  {
+    key: 'data',
+    icon: BarChart3,
+    accent: 'emerald'
+  },
+  {
+    key: 'cloud',
+    icon: ShieldCheck,
+    accent: 'blue'
+  },
+  {
+    key: 'consulting',
+    icon: Users,
+    accent: 'violet'
+  }
+] as const
+
+const capabilities = [
+  {
+    key: 'web',
+    icon: Laptop
+  },
+  {
+    key: 'software',
+    icon: Cpu
+  },
+  {
+    key: 'automation',
+    icon: GitFork
+  },
+  {
+    key: 'data',
+    icon: BarChart3
+  },
+  {
+    key: 'cloud',
+    icon: ShieldCheck
+  },
+  {
+    key: 'consulting',
+    icon: Users
+  }
+] as const
 
 const processSteps = [
-  { step: '01', key: 'step1', icon: Compass },
-  { step: '02', key: 'step2', icon: Layers },
-  { step: '03', key: 'step3', icon: Zap },
-  { step: '04', key: 'step4', icon: Sparkles }
-]
+  {
+    key: 'discover',
+    icon: Compass
+  },
+  {
+    key: 'design',
+    icon: Layers
+  },
+  {
+    key: 'build',
+    icon: Zap
+  },
+  {
+    key: 'grow',
+    icon: Sparkles
+  }
+] as const
 
-const whyUsItems = [
-  { key: 'business_first', icon: Users },
-  { key: 'expertise', icon: Cpu },
-  { key: 'scalable', icon: Layers },
-  { key: 'partner', icon: Sparkles }
-]
+const whyItems = [
+  {
+    key: 'businessFirst',
+    icon: Users
+  },
+  {
+    key: 'fullStack',
+    icon: Cpu
+  },
+  {
+    key: 'scalable',
+    icon: Layers
+  },
+  {
+    key: 'partner',
+    icon: Sparkles
+  }
+] as const
+
+const projects = [
+  {
+    key: 'haras-los-pellines',
+    image: '/img/portfolio/haras_los_pellines.webp'
+  },
+  {
+    key: 'languagelife',
+    image: '/img/portfolio/languagelife1.webp'
+  },
+  {
+    key: 'nico-castro',
+    image: '/img/portfolio/nicocastro1.webp'
+  }
+] as const
+
+useSeoMeta({
+  title: () =>
+    locale.value === 'fr'
+      ? 'Ingenium Bright | Solutions numériques & technologies'
+      : locale.value === 'es'
+        ? 'Ingenium Bright | Soluciones digitales & tecnología'
+        : 'Ingenium Bright | Digital Solutions & Technology',
+
+  description: () =>
+    locale.value === 'fr'
+      ? 'Nous concevons et développons des solutions numériques adaptées aux entreprises : sites web, logiciels, automatisation, données et cloud.'
+      : locale.value === 'es'
+        ? 'Diseñamos y desarrollamos soluciones digitales para empresas: sitios web, software, automatización, datos y cloud.'
+        : 'We design and build digital solutions for businesses — from websites and software to automation, data and cloud.',
+
+  ogTitle: () =>
+    locale.value === 'fr'
+      ? 'Ingenium Bright | Solutions numériques & technologies'
+      : locale.value === 'es'
+        ? 'Ingenium Bright | Soluciones digitales & tecnología'
+        : 'Ingenium Bright | Digital Solutions & Technology',
+
+  ogDescription: () =>
+    locale.value === 'fr'
+      ? 'Solutions numériques, développement logiciel, automatisation, données et cloud.'
+      : locale.value === 'es'
+        ? 'Soluciones digitales, desarrollo de software, automatización, datos y cloud.'
+        : 'Digital solutions, software development, automation, data and cloud.',
+
+  ogImage: '/img/Logo_V3/Ingenium_1.png',
+  twitterCard: 'summary_large_image'
+})
 </script>
 
 <template>
   <div class="relative min-h-screen overflow-hidden">
-    <!-- Ambient Neon Lights -->
-    <div class="absolute top-20 left-10 neon-glow-emerald opacity-20"></div>
-    <div class="absolute top-1/3 right-10 neon-glow-violet opacity-15"></div>
-    <div class="absolute bottom-20 left-1/4 neon-glow-blue opacity-15"></div>
 
-    <!-- 1. Hero Section -->
-    <section class="relative max-w-7xl mx-auto px-6 pt-16 pb-24 md:pt-24 md:pb-32 flex flex-col items-center text-center">
-      <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full border border-white/5 bg-white/5 backdrop-blur-md text-xs font-display text-zinc-400 mb-6 animate-fade-in">
-        <Sparkles class="w-4 h-4 text-brand-primary" />
-        <span>Ingenium Bright &bull; Digital Solutions</span>
+    <!-- Ambient background -->
+    <div class="pointer-events-none absolute inset-0 overflow-hidden">
+      <div class="absolute -top-32 left-1/4 h-96 w-96 rounded-full bg-emerald-500/10 blur-3xl" />
+      <div class="absolute top-1/3 -right-32 h-96 w-96 rounded-full bg-violet-500/10 blur-3xl" />
+      <div class="absolute bottom-1/4 -left-32 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
+    </div>
+
+    <!-- ====================================================== -->
+    <!-- HERO -->
+    <!-- ====================================================== -->
+
+    <section
+      class="relative mx-auto flex max-w-7xl flex-col items-center px-6 pb-24 pt-16 text-center md:pb-32 md:pt-24"
+    >
+      <div
+        class="mb-7 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-zinc-400 backdrop-blur"
+      >
+        <Sparkles class="h-4 w-4 text-emerald-400" />
+        <span>{{ $t('hero.eyebrow') }}</span>
       </div>
 
-      <h1 class="text-4xl md:text-7xl font-extrabold font-display leading-[1.1] text-gradient tracking-tight max-w-4xl animate-fade-in-up">
-        Technology that moves your <br class="hidden md:inline" />
-        <span class="text-gradient-emerald">business forward.</span>
+      <h1
+        class="max-w-5xl text-4xl font-extrabold leading-[1.05] tracking-tight text-white md:text-6xl lg:text-7xl"
+      >
+        {{ $t('hero.title') }}
       </h1>
 
-      <p class="mt-8 text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed font-sans animate-fade-in-up">
-        {{ $t('hero.subtitle') }}
+      <p
+        class="mt-8 max-w-2xl text-base leading-8 text-zinc-400 md:text-xl"
+      >
+        {{ $t('hero.description') }}
       </p>
 
-      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto animate-fade-in-up">
-        <ButtonPremium :to="localePath('/contact')" variant="primary" class="w-full sm:w-auto">
-          {{ $t('hero.cta_primary') }}
-        </ButtonPremium>
-        <ButtonPremium :to="localePath('/work')" variant="secondary" class="w-full sm:w-auto">
-          {{ $t('hero.cta_secondary') }}
-        </ButtonPremium>
+      <div
+        class="mt-10 flex w-full flex-col items-center justify-center gap-4 sm:w-auto sm:flex-row"
+      >
+        <NuxtLink
+          :to="localePath('/contact')"
+          class="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-zinc-950 transition hover:-translate-y-0.5 hover:bg-zinc-200 sm:w-auto"
+        >
+          {{ $t('hero.primaryCta') }}
+
+          <ArrowRight
+            class="h-4 w-4 transition-transform group-hover:translate-x-1"
+          />
+        </NuxtLink>
+
+        <NuxtLink
+          :to="localePath('/work')"
+          class="inline-flex w-full items-center justify-center rounded-full border border-white/10 bg-white/[0.03] px-7 py-3.5 text-sm font-semibold text-white transition hover:border-white/20 hover:bg-white/[0.06] sm:w-auto"
+        >
+          {{ $t('hero.secondaryCta') }}
+        </NuxtLink>
       </div>
 
-      <!-- Quick Badges Grid -->
-      <div class="mt-20 grid grid-cols-2 md:grid-cols-6 gap-4 w-full border-t border-white/5 pt-12 animate-fade-in">
-        <div 
-          v-for="sol in solutionsList" 
-          :key="sol.key"
-          class="flex flex-col items-center justify-center p-4 rounded-xl border border-white/5 bg-zinc-950/20 backdrop-blur-sm"
+      <!-- Capability strip -->
+      <div
+        class="mt-20 grid w-full grid-cols-2 border-y border-white/5 md:grid-cols-3 lg:grid-cols-6"
+      >
+        <div
+          v-for="item in capabilities"
+          :key="item.key"
+          class="flex items-center justify-center gap-2 border-white/5 px-4 py-5 text-xs font-medium text-zinc-500 md:border-r last:border-r-0"
         >
-          <component :is="sol.icon" class="w-5 h-5 text-zinc-500 mb-2" />
-          <span class="text-xs font-display font-medium text-zinc-400">{{ $t(`hero.badge_${sol.key}`) }}</span>
+          <component
+            :is="item.icon"
+            class="h-4 w-4"
+          />
+
+          <span>
+            {{ $t(`hero.capabilities.${item.key}`) }}
+          </span>
         </div>
       </div>
     </section>
 
-    <!-- 2. Problem / Value Section -->
-    <section class="border-t border-white/5 bg-zinc-950/40 py-24 relative">
-      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div class="lg:col-span-5 space-y-6">
-          <span class="text-xs font-display font-semibold uppercase tracking-wider text-brand-primary">
-            {{ $t('problem_value.tagline') }}
+    <!-- ====================================================== -->
+    <!-- INTRO -->
+    <!-- ====================================================== -->
+
+    <section
+      class="relative border-y border-white/5 bg-white/[0.015]"
+    >
+      <div
+        class="mx-auto grid max-w-7xl gap-10 px-6 py-24 md:py-28 lg:grid-cols-12 lg:items-center"
+      >
+        <div class="lg:col-span-5">
+          <span
+            class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400"
+          >
+            {{ $t('intro.eyebrow') }}
           </span>
-          <h2 class="text-3xl md:text-5xl font-display font-bold leading-tight">
-            {{ $t('problem_value.title') }}
+
+          <h2
+            class="mt-5 text-3xl font-bold leading-tight text-white md:text-5xl"
+          >
+            {{ $t('intro.title') }}
           </h2>
         </div>
-        <div class="lg:col-span-7 lg:pl-12">
-          <p class="text-lg text-zinc-400 leading-relaxed font-sans">
-            {{ $t('problem_value.description') }}
+
+        <div class="lg:col-span-6 lg:col-start-7">
+          <p class="text-lg leading-8 text-zinc-400">
+            {{ $t('intro.description') }}
           </p>
         </div>
       </div>
     </section>
 
-    <!-- 3. Solutions Section -->
-    <section class="max-w-7xl mx-auto px-6 py-24">
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-        <span class="text-xs font-display font-semibold uppercase tracking-wider text-brand-primary">
-          {{ $t('solutions.tagline') }}
+    <!-- ====================================================== -->
+    <!-- SOLUTIONS -->
+    <!-- ====================================================== -->
+
+    <section
+      id="solutions"
+      class="relative mx-auto max-w-7xl px-6 py-24 md:py-32"
+    >
+      <div class="mx-auto mb-16 max-w-3xl text-center">
+        <span
+          class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400"
+        >
+          {{ $t('solutions.eyebrow') }}
         </span>
-        <h2 class="text-3xl md:text-5xl font-display font-bold">
+
+        <h2
+          class="mt-5 text-3xl font-bold tracking-tight text-white md:text-5xl"
+        >
           {{ $t('solutions.title') }}
         </h2>
+
+        <p class="mt-6 leading-7 text-zinc-400">
+          {{ $t('solutions.description') }}
+        </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <CardPremium 
-          v-for="sol in solutionsList" 
-          :key="sol.key"
-          :glow-color="sol.color"
-          class="flex flex-col h-full justify-between"
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <article
+          v-for="solution in solutionsList"
+          :key="solution.key"
+          class="group relative flex min-h-[300px] flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-white/[0.025] p-7 transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.04]"
         >
-          <div class="space-y-4">
-            <div class="p-3 bg-white/5 rounded-xl inline-block">
-              <component :is="sol.icon" class="w-6 h-6 text-zinc-100" />
+          <div>
+            <div
+              class="mb-6 flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/[0.05]"
+            >
+              <component
+                :is="solution.icon"
+                class="h-5 w-5 text-zinc-200"
+              />
             </div>
-            <h3 class="text-xl font-display font-semibold text-zinc-100">
-              {{ $t(`solutions.${sol.key}.title`) }}
+
+            <h3 class="text-xl font-semibold text-white">
+              {{ $t(`solutions.${solution.key}.title`) }}
             </h3>
-            <p class="text-sm text-zinc-400 leading-relaxed">
-              {{ $t(`solutions.${sol.key}.desc`) }}
+
+            <p class="mt-3 text-sm leading-6 text-zinc-400">
+              {{ $t(`solutions.${solution.key}.description`) }}
             </p>
           </div>
 
-          <div class="mt-8 pt-6 border-t border-white/5 flex items-center justify-between">
-            <ul class="flex flex-wrap gap-1.5 max-w-[80%]">
-              <li 
-                v-for="item in ($t(`solutions.${sol.key}.items`) as any)" 
-                :key="item"
-                class="text-[10px] font-sans px-2 py-0.5 bg-white/5 rounded text-zinc-400"
+          <div class="mt-8">
+            <div class="mb-5 flex flex-wrap gap-2">
+              <span
+                v-for="(item, index) in $tm(`solutions.${solution.key}.items`)"
+                :key="`${solution.key}-${index}`"
+                class="rounded-full border border-white/5 bg-white/[0.04] px-2.5 py-1 text-[11px] text-zinc-500"
               >
-                {{ item }}
-              </li>
-            </ul>
-            <NuxtLink :to="localePath(sol.path)" class="text-zinc-100 hover:text-brand-primary transition-colors">
-              <ArrowRight class="w-5 h-5" />
+                {{ $rt(item) }}
+              </span>
+            </div>
+
+            <NuxtLink
+              :to="localePath(`/solutions/${solution.key}`)"
+              class="group/link inline-flex items-center gap-2 text-sm font-medium text-white"
+            >
+              {{ $t(`solutions.${solution.key}.cta`) }}
+
+              <ArrowRight
+                class="h-4 w-4 transition-transform group-hover/link:translate-x-1"
+              />
             </NuxtLink>
           </div>
-        </CardPremium>
+        </article>
       </div>
     </section>
 
-    <!-- 4. How We Work (Process) -->
-    <section class="border-t border-white/5 bg-zinc-950/20 py-24">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <span class="text-xs font-display font-semibold uppercase tracking-wider text-brand-primary">
-            {{ $t('process.tagline') }}
-          </span>
-          <h2 class="text-3xl md:text-5xl font-display font-bold">
-            {{ $t('process.title') }}
-          </h2>
+    <!-- ====================================================== -->
+    <!-- WORK -->
+    <!-- ====================================================== -->
+
+    <section
+      id="work"
+      class="border-y border-white/5 bg-white/[0.015] py-24 md:py-32"
+    >
+      <div class="mx-auto max-w-7xl px-6">
+
+        <div
+          class="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end"
+        >
+          <div class="max-w-2xl">
+            <span
+              class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400"
+            >
+              {{ $t('portfolio.tagline') }}
+            </span>
+
+            <h2 class="mt-5 text-3xl font-bold text-white md:text-5xl">
+              {{ $t('portfolio.title') }}
+            </h2>
+
+            <p class="mt-5 leading-7 text-zinc-400">
+              {{ $t('portfolio.description') }}
+            </p>
+          </div>
+
+          <NuxtLink
+            :to="localePath('/work')"
+            class="inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-white"
+          >
+            {{ $t('portfolio.viewAll') }}
+
+            <ArrowRight class="h-4 w-4" />
+          </NuxtLink>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div 
-            v-for="step in processSteps" 
-            :key="step.step"
-            class="relative space-y-4 p-6 rounded-2xl border border-white/5 bg-zinc-900/10 backdrop-blur-sm"
+        <div class="grid gap-6 md:grid-cols-3">
+
+          <article
+            v-for="project in projects"
+            :key="project.key"
+            class="group overflow-hidden rounded-2xl border border-white/10 bg-zinc-950"
           >
-            <div class="flex items-center justify-between">
-              <span class="text-4xl font-display font-extrabold text-white/10">{{ step.step }}</span>
-              <component :is="step.icon" class="w-5 h-5 text-brand-primary" />
+            <div class="aspect-[16/10] overflow-hidden bg-zinc-900">
+
+              <img
+                :src="project.image"
+                :alt="$t(`portfolio.projects.${project.key}.title`)"
+                class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                loading="lazy"
+              />
+
             </div>
-            <h3 class="text-lg font-display font-semibold text-zinc-200">
-              {{ $t(`process.${step.key}_title`) }}
-            </h3>
-            <p class="text-sm text-zinc-400 leading-relaxed font-sans">
-              {{ $t(`process.${step.key}_desc`) }}
-            </p>
-          </div>
+
+            <div class="p-6">
+
+              <p class="text-xs uppercase tracking-wider text-emerald-400">
+                {{ $t(`portfolio.projects.${project.key}.category`) }}
+              </p>
+
+              <h3 class="mt-2 text-xl font-semibold text-white">
+                {{ $t(`portfolio.projects.${project.key}.title`) }}
+              </h3>
+
+              <p class="mt-3 text-sm leading-6 text-zinc-500">
+                {{ $t(`portfolio.projects.${project.key}.description`) }}
+              </p>
+
+              <NuxtLink
+                :to="localePath('/work')"
+                class="mt-5 inline-flex items-center gap-2 text-sm font-medium text-white"
+              >
+                {{ $t('portfolio.cta_view') }}
+
+                <ArrowRight class="h-4 w-4" />
+              </NuxtLink>
+
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- 5. Why Ingenium Bright -->
-    <section class="max-w-7xl mx-auto px-6 py-24">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div class="lg:col-span-5 space-y-6">
-          <span class="text-xs font-display font-semibold uppercase tracking-wider text-brand-primary">
-            {{ $t('why_us.tagline') }}
-          </span>
-          <h2 class="text-3xl md:text-5xl font-display font-bold leading-tight">
-            {{ $t('why_us.title') }}
-          </h2>
-          <div class="pt-4">
-            <ButtonPremium :to="localePath('/about')" variant="secondary">
-              Learn about our capabilities
-            </ButtonPremium>
-          </div>
-        </div>
+    <!-- ====================================================== -->
+    <!-- PROCESS -->
+    <!-- ====================================================== -->
 
-        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div 
-            v-for="item in whyUsItems" 
-            :key="item.key"
-            class="p-6 rounded-xl border border-white/5 bg-zinc-950/40 space-y-3"
-          >
-            <component :is="item.icon" class="w-6 h-6 text-brand-primary" />
-            <h3 class="text-lg font-display font-semibold text-zinc-200">
-              {{ $t(`why_us.${item.key}_title`) }}
-            </h3>
-            <p class="text-sm text-zinc-400 leading-relaxed font-sans">
-              {{ $t(`why_us.${item.key}_desc`) }}
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="mx-auto max-w-7xl px-6 py-24 md:py-32">
 
-    <!-- 6. Bottom Banner CTA -->
-    <section class="max-w-7xl mx-auto px-6 pb-24">
-      <div class="relative rounded-3xl border border-white/5 bg-gradient-to-r from-zinc-950 via-zinc-900 to-zinc-950 p-12 md:p-20 overflow-hidden text-center flex flex-col items-center">
-        <!-- background glows -->
-        <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
-        <div class="absolute -top-12 left-10 neon-glow-emerald opacity-25"></div>
-        <div class="absolute -bottom-12 right-10 neon-glow-violet opacity-20"></div>
+      <div class="mx-auto mb-16 max-w-3xl text-center">
 
-        <h2 class="text-3xl md:text-5xl font-display font-bold text-zinc-100 max-w-2xl relative z-10">
-          {{ $t('contact.title') }}
+        <span
+          class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400"
+        >
+          {{ $t('process.eyebrow') }}
+        </span>
+
+        <h2 class="mt-5 text-3xl font-bold text-white md:text-5xl">
+          {{ $t('process.title') }}
         </h2>
-        <p class="mt-6 text-zinc-400 max-w-lg leading-relaxed text-sm md:text-base relative z-10 font-sans">
-          {{ $t('contact.desc') }}
-        </p>
-        <div class="mt-10 relative z-10">
-          <ButtonPremium :to="localePath('/contact')" variant="primary">
-            {{ $t('nav.cta') }}
-          </ButtonPremium>
-        </div>
+
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+
+        <article
+          v-for="step in processSteps"
+          :key="step.key"
+          class="rounded-2xl border border-white/10 bg-white/[0.025] p-7"
+        >
+
+          <div class="flex items-center justify-between">
+
+            <span class="text-5xl font-bold text-white/[0.07]">
+              {{ $t(`process.${step.key}.number`) }}
+            </span>
+
+            <component
+              :is="step.icon"
+              class="h-5 w-5 text-emerald-400"
+            />
+
+          </div>
+
+          <h3 class="mt-7 text-lg font-semibold text-white">
+            {{ $t(`process.${step.key}.title`) }}
+          </h3>
+
+          <p class="mt-3 text-sm leading-6 text-zinc-400">
+            {{ $t(`process.${step.key}.description`) }}
+          </p>
+
+        </article>
+
       </div>
     </section>
+
+    <!-- ====================================================== -->
+    <!-- WHY -->
+    <!-- ====================================================== -->
+
+    <section class="border-y border-white/5 bg-white/[0.015]">
+
+      <div
+        class="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:py-32 lg:grid-cols-12 lg:items-center"
+      >
+
+        <div class="lg:col-span-5">
+
+          <span
+            class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400"
+          >
+            {{ $t('why.eyebrow') }}
+          </span>
+
+          <h2
+            class="mt-5 text-3xl font-bold leading-tight text-white md:text-5xl"
+          >
+            {{ $t('why.title') }}
+          </h2>
+
+          <NuxtLink
+            :to="localePath('/about')"
+            class="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-white"
+          >
+            {{ $t('about.cta') }}
+
+            <ArrowRight class="h-4 w-4" />
+          </NuxtLink>
+
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:col-span-7">
+
+          <article
+            v-for="item in whyItems"
+            :key="item.key"
+            class="rounded-2xl border border-white/10 bg-zinc-950/50 p-6"
+          >
+
+            <component
+              :is="item.icon"
+              class="h-5 w-5 text-emerald-400"
+            />
+
+            <h3 class="mt-5 text-lg font-semibold text-white">
+              {{ $t(`why.${item.key}.title`) }}
+            </h3>
+
+            <p class="mt-3 text-sm leading-6 text-zinc-400">
+              {{ $t(`why.${item.key}.description`) }}
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- INSIGHTS -->
+    <!-- ====================================================== -->
+
+    <section class="mx-auto max-w-7xl px-6 py-24 md:py-32">
+
+      <div
+        class="rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.05] to-transparent p-8 md:p-14"
+      >
+
+        <div
+          class="flex flex-col gap-10 md:flex-row md:items-center md:justify-between"
+        >
+
+          <div class="max-w-2xl">
+
+            <span
+              class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400"
+            >
+              {{ $t('insights.eyebrow') }}
+            </span>
+
+            <h2 class="mt-5 text-3xl font-bold text-white md:text-4xl">
+              {{ $t('insights.title') }}
+            </h2>
+
+            <p class="mt-5 leading-7 text-zinc-400">
+              {{ $t('insights.description') }}
+            </p>
+
+          </div>
+
+          <!-- Instagram does NOT exist in Lucide.
+               Use the brand text instead. -->
+
+          <a
+            href="https://www.instagram.com/ingenium_bright/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex shrink-0 items-center gap-3 rounded-full border border-white/10 bg-white/[0.04] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/[0.08]"
+          >
+            <span class="font-bold">@</span>
+
+            <span>
+              {{ $t('insights.instagramHandle') }}
+            </span>
+
+            <span class="text-zinc-500">
+              ·
+            </span>
+
+            <span>
+              {{ $t('insights.instagram') }}
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- FINAL CTA -->
+    <!-- ====================================================== -->
+
+    <section class="mx-auto max-w-7xl px-6 pb-24 md:pb-32">
+
+      <div
+        class="relative overflow-hidden rounded-3xl border border-white/10 bg-zinc-950 px-8 py-16 text-center md:px-16 md:py-24"
+      >
+
+        <div
+          class="pointer-events-none absolute inset-0 opacity-30"
+          style="background-image: radial-gradient(circle at center, rgba(16,185,129,.18), transparent 45%);"
+        />
+
+        <div class="relative mx-auto max-w-2xl">
+
+          <span
+            class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400"
+          >
+            {{ $t('contact.eyebrow') }}
+          </span>
+
+          <h2 class="mt-5 text-3xl font-bold text-white md:text-5xl">
+            {{ $t('contact.title') }}
+          </h2>
+
+          <p class="mx-auto mt-6 max-w-xl leading-7 text-zinc-400">
+            {{ $t('contact.description') }}
+          </p>
+
+          <NuxtLink
+            :to="localePath('/contact')"
+            class="mt-9 inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-zinc-950 transition hover:-translate-y-0.5 hover:bg-zinc-200"
+          >
+            {{ $t('contact.cta') }}
+
+            <ArrowRight class="h-4 w-4" />
+          </NuxtLink>
+
+        </div>
+
+      </div>
+    </section>
+
   </div>
 </template>

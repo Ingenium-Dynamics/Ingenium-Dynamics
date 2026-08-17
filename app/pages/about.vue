@@ -1,24 +1,36 @@
 <script setup lang="ts">
 import { useLocalePath, useSeoMeta } from '#imports'
-import { Cpu, Layers, ShieldCheck, Sparkles, Users, BarChart3, Database } from 'lucide-vue-next'
+import { Cpu, Layers, ShieldCheck, Sparkles, Users, BarChart3, Database } from '@lucide/vue'
 import CardPremium from '~/components/ui/CardPremium.vue'
 import ButtonPremium from '~/components/ui/ButtonPremium.vue'
 
 const localePath = useLocalePath()
+const { locale } = useI18n()
 
 useSeoMeta({
-  title: 'About Us | Technology Meets Business',
-  description: 'Ingenium Bright is a digital solutions and technology boutique. We bridge the gap between software engineering and business strategy.'
+  title: () =>
+    locale.value === 'fr'
+      ? 'À propos | La technologie au service de la stratégie'
+      : locale.value === 'es'
+        ? 'Sobre Nosotros | Tecnología al servicio de la estrategia'
+        : 'About Us | Technology Meets Business',
+
+  description: () =>
+    locale.value === 'fr'
+      ? 'Ingenium Bright est une boutique de solutions numériques et technologiques. Nous relions l\'ingénierie logicielle à la stratégie d\'entreprise.'
+      : locale.value === 'es'
+        ? 'Ingenium Bright es una boutique de soluciones digitales y tecnología. Somos el puente entre la ingeniería de software y la estrategia de negocio.'
+        : 'Ingenium Bright is a digital solutions and technology boutique. We bridge the gap between software engineering and business strategy.'
 })
 
 const capabilities = [
-  { key: 'web_dev', title: 'Full Stack Development', desc: 'Modern frontend & backend architectures.', icon: Cpu },
-  { key: 'cloud', title: 'Cloud & Infrastructure', desc: 'Scalable setup on AWS and Google Cloud.', icon: ShieldCheck },
-  { key: 'data', title: 'Data Engineering', desc: 'Custom databases, schemas, and pipelines.', icon: Database },
-  { key: 'automation', title: 'Workflow Automation', desc: 'Connecting operations with custom integrations.', icon: Layers },
-  { key: 'sap', title: 'SAP Consulting', desc: 'Strategic ERP transformation and blueprints.', icon: Users },
-  { key: 'analytics', title: 'Business Intelligence', desc: 'Actionable KPI reporting and dashboards.', icon: BarChart3 }
-]
+  { key: 'web_dev', icon: Cpu },
+  { key: 'cloud', icon: ShieldCheck },
+  { key: 'data', icon: Database },
+  { key: 'automation', icon: Layers },
+  { key: 'sap', icon: Users },
+  { key: 'analytics', icon: BarChart3 }
+] as const
 </script>
 
 <template>
@@ -45,7 +57,7 @@ const capabilities = [
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-white/5 pt-16">
         <div class="space-y-4">
           <h2 class="text-2xl font-display font-bold text-zinc-100">
-            Our Philosophy
+            {{ $t('about.philosophy_title') }}
           </h2>
           <p class="text-sm text-zinc-400 leading-relaxed font-sans">
             {{ $t('about.desc_2') }}
@@ -53,7 +65,7 @@ const capabilities = [
         </div>
         <div class="space-y-4">
           <h2 class="text-2xl font-display font-bold text-zinc-100">
-            For Small & Scaling Businesses
+            {{ $t('about.small_business_title') }}
           </h2>
           <p class="text-sm text-zinc-400 leading-relaxed font-sans">
             {{ $t('about.founder_note') }}
@@ -64,7 +76,7 @@ const capabilities = [
       <!-- Capabilities Grid -->
       <div class="border-t border-white/5 pt-16 space-y-8">
         <h2 class="text-2xl font-display font-bold text-zinc-100">
-          Our Capabilities
+          {{ $t('about.capabilities_title') }}
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <CardPremium 
@@ -79,10 +91,10 @@ const capabilities = [
             </div>
             <div class="space-y-1">
               <h3 class="text-base font-display font-bold text-zinc-200">
-                {{ cap.title }}
+                {{ $t(`about.capabilities.${cap.key}.title`) }}
               </h3>
               <p class="text-xs text-zinc-500 font-sans">
-                {{ cap.desc }}
+                {{ $t(`about.capabilities.${cap.key}.description`) }}
               </p>
             </div>
           </CardPremium>
@@ -93,14 +105,14 @@ const capabilities = [
       <div class="rounded-3xl border border-white/5 bg-zinc-950/40 p-10 md:p-16 text-center space-y-6">
         <Sparkles class="w-8 h-8 text-brand-primary mx-auto" />
         <h3 class="text-2xl font-display font-bold text-zinc-100">
-          Let's discuss how we can work together
+          {{ $t('about.cta_title') }}
         </h3>
         <p class="text-zinc-400 text-sm max-w-md mx-auto leading-relaxed">
-          Tell us about the digital solutions you want to build or the technical challenges you are trying to solve.
+          {{ $t('about.cta_desc') }}
         </p>
         <div class="pt-4">
           <ButtonPremium :to="localePath('/contact')" variant="primary">
-            Start a conversation
+            {{ $t('about.cta_button') }}
           </ButtonPremium>
         </div>
       </div>

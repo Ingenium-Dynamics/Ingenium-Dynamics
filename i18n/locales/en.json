@@ -1,15 +1,193 @@
 {
   "nav": {
     "solutions": "Solutions",
-    "work": "Work",
+    "work": "Projects",
     "about": "About",
     "insights": "Insights",
-    "contact": "Contact"
+    "contact": "Contact",
+    "cta": "Start a Project",
+    "menu": "Menu"
   },
+
   "hero": {
+    "eyebrow": "Digital Solutions & Technology",
     "title": "Technology that moves your business forward.",
-    "description": "We design and build digital solutions around your business — from websites and applications to automation, data and cloud.",
-    "primaryCta": "Start a project",
-    "secondaryCta": "Explore our work"
+    "subtitle": "We design and build digital solutions around your business — from websites and applications to automation, data and cloud.",
+    "cta_primary": "Start a Conversation",
+    "cta_secondary": "View Our Work",
+    "badge_web": "Web & Digital",
+    "badge_software": "Software",
+    "badge_automation": "Automation & AI",
+    "badge_data": "Data & Analytics",
+    "badge_cloud": "Cloud & Security",
+    "badge_consulting": "Technology Consulting"
+  },
+
+  "problem_value": {
+    "tagline": "Technology with purpose",
+    "title": "Your technology should work for your business.",
+    "description": "We combine business understanding, design and engineering to create digital solutions that solve real problems, improve processes and create better experiences."
+  },
+
+  "solutions": {
+    "tagline": "What we do",
+    "title": "Digital solutions built around your needs.",
+    "explore": "Explore solution",
+
+    "web": {
+      "title": "Web & Digital",
+      "desc": "Professional websites, landing pages and digital experiences designed to attract, connect and convert.",
+      "items": [
+        "Websites",
+        "Landing Pages",
+        "E-commerce",
+        "SEO",
+        "UX/UI"
+      ]
+    },
+
+    "software": {
+      "title": "Custom Software",
+      "desc": "Digital products and applications designed around your processes, workflows and business requirements.",
+      "items": [
+        "Web Applications",
+        "Business Systems",
+        "Dashboards",
+        "APIs",
+        "SaaS"
+      ]
+    },
+
+    "automation": {
+      "title": "Automation & AI",
+      "desc": "Reduce repetitive work, connect your tools and use intelligent technologies to improve your business.",
+      "items": [
+        "Automation",
+        "AI Integration",
+        "Workflows",
+        "APIs",
+        "Chatbots"
+      ]
+    },
+
+    "data": {
+      "title": "Data & Analytics",
+      "desc": "Turn information into useful insights through data analysis, dashboards and intelligent reporting.",
+      "items": [
+        "Data Analysis",
+        "Dashboards",
+        "Reporting",
+        "Data Quality",
+        "Python"
+      ]
+    },
+
+    "cloud": {
+      "title": "Cloud & Security",
+      "desc": "Reliable cloud solutions designed with scalability, availability and security in mind.",
+      "items": [
+        "Cloud Solutions",
+        "AWS",
+        "Firebase",
+        "Security",
+        "Deployment"
+      ]
+    },
+
+    "consulting": {
+      "title": "Technology Consulting",
+      "desc": "Practical technology guidance for organizations that need clarity, structure and better decisions.",
+      "items": [
+        "Architecture",
+        "Digital Strategy",
+        "Process Improvement",
+        "Technology Assessment",
+        "Project Leadership"
+      ]
+    }
+  },
+
+  "work": {
+    "tagline": "Selected work",
+    "title": "Projects built with purpose.",
+    "description": "A selection of digital experiences and solutions created for professionals, businesses and creative organizations.",
+    "viewAll": "View all projects",
+
+    "projects": {
+      "vincent": {
+        "category": "Artist & Digital Presence",
+        "title": "Vincent Alize",
+        "description": "A refined digital presence designed to showcase an artist, his work and his creative identity."
+      },
+      "language": {
+        "category": "Education & Languages",
+        "title": "Language Art Life",
+        "description": "A multilingual digital experience connecting language learning, culture and creative expression."
+      },
+      "studio": {
+        "category": "Photography & Creative",
+        "title": "Studio M&M",
+        "description": "A visual-focused digital experience designed to present photography and creative work."
+      }
+    }
+  },
+
+  "process": {
+    "tagline": "How we work",
+    "title": "From idea to working solution.",
+
+    "step1_title": "Understand",
+    "step1_desc": "We start by understanding your business, objectives, users and challenges.",
+
+    "step2_title": "Design",
+    "step2_desc": "We define the experience, architecture and solution before implementation.",
+
+    "step3_title": "Build",
+    "step3_desc": "We develop the solution using modern technologies and practical engineering.",
+
+    "step4_title": "Improve",
+    "step4_desc": "We test, refine and continuously improve the solution based on real needs."
+  },
+
+  "why_us": {
+    "tagline": "Why Ingenium Bright",
+    "title": "Technology without unnecessary complexity.",
+    "description": "We focus on useful technology: solutions that are understandable, maintainable and aligned with the way your organization actually works.",
+    "cta": "Learn more",
+
+    "business_first_title": "Business first",
+    "business_first_desc": "Technology decisions start with your objectives, not with a specific tool.",
+
+    "expertise_title": "Technical expertise",
+    "expertise_desc": "We combine development, data, cloud, automation and business analysis.",
+
+    "scalable_title": "Built to evolve",
+    "scalable_desc": "Solutions are designed so they can grow as your needs change.",
+
+    "partner_title": "A practical partner",
+    "partner_desc": "Clear communication, direct collaboration and solutions focused on results."
+  },
+
+  "insights": {
+    "tagline": "Insights",
+    "title": "Ideas, projects and technology.",
+    "description": "Follow Ingenium Bright for practical ideas about digital solutions, technology, design, automation and projects.",
+    "instagram": "Follow @ingenium_bright"
+  },
+
+  "contact": {
+    "title": "Have a project in mind?",
+    "desc": "Tell us what you are trying to achieve. We will explore the challenge with you and identify the right digital solution."
+  },
+
+  "footer": {
+    "description": "Digital Solutions & Technology.",
+    "solutions": "Solutions",
+    "company": "Company",
+    "connect": "Connect",
+    "language": "Language",
+    "copyright": "© {year} Ingenium Bright. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
   }
 }

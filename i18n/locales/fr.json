@@ -1,15 +1,193 @@
 {
   "nav": {
     "solutions": "Solutions",
-    "work": "Réalisations",
+    "work": "Projets",
     "about": "À propos",
     "insights": "Perspectives",
-    "contact": "Contact"
+    "contact": "Contact",
+    "cta": "Démarrer un projet",
+    "menu": "Menu"
   },
+
   "hero": {
+    "eyebrow": "Solutions numériques & technologie",
     "title": "La technologie au service de votre entreprise.",
-    "description": "Nous concevons et développons des solutions numériques adaptées à votre entreprise — des sites web et applications à l’automatisation, aux données et au cloud.",
-    "primaryCta": "Démarrer un projet",
-    "secondaryCta": "Voir nos réalisations"
+    "subtitle": "Nous concevons et développons des solutions numériques adaptées à votre entreprise — sites web, applications, automatisation, données et cloud.",
+    "cta_primary": "Parlons de votre projet",
+    "cta_secondary": "Voir nos projets",
+    "badge_web": "Web & numérique",
+    "badge_software": "Logiciels",
+    "badge_automation": "Automatisation & IA",
+    "badge_data": "Données & analytique",
+    "badge_cloud": "Cloud & sécurité",
+    "badge_consulting": "Conseil technologique"
+  },
+
+  "problem_value": {
+    "tagline": "La technologie avec un objectif",
+    "title": "Votre technologie doit travailler pour votre entreprise.",
+    "description": "Nous combinons compréhension des affaires, design et ingénierie afin de créer des solutions numériques qui répondent à de vrais besoins, améliorent les processus et offrent de meilleures expériences."
+  },
+
+  "solutions": {
+    "tagline": "Nos services",
+    "title": "Des solutions numériques adaptées à vos besoins.",
+    "explore": "Découvrir la solution",
+
+    "web": {
+      "title": "Web & numérique",
+      "desc": "Sites web professionnels, landing pages et expériences numériques conçues pour attirer, connecter et convertir.",
+      "items": [
+        "Sites web",
+        "Landing pages",
+        "Commerce électronique",
+        "SEO",
+        "UX/UI"
+      ]
+    },
+
+    "software": {
+      "title": "Logiciels sur mesure",
+      "desc": "Produits numériques et applications conçus autour de vos processus, flux de travail et besoins d'affaires.",
+      "items": [
+        "Applications web",
+        "Systèmes d'affaires",
+        "Tableaux de bord",
+        "API",
+        "SaaS"
+      ]
+    },
+
+    "automation": {
+      "title": "Automatisation & IA",
+      "desc": "Réduisez les tâches répétitives, connectez vos outils et utilisez les technologies intelligentes pour améliorer votre entreprise.",
+      "items": [
+        "Automatisation",
+        "Intégration IA",
+        "Flux de travail",
+        "API",
+        "Chatbots"
+      ]
+    },
+
+    "data": {
+      "title": "Données & analytique",
+      "desc": "Transformez vos informations en connaissances utiles grâce à l'analyse de données, aux tableaux de bord et aux rapports intelligents.",
+      "items": [
+        "Analyse de données",
+        "Tableaux de bord",
+        "Rapports",
+        "Qualité des données",
+        "Python"
+      ]
+    },
+
+    "cloud": {
+      "title": "Cloud & sécurité",
+      "desc": "Des solutions cloud fiables conçues avec la scalabilité, la disponibilité et la sécurité à l'esprit.",
+      "items": [
+        "Solutions cloud",
+        "AWS",
+        "Firebase",
+        "Sécurité",
+        "Déploiement"
+      ]
+    },
+
+    "consulting": {
+      "title": "Conseil technologique",
+      "desc": "Un accompagnement technologique pratique pour les organisations qui recherchent plus de clarté, de structure et de meilleures décisions.",
+      "items": [
+        "Architecture",
+        "Stratégie numérique",
+        "Amélioration des processus",
+        "Évaluation technologique",
+        "Direction de projet"
+      ]
+    }
+  },
+
+  "work": {
+    "tagline": "Projets sélectionnés",
+    "title": "Des projets conçus avec intention.",
+    "description": "Une sélection d'expériences numériques et de solutions créées pour des professionnels, des entreprises et des organisations créatives.",
+    "viewAll": "Voir tous les projets",
+
+    "projects": {
+      "vincent": {
+        "category": "Artiste & présence numérique",
+        "title": "Vincent Alize",
+        "description": "Une présence numérique raffinée conçue pour présenter un artiste, son travail et son identité créative."
+      },
+      "language": {
+        "category": "Éducation & langues",
+        "title": "Language Art Life",
+        "description": "Une expérience numérique multilingue qui réunit l'apprentissage des langues, la culture et la créativité."
+      },
+      "studio": {
+        "category": "Photographie & création",
+        "title": "Studio M&M",
+        "description": "Une expérience numérique axée sur le visuel pour présenter la photographie et les projets créatifs."
+      }
+    }
+  },
+
+  "process": {
+    "tagline": "Notre méthode",
+    "title": "De l'idée à la solution.",
+
+    "step1_title": "Comprendre",
+    "step1_desc": "Nous commençons par comprendre votre entreprise, vos objectifs, vos utilisateurs et vos défis.",
+
+    "step2_title": "Concevoir",
+    "step2_desc": "Nous définissons l'expérience, l'architecture et la solution avant le développement.",
+
+    "step3_title": "Développer",
+    "step3_desc": "Nous construisons la solution avec des technologies modernes et une approche d'ingénierie pragmatique.",
+
+    "step4_title": "Améliorer",
+    "step4_desc": "Nous testons, affinons et améliorons continuellement la solution selon les besoins réels."
+  },
+
+  "why_us": {
+    "tagline": "Pourquoi Ingenium Bright",
+    "title": "La technologie sans complexité inutile.",
+    "description": "Nous privilégions une technologie utile : des solutions compréhensibles, maintenables et adaptées au fonctionnement réel de votre organisation.",
+    "cta": "En savoir plus",
+
+    "business_first_title": "L'entreprise d'abord",
+    "business_first_desc": "Les décisions technologiques commencent par vos objectifs, et non par un outil particulier.",
+
+    "expertise_title": "Expertise technique",
+    "expertise_desc": "Nous combinons développement, données, cloud, automatisation et analyse d'affaires.",
+
+    "scalable_title": "Conçu pour évoluer",
+    "scalable_desc": "Les solutions sont conçues pour évoluer avec vos besoins.",
+
+    "partner_title": "Un partenaire pratique",
+    "partner_desc": "Une communication claire, une collaboration directe et des solutions orientées vers les résultats."
+  },
+
+  "insights": {
+    "tagline": "Perspectives",
+    "title": "Idées, projets et technologie.",
+    "description": "Suivez Ingenium Bright pour découvrir des idées pratiques sur les solutions numériques, la technologie, le design, l'automatisation et nos projets.",
+    "instagram": "Suivre @ingenium_bright"
+  },
+
+  "contact": {
+    "title": "Vous avez un projet en tête ?",
+    "desc": "Parlez-nous de ce que vous souhaitez accomplir. Nous analyserons votre besoin avec vous afin d'identifier la solution numérique appropriée."
+  },
+
+  "footer": {
+    "description": "Solutions numériques & technologie.",
+    "solutions": "Solutions",
+    "company": "Entreprise",
+    "connect": "Contact",
+    "language": "Langue",
+    "copyright": "© {year} Ingenium Bright. Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
   }
 }
