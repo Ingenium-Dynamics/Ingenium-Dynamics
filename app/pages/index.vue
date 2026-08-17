@@ -12,7 +12,8 @@ import {
   Layers,
   Compass
 } from '@lucide/vue'
-
+import { PORTFOLIO_PROJECTS } from '~/data/projects'
+const featuredProjects = PORTFOLIO_PROJECTS.slice(0, 3)
 const localePath = useLocalePath()
 const { locale } = useI18n()
 
@@ -116,14 +117,17 @@ const whyItems = [
 
 const projects = [
   {
+    id:'haras-los-pellines',
     key: 'haras-los-pellines',
     image: '/img/portfolio/haras_los_pellines.webp'
   },
   {
+    id: 'languagelife',
     key: 'languagelife',
     image: '/img/portfolio/languagelife1.webp'
   },
   {
+    id: 'nico-castro',
     key: 'nico-castro',
     image: '/img/portfolio/nicocastro1.webp'
   }
@@ -203,7 +207,7 @@ useSeoMeta({
         class="mt-10 flex w-full flex-col items-center justify-center gap-4 sm:w-auto sm:flex-row"
       >
         <NuxtLink
-          :to="localePath('/contact')"
+          :to="localePath('contact')"
           class="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-zinc-950 transition hover:-translate-y-0.5 hover:bg-zinc-200 sm:w-auto"
         >
           {{ $t('hero.primaryCta') }}
@@ -214,7 +218,7 @@ useSeoMeta({
         </NuxtLink>
 
         <NuxtLink
-          :to="localePath('/work')"
+          :to="localePath('work/index')"
           class="inline-flex w-full items-center justify-center rounded-full border border-white/10 bg-white/[0.03] px-7 py-3.5 text-sm font-semibold text-white transition hover:border-white/20 hover:bg-white/[0.06] sm:w-auto"
         >
           {{ $t('hero.secondaryCta') }}
@@ -354,91 +358,101 @@ useSeoMeta({
     <!-- ====================================================== -->
     <!-- WORK -->
     <!-- ====================================================== -->
+<section
+  id="work"
+  class="border-y border-white/5 bg-white/[0.015] py-24 md:py-32"
+>
+  <div class="mx-auto max-w-7xl px-6">
 
-    <section
-      id="work"
-      class="border-y border-white/5 bg-white/[0.015] py-24 md:py-32"
+    <!-- Header -->
+    <div
+      class="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end"
     >
-      <div class="mx-auto max-w-7xl px-6">
-
-        <div
-          class="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end"
+      <div class="max-w-2xl">
+        <span
+          class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400"
         >
-          <div class="max-w-2xl">
-            <span
-              class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400"
-            >
-              {{ $t('portfolio.tagline') }}
-            </span>
+          {{ $t('portfolio.tagline') }}
+        </span>
 
-            <h2 class="mt-5 text-3xl font-bold text-white md:text-5xl">
-              {{ $t('portfolio.title') }}
-            </h2>
+        <h2 class="mt-5 text-3xl font-bold text-white md:text-5xl">
+          {{ $t('portfolio.title') }}
+        </h2>
 
-            <p class="mt-5 leading-7 text-zinc-400">
-              {{ $t('portfolio.description') }}
-            </p>
-          </div>
-
-          <NuxtLink
-            :to="localePath('/work')"
-            class="inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-white"
-          >
-            {{ $t('portfolio.viewAll') }}
-
-            <ArrowRight class="h-4 w-4" />
-          </NuxtLink>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-3">
-
-          <article
-            v-for="project in projects"
-            :key="project.key"
-            class="group overflow-hidden rounded-2xl border border-white/10 bg-zinc-950"
-          >
-            <div class="aspect-[16/10] overflow-hidden bg-zinc-900">
-
-              <img
-                :src="project.image"
-                :alt="$t(`portfolio.projects.${project.key}.title`)"
-                class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                loading="lazy"
-              />
-
-            </div>
-
-            <div class="p-6">
-
-              <p class="text-xs uppercase tracking-wider text-emerald-400">
-                {{ $t(`portfolio.projects.${project.key}.category`) }}
-              </p>
-
-              <h3 class="mt-2 text-xl font-semibold text-white">
-                {{ $t(`portfolio.projects.${project.key}.title`) }}
-              </h3>
-
-              <p class="mt-3 text-sm leading-6 text-zinc-500">
-                {{ $t(`portfolio.projects.${project.key}.description`) }}
-              </p>
-
-              <NuxtLink
-                :to="localePath('/work')"
-                class="mt-5 inline-flex items-center gap-2 text-sm font-medium text-white"
-              >
-                {{ $t('portfolio.cta_view') }}
-
-                <ArrowRight class="h-4 w-4" />
-              </NuxtLink>
-
-            </div>
-          </article>
-
-        </div>
+        <p class="mt-5 leading-7 text-zinc-400">
+          {{ $t('portfolio.description') }}
+        </p>
       </div>
-    </section>
 
-    <!-- ====================================================== -->
+      <!-- Ver todos -->
+      <NuxtLink
+        :to="localePath('work/index')"
+        class="group inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-white transition-colors hover:text-emerald-400"
+      >
+        {{ $t('portfolio.viewAll') }}
+
+        <ArrowRight
+          class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+        />
+      </NuxtLink>
+    </div>
+
+    <!-- Projects -->
+    <div class="grid gap-6 md:grid-cols-3">
+
+<NuxtLink
+  v-for="project in projects"
+  :key="project.id"
+  :to="`${localePath('work')}/${project.id}`"
+        class="group block overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] transition-all duration-500 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.05]"
+      >
+
+        <!-- Image -->
+        <div class="aspect-[16/10] overflow-hidden bg-zinc-900">
+          <img
+            :src="project.image"
+            :alt="$t(`portfolio.projects.${project.key}.title`)"
+            class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Content -->
+        <div class="p-6">
+
+          <p
+            class="text-xs uppercase tracking-wider text-emerald-400"
+          >
+            {{ $t(`portfolio.projects.${project.key}.category`) }}
+          </p>
+
+          <h3 class="mt-2 text-xl font-semibold text-white">
+            {{ $t(`portfolio.projects.${project.key}.title`) }}
+          </h3>
+
+          <p class="mt-3 text-sm leading-6 text-zinc-500">
+            {{ $t(`portfolio.projects.${project.key}.description`) }}
+          </p>
+
+          <!-- CTA -->
+          <span
+            class="mt-5 inline-flex items-center gap-2 text-sm font-medium text-white transition-colors group-hover:text-emerald-400"
+          >
+            {{ $t('portfolio.cta_view') }}
+
+            <ArrowRight
+              class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+            />
+          </span>
+
+        </div>
+      </NuxtLink>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================== -->
     <!-- PROCESS -->
     <!-- ====================================================== -->
 
@@ -517,7 +531,7 @@ useSeoMeta({
           </h2>
 
           <NuxtLink
-            :to="localePath('/about')"
+            :to="localePath('about')"
             class="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-white"
           >
             {{ $t('about.cta') }}
@@ -648,7 +662,7 @@ useSeoMeta({
           </p>
 
           <NuxtLink
-            :to="localePath('/contact')"
+            :to="localePath('contact')"
             class="mt-9 inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-zinc-950 transition hover:-translate-y-0.5 hover:bg-zinc-200"
           >
             {{ $t('contact.cta') }}

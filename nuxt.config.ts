@@ -116,16 +116,17 @@ export default defineNuxtConfig({
         fr: '/conseil-technologique',
         es: '/consultoria-tecnologica'
       },
-      'work/index': {
-        en: '/work',
-        fr: '/projets',
-        es: '/portafolio'
-      },
-      'work/[id]': {
-        en: '/work/:id',
-        fr: '/projets/:id',
-        es: '/portafolio/:id'
-      },
+  'work/index': {
+    en: '/work',
+    fr: '/projets',
+    es: '/portafolio'
+  },
+
+  'work/[id]': {
+    en: '/work/[id]',
+    fr: '/projets/[id]',
+    es: '/portafolio/[id]'
+  },
       about: {
         en: '/about',
         fr: '/a-propos',

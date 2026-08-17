@@ -6,22 +6,49 @@ import { getProjectById } from '~/data/projects'
 
 const route = useRoute()
 const routes = useAppRoutes()
-const projectId = route.params.id as string
-
-const currentProject = getProjectById(projectId)
-
-if (!currentProject) {
-  throw createError({ statusCode: 404, statusMessage: 'Case Study Not Found' })
-}
 
 const { t, locale } = useI18n()
 
+/**
+ * ID del proyecto proveniente de /work/[id]
+ */
+const projectId = String(route.params.id || '')
+
+/**
+ * Buscar el proyecto en la fuente única de datos.
+ */
+const currentProject = getProjectById(projectId)
+
+/**
+ * Si el ID no existe, mostrar 404.
+ */
+if (!currentProject) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Case Study Not Found',
+    fatal: true
+  })
+}
+
+/**
+ * SEO dinámico por proyecto e idioma.
+ */
 useSeoMeta({
   title: () => {
-    const suffix = locale.value === 'fr' ? 'Étude de Cas' : locale.value === 'es' ? 'Caso de Estudio' : 'Case Study'
-    return `${t(`portfolio.projects.${projectId}.title`)} — ${suffix}`
+    const suffix =
+      locale.value === 'fr'
+        ? 'Étude de cas'
+        : locale.value === 'es'
+          ? 'Caso de estudio'
+          : 'Case Study'
+
+    return `${t(
+      `portfolio.projects.${projectId}.title`
+    )} — ${suffix}`
   },
-  description: () => t(`portfolio.projects.${projectId}.description`)
+
+  description: () =>
+    t(`portfolio.projects.${projectId}.description`)
 })
 </script>
 
