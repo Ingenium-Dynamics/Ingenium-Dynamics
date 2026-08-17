@@ -1,234 +1,317 @@
 {
   "nav": {
+    "home": "Home",
     "solutions": "Solutions",
-    "work": "Projects",
+    "work": "Portfolio",
     "about": "About Us",
     "insights": "Insights",
     "contact": "Contact",
-    "startProject": "Start a project"
+    "cta": "Start a Project"
   },
-
   "hero": {
-    "eyebrow": "DIGITAL SOLUTIONS & TECHNOLOGY",
+    "eyebrow": "Technology Boutique",
     "title": "Technology that drives your business.",
-    "description": "We design and develop digital solutions tailored to your business — from websites and applications to automation, data and cloud.",
+    "description": "We design and build tailored digital solutions for your business — from websites and applications to automation, data and cloud.",
     "primaryCta": "Start a project",
-    "secondaryCta": "View our projects",
+    "secondaryCta": "Explore our work",
     "capabilities": {
-      "web": "Web",
-      "software": "Software",
-      "automation": "Automation",
-      "data": "Data",
-      "cloud": "Cloud",
-      "consulting": "Consulting"
+      "web": "Web & Digital",
+      "software": "Custom Software",
+      "automation": "Automation & AI",
+      "data": "Data & Analytics",
+      "cloud": "Cloud & Security",
+      "consulting": "Technology Consulting"
     }
   },
-
   "intro": {
-    "eyebrow": "OUR APPROACH",
+    "eyebrow": "Business-Focused",
     "title": "Your business doesn't need more technology. It needs the right technology.",
-    "description": "We start by understanding your business, your users and your goals. Then we design the right digital solution to solve the problem."
+    "description": "At Ingenium Bright, we don't choose tools blindly. We start by understanding your business challenges, processes and goals. From there, we design and build a scalable technical solution that genuinely solves the problem and delivers measurable value."
   },
-
   "solutions": {
-    "eyebrow": "WHAT WE DO",
-    "title": "Digital solutions designed for your business.",
-    "description": "From a professional website to custom software and automation, we combine design, technology and strategy to create solutions that deliver real value.",
-
+    "eyebrow": "Our Solutions",
+    "title": "Technology Services Boutique",
+    "description": "Six areas of expertise working together to take your business from digital to strategic.",
     "web": {
       "title": "Web & Digital",
-      "description": "Professional websites, landing pages and e-commerce experiences designed to attract, connect and convert.",
+      "description": "Corporate websites, high-converting landing pages and fast, modern e-commerce platforms fully optimized for SEO.",
       "items": [
         "Web Development",
         "Landing Pages",
-        "Corporate Websites",
         "E-commerce",
-        "SEO-ready Websites"
+        "SEO-Optimized Websites"
       ],
-      "cta": "Explore Web solutions"
+      "cta": "Explore Web & Digital"
     },
-
     "software": {
-      "title": "Software",
-      "description": "Digital products and custom applications developed around your business processes and needs.",
+      "title": "Custom Software",
+      "description": "Powerful web applications, internal management systems, APIs and custom integration workflows designed to automate core business processes.",
       "items": [
         "Web Applications",
         "Custom Software",
-        "APIs",
+        "API Design",
         "System Integrations"
       ],
-      "cta": "Explore software solutions"
+      "cta": "Explore Custom Software"
     },
-
     "automation": {
       "title": "Automation & AI",
-      "description": "Reduce repetitive tasks, connect your tools and use intelligent technologies to improve your business.",
+      "description": "Optimization of repetitive workflows and integration of artificial intelligence models to accelerate productivity.",
       "items": [
-        "Business Automation",
         "Process Automation",
-        "AI Solutions",
-        "API Integrations"
+        "AI Integration",
+        "Workflows",
+        "API Connections"
       ],
-      "cta": "Explore automation"
+      "cta": "Explore Automation & AI"
     },
-
     "data": {
       "title": "Data & Analytics",
-      "description": "We transform your data into useful information to help you make better decisions.",
+      "description": "Interactive dashboards, data engineering and automated reporting to support informed business decisions.",
       "items": [
         "Dashboards",
-        "Data Analysis",
+        "Data Analytics",
         "Data Engineering",
-        "Business Reporting"
+        "Automated Reporting"
       ],
-      "cta": "Explore data solutions"
+      "cta": "Explore Data & Analytics"
     },
-
     "cloud": {
       "title": "Cloud & Security",
-      "description": "Reliable digital infrastructure designed for performance, scalability and security.",
+      "description": "Scalable cloud architecture, continuous deployment and modern security practices to protect your infrastructure.",
       "items": [
         "Cloud Architecture",
-        "Deployment",
-        "Infrastructure",
-        "Security"
+        "DevOps Deployment",
+        "Cybersecurity",
+        "Infrastructure as Code"
       ],
-      "cta": "Explore Cloud solutions"
+      "cta": "Explore Cloud & Security"
     },
-
     "consulting": {
       "title": "Technology Consulting",
-      "description": "Technology strategy and technical advisory services to help you make better digital decisions.",
+      "description": "Strategic advice on digital transformation, SAP consulting and technical architecture for the future.",
       "items": [
         "Technology Strategy",
         "Digital Transformation",
         "SAP Consulting",
-        "Technical Architecture"
+        "Systems Architecture"
       ],
-      "cta": "Explore consulting"
+      "cta": "Explore Consulting"
     }
   },
-
-  "work": {
-    "eyebrow": "FEATURED PROJECTS",
-    "title": "Ideas turned into digital experiences.",
-    "description": "Explore some of the projects we have designed and developed for businesses, professionals and creative organizations.",
-    "viewAll": "View all projects",
-    "viewProject": "View project",
-
-    "projects": {
-      "vincent": {
-        "title": "Vincent Alize",
-        "category": "Artist & Digital Presence",
-        "description": "A refined digital presence designed for a professional artist and musician."
-      },
-
-      "languageArtLife": {
-        "title": "Language Art Life",
-        "category": "Education & Languages",
-        "description": "A multilingual digital platform for language learning and communication."
-      },
-
-      "studioMM": {
-        "title": "Studio M&M",
-        "category": "Photography & Creative",
-        "description": "A visual experience designed to showcase photography and creative work."
-      }
-    }
-  },
-
   "process": {
-    "eyebrow": "HOW WE WORK",
-    "title": "A clear process, from idea to solution.",
-
+    "eyebrow": "Methodology",
+    "title": "How we work",
     "discover": {
       "number": "01",
       "title": "Discover",
-      "description": "We understand your business, users, goals and technical requirements."
+      "description": "We deeply understand your business, users and commercial goals before proposing any solution."
     },
-
     "design": {
       "number": "02",
       "title": "Design",
-      "description": "We define the experience, architecture and solution before development begins."
+      "description": "We define the user experience, system architecture and detailed technical approach."
     },
-
     "build": {
       "number": "03",
       "title": "Build",
-      "description": "We develop, integrate, test and deploy the solution with a strong focus on quality."
+      "description": "We develop cleanly, integrate with your systems, perform quality testing and deploy."
     },
-
     "grow": {
       "number": "04",
-      "title": "Evolve",
-      "description": "We improve, maintain and evolve your digital solution as your business grows."
+      "title": "Grow",
+      "description": "We monitor the solution, provide specialized maintenance and evolve the product at your pace."
     }
   },
-
   "why": {
-    "eyebrow": "WHY INGENIUM BRIGHT",
-    "title": "Technology with a business-focused vision.",
-
+    "eyebrow": "Why Choose Us",
+    "title": "A trusted partner for your digital challenges",
     "businessFirst": {
-      "title": "Business first",
-      "description": "We start with the problem, not the technology."
+      "title": "Business First",
+      "description": "We start with the real business problem, not the latest technology trend."
     },
-
     "fullStack": {
-      "title": "Full-stack expertise",
-      "description": "From interfaces and frontend to backend systems, APIs and architecture."
+      "title": "Full-Stack Expertise",
+      "description": "We work across user interfaces, server architectures, data and APIs."
     },
-
     "scalable": {
-      "title": "Built to grow",
-      "description": "Solutions designed with your business's next stage of growth in mind."
+      "title": "Scalable by Design",
+      "description": "Clean solutions built to grow and evolve alongside your business."
     },
-
     "partner": {
-      "title": "One technology partner",
-      "description": "Strategy, design, development, integration and deployment in one place."
+      "title": "One Technology Partner",
+      "description": "We handle the entire cycle: strategy, design, development and support."
     }
   },
-
   "about": {
-    "eyebrow": "ABOUT INGENIUM BRIGHT",
-    "title": "Where technology meets business.",
-    "description": "Ingenium Bright is a boutique digital solutions and technology company focused on creating practical, modern and scalable solutions for businesses and organizations.",
-    "secondaryDescription": "Our experience combines software development, web technologies, automation, data, cloud and technology consulting.",
-    "cta": "Discover Ingenium Bright"
+    "tagline": "About Ingenium Bright",
+    "title": "Where technology meets business strategy",
+    "cta": "Discover our story",
+    "desc_1": "We are a professional technology boutique dedicated to designing and building high-quality digital solutions. We move beyond generic templates and mass-produced software: every project is designed and developed around the specific challenges of your business.",
+    "desc_2": "Our experience ranges from modern frontend and backend web development to cloud technology consulting, complex data systems and strategic SAP consulting. We take pride in bridging business needs with modern software engineering.",
+    "founder_note": "We work with small local businesses looking to professionalize their online presence, as well as startups and growing companies requiring custom applications and robust automation workflows.",
+    "philosophy_title": "Our philosophy",
+    "small_business_title": "For small businesses and growing companies",
+    "capabilities_title": "Our capabilities",
+    "capabilities": {
+      "web_dev": {
+        "title": "Full-Stack Development",
+        "description": "Modern frontend and backend architectures."
+      },
+      "cloud": {
+        "title": "Cloud & Infrastructure",
+        "description": "Scalable AWS and Google Cloud configurations."
+      },
+      "data": {
+        "title": "Data Engineering",
+        "description": "Custom databases, schemas and data pipelines."
+      },
+      "automation": {
+        "title": "Process Automation",
+        "description": "We connect operations through custom integrations."
+      },
+      "sap": {
+        "title": "SAP Consulting",
+        "description": "Strategic ERP transformation and blueprints."
+      },
+      "analytics": {
+        "title": "Business Intelligence",
+        "description": "Actionable KPI reports and dashboards."
+      }
+    },
+    "cta_title": "Let's talk about how we can work together",
+    "cta_desc": "Tell us what digital solutions you want to build or what technical challenges you are facing.",
+    "cta_button": "Start a conversation"
   },
-
   "insights": {
-    "eyebrow": "INSIGHTS",
-    "title": "What we build. What we learn. What's next.",
-    "description": "Follow us for our latest ideas, projects and perspectives on technology, digital strategy and business.",
-    "instagram": "Follow us on Instagram",
-    "instagramHandle": "ingenium_bright"
+    "eyebrow": "Insights & Community",
+    "title": "News, strategy and technology trends",
+    "description": "We believe in sharing knowledge. Follow us on Instagram for our latest updates, quick technical insights and digital strategy tips.",
+    "instagramHandle": "ingenium_bright",
+    "instagram": "Follow",
+    "banner_title": "Follow us on Instagram",
+    "banner_desc": "Behind-the-scenes content, quick technology tips and the latest updates from our projects.",
+    "coming_soon": "We are preparing in-depth articles and technical guides. Soon you will find exclusive content here about digital strategy, automation and software architecture."
   },
-
   "contact": {
-    "eyebrow": "LET'S TALK",
-    "title": "Let's talk about your project.",
-    "description": "Tell us what you want to create, improve or automate.",
-    "cta": "Start a conversation"
+    "eyebrow": "Let's Talk",
+    "title": "Tell us about your project",
+    "description": "Tell us what you want to build, improve or automate. We'll get back to you shortly.",
+    "cta": "Start a Project",
+    "email_label": "Email",
+    "location_label": "Location",
+    "location": "Santiago, Chile",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "company": "Company",
+      "project_type": "Project type",
+      "project_type_placeholder": "Select the type of project...",
+      "web_dev": "Website / E-commerce",
+      "custom_software": "Custom Software",
+      "automation": "Automation or AI",
+      "other": "Other / Consulting",
+      "need": "What do you need?",
+      "need_placeholder": "Briefly describe your needs...",
+      "budget": "Budget range (Optional)",
+      "budget_placeholder": "Select an approximate range...",
+      "budget_1": "Less than $2,000 USD",
+      "budget_2": "$2,000 - $5,000 USD",
+      "budget_3": "$5,000 - $10,000 USD",
+      "budget_4": "More than $10,000 USD",
+      "message": "Your message",
+      "message_placeholder": "Tell us more about your project...",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! We'll be in touch soon.",
+      "error": "There was an error sending your message. Please try again."
+    }
   },
-
+  "portfolio": {
+    "tagline": "Case Studies",
+    "title": "Featured Work",
+    "description": "A selection of real projects, built specifically for businesses like yours.",
+    "intro": "Every project starts with a real business challenge. These are some of the case studies that show how we design, build and deliver tailored solutions.",
+    "viewAll": "View all projects",
+    "cta_view": "View case study",
+    "visit_site": "Visit website",
+    "back_to_work": "Back to portfolio",
+    "project": "Project",
+    "client": "Client / Industry",
+    "challenge": "The Challenge",
+    "approach": "Our Approach",
+    "solution": "The Solution",
+    "tech": "Technologies Used",
+    "result": "The Result",
+    "details": "Project Details",
+    "gallery": "Gallery",
+    "cta_title": "Ready to build your own success story?",
+    "cta_desc": "Tell us about your project and let's discover the best technical solution for your business together.",
+    "cta_button": "Start a Project",
+    "projects": {
+      "haras-los-pellines": {
+        "title": "Haras Los Pellines",
+        "category": "Digital Presence / Horse Breeding",
+        "description": "High-impact landing page for a prestigious horse breeding operation, featuring a cloud-based automated contact form.",
+        "challenge": "The client needed an elegant digital presence reflecting the prestige and tradition of the breeding operation, along with a secure and reliable channel for receiving inquiries from prospective clients.",
+        "solution": "We designed a premium mobile-first landing page with refined typography and an optimized photo gallery. We implemented a secure contact form connected to serverless AWS services.",
+        "tech": "HTML5, CSS3, Tailwind, JavaScript, AWS Lambda, API Gateway.",
+        "result": "A fast and modern platform with outstanding load performance and a contact system that processes and notifies inquiries in real time."
+      },
+      "languagelife": {
+        "title": "LanguageLife",
+        "category": "Education / Art & Academy",
+        "description": "Multilingual web platform for an international language and art academy, featuring galleries and exhibition registration.",
+        "challenge": "The academy needed a multilingual website capable of presenting its language courses, artistic activities and painting galleries in a visually engaging way.",
+        "solution": "We developed a multilingual website with a real-time language selector, dedicated exhibition sections and an interactive gallery with lazy loading to optimize visual performance.",
+        "tech": "HTML5, CSS3, JavaScript, Bootstrap, Multilingual Routing.",
+        "result": "Successful attraction of international students and increased visibility for local artists through virtual galleries."
+      },
+      "alex-oyarzun": {
+        "title": "Psychologist Alex Oyarzún",
+        "category": "Healthcare / Professional Practice",
+        "description": "Professional and refined website designed to present therapeutic services and facilitate clinical appointment requests.",
+        "challenge": "The professional needed a calm and empathetic landing page explaining his therapeutic approach while making direct contact easier and respecting the privacy of the communication channel.",
+        "solution": "We created a clean design focused on usability and visual warmth, providing detailed information about specialties while simplifying direct communication channels.",
+        "tech": "HTML5, CSS3, Tailwind, JavaScript.",
+        "result": "A stronger digital presence, resulting in an active professional inquiry channel without intermediaries."
+      },
+      "nico-castro": {
+        "title": "Nicolás Castro Photography",
+        "category": "Photography / Creative Portfolio",
+        "description": "Multilingual artistic photography portfolio designed to showcase high-definition visual work without compromising website performance.",
+        "challenge": "The photographer needed to display high-definition work without the image weight affecting website performance on mobile devices.",
+        "solution": "We implemented a dark and minimalist interface that acts as a canvas for the photographs, incorporating advanced compression techniques and lazy loading.",
+        "tech": "HTML5, CSS3, JavaScript, WebP Optimization, CloudFront CDN.",
+        "result": "A highly visual portfolio that loads quickly and presents international photography work in a clean and immersive way."
+      },
+      "fidias-place": {
+        "title": "Fidias Place",
+        "category": "Sports & Leisure / Dance Academy",
+        "description": "Interactive landing page for a dance academy featuring class schedules, pricing and online registration.",
+        "challenge": "The academy needed an agile page to attract new students, clearly presenting class schedules and promoting salsa and bachata workshops.",
+        "solution": "We designed a clear conversion flow with dynamic calls to action and structured schedule tables for easy mobile reading.",
+        "tech": "HTML5, CSS3, Bootstrap, JavaScript.",
+        "result": "A significant increase in weekly registrations thanks to a clear, mobile-friendly enrollment flow."
+      },
+      "j-avila": {
+        "title": "J-Avila Cleaning & Maintenance",
+        "category": "Industrial Services / Cleaning & Home",
+        "description": "Commercial and residential services landing page optimized for conversions and direct quote generation.",
+        "challenge": "A cleaning and landscaping company needed to professionalize its digital brand to compete in the industrial and corporate sectors.",
+        "solution": "We developed a landing page focused on benefits, trust and a simplified service quotation process.",
+        "tech": "HTML5, CSS3, Tailwind, JavaScript.",
+        "result": "Greater corporate credibility and a steady flow of quote requests from offices and residential communities."
+      }
+    }
+  },
   "footer": {
-    "description": "Digital solutions & technology.",
-    "solutions": "Solutions",
-    "company": "Company",
-    "connect": "Connect",
-    "copyright": "© {year} Ingenium Bright. All rights reserved.",
-    "privacy": "Privacy Policy",
-    "terms": "Terms & Conditions"
-  },
-
-  "common": {
-    "learnMore": "Learn more",
-    "viewMore": "View more",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous"
+    "tagline": "Technology Services Boutique",
+    "desc": "Tailored digital solutions for your business. We design and develop with technical excellence.",
+    "solutions_title": "Solutions",
+    "company_title": "Company",
+    "social_title": "Follow Us",
+    "language": "Language",
+    "rights": "All rights reserved."
   }
 }

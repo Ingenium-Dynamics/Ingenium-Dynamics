@@ -20,31 +20,37 @@ const { locale } = useI18n()
 const solutionsList = [
   {
     key: 'web',
+    route: 'solutions-web',
     icon: Laptop,
     accent: 'emerald'
   },
   {
     key: 'software',
+    route: 'solutions-software',
     icon: Cpu,
     accent: 'blue'
   },
   {
     key: 'automation',
+    route: 'solutions-automation',
     icon: GitFork,
     accent: 'violet'
   },
   {
     key: 'data',
+    route: 'solutions-data',
     icon: BarChart3,
     accent: 'emerald'
   },
   {
     key: 'cloud',
+    route: 'solutions-cloud',
     icon: ShieldCheck,
     accent: 'blue'
   },
   {
     key: 'consulting',
+    route: 'solutions-consulting',
     icon: Users,
     accent: 'violet'
   }
@@ -341,7 +347,7 @@ useSeoMeta({
             </div>
 
             <NuxtLink
-              :to="localePath(`/solutions/${solution.key}`)"
+              :to="localePath(solution.route)"
               class="group/link inline-flex items-center gap-2 text-sm font-medium text-white"
             >
               {{ $t(`solutions.${solution.key}.cta`) }}
