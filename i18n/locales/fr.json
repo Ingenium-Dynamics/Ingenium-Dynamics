@@ -29,76 +29,227 @@
     "description": "Chez Ingenium Bright, nous ne choisissons pas les outils à l’aveugle. Nous commençons par comprendre les défis, les processus et les objectifs de votre entreprise. Nous concevons ensuite une solution technique évolutive qui répond réellement au problème et génère une valeur mesurable."
   },
   "solutions": {
-    "eyebrow": "Nos solutions",
-    "title": "Boutique de services technologiques",
-    "description": "Six domaines d’expertise qui travaillent ensemble pour faire passer votre entreprise du numérique à la stratégie.",
-    "web": {
-      "title": "Web & Digital",
-      "description": "Sites web corporatifs, landing pages à forte conversion et plateformes e-commerce rapides, modernes et entièrement optimisées pour le SEO.",
-      "items": [
-        "Développement Web",
-        "Landing Pages",
-        "Commerce électronique",
-        "Sites optimisés pour le SEO"
-      ],
-      "cta": "Découvrir Web & Digital"
-    },
-    "software": {
-      "title": "Logiciels sur mesure",
-      "description": "Applications web performantes, systèmes de gestion internes, API et flux d’intégration personnalisés pour automatiser les processus clés.",
-      "items": [
-        "Applications Web",
-        "Logiciels personnalisés",
-        "Conception d’API",
-        "Intégrations de systèmes"
-      ],
-      "cta": "Découvrir les logiciels sur mesure"
-    },
-    "automation": {
-      "title": "Automatisation & IA",
-      "description": "Optimisation des flux de travail répétitifs et intégration de modèles d’intelligence artificielle pour accélérer la productivité.",
-      "items": [
-        "Automatisation des processus",
-        "Intégration de l’IA",
-        "Flux de travail",
-        "Connexions API"
-      ],
-      "cta": "Découvrir l’automatisation & l’IA"
-    },
-    "data": {
-      "title": "Données & Analytique",
-      "description": "Tableaux de bord interactifs, ingénierie des données et rapports automatisés pour prendre de meilleures décisions commerciales.",
-      "items": [
-        "Tableaux de bord",
-        "Analyse de données",
-        "Ingénierie des données",
-        "Rapports automatisés"
-      ],
-      "cta": "Découvrir les données & l’analytique"
-    },
-    "cloud": {
-      "title": "Cloud & Sécurité",
-      "description": "Architecture cloud évolutive, déploiement continu et pratiques modernes de sécurité pour protéger votre infrastructure.",
-      "items": [
-        "Architecture Cloud",
-        "Déploiements DevOps",
-        "Cybersécurité",
-        "Infrastructure as Code"
-      ],
-      "cta": "Découvrir le Cloud & la sécurité"
-    },
-    "consulting": {
-      "title": "Conseil technologique",
-      "description": "Conseil stratégique en transformation numérique, accompagnement SAP et définition d’architectures techniques adaptées à l’avenir.",
-      "items": [
-        "Stratégie technologique",
-        "Transformation numérique",
-        "Conseil SAP",
-        "Architecture des systèmes"
-      ],
-      "cta": "Découvrir le conseil technologique"
-    }
+  "eyebrow": "CE QUE NOUS FAISONS",
+  "title": "Des solutions numériques conçues pour votre entreprise.",
+  "description": "D'un site web professionnel aux logiciels sur mesure et à l'automatisation, nous combinons design, technologie et stratégie pour créer des solutions qui génèrent une réelle valeur.",
+
+  "detail": {
+    "back": "Retour aux solutions",
+    "technologies": "Technologies que nous maîtrisons"
   },
+
+  "web": {
+    "title": "Web & Digital",
+    "description": "Sites web professionnels, landing pages et expériences e-commerce conçus pour attirer, engager et convertir.",
+    "desc": "Nous créons des expériences web rapides, modernes et axées sur les résultats, en combinant design, expérience utilisateur, SEO et technologie.",
+
+    "items": [
+      "Développement Web",
+      "Landing Pages",
+      "Sites corporatifs",
+      "E-commerce",
+      "SEO",
+      "Google Business Profile"
+    ],
+
+    "itemDescription": "Nous concevons et développons des solutions numériques axées sur la performance, l'expérience utilisateur, la visibilité dans les moteurs de recherche et la conversion.",
+
+    "technologies": [
+      "Vue",
+      "Nuxt",
+      "JavaScript",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML5 / CSS3",
+      "SEO",
+      "Google Business Profile"
+    ],
+
+    "seoTitle": "Développement Web, SEO et Présence Numérique",
+    "seoDescription": "Développement web sur mesure, landing pages, SEO et Google Business Profile pour créer une présence numérique professionnelle et axée sur les résultats.",
+
+    "ctaTitle": "Besoin d'une présence web professionnelle ?",
+    "ctaDescription": "Nous créons des sites web et des expériences numériques adaptés aux objectifs réels de votre entreprise.",
+    "ctaButton": "Démarrer un projet web",
+
+    "cta": "Découvrir nos solutions Web"
+  },
+
+  "software": {
+    "title": "Logiciels sur mesure",
+    "description": "Produits numériques et applications sur mesure développés autour des processus et des besoins de votre entreprise.",
+    "desc": "Nous concevons et développons des applications et plateformes personnalisées pour résoudre des processus spécifiques et créer de nouvelles capacités numériques.",
+
+    "items": [
+      "Applications Web",
+      "Logiciels sur mesure",
+      "APIs",
+      "Intégration de systèmes"
+    ],
+
+    "itemDescription": "Nous construisons des solutions logicielles évolutives, maintenables et adaptées aux processus spécifiques de chaque organisation.",
+
+    "technologies": [
+      "Vue",
+      "Nuxt",
+      "JavaScript",
+      "TypeScript",
+      "PHP",
+      "MySQL",
+      "REST APIs",
+      "Firebase"
+    ],
+
+    "seoTitle": "Logiciels sur mesure et Applications Web",
+    "seoDescription": "Développement de logiciels sur mesure, applications web, APIs et intégrations pour optimiser les processus et créer des solutions numériques évolutives.",
+
+    "ctaTitle": "Vous avez un processus qui nécessite une solution ?",
+    "ctaDescription": "Nous analysons vos besoins et développons le logiciel adapté à votre entreprise.",
+    "ctaButton": "Parler de mon projet",
+
+    "cta": "Découvrir nos solutions logicielles"
+  },
+
+  "automation": {
+    "title": "Automatisation & IA",
+    "description": "Réduisez les tâches répétitives, connectez vos outils et utilisez des technologies intelligentes pour améliorer votre entreprise.",
+    "desc": "Nous automatisons les processus, connectons les systèmes et appliquons l'intelligence artificielle pour réduire le travail manuel et améliorer l'efficacité.",
+
+    "items": [
+      "Automatisation d'entreprise",
+      "Automatisation des processus",
+      "Solutions d'IA",
+      "Intégrations API"
+    ],
+
+    "itemDescription": "Nous identifions les tâches répétitives et concevons des flux automatisés qui connectent les personnes, les applications, les données et les services.",
+
+    "technologies": [
+      "Python",
+      "JavaScript",
+      "APIs",
+      "Webhooks",
+      "Firebase",
+      "OpenAI",
+      "n8n",
+      "Cloud Functions"
+    ],
+
+    "seoTitle": "Automatisation des Processus et Intelligence Artificielle",
+    "seoDescription": "Automatisation d'entreprise, intégration d'APIs et intelligence artificielle pour réduire les tâches répétitives et améliorer l'efficacité.",
+
+    "ctaTitle": "Quels processus pourriez-vous automatiser ?",
+    "ctaDescription": "Nous analysons vos opérations et identifions des opportunités concrètes pour automatiser et améliorer votre flux de travail.",
+    "ctaButton": "Explorer l'automatisation",
+
+    "cta": "Découvrir l'automatisation"
+  },
+
+  "data": {
+    "title": "Données & Analytique",
+    "description": "Nous transformons vos données en informations utiles pour prendre de meilleures décisions.",
+    "desc": "Nous transformons des données dispersées en informations claires et exploitables grâce à l'analyse, aux tableaux de bord, au reporting et à l'ingénierie des données.",
+
+    "items": [
+      "Tableaux de bord",
+      "Analyse de données",
+      "Ingénierie des données",
+      "Rapports d'entreprise"
+    ],
+
+    "itemDescription": "Nous intégrons, nettoyons, analysons et visualisons les données pour vous aider à comprendre les performances de votre entreprise et à prendre des décisions basées sur l'information.",
+
+    "technologies": [
+      "Python",
+      "Pandas",
+      "SQL",
+      "Power BI",
+      "Tableau",
+      "MySQL",
+      "PostgreSQL",
+      "BigQuery"
+    ],
+
+    "seoTitle": "Données, Analytique et Business Intelligence",
+    "seoDescription": "Tableaux de bord, analyse de données, ingénierie des données et reporting d'entreprise pour transformer l'information en décisions.",
+
+    "ctaTitle": "Transformez vos données en décisions",
+    "ctaDescription": "Nous concevons des solutions d'analyse et de visualisation qui transforment vos données en informations utiles pour votre entreprise.",
+    "ctaButton": "Démarrer un projet data",
+
+    "cta": "Découvrir nos solutions data"
+  },
+
+  "cloud": {
+    "title": "Cloud & Sécurité",
+    "description": "Une infrastructure numérique fiable conçue pour la performance, l'évolutivité et la sécurité.",
+    "desc": "Nous concevons des architectures cloud fiables et évolutives afin que vos applications et services puissent évoluer de manière sécurisée.",
+
+    "items": [
+      "Architecture Cloud",
+      "Déploiement",
+      "Infrastructure",
+      "Sécurité"
+    ],
+
+    "itemDescription": "Nous concevons et configurons une infrastructure prête à évoluer, avec un accent sur la disponibilité, la performance, la sécurité et le contrôle des coûts.",
+
+    "technologies": [
+      "AWS",
+      "Google Cloud",
+      "Firebase",
+      "Cloudflare",
+      "Docker",
+      "GitHub",
+      "CI/CD",
+      "Cloud Functions"
+    ],
+
+    "seoTitle": "Cloud, Infrastructure et Sécurité",
+    "seoDescription": "Architecture cloud, infrastructure, déploiement et sécurité pour des applications et services numériques évolutifs.",
+
+    "ctaTitle": "Votre infrastructure est-elle prête à évoluer ?",
+    "ctaDescription": "Nous concevons des architectures cloud adaptées à vos applications, à vos besoins de sécurité et à vos objectifs de croissance.",
+    "ctaButton": "Parler d'infrastructure",
+
+    "cta": "Découvrir nos solutions Cloud"
+  },
+
+  "consulting": {
+    "title": "Conseil Technologique",
+    "description": "Stratégie technologique et conseil technique pour vous aider à prendre de meilleures décisions numériques.",
+    "desc": "Nous vous aidons à évaluer les technologies, définir les architectures et prendre des décisions techniques alignées sur les objectifs de votre entreprise.",
+
+    "items": [
+      "Stratégie technologique",
+      "Transformation numérique",
+      "Conseil SAP",
+      "Architecture technique"
+    ],
+
+    "itemDescription": "Nous combinons expertise technique et vision d'entreprise pour vous aider à définir les priorités, évaluer les alternatives et construire une stratégie technologique claire.",
+
+    "technologies": [
+      "Architecture logicielle",
+      "Cloud",
+      "SAP",
+      "APIs",
+      "Data",
+      "Automatisation",
+      "Sécurité",
+      "Transformation numérique"
+    ],
+
+    "seoTitle": "Conseil Technologique et Transformation Numérique",
+    "seoDescription": "Conseil technologique, architecture logicielle, transformation numérique et conseil SAP pour les entreprises qui souhaitent prendre de meilleures décisions.",
+
+    "ctaTitle": "Besoin de prendre une décision technologique ?",
+    "ctaDescription": "Nous analysons votre situation actuelle et vous aidons à définir une stratégie technologique claire et réaliste.",
+    "ctaButton": "Parler à un consultant",
+
+    "cta": "Découvrir nos services de conseil"
+  }
+},
   "process": {
     "eyebrow": "Méthodologie",
     "title": "Notre façon de travailler",
@@ -249,14 +400,14 @@
     "cta_desc": "Parlez-nous de votre projet et découvrons ensemble la meilleure solution technique pour votre entreprise.",
     "cta_button": "Démarrer un projet",
     "projects": {
-      "haras-los-pellines": {
-        "title": "Haras Los Pellines",
-        "category": "Présence numérique / Élevage de chevaux",
-        "description": "Landing page à fort impact pour un prestigieux élevage de chevaux, avec formulaire de contact automatisé dans le cloud.",
-        "challenge": "Le client avait besoin d’une présence numérique élégante reflétant le prestige et la tradition de son haras, ainsi que d’un canal sécurisé et fiable pour recevoir les demandes des clients potentiels.",
-        "solution": "Nous avons conçu une landing page premium adaptée aux appareils mobiles, avec une typographie raffinée et une galerie photo optimisée. Nous avons mis en place un formulaire de contact sécurisé connecté à des services serverless AWS.",
-        "tech": "HTML5, CSS3, Tailwind, JavaScript, AWS Lambda, API Gateway.",
-        "result": "Une plateforme rapide et moderne offrant d’excellentes performances de chargement et un système de contact qui traite et notifie les demandes en temps réel."
+      "el-fogon-de-la-llave": {
+        "title": "El Fogón de la Llave",
+        "category": "Événements Champêtres & Expériences",
+        "description": "Une expérience numérique conçue pour présenter un espace champêtre dédié aux célébrations, à la gastronomie, aux loisirs et à la détente à Penco.",
+        "challenge": "Le défi consistait à transformer l'identité d'El Fogón de la Llave en une expérience numérique capable de transmettre l'essence du lieu : nature, gastronomie, célébrations et moments de partage.",
+        "solution": "Nous avons conçu une expérience web visuelle, claire et responsive, en utilisant l'identité du lieu, ses espaces et son contenu multimédia afin de créer une présence numérique chaleureuse et mémorable.",
+        "tech": "Tailwind CSS, Conception adaptative, SEO, SEO local, Intégration WhatsApp, Configuration initiale de Google Business Profile",
+        "result": "Une présence numérique qui combine identité, photographie et contenu pour communiquer l'essence d'El Fogón de la Llave et faciliter le contact avec les visiteurs."
       },
       "languagelife": {
         "title": "LanguageLife",
@@ -267,14 +418,23 @@
         "tech": "HTML5, CSS3, JavaScript, Bootstrap, Multilingual Routing.",
         "result": "Une meilleure visibilité auprès des étudiants internationaux ainsi qu’une visibilité accrue pour les artistes locaux grâce aux galeries virtuelles."
       },
-      "alex-oyarzun": {
-        "title": "Psychologue Alex Oyarzún",
-        "category": "Santé / Cabinet professionnel",
-        "description": "Site web professionnel et sobre permettant de présenter les services thérapeutiques et de faciliter les demandes de rendez-vous.",
-        "challenge": "Le professionnel avait besoin d’une landing page sobre et empathique expliquant son approche thérapeutique tout en facilitant le contact direct et en respectant la confidentialité du canal de communication.",
-        "solution": "Nous avons créé un design épuré axé sur l’utilisabilité et la chaleur visuelle, avec des informations détaillées sur les spécialités et des canaux de communication simplifiés.",
-        "tech": "HTML5, CSS3, Tailwind, JavaScript.",
-        "result": "Une présence numérique renforcée, avec un canal de contact professionnel actif et sans intermédiaire."
+      "vincentalize": {
+        "title": "Vincent Alizé",
+        "category": "Musique / Artiste & Présence numérique",
+        "description": "Site web professionnel pour le projet musical Vincent Alizé, conçu pour présenter son univers artistique, sa musique, ses spectacles et son contenu audiovisuel.",
+        "challenge": "Le projet avait besoin d'une présence numérique capable de réunir l'identité artistique de Vincent Alizé, sa musique, ses prochains spectacles et ses contenus audiovisuels dans une expérience cohérente, tout en respectant l'univers musical de l'artiste.",
+        "solution": "Nous avons conçu et développé une expérience web visuelle et immersive permettant de découvrir l'artiste, d'explorer ses albums et ses chansons, de consulter ses prochains spectacles et d'accéder à ses vidéoclips et plateformes musicales.",
+        "tech": "HTML5, CSS3, Tailwind CSS, JavaScript, conception adaptative.",
+        "result": "Une présence numérique artistique et moderne qui rassemble la musique, les spectacles, les vidéos et les moyens de contact de Vincent Alizé dans une expérience web cohérente."
+      },
+      "movil-technology": {
+        "title": "Movil Technology",
+        "category": "Technologie / Réparation de téléphones",
+        "description": "Un site web professionnel pour une entreprise spécialisée dans la réparation et l'assistance pour téléphones mobiles.",
+        "challenge": "L'objectif était de créer une présence numérique claire et professionnelle pour une entreprise de réparation de téléphones, permettant aux clients de comprendre facilement les services proposés et de trouver rapidement les informations dont ils ont besoin.",
+        "solution": "Nous avons développé une interface moderne et responsive axée sur la clarté des services, la confiance et une navigation simple sur tous les appareils.",
+        "tech": "Vue.js, Vuetify, Tailwind CSS, conception adaptative, SEO, SEO local, Intégration WhatsApp, Configuration initiale de Google Business Profile",
+        "result": "Une présence numérique moderne et adaptable qui présente les services de réparation de téléphones de manière claire et professionnelle."
       },
       "nico-castro": {
         "title": "Nicolás Castro Photography",
@@ -305,6 +465,10 @@
       }
     }
   },
+  "detail": {
+  "back": "Retour aux solutions",
+  "technologies": "Technologies"
+},
   "footer": {
     "tagline": "Boutique de services technologiques",
     "desc": "Des solutions numériques sur mesure pour votre entreprise. Nous concevons et développons avec excellence technique.",

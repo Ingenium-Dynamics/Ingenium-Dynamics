@@ -7,17 +7,16 @@ export interface PortfolioProject {
 }
 
 export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
-  {
-    id: 'haras-los-pellines',
-    cover: '/img/portfolio/haras_los_pellines.webp',
-    images: [
-      '/img/portfolio/haras_los_pellines.webp',
-      '/img/portfolio/haras_los_pellines01.webp',
-      '/img/portfolio/haras_los_pellines02.webp'
-    ],
-    web: 'https://haraslospellines.com',
-    color: 'emerald'
-  },
+{
+  id: 'el-fogon-de-la-llave',
+  cover: '/img/portfolio/el_fogon_de_la_llave.jpg',
+  images: [
+    '/img/portfolio/el_fogon_de_la_llave.jpg',
+    '/img/portfolio/el_fogon_de_la_llave01.jpg'
+  ],
+  web: 'https://www.elfogondelallave.cl/',
+  color: 'emerald'
+},
   {
     id: 'languagelife',
     cover: '/img/portfolio/languagelife1.webp',
@@ -31,16 +30,24 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     color: 'blue'
   },
   {
-    id: 'alex-oyarzun',
-    cover: '/img/portfolio/alexoyarzun1.webp',
+    id: 'vincentalize',
+    cover: '/img/portfolio/vincentalize.png',
     images: [
-      '/img/portfolio/alexoyarzun1.webp',
-      '/img/portfolio/alexoyarzun2.webp',
-      '/img/portfolio/alexoyarzun3.webp'
+      '/img/portfolio/vincentalize.png',
+      '/img/portfolio/vincentalize01.jpg'
     ],
-    web: 'https://www.psicologoalexoyarzun.com/',
+    web: 'https://www.vincentalize.ca/',
     color: 'violet'
   },
+  {
+  id: 'movil-technology',
+  cover: '/img/portfolio/moviltechnology.png',
+  images: [
+    '/img/portfolio/moviltechnology.png'
+  ],
+  web: 'https://moviltechnology.ingeniumbright.com/',
+  color: 'blue'
+},
   {
     id: 'nico-castro',
     cover: '/img/portfolio/nicocastro1.webp',

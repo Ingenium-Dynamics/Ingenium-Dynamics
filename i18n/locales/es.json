@@ -29,46 +29,227 @@
     "description": "En Ingenium Bright no elegimos herramientas a ciegas. Comenzamos por comprender los desafíos, los procesos y las metas de tu negocio. A partir de ahí, diseñamos y construimos una solución técnica escalable que realmente resuelva el problema y aporte valor medible."
   },
   "solutions": {
-    "eyebrow": "Nuestras Soluciones",
-    "title": "Boutique de Servicios Tecnológicos",
-    "description": "Seis áreas de especialización que trabajan en conjunto para llevar tu negocio de lo digital a lo estratégico.",
-    "web": {
-      "title": "Web & Digital",
-      "description": "Sitios web corporativos, landing pages de alta conversión y plataformas de comercio electrónico rápidas, modernas y totalmente optimizadas para SEO.",
-      "items": ["Desarrollo Web", "Landing Pages", "Comercio Electrónico", "Webs Optimizadas para SEO"],
-      "cta": "Explorar Web & Digital"
-    },
-    "software": {
-      "title": "Software a Medida",
-      "description": "Aplicaciones web potentes, sistemas de gestión interna, APIs y flujos de integración personalizados para automatizar los procesos centrales.",
-      "items": ["Aplicaciones Web", "Software Personalizado", "Diseño de APIs", "Integraciones de Sistemas"],
-      "cta": "Explorar Software a Medida"
-    },
-    "automation": {
-      "title": "Automatización & IA",
-      "description": "Optimización de flujos de trabajo repetitivos e integración de modelos de inteligencia artificial para acelerar la productividad.",
-      "items": ["Automatización de Procesos", "Integración de IA", "Flujos de Trabajo", "Conexiones de APIs"],
-      "cta": "Explorar Automatización & IA"
-    },
-    "data": {
-      "title": "Datos & Analítica",
-      "description": "Paneles de visualización interactivos, ingeniería de datos y reportes automáticos para tomar decisiones comerciales informadas.",
-      "items": ["Dashboards", "Analítica de Datos", "Ingeniería de Datos", "Reportes Automatizados"],
-      "cta": "Explorar Datos & Analítica"
-    },
-    "cloud": {
-      "title": "Nube & Seguridad",
-      "description": "Arquitectura en la nube escalable, despliegue continuo y protocolos de seguridad modernos para proteger tu infraestructura.",
-      "items": ["Arquitectura Cloud", "Despliegues DevOps", "Ciberseguridad", "Infraestructura como Código"],
-      "cta": "Explorar Nube & Seguridad"
-    },
-    "consulting": {
-      "title": "Consultoría Tecnológica",
-      "description": "Asesoría estratégica en transformación digital, consultoría SAP y definición de arquitecturas técnicas para el futuro.",
-      "items": ["Estrategia Tecnológica", "Transformación Digital", "Consultoría SAP", "Arquitectura de Sistemas"],
-      "cta": "Explorar Consultoría"
-    }
+  "eyebrow": "LO QUE HACEMOS",
+  "title": "Soluciones digitales diseñadas para tu negocio.",
+  "description": "Desde un sitio web profesional hasta software a medida y automatización, combinamos diseño, tecnología y estrategia para crear soluciones que generan valor real.",
+
+  "detail": {
+    "back": "Volver a soluciones",
+    "technologies": "Tecnologías que dominamos"
   },
+
+  "web": {
+    "title": "Web & Digital",
+    "description": "Sitios web profesionales, landing pages y experiencias de comercio electrónico diseñadas para atraer, conectar y convertir.",
+    "desc": "Creamos experiencias web rápidas, modernas y orientadas a resultados, combinando diseño, experiencia de usuario, SEO y tecnología.",
+    
+    "items": [
+      "Desarrollo Web",
+      "Landing Pages",
+      "Sitios Corporativos",
+      "E-commerce",
+      "SEO",
+      "Google Business Profile"
+    ],
+
+    "itemDescription": "Diseñamos y desarrollamos soluciones digitales enfocadas en rendimiento, experiencia de usuario, visibilidad en buscadores y conversión.",
+
+    "technologies": [
+      "Vue",
+      "Nuxt",
+      "JavaScript",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML5 / CSS3",
+      "SEO",
+      "Google Business Profile"
+    ],
+
+    "seoTitle": "Desarrollo Web, SEO y Presencia Digital",
+    "seoDescription": "Desarrollo web a medida, landing pages, SEO y Google Business Profile para crear una presencia digital profesional y orientada a resultados.",
+
+    "ctaTitle": "¿Necesitas una presencia web profesional?",
+    "ctaDescription": "Creamos sitios web y experiencias digitales adaptadas a los objetivos reales de tu negocio.",
+    "ctaButton": "Iniciar un proyecto web",
+
+    "cta": "Explorar soluciones Web"
+  },
+
+  "software": {
+    "title": "Software a Medida",
+    "description": "Productos digitales y aplicaciones a medida desarrollados alrededor de los procesos y necesidades de tu negocio.",
+    "desc": "Diseñamos y desarrollamos aplicaciones y plataformas personalizadas para resolver procesos específicos y crear nuevas capacidades digitales.",
+
+    "items": [
+      "Aplicaciones Web",
+      "Software a medida",
+      "APIs",
+      "Integraciones de sistemas"
+    ],
+
+    "itemDescription": "Construimos soluciones de software escalables, mantenibles y adaptadas a los procesos específicos de cada organización.",
+
+    "technologies": [
+      "Vue",
+      "Nuxt",
+      "JavaScript",
+      "TypeScript",
+      "PHP",
+      "MySQL",
+      "REST APIs",
+      "Firebase"
+    ],
+
+    "seoTitle": "Software a Medida y Aplicaciones Web",
+    "seoDescription": "Desarrollo de software a medida, aplicaciones web, APIs e integraciones para optimizar procesos y crear soluciones digitales escalables.",
+
+    "ctaTitle": "¿Tienes un proceso que necesita una solución?",
+    "ctaDescription": "Analizamos tus necesidades y desarrollamos el software adecuado para tu negocio.",
+    "ctaButton": "Hablar sobre mi proyecto",
+
+    "cta": "Explorar soluciones de software"
+  },
+
+  "automation": {
+    "title": "Automatización & IA",
+    "description": "Reduce tareas repetitivas, conecta tus herramientas y utiliza tecnologías inteligentes para mejorar tu negocio.",
+    "desc": "Automatizamos procesos, conectamos sistemas y aplicamos inteligencia artificial para reducir trabajo manual y mejorar la eficiencia.",
+
+    "items": [
+      "Automatización empresarial",
+      "Automatización de procesos",
+      "Soluciones de IA",
+      "Integraciones API"
+    ],
+
+    "itemDescription": "Identificamos tareas repetitivas y diseñamos flujos automatizados que conectan personas, aplicaciones, datos y servicios.",
+
+    "technologies": [
+      "Python",
+      "JavaScript",
+      "APIs",
+      "Webhooks",
+      "Firebase",
+      "OpenAI",
+      "n8n",
+      "Cloud Functions"
+    ],
+
+    "seoTitle": "Automatización de Procesos e Inteligencia Artificial",
+    "seoDescription": "Automatización empresarial, integración de APIs e inteligencia artificial para reducir tareas repetitivas y mejorar la eficiencia.",
+
+    "ctaTitle": "¿Qué procesos podrías automatizar?",
+    "ctaDescription": "Analizamos tus operaciones y encontramos oportunidades concretas para automatizar y mejorar tu flujo de trabajo.",
+    "ctaButton": "Explorar automatización",
+
+    "cta": "Explorar automatización"
+  },
+
+  "data": {
+    "title": "Datos & Analítica",
+    "description": "Transformamos tus datos en información útil para tomar mejores decisiones.",
+    "desc": "Convertimos datos dispersos en información clara y accionable mediante análisis, dashboards, reporting e ingeniería de datos.",
+
+    "items": [
+      "Dashboards",
+      "Análisis de datos",
+      "Ingeniería de datos",
+      "Reportes empresariales"
+    ],
+
+    "itemDescription": "Integramos, limpiamos, analizamos y visualizamos datos para ayudarte a comprender el rendimiento de tu negocio y tomar decisiones basadas en información.",
+
+    "technologies": [
+      "Python",
+      "Pandas",
+      "SQL",
+      "Power BI",
+      "Tableau",
+      "MySQL",
+      "PostgreSQL",
+      "BigQuery"
+    ],
+
+    "seoTitle": "Datos, Analítica y Business Intelligence",
+    "seoDescription": "Dashboards, análisis de datos, ingeniería de datos y reporting empresarial para convertir información en decisiones.",
+
+    "ctaTitle": "Convierte tus datos en decisiones",
+    "ctaDescription": "Diseñamos soluciones de análisis y visualización que convierten tus datos en información útil para el negocio.",
+    "ctaButton": "Iniciar un proyecto de datos",
+
+    "cta": "Explorar soluciones de datos"
+  },
+
+  "cloud": {
+    "title": "Cloud & Seguridad",
+    "description": "Infraestructura digital confiable diseñada para rendimiento, escalabilidad y seguridad.",
+    "desc": "Diseñamos arquitecturas cloud confiables y escalables para que tus aplicaciones y servicios puedan crecer de forma segura.",
+
+    "items": [
+      "Arquitectura Cloud",
+      "Despliegue",
+      "Infraestructura",
+      "Seguridad"
+    ],
+
+    "itemDescription": "Diseñamos y configuramos infraestructura preparada para el crecimiento, con foco en disponibilidad, rendimiento, seguridad y control de costos.",
+
+    "technologies": [
+      "AWS",
+      "Google Cloud",
+      "Firebase",
+      "Cloudflare",
+      "Docker",
+      "GitHub",
+      "CI/CD",
+      "Cloud Functions"
+    ],
+
+    "seoTitle": "Cloud, Infraestructura y Seguridad",
+    "seoDescription": "Arquitectura cloud, infraestructura, despliegue y seguridad para aplicaciones y servicios digitales escalables.",
+
+    "ctaTitle": "¿Tu infraestructura está preparada para crecer?",
+    "ctaDescription": "Diseñamos arquitecturas cloud adecuadas para tus aplicaciones, necesidades de seguridad y objetivos de crecimiento.",
+    "ctaButton": "Hablar sobre infraestructura",
+
+    "cta": "Explorar soluciones Cloud"
+  },
+
+  "consulting": {
+    "title": "Consultoría Tecnológica",
+    "description": "Estrategia tecnológica y asesoría técnica para ayudarte a tomar mejores decisiones digitales.",
+    "desc": "Te ayudamos a evaluar tecnologías, definir arquitecturas y tomar decisiones técnicas alineadas con los objetivos de tu negocio.",
+
+    "items": [
+      "Estrategia tecnológica",
+      "Transformación digital",
+      "Consultoría SAP",
+      "Arquitectura técnica"
+    ],
+
+    "itemDescription": "Combinamos experiencia técnica y visión de negocio para ayudarte a definir prioridades, evaluar alternativas y construir una estrategia tecnológica clara.",
+
+    "technologies": [
+      "Arquitectura de Software",
+      "Cloud",
+      "SAP",
+      "APIs",
+      "Data",
+      "Automatización",
+      "Seguridad",
+      "Transformación Digital"
+    ],
+
+    "seoTitle": "Consultoría Tecnológica y Transformación Digital",
+    "seoDescription": "Consultoría tecnológica, arquitectura de software, transformación digital y asesoría SAP para empresas que necesitan tomar mejores decisiones.",
+
+    "ctaTitle": "¿Necesitas tomar una decisión tecnológica?",
+    "ctaDescription": "Analizamos tu situación actual y te ayudamos a definir una estrategia tecnológica clara y realista.",
+    "ctaButton": "Hablar con un consultor",
+
+    "cta": "Explorar consultoría"
+  }
+},
   "process": {
     "eyebrow": "Metodología",
     "title": "Cómo trabajamos",
@@ -219,14 +400,14 @@
     "cta_desc": "Cuéntanos sobre tu proyecto y descubramos juntos la mejor solución técnica para tu negocio.",
     "cta_button": "Iniciar Proyecto",
     "projects": {
-      "haras-los-pellines": {
-        "title": "Haras Los Pellines",
-        "category": "Presencia Digital / Criadero de Caballos",
-        "description": "Landing page de alto impacto para un prestigioso criadero de caballos, equipada con formulario de contacto automatizado en la nube.",
-        "challenge": "El cliente necesitaba una presencia digital elegante que reflejara el prestigio y la tradición de su haras, además de un canal seguro y confiable para recibir solicitudes de clientes interesados.",
-        "solution": "Diseñamos una landing page premium adaptada a dispositivos móviles con tipografía refinada y una galería fotográfica optimizada. Implementamos un formulario de contacto seguro conectado a servicios serverless en AWS.",
-        "tech": "HTML5, CSS3, Tailwind, JavaScript, AWS Lambda, API Gateway.",
-        "result": "Una plataforma rápida y moderna con un tiempo de carga sobresaliente y un sistema de contacto que procesa y notifica las consultas en tiempo real."
+      "el-fogon-de-la-llave": {
+        "title": "El Fogón de la Llave",
+        "category": "Eventos Campestres & Experiencias",
+        "description": "Una experiencia digital creada para presentar un espacio campestre dedicado a celebraciones, gastronomía, recreación y descanso en Penco.",
+        "challenge": "El desafío era transformar la identidad de El Fogón de la Llave en una experiencia digital capaz de transmitir la esencia del lugar: naturaleza, gastronomía, celebraciones y momentos para compartir.",
+        "solution": "Diseñamos una experiencia web visual, clara y responsive, utilizando la identidad del lugar, sus espacios y contenido multimedia para crear una presencia digital cálida y memorable.",
+        "tech": "Tailwind CSS, Diseño responsivo, SEO, SEO Local, Integración WhatsApp, Configuración inicial Google my business",
+        "result": "Una presencia digital que combina identidad, fotografía y contenido para comunicar la esencia de El Fogón de la Llave y facilitar el contacto con sus visitantes."
       },
       "languagelife": {
         "title": "LanguageLife",
@@ -237,14 +418,23 @@
         "tech": "HTML5, CSS3, JavaScript, Bootstrap, Multilingual Routing.",
         "result": "Atracción exitosa de estudiantes internacionales y un aumento notable en la visibilidad de los artistas locales gracias a las galerías virtuales."
       },
-      "alex-oyarzun": {
-        "title": "Psicólogo Alex Oyarzún",
-        "category": "Salud / Consulta Profesional",
-        "description": "Sitio web profesional y sobrio que permite dar a conocer los servicios terapéuticos y agendar consultas clínicas.",
-        "challenge": "El profesional requería una landing page sobria y empática que explicara su metodología terapéutica y facilitara el contacto directo de pacientes respetando la privacidad del canal.",
-        "solution": "Estructuramos un diseño limpio enfocado en la usabilidad y la calidez visual, facilitando información detallada sobre las especialidades y simplificando los canales de comunicación directa.",
-        "tech": "HTML5, CSS3, Tailwind, JavaScript.",
-        "result": "Consolidación de su presencia digital, resultando en una consulta clínica activa y un canal directo de contacto sin intermediarios."
+      "vincentalize": {
+          "title": "Vincent Alizé",
+          "category": "Música / Artista & Presencia Digital",
+          "description": "Sitio web profesional para el proyecto musical Vincent Alizé, diseñado para presentar su universo artístico, música, espectáculos y contenido audiovisual.",
+          "challenge": "El proyecto necesitaba una presencia digital capaz de reunir en un mismo espacio la identidad artística de Vincent Alizé, su música, sus próximos espectáculos y sus contenidos audiovisuales, manteniendo una experiencia visual coherente con su universo musical.",
+          "solution": "Diseñamos y desarrollamos una experiencia web visual y envolvente que permite descubrir al artista, explorar sus álbumes y canciones, conocer los próximos espectáculos y acceder a sus videoclips y plataformas musicales.",
+          "tech": "HTML5, CSS3, Tailwind CSS, JavaScript,diseño responsivo.",
+          "result": "Una presencia digital artística y moderna que centraliza la música, los espectáculos, los videos y los canales de contacto de Vincent Alizé en una experiencia web coherente."
+        },
+      "movil-technology": {
+        "title": "Movil Technology",
+        "category": "Tecnología / Reparación de Celulares",
+        "description": "Sitio web profesional para un servicio especializado en reparación y soporte de dispositivos móviles.",
+        "challenge": "El objetivo era crear una presencia digital clara y profesional para un negocio de reparación de celulares, facilitando que los clientes conozcan sus servicios y encuentren rápidamente la información que necesitan.",
+        "solution": "Desarrollamos una interfaz moderna y responsive enfocada en la claridad de los servicios, la confianza y una navegación sencilla desde cualquier dispositivo.",
+        "tech": "Vue.js, Vuetify, Tailwind CSS, diseño responsivo, SEO, SEO Local, Integración WhatsApp, Configuración inicial Google my business",
+        "result": "Una presencia digital moderna y adaptable que permite presentar los servicios de reparación de celulares de forma clara y profesional."
       },
       "nico-castro": {
         "title": "Nicolás Castro Photography",
@@ -275,6 +465,12 @@
       }
     }
   },
+
+"detail": {
+  "back": "Volver a soluciones",
+  "technologies": "Tecnologías"
+},
+  
   "footer": {
     "tagline": "Boutique de Servicios Tecnológicos",
     "desc": "Soluciones digitales a la medida de tu negocio. Diseñamos y programamos con excelencia técnica.",

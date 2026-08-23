@@ -29,76 +29,227 @@
     "description": "At Ingenium Bright, we don't choose tools blindly. We start by understanding your business challenges, processes and goals. From there, we design and build a scalable technical solution that genuinely solves the problem and delivers measurable value."
   },
   "solutions": {
-    "eyebrow": "Our Solutions",
-    "title": "Technology Services Boutique",
-    "description": "Six areas of expertise working together to take your business from digital to strategic.",
-    "web": {
-      "title": "Web & Digital",
-      "description": "Corporate websites, high-converting landing pages and fast, modern e-commerce platforms fully optimized for SEO.",
-      "items": [
-        "Web Development",
-        "Landing Pages",
-        "E-commerce",
-        "SEO-Optimized Websites"
-      ],
-      "cta": "Explore Web & Digital"
-    },
-    "software": {
-      "title": "Custom Software",
-      "description": "Powerful web applications, internal management systems, APIs and custom integration workflows designed to automate core business processes.",
-      "items": [
-        "Web Applications",
-        "Custom Software",
-        "API Design",
-        "System Integrations"
-      ],
-      "cta": "Explore Custom Software"
-    },
-    "automation": {
-      "title": "Automation & AI",
-      "description": "Optimization of repetitive workflows and integration of artificial intelligence models to accelerate productivity.",
-      "items": [
-        "Process Automation",
-        "AI Integration",
-        "Workflows",
-        "API Connections"
-      ],
-      "cta": "Explore Automation & AI"
-    },
-    "data": {
-      "title": "Data & Analytics",
-      "description": "Interactive dashboards, data engineering and automated reporting to support informed business decisions.",
-      "items": [
-        "Dashboards",
-        "Data Analytics",
-        "Data Engineering",
-        "Automated Reporting"
-      ],
-      "cta": "Explore Data & Analytics"
-    },
-    "cloud": {
-      "title": "Cloud & Security",
-      "description": "Scalable cloud architecture, continuous deployment and modern security practices to protect your infrastructure.",
-      "items": [
-        "Cloud Architecture",
-        "DevOps Deployment",
-        "Cybersecurity",
-        "Infrastructure as Code"
-      ],
-      "cta": "Explore Cloud & Security"
-    },
-    "consulting": {
-      "title": "Technology Consulting",
-      "description": "Strategic advice on digital transformation, SAP consulting and technical architecture for the future.",
-      "items": [
-        "Technology Strategy",
-        "Digital Transformation",
-        "SAP Consulting",
-        "Systems Architecture"
-      ],
-      "cta": "Explore Consulting"
-    }
+  "eyebrow": "WHAT WE DO",
+  "title": "Digital solutions designed for your business.",
+  "description": "From professional websites to custom software and automation, we combine design, technology and strategy to create solutions that deliver real business value.",
+
+  "detail": {
+    "back": "Back to solutions",
+    "technologies": "Technologies we excel in"
   },
+
+  "web": {
+    "title": "Web & Digital",
+    "description": "Professional websites, landing pages and e-commerce experiences designed to attract, engage and convert.",
+    "desc": "We create fast, modern and results-driven web experiences by combining design, user experience, SEO and technology.",
+
+    "items": [
+      "Web Development",
+      "Landing Pages",
+      "Corporate Websites",
+      "E-commerce",
+      "SEO",
+      "Google Business Profile"
+    ],
+
+    "itemDescription": "We design and develop digital solutions focused on performance, user experience, search visibility and conversion.",
+
+    "technologies": [
+      "Vue",
+      "Nuxt",
+      "JavaScript",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML5 / CSS3",
+      "SEO",
+      "Google Business Profile"
+    ],
+
+    "seoTitle": "Web Development, SEO and Digital Presence",
+    "seoDescription": "Custom web development, landing pages, SEO and Google Business Profile solutions to build a professional, results-driven digital presence.",
+
+    "ctaTitle": "Need a professional web presence?",
+    "ctaDescription": "We create websites and digital experiences tailored to your business goals.",
+    "ctaButton": "Start a web project",
+
+    "cta": "Explore Web solutions"
+  },
+
+  "software": {
+    "title": "Custom Software",
+    "description": "Digital products and custom applications built around your business processes and specific needs.",
+    "desc": "We design and develop customized applications and platforms to solve specific processes and create new digital capabilities.",
+
+    "items": [
+      "Web Applications",
+      "Custom Software",
+      "APIs",
+      "System Integrations"
+    ],
+
+    "itemDescription": "We build scalable, maintainable software solutions tailored to the specific processes of each organization.",
+
+    "technologies": [
+      "Vue",
+      "Nuxt",
+      "JavaScript",
+      "TypeScript",
+      "PHP",
+      "MySQL",
+      "REST APIs",
+      "Firebase"
+    ],
+
+    "seoTitle": "Custom Software and Web Applications",
+    "seoDescription": "Custom software development, web applications, APIs and integrations designed to optimize processes and build scalable digital solutions.",
+
+    "ctaTitle": "Have a process that needs a solution?",
+    "ctaDescription": "We analyze your needs and develop the right software solution for your business.",
+    "ctaButton": "Discuss my project",
+
+    "cta": "Explore software solutions"
+  },
+
+  "automation": {
+    "title": "Automation & AI",
+    "description": "Reduce repetitive tasks, connect your tools and use intelligent technologies to improve your business.",
+    "desc": "We automate processes, connect systems and apply artificial intelligence to reduce manual work and improve efficiency.",
+
+    "items": [
+      "Business Automation",
+      "Process Automation",
+      "AI Solutions",
+      "API Integrations"
+    ],
+
+    "itemDescription": "We identify repetitive tasks and design automated workflows that connect people, applications, data and services.",
+
+    "technologies": [
+      "Python",
+      "JavaScript",
+      "APIs",
+      "Webhooks",
+      "Firebase",
+      "OpenAI",
+      "n8n",
+      "Cloud Functions"
+    ],
+
+    "seoTitle": "Process Automation and Artificial Intelligence",
+    "seoDescription": "Business automation, API integration and artificial intelligence solutions to reduce repetitive tasks and improve efficiency.",
+
+    "ctaTitle": "What could you automate?",
+    "ctaDescription": "We analyze your operations and identify concrete opportunities to automate and improve your workflow.",
+    "ctaButton": "Explore automation",
+
+    "cta": "Explore automation"
+  },
+
+  "data": {
+    "title": "Data & Analytics",
+    "description": "We transform your data into useful insights to help you make better decisions.",
+    "desc": "We turn scattered data into clear and actionable insights through analytics, dashboards, reporting and data engineering.",
+
+    "items": [
+      "Dashboards",
+      "Data Analysis",
+      "Data Engineering",
+      "Business Reporting"
+    ],
+
+    "itemDescription": "We integrate, clean, analyze and visualize data to help you understand business performance and make informed decisions.",
+
+    "technologies": [
+      "Python",
+      "Pandas",
+      "SQL",
+      "Power BI",
+      "Tableau",
+      "MySQL",
+      "PostgreSQL",
+      "BigQuery"
+    ],
+
+    "seoTitle": "Data, Analytics and Business Intelligence",
+    "seoDescription": "Dashboards, data analysis, data engineering and business reporting solutions that turn information into better decisions.",
+
+    "ctaTitle": "Turn your data into decisions",
+    "ctaDescription": "We design analytics and visualization solutions that turn your data into useful business insights.",
+    "ctaButton": "Start a data project",
+
+    "cta": "Explore data solutions"
+  },
+
+  "cloud": {
+    "title": "Cloud & Security",
+    "description": "Reliable digital infrastructure designed for performance, scalability and security.",
+    "desc": "We design reliable and scalable cloud architectures so your applications and services can grow securely.",
+
+    "items": [
+      "Cloud Architecture",
+      "Deployment",
+      "Infrastructure",
+      "Security"
+    ],
+
+    "itemDescription": "We design and configure infrastructure ready for growth, with a focus on availability, performance, security and cost control.",
+
+    "technologies": [
+      "AWS",
+      "Google Cloud",
+      "Firebase",
+      "Cloudflare",
+      "Docker",
+      "GitHub",
+      "CI/CD",
+      "Cloud Functions"
+    ],
+
+    "seoTitle": "Cloud, Infrastructure and Security",
+    "seoDescription": "Cloud architecture, infrastructure, deployment and security solutions for scalable digital applications and services.",
+
+    "ctaTitle": "Is your infrastructure ready to scale?",
+    "ctaDescription": "We design cloud architectures suited to your applications, security requirements and growth objectives.",
+    "ctaButton": "Discuss infrastructure",
+
+    "cta": "Explore Cloud solutions"
+  },
+
+  "consulting": {
+    "title": "Technology Consulting",
+    "description": "Technology strategy and technical advisory to help you make better digital decisions.",
+    "desc": "We help you evaluate technologies, define architectures and make technical decisions aligned with your business objectives.",
+
+    "items": [
+      "Technology Strategy",
+      "Digital Transformation",
+      "SAP Consulting",
+      "Technical Architecture"
+    ],
+
+    "itemDescription": "We combine technical expertise and business vision to help you define priorities, evaluate alternatives and build a clear technology strategy.",
+
+    "technologies": [
+      "Software Architecture",
+      "Cloud",
+      "SAP",
+      "APIs",
+      "Data",
+      "Automation",
+      "Security",
+      "Digital Transformation"
+    ],
+
+    "seoTitle": "Technology Consulting and Digital Transformation",
+    "seoDescription": "Technology consulting, software architecture, digital transformation and SAP advisory for businesses looking to make better technology decisions.",
+
+    "ctaTitle": "Need to make a technology decision?",
+    "ctaDescription": "We assess your current situation and help you define a clear and realistic technology strategy.",
+    "ctaButton": "Talk to a consultant",
+
+    "cta": "Explore consulting services"
+  }
+},
   "process": {
     "eyebrow": "Methodology",
     "title": "How we work",
@@ -249,14 +400,14 @@
     "cta_desc": "Tell us about your project and let's discover the best technical solution for your business together.",
     "cta_button": "Start a Project",
     "projects": {
-      "haras-los-pellines": {
-        "title": "Haras Los Pellines",
-        "category": "Digital Presence / Horse Breeding",
-        "description": "High-impact landing page for a prestigious horse breeding operation, featuring a cloud-based automated contact form.",
-        "challenge": "The client needed an elegant digital presence reflecting the prestige and tradition of the breeding operation, along with a secure and reliable channel for receiving inquiries from prospective clients.",
-        "solution": "We designed a premium mobile-first landing page with refined typography and an optimized photo gallery. We implemented a secure contact form connected to serverless AWS services.",
-        "tech": "HTML5, CSS3, Tailwind, JavaScript, AWS Lambda, API Gateway.",
-        "result": "A fast and modern platform with outstanding load performance and a contact system that processes and notifies inquiries in real time."
+      "el-fogon-de-la-llave": {
+        "title": "El Fogón de la Llave",
+        "category": "Countryside Events & Experiences",
+        "description": "A digital experience created to showcase a countryside destination focused on celebrations, gastronomy, recreation and relaxation in Penco.",
+        "challenge": "The challenge was to transform El Fogón de la Llave's identity into a digital experience capable of communicating the essence of the place: nature, gastronomy, celebrations and shared moments.",
+        "solution": "We designed a visual, clear and responsive web experience using the venue's identity, spaces and multimedia content to create a warm and memorable digital presence.",
+        "tech": "Tailwind CSS, Responsive Design, SEO, Local SEO, WhatsApp Integration, Initial Google Business Profile Setup",
+        "result": "A digital presence that combines identity, photography and content to communicate the essence of El Fogón de la Llave while making it easy for visitors to get in touch."
       },
       "languagelife": {
         "title": "LanguageLife",
@@ -267,14 +418,23 @@
         "tech": "HTML5, CSS3, JavaScript, Bootstrap, Multilingual Routing.",
         "result": "Successful attraction of international students and increased visibility for local artists through virtual galleries."
       },
-      "alex-oyarzun": {
-        "title": "Psychologist Alex Oyarzún",
-        "category": "Healthcare / Professional Practice",
-        "description": "Professional and refined website designed to present therapeutic services and facilitate clinical appointment requests.",
-        "challenge": "The professional needed a calm and empathetic landing page explaining his therapeutic approach while making direct contact easier and respecting the privacy of the communication channel.",
-        "solution": "We created a clean design focused on usability and visual warmth, providing detailed information about specialties while simplifying direct communication channels.",
-        "tech": "HTML5, CSS3, Tailwind, JavaScript.",
-        "result": "A stronger digital presence, resulting in an active professional inquiry channel without intermediaries."
+      "vincentalize": {
+        "title": "Vincent Alizé",
+        "category": "Music / Artist & Digital Presence",
+        "description": "A professional website for the Vincent Alizé music project, designed to showcase his artistic universe, music, performances and audiovisual content.",
+        "challenge": "The project needed a digital presence capable of bringing Vincent Alizé's artistic identity, music, upcoming performances and audiovisual content together in one cohesive experience while preserving the character of his musical universe.",
+        "solution": "We designed and developed a visual and immersive web experience that allows visitors to discover the artist, explore albums and songs, view upcoming performances and access music videos and music platforms.",
+        "tech": "HTML5, CSS3, Tailwind CSS, JavaScript,Responsive Design.",
+        "result": "A modern artistic digital presence that brings Vincent Alizé's music, performances, videos and contact channels together in a cohesive web experience."
+      },
+      "movil-technology": {
+        "title": "Movil Technology",
+        "category": "Technology / Mobile Phone Repair",
+        "description": "A professional website for a business specialized in mobile phone repair and support.",
+        "challenge": "The goal was to create a clear and professional digital presence for a mobile phone repair business, making it easy for customers to understand the services and quickly find the information they need.",
+        "solution": "We developed a modern and responsive interface focused on service clarity, trust and straightforward navigation across devices.",
+        "tech": "Vue.js, Vuetify, Tailwind CSS, Responsive Design,SEO, Local SEO, WhatsApp Integration, Initial Google Business Profile Setup",
+        "result": "A modern and adaptable digital presence that presents mobile phone repair services in a clear and professional way."
       },
       "nico-castro": {
         "title": "Nicolás Castro Photography",
@@ -305,6 +465,10 @@
       }
     }
   },
+"detail": {
+  "back": "Back to solutions",
+  "technologies": "Technologies"
+},
   "footer": {
     "tagline": "Technology Services Boutique",
     "desc": "Tailored digital solutions for your business. We design and develop with technical excellence.",
