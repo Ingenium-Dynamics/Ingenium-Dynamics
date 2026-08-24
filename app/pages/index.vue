@@ -123,9 +123,9 @@ const whyItems = [
 
 const projects = [
   {
-    id:'haras-los-pellines',
-    key: 'haras-los-pellines',
-    image: '/img/portfolio/haras_los_pellines.webp'
+    id:'vincentalize',
+    key: 'vincentalize',
+    image: '/img/portfolio/vincentalize.png'
   },
   {
     id: 'languagelife',
@@ -133,9 +133,9 @@ const projects = [
     image: '/img/portfolio/languagelife1.webp'
   },
   {
-    id: 'nico-castro',
-    key: 'nico-castro',
-    image: '/img/portfolio/nicocastro1.webp'
+    id: 'el-fogon-de-la-llave',
+    key: 'el-fogon-de-la-llave',
+    image: '/img/portfolio/el_fogon_de_la_llave.jpg'
   }
 ] as const
 
