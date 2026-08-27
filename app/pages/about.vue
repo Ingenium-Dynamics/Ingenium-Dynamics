@@ -111,7 +111,7 @@ const capabilities = [
           {{ $t('about.cta_desc') }}
         </p>
         <div class="pt-4">
-          <ButtonPremium :to="localePath('/contact')" variant="primary">
+          <ButtonPremium :to="localePath({ name: 'contact' })" variant="primary">
             {{ $t('about.cta_button') }}
           </ButtonPremium>
         </div>

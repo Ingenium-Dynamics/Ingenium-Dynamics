@@ -7,6 +7,10 @@ import InputPremium from '~/components/ui/InputPremium.vue'
 const { t, locale } = useI18n()
 const { submitContactForm } = useContactSubmit()
 
+// <!-- FAQPage (schema.org) para AEO: las preguntas frecuentes responden dudas
+// comerciales directas y pueden ser citadas por Google AI Overviews. -->
+const { faqItems } = useFaqJsonLd('contact')
+
 useSeoMeta({
   title: () =>
     locale.value === 'fr'
@@ -222,5 +226,32 @@ const errorMessage = computed(() => {
         </div>
       </div>
     </div>
+
+    <!-- FAQ: <section> con preguntas en <h3> interrogativos. Cada pregunta y
+         respuesta coincide con el JSON-LD FAQPage inyectado en <head>, lo que
+         refuerza la señal de AEO para los AI Overviews. -->
+    <section
+      v-if="faqItems.length"
+      aria-labelledby="contact-faq-heading"
+      class="max-w-7xl mx-auto px-6 pt-20"
+    >
+      <h2 id="contact-faq-heading" class="font-display text-2xl md:text-3xl font-bold text-zinc-100">
+        {{ $t('faq.title') }}
+      </h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article
+          v-for="(item, index) in faqItems"
+          :key="index"
+          class="rounded-2xl border border-white/5 bg-zinc-950/20 p-6"
+        >
+          <h3 class="font-display text-base font-bold text-zinc-100">
+            {{ item.q }}
+          </h3>
+          <p class="mt-2 font-sans text-sm leading-relaxed text-zinc-400">
+            {{ item.a }}
+          </p>
+        </article>
+      </div>
+    </section>
   </div>
 </template>

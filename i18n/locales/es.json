@@ -471,6 +471,126 @@
   "technologies": "Tecnologías"
 },
   
+  "faq": {
+    "eyebrow": "Preguntas Frecuentes",
+    "title": "Preguntas frecuentes",
+    "contact": {
+      "questions": [
+        {
+          "q": "¿Cuánto cuesta un proyecto?",
+          "a": "Cada proyecto se cotiza de forma individual. Ofrecemos precios basados en el alcance real de tus necesidades, de modo que pagas solo por lo que tu negocio requiere, sin costos ocultos."
+        },
+        {
+          "q": "¿Cuánto tiempo toma un proyecto típico?",
+          "a": "Un sitio web profesional suele tomar entre 2 y 6 semanas, mientras que un software a medida toma entre 1 y 4 meses según el alcance. Definimos un cronograma claro contigo antes de comenzar."
+        },
+        {
+          "q": "¿Trabajan con clientes internacionales?",
+          "a": "Sí. Trabajamos con clientes en Canadá, Chile, Estados Unidos y Europa. Coordinamos comunicación, husos horarios y entregas 100% de forma remota."
+        },
+        {
+          "q": "¿Ofrecen soporte después de la entrega?",
+          "a": "Sí. Brindamos mantenimiento continuo, actualizaciones y evolución del producto. Muchos clientes trabajan con nosotros como su socio tecnológico a largo plazo."
+        }
+      ]
+    },
+    "web": {
+      "questions": [
+        {
+          "q": "¿Cuánto tiempo toma crear un sitio web profesional?",
+          "a": "Una landing page o sitio corporativo suele tomar entre 2 y 6 semanas. Primero definimos el alcance contigo y luego diseñamos, desarrollamos y optimizamos para rendimiento y SEO."
+        },
+        {
+          "q": "¿Mi sitio web estará optimizado para buscadores?",
+          "a": "Sí. Todo sitio que construimos usa HTML semántico, datos estructurados (JSON-LD), recursos de carga rápida y diseño mobile-first, para que buscadores y asistentes de IA puedan entenderlo y posicionarlo."
+        },
+        {
+          "q": "¿Pueden rediseñar mi sitio web actual?",
+          "a": "Sí. Podemos reconstruir, restructurar o rediseñar un sitio existente preservando tu contenido, posicionamiento e identidad de marca."
+        }
+      ]
+    },
+    "software": {
+      "questions": [
+        {
+          "q": "¿Qué tipo de software desarrollan?",
+          "a": "Desarrollamos aplicaciones web, portales de gestión interna, APIs e integraciones a medida. Nos enfocamos en soluciones que automatizan la lógica central del negocio y escalan con tus operaciones."
+        },
+        {
+          "q": "¿Pueden integrarse con nuestros sistemas actuales?",
+          "a": "Sí. Conectamos tu software con CRMs, ERPs, pasarelas de pago y APIs de terceros, trabajando con tu stack actual siempre que sea posible."
+        },
+        {
+          "q": "¿Cómo garantizan la calidad del software?",
+          "a": "Usamos código tipado, arquitectura modular, pruebas automatizadas y releases por etapas. Además, monitoreamos el rendimiento tras el lanzamiento y aplicamos mejoras continuas."
+        }
+      ]
+    },
+    "automation": {
+      "questions": [
+        {
+          "q": "¿Cómo identifican qué automatizar?",
+          "a": "Analizamos tus flujos de trabajo, mapeamos las tareas repetitivas y medimos su frecuencia y costo. Luego priorizamos la automatización con mayor retorno de inversión."
+        },
+        {
+          "q": "¿Pueden integrar inteligencia artificial en nuestros flujos?",
+          "a": "Sí. Integramos modelos de IA para procesamiento de documentos, generación de contenido, apoyo a decisiones y enrutamiento inteligente, siempre con supervisión humana donde corresponde."
+        },
+        {
+          "q": "¿La automatización exige reemplazar nuestras herramientas actuales?",
+          "a": "No necesariamente. Construimos automatizaciones que conectan tus herramientas existentes mediante APIs y webhooks, conservando lo que funciona y eliminando los vacíos manuales."
+        }
+      ]
+    },
+    "data": {
+      "questions": [
+        {
+          "q": "¿En qué consiste un proyecto de dashboard de datos?",
+          "a": "Conectamos tus fuentes de datos, limpiamos y modelamos la información, y construimos dashboards interactivos que monitorean los KPIs que importan para tus decisiones de negocio."
+        },
+        {
+          "q": "¿Pueden consolidar datos de múltiples fuentes?",
+          "a": "Sí. Construimos pipelines que unifican datos de bases de datos, planillas, CRMs y herramientas SaaS en una única fuente de verdad confiable."
+        },
+        {
+          "q": "¿Crean reportes automatizados?",
+          "a": "Sí. Generamos reportes programados que llegan a tu correo o espacio de trabajo, para que siempre tengas el rendimiento actualizado sin trabajo manual."
+        }
+      ]
+    },
+    "cloud": {
+      "questions": [
+        {
+          "q": "¿Con qué proveedores de nube trabajan?",
+          "a": "Trabajamos con AWS, Google Cloud, Firebase y Cloudflare. Recomendamos el proveedor que mejor se ajuste a tus necesidades de rendimiento, costo y cumplimiento."
+        },
+        {
+          "q": "¿Pueden migrar nuestra infraestructura actual?",
+          "a": "Sí. Planificamos y ejecutamos migraciones con un tiempo de inactividad mínimo, incluyendo hosting de aplicaciones, bases de datos y pipelines de despliegue CI/CD."
+        },
+        {
+          "q": "¿Cómo manejan la seguridad?",
+          "a": "Aplicamos buenas prácticas de seguridad en cada capa: datos cifrados, acceso con privilegios mínimos, infraestructura monitoreada y dependencias y protocolos actualizados."
+        }
+      ]
+    },
+    "consulting": {
+      "questions": [
+        {
+          "q": "¿Cómo es una consultoría tecnológica?",
+          "a": "Partimos auditando tu situación actual y luego definimos una hoja de ruta tecnológica clara, alineada con tus objetivos de negocio, prioridades y presupuesto."
+        },
+        {
+          "q": "¿Ofrecen consultoría SAP?",
+          "a": "Sí. Brindamos asesoría estratégica SAP, incluyendo blueprints de transformación ERP y apoyo para modernizar procesos de negocio basados en SAP."
+        },
+        {
+          "q": "¿Cómo alinean la tecnología con la estrategia del negocio?",
+          "a": "Evaluamos las alternativas según su impacto real en el negocio, no según tendencias. Cada recomendación se asocia a un resultado medible como ahorro de costos, eficiencia o crecimiento."
+        }
+      ]
+    }
+  },
   "footer": {
     "tagline": "Boutique de Servicios Tecnológicos",
     "desc": "Soluciones digitales a la medida de tu negocio. Diseñamos y programamos con excelencia técnica.",

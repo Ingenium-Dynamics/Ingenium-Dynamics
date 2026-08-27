@@ -48,14 +48,20 @@ useSeoMeta({
           :glow-color="project.color"
           class="flex flex-col h-full justify-between !p-0 group border border-white/5 bg-zinc-950/20"
         >
-          <div class="relative w-full aspect-video overflow-hidden rounded-t-2xl border-b border-white/5 bg-zinc-900">
-            <img 
+          <!-- <figure> semántico: asocia la portada del proyecto con su pie de
+               figura para que la IA entienda el contexto visual (alt + caption). -->
+          <figure class="relative w-full aspect-video overflow-hidden rounded-t-2xl border-b border-white/5 bg-zinc-900">
+            <NuxtImg 
               :src="project.cover" 
               :alt="$t(`portfolio.projects.${project.id}.title`)"
+              format="webp"
               class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
             />
-          </div>
+            <figcaption class="sr-only">
+              {{ $t(`portfolio.projects.${project.id}.title`) }}
+            </figcaption>
+          </figure>
 
           <div class="p-8 flex flex-col justify-between flex-grow">
             <div class="space-y-3">
@@ -76,9 +82,10 @@ useSeoMeta({
               </span>
               <NuxtLink 
                 :to="routes.workProject(project.id)" 
+                :aria-label="$t('portfolio.cta_view')"
                 class="inline-flex items-center justify-center w-10 h-10 rounded-xl border border-white/5 bg-white/5 text-zinc-200 hover:bg-brand-primary hover:border-brand-primary hover:text-white transition-all duration-300"
               >
-                <ArrowRight class="w-5 h-5" />
+                <ArrowRight class="w-5 h-5" aria-hidden="true" />
               </NuxtLink>
             </div>
           </div>

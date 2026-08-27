@@ -30,6 +30,7 @@ const props = defineProps<{
 }>()
 
 const localePath = useLocalePath()
+const { t } = useI18n()
 
 const config = {
   web: {
@@ -96,9 +97,14 @@ const config = {
 const current = computed(() => config[props.solution])
 
 useSeoMeta({
-  title: () => String(useI18n().t(current.value.seoTitle)),
-  description: () => String(useI18n().t(current.value.seoDescription))
+  title: () => String(t(current.value.seoTitle)),
+  description: () => String(t(current.value.seoDescription))
 })
+
+// <!-- Se usa <section> + <article> en lugar de <div> para que la IA identifique
+// la sección FAQ como contenido de preguntas y respuestas (AEO). El JSON-LD
+// FAQPage se inyecta en <head> para alimentar directamente a los AI Overviews. -->
+const { faqItems } = useFaqJsonLd(props.solution)
 </script>
 
 <template>
@@ -111,9 +117,10 @@ useSeoMeta({
 
     <div class="relative z-10 mx-auto max-w-4xl px-6">
 
-      <!-- Back -->
+      <!-- Back: se usa el nombre de ruta ({ name: 'solutions' }) para que
+           localePath lo resuelva con el prefijo de idioma correcto en EN/FR/ES -->
       <NuxtLink
-        :to="localePath('/solutions')"
+        :to="localePath({ name: 'solutions' })"
         class="mb-12 inline-flex items-center space-x-2 text-sm font-display text-zinc-500 transition-colors hover:text-zinc-300"
       >
         <ArrowLeft class="h-4 w-4" />
@@ -182,7 +189,11 @@ useSeoMeta({
 
 </div>
       <!-- Technologies -->
-      <div class="flex flex-wrap gap-3">
+      <section class="mt-16 space-y-6">
+        <h2 class="font-display text-2xl font-bold text-zinc-100">
+          {{ $t('detail.technologies') }}
+        </h2>
+        <div class="flex flex-wrap gap-3">
 
   <span
     v-for="(tech, index) in $tm(`solutions.${solution}.technologies`)"
@@ -193,6 +204,34 @@ useSeoMeta({
   </span>
 
 </div>
+      </section>
+
+      <!-- FAQ -->
+      <section
+        v-if="faqItems.length"
+        aria-labelledby="faq-heading"
+        class="mt-20 space-y-8 border-t border-white/5 pt-16"
+      >
+        <h2 id="faq-heading" class="font-display text-2xl font-bold text-zinc-100">
+          {{ $t('faq.title') }}
+        </h2>
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <article
+            v-for="(item, index) in faqItems"
+            :key="index"
+            class="rounded-2xl border border-white/5 bg-zinc-950/40 p-6"
+          >
+            <h3 class="font-display text-base font-bold text-zinc-100">
+              {{ item.q }}
+            </h3>
+            <p class="mt-2 font-sans text-sm leading-relaxed text-zinc-400">
+              {{ item.a }}
+            </p>
+          </article>
+        </div>
+      </section>
+
       <!-- CTA -->
       <div
         class="mt-20 space-y-6 rounded-3xl border border-white/5 bg-zinc-950/40 p-10 text-center"
@@ -216,7 +255,7 @@ useSeoMeta({
         <div class="pt-4">
 
           <ButtonPremium
-            :to="localePath('/contact')"
+            :to="localePath({ name: 'contact' })"
             :variant="current.glow === 'blue' ? 'primary' : 'accent'"
           >
             {{ $t(`solutions.${solution}.ctaButton`) }}
