@@ -410,13 +410,13 @@
         "result": "Una presencia digital que combina identidad, fotografía y contenido para comunicar la esencia de El Fogón de la Llave y facilitar el contacto con sus visitantes."
       },
       "languagelife": {
-        "title": "LanguageLife",
-        "category": "Educación / Arte & Academia",
-        "description": "Plataforma web multilingüe para una academia internacional de idiomas y arte, con galerías y registro de exposiciones.",
-        "challenge": "La academia necesitaba un sitio web en múltiples idiomas que pudiera mostrar tanto su oferta de cursos de idiomas como sus actividades artísticas y galerías de pinturas de forma visualmente atractiva.",
-        "solution": "Desarrollamos un sitio web multilingüe con selector de idioma en tiempo real, secciones dedicadas para exposiciones y una galería interactiva con lazy loading para optimizar el rendimiento visual.",
-        "tech": "HTML5, CSS3, JavaScript, Bootstrap, Multilingual Routing.",
-        "result": "Atracción exitosa de estudiantes internacionales y un aumento notable en la visibilidad de los artistas locales gracias a las galerías virtuales."
+        "title": "Language Art Life",
+        "category": "Educación, Idiomas & Experiencias Interactivas",
+        "description": "Una plataforma digital multilingüe que combina aprendizaje de idiomas, una galería virtual interactiva y juegos educativos para practicar de forma dinámica.",
+        "challenge": "El desafío era crear una experiencia digital que fuera más allá de una plataforma tradicional de idiomas, integrando contenidos educativos, experiencias culturales y elementos interactivos que incentivaran la exploración y la práctica.",
+        "solution": "Diseñamos una experiencia web multilingüe que combina contenidos de aprendizaje con una galería virtual interactiva para descubrir obras de arte y juegos diseñados para practicar idiomas de una manera más entretenida y participativa.",
+        "tech": "Diseño Web, Desarrollo Frontend, Experiencias Interactivas, Responsive Design, SEO.",
+        "result": "Una plataforma educativa que combina idiomas, arte e interacción, ofreciendo a los usuarios diferentes formas de explorar contenidos y practicar sus habilidades lingüísticas."
       },
       "vincentalize": {
           "title": "Vincent Alizé",
@@ -435,6 +435,15 @@
         "solution": "Desarrollamos una interfaz moderna y responsive enfocada en la claridad de los servicios, la confianza y una navegación sencilla desde cualquier dispositivo.",
         "tech": "Vue.js, Vuetify, Tailwind CSS, diseño responsivo, SEO, SEO Local, Integración WhatsApp, Configuración inicial Google my business",
         "result": "Una presencia digital moderna y adaptable que permite presentar los servicios de reparación de celulares de forma clara y profesional."
+      },
+      "podologa-soley": {
+        "title": "Podóloga Soley",
+        "category": "Salud / Web & Arquitectura Serverless",
+        "description": "Landing page profesional para una consulta de podología, desarrollada con Bootstrap 5 y optimizada para SEO, AEO y captación de pacientes.",
+        "challenge": "Crear una presencia digital profesional, rápida y accesible que permitiera presentar claramente los servicios de podología, responder las principales preguntas de los pacientes y facilitar el contacto, manteniendo una infraestructura eficiente y de bajo costo.",
+        "solution": "Desarrollamos una landing page responsive con Bootstrap 5, estructura HTML semántica, contenido optimizado para SEO y AEO, datos estructurados Schema.org y preguntas frecuentes. El formulario de contacto utiliza una arquitectura serverless en AWS con API Gateway, Lambda y SES para procesar y enviar los mensajes sin necesidad de un servidor tradicional.",
+        "tech": "Bootstrap 5, HTML5, JavaScript, SEO, AEO, Schema.org, AWS API Gateway, AWS Lambda, Amazon SES.",
+        "result": "Una presencia digital moderna y optimizada que combina experiencia responsive, visibilidad en buscadores, preparación para motores de respuesta basados en IA y una infraestructura serverless escalable y de bajo mantenimiento."
       },
       "nico-castro": {
         "title": "Nicolás Castro Photography",

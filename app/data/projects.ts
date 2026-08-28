@@ -40,14 +40,24 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     color: 'violet'
   },
   {
-  id: 'movil-technology',
-  cover: '/img/portfolio/moviltechnology.png',
-  images: [
-    '/img/portfolio/moviltechnology.png'
-  ],
-  web: 'https://moviltechnology.ingeniumbright.com/',
-  color: 'blue'
-},
+    id: 'movil-technology',
+    cover: '/img/portfolio/moviltechnology.png',
+    images: [
+      '/img/portfolio/moviltechnology.png'
+    ],
+    web: 'https://moviltechnology.ingeniumbright.com/',
+    color: 'blue'
+  },
+  {
+    id: 'podologa-soley',
+    cover: '/img/portfolio/podologasoley.jpg',
+    images: [
+      '/img/portfolio/podologasoley.jpg',
+      '/img/portfolio/podologasoley02.jpg'
+    ],
+    web: 'https://podologasoley.com/',
+    color: 'emerald'
+  },
   {
     id: 'nico-castro',
     cover: '/img/portfolio/nicocastro1.webp',

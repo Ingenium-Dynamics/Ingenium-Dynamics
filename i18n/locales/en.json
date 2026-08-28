@@ -410,13 +410,13 @@
         "result": "A digital presence that combines identity, photography and content to communicate the essence of El Fogón de la Llave while making it easy for visitors to get in touch."
       },
       "languagelife": {
-        "title": "LanguageLife",
-        "category": "Education / Art & Academy",
-        "description": "Multilingual web platform for an international language and art academy, featuring galleries and exhibition registration.",
-        "challenge": "The academy needed a multilingual website capable of presenting its language courses, artistic activities and painting galleries in a visually engaging way.",
-        "solution": "We developed a multilingual website with a real-time language selector, dedicated exhibition sections and an interactive gallery with lazy loading to optimize visual performance.",
-        "tech": "HTML5, CSS3, JavaScript, Bootstrap, Multilingual Routing.",
-        "result": "Successful attraction of international students and increased visibility for local artists through virtual galleries."
+        "title": "Language Art Life",
+        "category": "Education, Languages & Interactive Experiences",
+        "description": "A multilingual digital platform combining language learning, an interactive virtual gallery and educational games for dynamic language practice.",
+        "challenge": "The challenge was to create a digital experience that went beyond a traditional language platform by combining educational content, cultural experiences and interactive elements that encourage exploration and practice.",
+        "solution": "We designed a multilingual web experience combining language-learning content with an interactive virtual gallery for discovering artworks and games designed to make language practice more engaging and participatory.",
+        "tech": "Web Design, Frontend Development, Interactive Experiences, Responsive Design, SEO.",
+        "result": "An educational platform that brings together languages, art and interaction, offering users different ways to explore content and develop their language skills."
       },
       "vincentalize": {
         "title": "Vincent Alizé",
@@ -435,6 +435,15 @@
         "solution": "We developed a modern and responsive interface focused on service clarity, trust and straightforward navigation across devices.",
         "tech": "Vue.js, Vuetify, Tailwind CSS, Responsive Design,SEO, Local SEO, WhatsApp Integration, Initial Google Business Profile Setup",
         "result": "A modern and adaptable digital presence that presents mobile phone repair services in a clear and professional way."
+      },
+      "podologa-soley": {
+        "title": "Podóloga Soley",
+        "category": "Healthcare / Web & Serverless Architecture",
+        "description": "A professional landing page for a podiatry practice, built with Bootstrap 5 and optimized for SEO, AEO and patient acquisition.",
+        "challenge": "The goal was to create a professional, fast and accessible digital presence that clearly presents podiatry services, answers common patient questions and facilitates contact while maintaining an efficient and cost-effective infrastructure.",
+        "solution": "We developed a responsive landing page using Bootstrap 5, semantic HTML structure, SEO and AEO-optimized content, Schema.org structured data and FAQ markup. The contact form uses a serverless AWS architecture with API Gateway, Lambda and SES to process and deliver messages without requiring a traditional backend server.",
+        "tech": "Bootstrap 5, HTML5, JavaScript, SEO, AEO, Schema.org, AWS API Gateway, AWS Lambda, Amazon SES.",
+        "result": "A modern and optimized digital presence combining responsive user experience, search visibility, AI answer-engine readiness and a scalable, low-maintenance serverless infrastructure."
       },
       "nico-castro": {
         "title": "Nicolás Castro Photography",
