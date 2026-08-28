@@ -478,6 +478,126 @@
   "back": "Retour aux solutions",
   "technologies": "Technologies"
 },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions fréquentes",
+    "contact": {
+      "questions": [
+        {
+          "q": "Combien coûte un projet ?",
+          "a": "Chaque projet est chiffré individuellement. Nous proposons une tarification basée sur le périmètre réel de vos besoins : vous payez uniquement pour ce dont votre entreprise a besoin, sans frais cachés."
+        },
+        {
+          "q": "Combien de temps dure un projet type ?",
+          "a": "Un site web professionnel prend généralement 2 à 6 semaines, tandis qu'un logiciel sur mesure demande 1 à 4 mois selon l'ampleur. Nous définissons un calendrier clair avec vous avant de commencer."
+        },
+        {
+          "q": "Travaillez-vous avec des clients internationaux ?",
+          "a": "Oui. Nous travaillons avec des clients au Canada, au Chili, aux États-Unis et en Europe. Nous gérons la communication, les fuseaux horaires et la livraison entièrement à distance."
+        },
+        {
+          "q": "Offrez-vous un support après la livraison ?",
+          "a": "Oui. Nous assurons la maintenance continue, les mises à jour et l'évolution du produit. De nombreux clients travaillent avec nous comme partenaire technologique à long terme."
+        }
+      ]
+    },
+    "web": {
+      "questions": [
+        {
+          "q": "Combien de temps faut-il pour créer un site web professionnel ?",
+          "a": "Une page d'atterrissage ou un site corporatif prend généralement 2 à 6 semaines. Nous définissons d'abord le périmètre avec vous, puis nous concevons, développons et optimisons pour la performance et le référencement."
+        },
+        {
+          "q": "Mon site web sera-t-il optimisé pour les moteurs de recherche ?",
+          "a": "Oui. Chaque site que nous construisons repose sur du HTML sémantique, des données structurées (JSON-LD), des ressources rapides et une conception mobile-first, afin que les moteurs de recherche et les assistants IA puissent le comprendre et le référencer."
+        },
+        {
+          "q": "Pouvez-vous redessiner mon site web existant ?",
+          "a": "Oui. Nous pouvons reconstruire, restructurer ou restyliser un site existant tout en préservant votre contenu, votre référencement et votre identité de marque."
+        }
+      ]
+    },
+    "software": {
+      "questions": [
+        {
+          "q": "Quel type de logiciels développez-vous ?",
+          "a": "Nous développons des applications web, des portails de gestion interne, des API et des intégrations sur mesure. Nous nous concentrons sur des solutions qui automatisent la logique métier centrale et évoluent avec vos opérations."
+        },
+        {
+          "q": "Pouvez-vous vous intégrer à nos systèmes existants ?",
+          "a": "Oui. Nous connectons votre logiciel aux CRM, ERP, fournisseurs de paiement et API tierces, en travaillant avec votre stack actuel chaque fois que c'est possible."
+        },
+        {
+          "q": "Comment garantissez-vous la qualité du logiciel ?",
+          "a": "Nous utilisons du code typé, une architecture modulaire, des tests automatisés et des livraisons par étapes. Nous surveillons aussi la performance après le lancement et apportons des améliorations continues."
+        }
+      ]
+    },
+    "automation": {
+      "questions": [
+        {
+          "q": "Comment identifiez-vous ce qu'il faut automatiser ?",
+          "a": "Nous analysons vos flux de travail, cartographions les tâches répétitives et mesurons leur fréquence et leur coût. Ensuite, nous priorisons l'automatisation au meilleur retour sur investissement."
+        },
+        {
+          "q": "Pouvez-vous intégrer l'intelligence artificielle dans nos processus ?",
+          "a": "Oui. Nous intégrons des modèles d'IA pour le traitement de documents, la génération de contenu, l'aide à la décision et le routage intelligent, toujours avec une supervision humaine là où c'est nécessaire."
+        },
+        {
+          "q": "L'automatisation exige-t-elle de remplacer nos outils actuels ?",
+          "a": "Pas nécessairement. Nous créons des automatisations qui relient vos outils existants via des API et des webhooks, pour conserver ce qui fonctionne et éliminer les tâches manuelles."
+        }
+      ]
+    },
+    "data": {
+      "questions": [
+        {
+          "q": "En quoi consiste un projet de tableau de bord de données ?",
+          "a": "Nous connectons vos sources de données, nettoyons et modélisons l'information, puis construisons des tableaux de bord interactifs qui suivent les KPI importants pour vos décisions."
+        },
+        {
+          "q": "Pouvez-vous consolider des données de plusieurs sources ?",
+          "a": "Oui. Nous créons des pipelines qui unifient les données issues de bases de données, feuilles de calcul, CRM et outils SaaS en une source de vérité unique et fiable."
+        },
+        {
+          "q": "Créez-vous des rapports automatisés ?",
+          "a": "Oui. Nous générons des rapports planifiés livrés à votre boîte mail ou espace de travail, pour disposer en permanence de la performance de l'entreprise sans travail manuel."
+        }
+      ]
+    },
+    "cloud": {
+      "questions": [
+        {
+          "q": "Avec quels fournisseurs cloud travaillez-vous ?",
+          "a": "Nous travaillons avec AWS, Google Cloud, Firebase et Cloudflare. Nous recommandons le fournisseur le plus adapté à vos besoins de performance, de coût et de conformité."
+        },
+        {
+          "q": "Pouvez-vous migrer notre infrastructure existante ?",
+          "a": "Oui. Nous planifions et exécutons des migrations avec un temps d'arrêt minimal, y compris l'hébergement d'applications, les bases de données et les pipelines de déploiement CI/CD."
+        },
+        {
+          "q": "Comment gérez-vous la sécurité ?",
+          "a": "Nous appliquons les bonnes pratiques de sécurité à chaque couche : données chiffrées, accès au moindre privilège, infrastructure surveillée et dépendances et protocoles à jour."
+        }
+      ]
+    },
+    "consulting": {
+      "questions": [
+        {
+          "q": "Comment se déroule un accompagnement en conseil technologique ?",
+          "a": "Nous commençons par auditer votre situation actuelle, puis nous définissons une feuille de route technologique claire, alignée sur vos objectifs, priorités et budget."
+        },
+        {
+          "q": "Proposez-vous du conseil SAP ?",
+          "a": "Oui. Nous offrons un accompagnement stratégique SAP, notamment des blueprints de transformation ERP et du support pour moderniser les processus métier basés sur SAP."
+        },
+        {
+          "q": "Comment alignez-vous la technologie avec la stratégie d'entreprise ?",
+          "a": "Nous évaluons les alternatives selon leur impact réel, pas selon les tendances. Chaque recommandation est liée à un résultat mesurable comme les économies, l'efficacité ou la croissance."
+        }
+      ]
+    }
+  },
   "footer": {
     "tagline": "Boutique de services technologiques",
     "desc": "Des solutions numériques sur mesure pour votre entreprise. Nous concevons et développons avec excellence technique.",

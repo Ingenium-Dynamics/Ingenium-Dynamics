@@ -478,6 +478,126 @@
   "back": "Back to solutions",
   "technologies": "Technologies"
 },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "contact": {
+      "questions": [
+        {
+          "q": "How much does a project cost?",
+          "a": "Every project is scoped individually. We offer project-based pricing tailored to your needs, so you only pay for what your business actually requires — with no hidden fees."
+        },
+        {
+          "q": "How long does a typical project take?",
+          "a": "A professional website usually takes 2 to 6 weeks, while custom software projects range from 1 to 4 months depending on scope. We define a clear timeline with you before we start."
+        },
+        {
+          "q": "Do you work with international clients?",
+          "a": "Yes. We work with clients across Canada, Chile, the United States, and Europe. We handle communication, time zones, and delivery fully remotely."
+        },
+        {
+          "q": "Do you offer support after delivery?",
+          "a": "Yes. We provide ongoing maintenance, updates, and evolution of the product. Many clients work with us as their long-term technology partner."
+        }
+      ]
+    },
+    "web": {
+      "questions": [
+        {
+          "q": "How long does it take to build a professional website?",
+          "a": "A landing page or corporate website typically takes 2 to 6 weeks. We scope the project with you first, then design, build, and optimize it for performance and SEO."
+        },
+        {
+          "q": "Will my website be optimized for search engines?",
+          "a": "Yes. Every site we build follows semantic HTML, structured data (JSON-LD), fast-loading assets, and mobile-first design, so search engines and AI assistants can understand and rank it."
+        },
+        {
+          "q": "Can you redesign my existing website?",
+          "a": "Yes. We can rebuild, restructure, or restyle an existing site while preserving your content, rankings, and brand identity."
+        }
+      ]
+    },
+    "software": {
+      "questions": [
+        {
+          "q": "What kind of software do you build?",
+          "a": "We build web applications, internal management portals, APIs, and custom integrations. We focus on solutions that automate core business logic and scale with your operations."
+        },
+        {
+          "q": "Can you integrate with our existing systems?",
+          "a": "Yes. We connect your software with CRMs, ERPs, payment providers, and third-party APIs, working with your current stack whenever possible."
+        },
+        {
+          "q": "How do you ensure the quality of the software?",
+          "a": "We use typed code, modular architecture, automated testing, and staged releases. We also monitor performance after launch and provide continuous improvements."
+        }
+      ]
+    },
+    "automation": {
+      "questions": [
+        {
+          "q": "How do you identify what to automate?",
+          "a": "We analyze your workflows, map repetitive tasks, and measure their frequency and cost. Then we prioritize the automation with the highest return on investment."
+        },
+        {
+          "q": "Can artificial intelligence be integrated into our workflows?",
+          "a": "Yes. We integrate AI models for document processing, content generation, decision support, and intelligent routing, always with human oversight where it matters."
+        },
+        {
+          "q": "Does automation require replacing our current tools?",
+          "a": "Not necessarily. We build automations that connect your existing tools through APIs and webhooks, so you keep what works and eliminate the manual gaps."
+        }
+      ]
+    },
+    "data": {
+      "questions": [
+        {
+          "q": "What does a data dashboard project involve?",
+          "a": "We connect your data sources, clean and model the data, and build interactive dashboards that track the KPIs that matter for your business decisions."
+        },
+        {
+          "q": "Can you consolidate data from multiple sources?",
+          "a": "Yes. We build pipelines that unify data from databases, spreadsheets, CRMs, and SaaS tools into a single, reliable source of truth."
+        },
+        {
+          "q": "Do you build automated reports?",
+          "a": "Yes. We create scheduled reports delivered to your inbox or workspace, so you always have up-to-date business performance without manual work."
+        }
+      ]
+    },
+    "cloud": {
+      "questions": [
+        {
+          "q": "Which cloud providers do you work with?",
+          "a": "We work with AWS, Google Cloud, Firebase, and Cloudflare. We recommend the provider that best fits your performance, cost, and compliance needs."
+        },
+        {
+          "q": "Can you migrate our existing infrastructure?",
+          "a": "Yes. We plan and execute migrations with minimal downtime, including application hosting, databases, and CI/CD deployment pipelines."
+        },
+        {
+          "q": "How do you handle security?",
+          "a": "We apply security best practices at every layer: encrypted data, least-privilege access, monitored infrastructure, and up-to-date dependencies and protocols."
+        }
+      ]
+    },
+    "consulting": {
+      "questions": [
+        {
+          "q": "What is a technology consulting engagement like?",
+          "a": "We start by auditing your current situation, then define a clear technology roadmap aligned with your business goals, priorities, and budget."
+        },
+        {
+          "q": "Do you provide SAP consulting?",
+          "a": "Yes. We offer strategic SAP advisory, including ERP transformation blueprints and support for modernizing SAP-based business processes."
+        },
+        {
+          "q": "How do you align technology with business strategy?",
+          "a": "We evaluate alternatives based on business impact, not trends. Every recommendation is tied to a measurable outcome such as cost savings, efficiency, or growth."
+        }
+      ]
+    }
+  },
   "footer": {
     "tagline": "Technology Services Boutique",
     "desc": "Tailored digital solutions for your business. We design and develop with technical excellence.",

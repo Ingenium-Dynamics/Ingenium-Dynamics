@@ -30,6 +30,7 @@ const props = defineProps<{
 }>()
 
 const localePath = useLocalePath()
+const { t } = useI18n()
 
 const config = {
   web: {
@@ -96,9 +97,14 @@ const config = {
 const current = computed(() => config[props.solution])
 
 useSeoMeta({
-  title: () => String(useI18n().t(current.value.seoTitle)),
-  description: () => String(useI18n().t(current.value.seoDescription))
+  title: () => String(t(current.value.seoTitle)),
+  description: () => String(t(current.value.seoDescription))
 })
+
+// <!-- Se usa <section> + <article> en lugar de <div> para que la IA identifique
+// la sección FAQ como contenido de preguntas y respuestas (AEO). El JSON-LD
+// FAQPage se inyecta en <head> para alimentar directamente a los AI Overviews. -->
+const { faqItems } = useFaqJsonLd(props.solution)
 </script>
 
 <template>
@@ -111,9 +117,10 @@ useSeoMeta({
 
     <div class="relative z-10 mx-auto max-w-5xl 2xl:max-w-6xl fhd:max-w-7xl px-6 fhd:px-12">
 
-      <!-- Back -->
+      <!-- Back: se usa el nombre de ruta ({ name: 'solutions' }) para que
+           localePath lo resuelva con el prefijo de idioma correcto en EN/FR/ES -->
       <NuxtLink
-        :to="localePath('/solutions')"
+        :to="localePath({ name: 'solutions' })"
         class="mb-12 inline-flex items-center space-x-2 text-sm fhd:text-base font-display text-zinc-500 transition-colors hover:text-zinc-300"
       >
         <ArrowLeft class="h-4 w-4 fhd:h-5 fhd:w-5" />
@@ -183,13 +190,11 @@ useSeoMeta({
       </div>
 
       <!-- Technologies -->
-      <div class="mt-16 fhd:mt-24 border-t border-white/5 pt-12 fhd:pt-16">
+      <section class="mt-16 fhd:mt-24 border-t border-white/5 pt-12 fhd:pt-16 space-y-6">
 
-        <h3
-          class="mb-6 font-display text-xs fhd:text-sm font-semibold uppercase tracking-wider text-zinc-400"
-        >
+        <h2 class="font-display text-2xl fhd:text-3xl font-bold text-zinc-100">
           {{ $t('solutions.detail.technologies') }}
-        </h3>
+        </h2>
 
         <div class="flex flex-wrap gap-3 fhd:gap-4">
 
@@ -203,7 +208,33 @@ useSeoMeta({
 
         </div>
 
-      </div>
+      </section>
+
+      <!-- FAQ (AEO: Answer Engine Optimization & Structured Schema) -->
+      <section
+        v-if="faqItems.length"
+        aria-labelledby="faq-heading"
+        class="mt-20 fhd:mt-28 space-y-8 border-t border-white/5 pt-16"
+      >
+        <h2 id="faq-heading" class="font-display text-2xl fhd:text-3xl font-bold text-zinc-100">
+          {{ $t('faq.title') }}
+        </h2>
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 fhd:gap-8">
+          <article
+            v-for="(item, index) in faqItems"
+            :key="index"
+            class="rounded-2xl border border-white/5 bg-zinc-950/40 p-6 fhd:p-8"
+          >
+            <h3 class="font-display text-base fhd:text-lg font-bold text-zinc-100">
+              {{ item.q }}
+            </h3>
+            <p class="mt-2 font-sans text-sm fhd:text-base leading-relaxed text-zinc-400">
+              {{ item.a }}
+            </p>
+          </article>
+        </div>
+      </section>
 
       <!-- CTA -->
       <div
@@ -228,7 +259,7 @@ useSeoMeta({
         <div class="pt-4">
 
           <ButtonPremium
-            :to="localePath('/contact')"
+            :to="localePath({ name: 'contact' })"
             :variant="current.glow === 'blue' ? 'primary' : 'accent'"
           >
             {{ $t(`solutions.${solution}.ctaButton`) }}

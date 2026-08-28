@@ -168,18 +168,24 @@ useSeoMeta({
         </h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div 
-            v-for="(img, idx) in currentProject.images" 
+          <figure
+            v-for="(img, idx) in currentProject.images"
             :key="img"
             class="relative rounded-2xl overflow-hidden border border-white/5 bg-zinc-900 group aspect-video"
           >
-            <img 
-              :src="img" 
+            <NuxtImg
+              :src="img"
               :alt="`${$t(`portfolio.projects.${projectId}.title`)} — ${idx + 1}`"
+              format="webp"
               class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
               loading="lazy"
             />
-          </div>
+            <!-- <figcaption>: pie de figura para que la IA relacione cada
+                 imagen del case study con el proyecto y su posición -->
+            <figcaption class="absolute bottom-3 left-3 rounded-lg bg-zinc-950/70 px-3 py-1 text-[11px] font-display font-medium text-zinc-300 backdrop-blur">
+              {{ $t(`portfolio.projects.${projectId}.title`) }} — {{ idx + 1 }}
+            </figcaption>
+          </figure>
         </div>
       </div>
 

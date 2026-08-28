@@ -20,15 +20,18 @@ const toggleMobileMenu = () => {
 <template>
   <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/5 bg-brand-dark/80 backdrop-blur-xl">
     <div class="max-w-7xl 2xl:max-w-[1536px] fhd:max-w-[1680px] mx-auto px-6 2xl:px-10 fhd:px-12 h-20 fhd:h-24 flex items-center justify-between">
-      <NuxtLink :to="routes.home()" class="flex items-center space-x-3 group">
+      <NuxtLink :to="routes.home()" class="flex items-center space-x-3 group" aria-label="Ingenium Bright — Home">
         <img 
           src="/img/Logo_V3/Logo_ID_1.png" 
           alt="Ingenium Bright Logo" 
+          width="82"
+          height="40"
           class="h-10 fhd:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
         />
       </NuxtLink>
 
-      <nav class="hidden md:flex items-center space-x-8 fhd:space-x-12">
+      <!-- <nav> semántico: define la navegación principal para crawlers y lectores de pantalla -->
+      <nav aria-label="Main navigation" class="hidden md:flex items-center space-x-8 fhd:space-x-12">
         <NuxtLink
           v-for="link in navLinks"
           :key="link.key"
@@ -50,12 +53,13 @@ const toggleMobileMenu = () => {
       <button 
         @click="toggleMobileMenu"
         class="md:hidden p-2 text-zinc-400 hover:text-zinc-100 focus:outline-none"
-        aria-label="Toggle menu"
+        :aria-label="isMobileMenuOpen ? 'Close menu' : 'Open menu'"
+        :aria-expanded="isMobileMenuOpen"
       >
-        <svg v-if="!isMobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg v-if="!isMobileMenuOpen" class="w-6 h-6" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
-        <svg v-else class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg v-else class="w-6 h-6" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
@@ -64,6 +68,7 @@ const toggleMobileMenu = () => {
     <div 
       v-if="isMobileMenuOpen"
       class="md:hidden border-b border-white/5 bg-brand-dark/95 backdrop-blur-2xl transition-all duration-300"
+      aria-label="Mobile navigation"
     >
       <div class="px-6 py-6 space-y-4 flex flex-col">
         <NuxtLink

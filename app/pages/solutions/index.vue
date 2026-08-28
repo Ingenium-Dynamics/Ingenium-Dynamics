@@ -19,12 +19,12 @@ useSeoMeta({
 })
 
 const solutions = [
-  { key: 'web', icon: Laptop, path: '/solutions/web', color: 'emerald' },
-  { key: 'software', icon: Cpu, path: '/solutions/software', color: 'blue' },
-  { key: 'automation', icon: GitFork, path: '/solutions/automation', color: 'violet' },
-  { key: 'data', icon: BarChart3, path: '/solutions/data', color: 'emerald' },
-  { key: 'cloud', icon: ShieldCheck, path: '/solutions/cloud', color: 'blue' },
-  { key: 'consulting', icon: Users, path: '/solutions/consulting', color: 'violet' }
+  { key: 'web', icon: Laptop, route: 'solutions-web', color: 'emerald' },
+  { key: 'software', icon: Cpu, route: 'solutions-software', color: 'blue' },
+  { key: 'automation', icon: GitFork, route: 'solutions-automation', color: 'violet' },
+  { key: 'data', icon: BarChart3, route: 'solutions-data', color: 'emerald' },
+  { key: 'cloud', icon: ShieldCheck, route: 'solutions-cloud', color: 'blue' },
+  { key: 'consulting', icon: Users, route: 'solutions-consulting', color: 'violet' }
 ]
 </script>
 
@@ -93,10 +93,11 @@ const solutions = [
               {{ $t(`solutions.${sol.key}.cta`) }}
             </span>
             <NuxtLink 
-              :to="localePath(sol.path)" 
+              :to="localePath({ name: sol.route })" 
+              :aria-label="`Learn more about ${$t(`solutions.${sol.key}.title`)}`"
               class="inline-flex items-center justify-center w-10 h-10 fhd:w-12 fhd:h-12 rounded-xl border border-white/5 bg-white/5 text-zinc-200 hover:bg-brand-primary hover:border-brand-primary hover:text-white transition-all duration-300"
             >
-              <ArrowRight class="w-5 h-5 fhd:w-6 fhd:h-6" />
+              <ArrowRight class="w-5 h-5 fhd:w-6 fhd:h-6" aria-hidden="true" />
             </NuxtLink>
           </div>
         </CardPremium>

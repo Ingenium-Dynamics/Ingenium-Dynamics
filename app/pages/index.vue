@@ -414,15 +414,20 @@ useSeoMeta({
         class="group block overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] transition-all duration-500 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.05]"
       >
 
-        <!-- Image -->
-        <div class="aspect-[16/10] overflow-hidden bg-zinc-900">
-          <img
+        <!-- Image: <figure> + <figcaption> semántico; la IA relaciona la imagen
+             con su pie de figura para entender el contexto visual -->
+        <figure class="aspect-[16/10] overflow-hidden bg-zinc-900">
+          <NuxtImg
             :src="project.image"
             :alt="$t(`portfolio.projects.${project.key}.title`)"
+            format="webp"
             class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
             loading="lazy"
           />
-        </div>
+          <figcaption class="sr-only">
+            {{ $t(`portfolio.projects.${project.key}.title`) }}
+          </figcaption>
+        </figure>
 
         <!-- Content -->
         <div class="p-6 fhd:p-8">
