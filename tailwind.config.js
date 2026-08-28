@@ -11,6 +11,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        '3xl': '1920px',
+        'fhd': '1920px'
+      },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         display: ['Outfit', 'sans-serif']

@@ -27,7 +27,7 @@ const companyLinks = [
     <div class="absolute bottom-0 right-1/4 neon-glow-violet opacity-20 transform translate-y-1/2"></div>
     <div class="absolute top-1/2 left-10 neon-glow-emerald opacity-10"></div>
 
-    <div class="max-w-7xl mx-auto px-6 relative z-20">
+    <div class="max-w-7xl 2xl:max-w-[1536px] fhd:max-w-[1680px] mx-auto px-6 2xl:px-10 fhd:px-12 relative z-20">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12 pb-16">
         <div class="md:col-span-1 space-y-4">
           <NuxtLink :to="routes.home()" class="inline-block">

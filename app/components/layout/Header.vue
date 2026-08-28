@@ -19,21 +19,21 @@ const toggleMobileMenu = () => {
 
 <template>
   <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/5 bg-brand-dark/80 backdrop-blur-xl">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="max-w-7xl 2xl:max-w-[1536px] fhd:max-w-[1680px] mx-auto px-6 2xl:px-10 fhd:px-12 h-20 fhd:h-24 flex items-center justify-between">
       <NuxtLink :to="routes.home()" class="flex items-center space-x-3 group">
         <img 
           src="/img/Logo_V3/Logo_ID_1.png" 
           alt="Ingenium Bright Logo" 
-          class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          class="h-10 fhd:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
         />
       </NuxtLink>
 
-      <nav class="hidden md:flex items-center space-x-8">
+      <nav class="hidden md:flex items-center space-x-8 fhd:space-x-12">
         <NuxtLink
           v-for="link in navLinks"
           :key="link.key"
           :to="link.to()"
-          class="text-sm font-medium text-zinc-400 hover:text-zinc-100 transition-colors duration-200"
+          class="text-sm fhd:text-base font-medium text-zinc-400 hover:text-zinc-100 transition-colors duration-200"
           active-class="text-brand-primary font-semibold"
         >
           {{ $t(`nav.${link.key}`) }}
@@ -41,7 +41,7 @@ const toggleMobileMenu = () => {
       </nav>
 
       <div class="hidden md:flex items-center">
-        <NuxtLink :to="routes.contact()" class="btn-premium-secondary px-5 py-2 text-sm">
+        <NuxtLink :to="routes.contact()" class="btn-premium-secondary px-5 py-2 fhd:px-6 fhd:py-2.5 text-sm fhd:text-base">
           {{ $t('nav.cta') }}
         </NuxtLink>
         <LanguageSwitcher />
