@@ -11,7 +11,7 @@ import {
   ArrowLeft,
   CheckCircle,
   Sparkles
-} from 'lucide-vue-next'
+} from '@lucide/vue'
 
 import ButtonPremium from '~/components/ui/ButtonPremium.vue'
 import CardPremium from '~/components/ui/CardPremium.vue'

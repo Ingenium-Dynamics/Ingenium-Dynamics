@@ -8,7 +8,7 @@ import {
   ShieldCheck, 
   Users, 
   ArrowRight 
-} from 'lucide-vue-next'
+} from '@lucide/vue'
 import CardPremium from '~/components/ui/CardPremium.vue'
 
 const localePath = useLocalePath()
