@@ -41,6 +41,8 @@ jobs:
             @rollup/rollup-linux-x64-gnu \
             @oxc-parser/binding-linux-x64-gnu \
             @oxc-transform/binding-linux-x64-gnu \
+            @img/sharp-linux-x64 \
+            sharp \
             lightningcss
 
       - name: Prepare Nuxt
