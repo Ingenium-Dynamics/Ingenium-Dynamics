@@ -29,14 +29,14 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install --include=optional --ignore-scripts
+        run: npm install --include=optional --ignore-scripts --legacy-peer-deps
         env:
           NPM_CONFIG_INCLUDE: optional
           npm_config_optional: true
 
       - name: Install Linux native bindings
         run: |
-          npm install --no-save --include=optional \
+          npm install --no-save --include=optional --legacy-peer-deps \
             @rolldown/binding-linux-x64-gnu \
             @rollup/rollup-linux-x64-gnu \
             @oxc-parser/binding-linux-x64-gnu \
