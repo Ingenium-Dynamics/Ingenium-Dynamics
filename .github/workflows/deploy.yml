@@ -40,6 +40,7 @@ jobs:
             @rolldown/binding-linux-x64-gnu \
             @rollup/rollup-linux-x64-gnu \
             @oxc-parser/binding-linux-x64-gnu \
+            @oxc-transform/binding-linux-x64-gnu \
             lightningcss
 
       - name: Prepare Nuxt
