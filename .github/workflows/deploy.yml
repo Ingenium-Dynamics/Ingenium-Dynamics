@@ -43,7 +43,8 @@ jobs:
             @oxc-transform/binding-linux-x64-gnu \
             @img/sharp-linux-x64 \
             sharp \
-            lightningcss
+            lightningcss \
+            vite
 
       - name: Prepare Nuxt
         run: npx nuxt prepare
