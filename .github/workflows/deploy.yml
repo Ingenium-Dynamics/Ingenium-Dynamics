@@ -29,7 +29,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install --include=optional
+        run: npm install --include=optional --ignore-scripts
         env:
           NPM_CONFIG_INCLUDE: optional
           npm_config_optional: true
@@ -40,6 +40,9 @@ jobs:
             @rolldown/binding-linux-x64-gnu \
             @rollup/rollup-linux-x64-gnu \
             lightningcss
+
+      - name: Prepare Nuxt
+        run: npx nuxt prepare
 
       - name: Generate static site
         run: npm run generate
