@@ -46,7 +46,7 @@ const companyLinks = [
             {{ $t('footer.desc') }}
           </p>
           <div class="pt-4 text-xs text-zinc-500">
-            <a href="mailto:info@ingeniumbright.com" class="hover:text-zinc-300 transition-colors">info@ingeniumbright.com</a>
+            <a href="mailto:Francisco.monroy@ingeniumbright.com" class="hover:text-zinc-300 transition-colors">Francisco.monroy@ingeniumbright.com</a>
           </div>
         </div>
 

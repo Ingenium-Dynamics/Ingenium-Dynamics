@@ -224,7 +224,7 @@ useSeoMeta({
         </NuxtLink>
 
         <NuxtLink
-          :to="localePath('work/index')"
+          :to="localePath({ name: 'work' })"
           class="inline-flex w-full items-center justify-center rounded-full border border-white/10 bg-white/[0.03] px-7 py-3.5 fhd:px-9 fhd:py-4 text-sm fhd:text-base font-semibold text-white transition hover:border-white/20 hover:bg-white/[0.06] sm:w-auto"
         >
           {{ $t('hero.secondaryCta') }}
@@ -393,7 +393,7 @@ useSeoMeta({
 
       <!-- Ver todos -->
       <NuxtLink
-        :to="localePath('work/index')"
+        :to="localePath({ name: 'work' })"
         class="group inline-flex shrink-0 items-center gap-2 text-sm fhd:text-base font-semibold text-white transition-colors hover:text-emerald-400"
       >
         {{ $t('portfolio.viewAll') }}

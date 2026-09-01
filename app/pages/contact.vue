@@ -101,8 +101,8 @@ const errorMessage = computed(() => {
             </div>
             <div>
               <span class="block text-[10px] font-display font-semibold uppercase tracking-wider text-zinc-500">{{ $t('contact.email_label') }}</span>
-              <a href="mailto:info@ingeniumbright.com" class="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
-                info@ingeniumbright.com
+              <a href="mailto:Francisco.monroy@ingeniumbright.com" class="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
+                francisco.monroy@ingeniumbright.com
               </a>
             </div>
           </div>

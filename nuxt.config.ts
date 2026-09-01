@@ -53,7 +53,7 @@ export default defineNuxtConfig({
         'https://www.instagram.com/ingenium_bright/',
         'https://www.linkedin.com/company/ingenium-dynamics'
       ],
-      email: 'info@ingeniumbright.com'
+      email: 'francisco.monroy@ingeniumbright.com'
     }
   },
 

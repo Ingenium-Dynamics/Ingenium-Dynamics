@@ -139,7 +139,7 @@
       "success": "Message sent successfully! We will get back to you soon.",
       "error": "An error occurred while sending the message. Please try again.",
       "error_rate_limit": "You have exceeded the submission limit. Please try again later.",
-      "error_config": "The contact form is temporarily unavailable. Please email us at info@ingeniumbright.com"
+      "error_config": "The contact form is temporarily unavailable. Please email us at francisco.monroy@ingeniumbright.com"
     }
   },
   "portfolio": {
