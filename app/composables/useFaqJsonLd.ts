@@ -4,19 +4,31 @@ interface FaqItem {
 }
 
 export function useFaqJsonLd(scope: string) {
-  const { tm } = useI18n()
+  const { tm, rt } = useI18n()
 
-  // <!-- FAQPage (schema.org): marca la sección de preguntas frecuentes para que
-  // Google AI Overviews y otros motores la puedan citar como respuesta directa. -->
-  const faqItems = computed(() => {
+  // FAQPage (schema.org):
+  // permite que Google y otros motores de respuesta
+  // entiendan las preguntas y respuestas de la página.
+  const faqItems = computed<FaqItem[]>(() => {
     const raw = tm(`faq.${scope}.questions`) as FaqItem[] | undefined
-    return Array.isArray(raw) ? raw : []
+
+    if (!Array.isArray(raw)) {
+      return []
+    }
+
+    return raw.map((item) => ({
+      q: rt(item.q as any),
+      a: rt(item.a as any)
+    }))
   })
 
   useHead({
     script: computed(() => {
       const items = faqItems.value
-      if (!items.length) return []
+
+      if (!items.length) {
+        return []
+      }
 
       const schema = {
         '@context': 'https://schema.org',

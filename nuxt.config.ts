@@ -31,7 +31,12 @@ export default defineNuxtConfig({
     public: {
       awsRegion: 'us-east-1',
       awsIdentityPoolId: 'us-east-1:4cb32f41-9337-4954-83a1-214f3ead6d6d',
-      awsSnsTopicArn: 'arn:aws:sns:us-east-1:183295419448:Topic_ContactForm_ID_es_CG_03'
+      awsSnsTopicArn: 'arn:aws:sns:us-east-1:183295419448:Topic_ContactForm_ID_es_CG_03',
+      //emailjs
+
+      emailjsServiceId: process.env.NUXT_PUBLIC_EMAILJS_SERVICE_ID || '',
+      emailjsTemplateId: process.env.NUXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+      emailjsPublicKey: process.env.NUXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
     }
   },
 

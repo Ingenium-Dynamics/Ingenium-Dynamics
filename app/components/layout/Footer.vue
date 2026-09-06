@@ -32,11 +32,11 @@ const companyLinks = [
         <div class="md:col-span-1 space-y-4">
           <NuxtLink :to="routes.home()" class="inline-block" aria-label="Ingenium Bright — Home">
             <img 
-              src="/img/Logo_V3/Logo_ID_1.png" 
+              src="/img/Logo_V3/Logo_IB2.png" 
               alt="Ingenium Bright" 
-              width="82"
-              height="40"
-              class="h-10 w-auto object-contain"
+              width="auto"
+              height="80"
+              class="h-20 w-auto object-contain"
             />
           </NuxtLink>
           <p class="text-sm font-display font-medium text-zinc-300">

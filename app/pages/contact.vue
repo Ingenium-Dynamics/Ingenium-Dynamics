@@ -231,27 +231,42 @@ const errorMessage = computed(() => {
          respuesta coincide con el JSON-LD FAQPage inyectado en <head>, lo que
          refuerza la señal de AEO para los AI Overviews. -->
     <section
-      v-if="faqItems.length"
-      aria-labelledby="contact-faq-heading"
-      class="max-w-7xl mx-auto px-6 pt-20"
+  v-if="faqItems.length"
+  aria-labelledby="contact-faq-heading"
+  class="max-w-7xl mx-auto px-6 pt-20 pb-16"
+>
+  <h2
+    id="contact-faq-heading"
+    class="font-display text-2xl md:text-3xl font-bold text-zinc-100"
+  >
+    {{ $t('faq.title') }}
+  </h2>
+
+  <div class="mt-8 max-w-4xl space-y-4">
+    <details
+      v-for="(item, index) in faqItems"
+      :key="index"
+      class="group rounded-2xl border border-white/5 bg-zinc-950/20 overflow-hidden"
     >
-      <h2 id="contact-faq-heading" class="font-display text-2xl md:text-3xl font-bold text-zinc-100">
-        {{ $t('faq.title') }}
-      </h2>
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <article
-          v-for="(item, index) in faqItems"
-          :key="index"
-          class="rounded-2xl border border-white/5 bg-zinc-950/20 p-6"
+      <summary
+        class="flex cursor-pointer items-center justify-between gap-6 p-6 font-display text-base font-bold text-zinc-100 list-none"
+      >
+        <span>{{ item.q }}</span>
+
+        <span
+          class="flex-shrink-0 text-brand-primary text-xl transition-transform duration-300 group-open:rotate-45"
         >
-          <h3 class="font-display text-base font-bold text-zinc-100">
-            {{ item.q }}
-          </h3>
-          <p class="mt-2 font-sans text-sm leading-relaxed text-zinc-400">
-            {{ item.a }}
-          </p>
-        </article>
+          +
+        </span>
+      </summary>
+
+      <div class="px-6 pb-6">
+        <p class="font-sans text-sm leading-relaxed text-zinc-400">
+          {{ item.a }}
+        </p>
       </div>
-    </section>
+    </details>
+  </div>
+</section>
   </div>
 </template>
