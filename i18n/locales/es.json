@@ -501,6 +501,38 @@
         {
           "q": "¿Ofrecen soporte después de la entrega?",
           "a": "Sí. Brindamos mantenimiento continuo, actualizaciones y evolución del producto. Muchos clientes trabajan con nosotros como su socio tecnológico a largo plazo."
+        },
+        {
+          "q": "¿Por qué mi empresa necesita un sitio web si ya tengo Facebook o Instagram?",
+          "a": "Las redes sociales son excelentes para generar comunidad y compartir contenido, pero no sustituyen un sitio web propio. Tu sitio web es el espacio digital que controlas, donde puedes presentar tus servicios, captar clientes, mostrar información profesional y construir una presencia que no depende de los cambios de una plataforma social."
+        },
+        {
+          "q": "¿Por qué no es suficiente tener solamente redes sociales?",
+          "a": "Una empresa que depende únicamente de las redes sociales queda condicionada por los algoritmos, formatos y políticas de plataformas externas. Un sitio web propio te permite tener una presencia digital estable, profesional y accesible desde Google y otros canales, además de ofrecer una experiencia diseñada específicamente para tu negocio."
+        },
+        {
+          "q": "¿Por qué es importante tener un perfil de Google Business?",
+          "a": "Google Business Profile ayuda a que los clientes encuentren tu empresa cuando realizan búsquedas locales en Google y Google Maps. Un perfil completo y actualizado puede mostrar información esencial como ubicación, horarios, teléfono, sitio web, servicios, fotografías y reseñas, facilitando que los clientes potenciales contacten contigo."
+        },
+        {
+          "q": "¿Ingenium Bright administra Google Business Profile?",
+          "a": "Sí. Gestionamos Google Business Profile para empresas que necesitan mejorar y mantener su presencia local en Google. Podemos ayudarte con la configuración y optimización del perfil, información del negocio, categorías, servicios, publicaciones y estrategia de presencia local."
+        },
+        {
+          "q": "¿Pueden ayudarme a mejorar mi presencia en Google?",
+          "a": "Sí. Combinamos desarrollo web, SEO, contenido estructurado, optimización local y Google Business Profile para construir una presencia digital coherente. El objetivo es facilitar que los clientes encuentren tu empresa, comprendan tus servicios y puedan contactarte."
+        },
+        {
+          "q": "¿Un sitio web ayuda a que mi negocio aparezca en Google?",
+          "a": "Sí, aunque tener un sitio web por sí solo no garantiza una posición determinada en Google. Un sitio correctamente estructurado, rápido, accesible y optimizado para SEO proporciona a los buscadores información clara sobre tu negocio y puede formar parte de una estrategia integral de posicionamiento."
+        },
+        {
+          "q": "¿Pueden crear un sitio web optimizado para SEO y AEO?",
+          "a": "Sí. Desarrollamos sitios considerando tanto el SEO tradicional como el Answer Engine Optimization (AEO). Esto incluye estructura semántica, contenido orientado a preguntas, datos estructurados, información clara sobre la empresa y elementos técnicos que facilitan que buscadores y sistemas de respuesta comprendan el contenido."
+        },
+        {
+          "q": "¿Pueden mantener y actualizar mi presencia digital?",
+          "a": "Sí. Podemos acompañarte después del lanzamiento con mantenimiento, actualizaciones del sitio web, mejoras técnicas, SEO, optimización de Google Business Profile y evolución de tus soluciones digitales según las necesidades de tu negocio."
         }
       ]
     },

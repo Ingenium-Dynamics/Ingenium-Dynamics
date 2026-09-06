@@ -498,6 +498,38 @@
         {
           "q": "Do you offer support after delivery?",
           "a": "Yes. We provide ongoing maintenance, updates, and evolution of the product. Many clients work with us as their long-term technology partner."
+        },
+        {
+          "q": "Why does my business need a website if I already have Facebook or Instagram?",
+          "a": "Social media is excellent for building a community and sharing content, but it does not replace your own website. Your website is a digital space you control, where you can present your services, attract customers, provide professional information and build an online presence that does not depend on a social media platform."
+        },
+        {
+          "q": "Why isn't having social media alone enough?",
+          "a": "A business that relies entirely on social media is dependent on external platforms, their algorithms, formats and policies. A website gives your business a stable and professional digital presence that customers can access through Google and other channels, while providing an experience specifically designed around your business."
+        },
+        {
+          "q": "Why is having a Google Business Profile important?",
+          "a": "Google Business Profile helps customers discover your business when they search locally on Google and Google Maps. A complete and up-to-date profile can display essential information such as your location, hours, phone number, website, services, photos and reviews, making it easier for potential customers to contact you."
+        },
+        {
+          "q": "Does Ingenium Bright manage Google Business Profile?",
+          "a": "Yes. We manage Google Business Profile for businesses that want to improve and maintain their local presence on Google. We can help with profile setup and optimization, business information, categories, services, posts and local visibility strategy."
+        },
+        {
+          "q": "Can you help improve my visibility on Google?",
+          "a": "Yes. We combine web development, SEO, structured content, local optimization and Google Business Profile management to build a consistent digital presence. The goal is to make it easier for customers to find your business, understand your services and get in touch."
+        },
+        {
+          "q": "Does having a website help my business appear on Google?",
+          "a": "Yes, although having a website alone does not guarantee a specific ranking on Google. A properly structured, fast, accessible and SEO-optimized website gives search engines clear information about your business and can become an important part of an overall visibility strategy."
+        },
+        {
+          "q": "Can you build a website optimized for SEO and AEO?",
+          "a": "Yes. We develop websites with both traditional SEO and Answer Engine Optimization (AEO) in mind. This includes semantic structure, question-focused content, structured data, clear business information and technical elements that help search engines and answer systems understand the content."
+        },
+        {
+          "q": "Can you maintain and update my digital presence?",
+          "a": "Yes. We can continue supporting your business after launch with website maintenance, technical updates, SEO improvements, Google Business Profile optimization and the evolution of your digital solutions as your business grows."
         }
       ]
     },
