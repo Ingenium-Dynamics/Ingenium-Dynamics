@@ -65,7 +65,11 @@ export default defineNuxtConfig({
   sitemap: {
     zeroRuntime: true
   },
-
+  robots: {
+    allow: ['/'],
+    sitemap: 'https://www.ingeniumbright.com/sitemap.xml'
+  },
+  
   i18n: {
     locales: [
       { code: 'en', iso: 'en-CA', name: 'English', file: 'en.json' },
