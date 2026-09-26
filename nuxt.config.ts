@@ -44,7 +44,8 @@ export default defineNuxtConfig({
     url: 'https://www.ingeniumbright.com',
     name: 'Ingenium Bright',
     description: 'Digital Solutions & Technology — Technology that moves your business forward.',
-    defaultLocale: 'en'
+    defaultLocale: 'en',
+    trailingSlash: true
   },
 
   schemaOrg: {
