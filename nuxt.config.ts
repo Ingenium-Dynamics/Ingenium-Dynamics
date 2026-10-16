@@ -82,13 +82,13 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: 'locales/',
     baseUrl: 'https://www.ingeniumbright.com',
-    detectBrowserLanguage: {
+   /* detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
       alwaysRedirect: true,
       fallbackLocale: 'en'
-    },
+    },*/
     customRoutes: 'config',
     pages: {
       'solutions/index': {
