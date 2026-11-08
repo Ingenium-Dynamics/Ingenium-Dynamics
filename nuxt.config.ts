@@ -20,6 +20,23 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
 
+  app: {
+    head: {
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-96DW2M52M1',
+          async: true
+        },
+        {
+          innerHTML: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-96DW2M52M1');`
+        }
+      ]
+    }
+  },
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
