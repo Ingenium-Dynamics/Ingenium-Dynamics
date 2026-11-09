@@ -166,10 +166,7 @@ useSeoMeta({
       ? 'Solutions numériques, développement logiciel, automatisation, données et cloud.'
       : locale.value === 'es'
         ? 'Soluciones digitales, desarrollo de software, automatización, datos y cloud.'
-        : 'Digital solutions, software development, automation, data and cloud.',
-
-  ogImage: '/img/Logo_V3/Ingenium_1.png',
-  twitterCard: 'summary_large_image'
+        : 'Digital solutions, software development, automation, data and cloud.'
 })
 </script>
 

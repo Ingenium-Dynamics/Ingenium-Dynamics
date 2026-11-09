@@ -6,7 +6,7 @@ const route = useRoute()
 const { locale } = useI18n()
 
 const siteUrl = 'https://www.ingeniumbright.com'
-const ogImage = `${siteUrl}/img/Logo_V3/OG-IngeniumBright.png`
+const ogImage = `${siteUrl}/img/Logo_V3/OG-IngeniumBright.jpg`
 
 /*
  * Map Nuxt i18n locale → Open Graph locale.
@@ -135,6 +135,11 @@ useHead({
 })
 useSeoMeta({
   ogImage: ogImage,
+  ogImageSecureUrl: ogImage,
+  ogImageType: 'image/jpeg',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: 'Ingenium Bright | Digital Solutions & Technology',
   twitterImage: ogImage,
   twitterCard: 'summary_large_image'
 })
